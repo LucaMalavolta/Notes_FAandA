@@ -8,17 +8,8 @@
 ## Table of contents
 
 ```{toctree}
-:maxdepth: 2
-installation
-quickstart
-prepare_datasets
-prepare_yaml
-common_objects
-models
-gaussian_process_regression
-multidimensional_gps
-running_pyorbit
-GitHub Repository <https://github.com/LucaMalavolta/PyORBIT>
+:maxdepth: 1
+chapter00_introduction
 ```
 
 
