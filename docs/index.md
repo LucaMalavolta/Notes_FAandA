@@ -1,15 +1,14 @@
 (home)=
 
 # Fundamentals of Astronomy and Astrophysics
-## Notes of the course for the Bacehlor's degree in Aerospace Engineering
+## Notes of the course for the Bachelor's degree in Aerospace Engineering
 
 ![Degree][degree-badge]
 ![Course][FAandA-badge]
 [![GitHub][github-badge]][github-link]
 
-The extence of things
 
-
+Edit directly on GitHub page
 
 ## Table of contents
 
