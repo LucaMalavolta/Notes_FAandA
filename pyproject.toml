@@ -1,0 +1,4 @@
+[project]
+name = "Notes_FAandA"
+authors = [{name = "Luca Malavolta", email = "luca.malavolta@unipd.it"}]
+dynamic = ["version", "description"]
