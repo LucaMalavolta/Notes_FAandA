@@ -70,6 +70,8 @@ suppress_warnings = ["myst.header"]
 source_suffix = {
     ".rst": "restructuredtext",
     ".ipynb": "myst-nb",
+    '.txt': 'markdown',
+    '.md': 'markdown',
 }
 #source_suffix = '.rst'
 
@@ -78,7 +80,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Notes_FAandA'
-copyright = u'2024, Luca Malavolta'
+copyright = u'2025, Luca Malavolta - not for redistribution'
 author = u'Luca Malavolta'
 contact = 'luca.malavolta at unipd.it'
 
@@ -116,8 +118,9 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 html_theme = 'sphinx_book_theme'
-html_logo = "_static/Logo_Università_Padova.png"
-html_title = "Fundamentals of Astronomy and Astrophysics"
+#html_logo = "_static/Logo_Universita_Padova.png"
+#html_title = "Fundamentals of Astronomy and Astrophysics"
+html_favicon = "_static/favicon.ico"
 
 html_copy_source = True
 html_show_sourcelink = True
@@ -136,8 +139,14 @@ html_theme_options = {
     "use_issues_button": True,
     #"home_page_in_toc": True,
     "show_navbar_depth": 3,
-    "logo_only": True,
+    "logo_only": False,
+    "use_sidenotes": True,
     #"show_related": True
+    "logo": {
+        "text": "Fundamentals of Astronomy and Astrophysics",
+        "image_light": "_static/Logo_Universita_Padova.png",
+        "image_dark": "_static/Logo_Universita_Padova.png",
+    }
 }
 
 
