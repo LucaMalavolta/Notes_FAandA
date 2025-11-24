@@ -53,11 +53,44 @@ There are four standards to represent angles in Astronomy:
 where $\int$ is the integer part of the number ($\int(24.9) = 24$). 
 The inverse conversion is much simpler: $\beta = d + m/60 + s/3600$.
 - **Hours (dhms)**: again a *sexagesimal* system, with angles measured between $0$ and $24$ *hours*. Thus, *one hour* corresponds  to *15 degrees*.
-SSSSSSSSSSS 
+To avoid confusion with the degree (dms) system, the units composing an hour are called *minutes* and *seconds* rather than arcminutes and arcseconds.
 The conversion from decimal degrees to sexagesimal degrees is obtained through three steps: 
   1) $h = \int(\beta / 15) 
   3) $m = \int( (\beta/15 - h)*60) $
   4) $s = ((\beta/15 - d)*60 - m) * 60$
+The inverse conversion is much simpler: $\beta = (h + m/60 + s/3600) * 15$.
+
+**immagine**
+
+
+## Spherical trigonometry
+ 
+Consider a sphere with radius $r$ and centered in $C$. \
+A plane passing through the center of the sphere $C$ divides the sphere in two identical parts, called **hemispheres**. The intersection of this plane with the sphere is called **great circle**. Two hemispheres are always separated by a great circle. Consider now the perpendicular (or *normal*) to the same plane and passing to the center $C$: the intersection $P$ and $P'$ between this normal and the sphere are called **poles** .\
+The intersection between the sphere and any other plane **not** passing through the center $C$ is called **small circle**. \
+The shortest path between two points on a sphere $Q$ and $Q'$ is always **along a great circle**. 
+
+**immagine** 
+
+If you identify three points on the surface of the sphere, and connect them with great circles, you obtain a **spherical triangle**. Considering the spherical triangle in the figure, the angle *c* subtended by the arc *AB* is called **central angle** and it is measure in radians or degrees. \
+The length of the arc *AB* is equal to radius of the sphere multiplied by the subtended central angle, $AB = r* c$. If we consider a sphere with unitary radius ($r=1$), then we obtain $AB = c$ and we can measure the arc *AB* in radians or degrees.
+
+ANGLES?
+
+Other properties of spherical triangles:
+
+- The sum of the internal angles is always greater than $180°$. 
+- The spherical excess 
+
+
+
+
+
+
+ 
+
+
+
 
 
 
