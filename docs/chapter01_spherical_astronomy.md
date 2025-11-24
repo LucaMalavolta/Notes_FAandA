@@ -44,7 +44,20 @@ The most essential trigonometric functions[^margin_trigonometric_functions]
 
 
 There are four standards to represent angles in Astronomy:
-- **Radians**: the standard way. Angles are measured between $0$ and $2 \pi$. Radians are the only accepted input by trigonometric functions.
-- **Decimal degrees**: angles vary between $0$ and $360°$
+- **Radians**: the standard way. Angles are measured between $0$ and $2 \pi$ radians. Radians are the only accepted input by trigonometric functions.
+- **Decimal degrees**: angles vary between $0$ and $360°$. Given $\alpha$ the value of the angle in radians and $\beta$ the same angle in decimal degrees, the relationship between the two is $\beta = \alpha * 180 / \pi$
+- **Degrees (dms)**: it is a *sexagesimal* system where the angles still vary between $0$ and $360°$, but fractions of a degree are expressed as separate numbers rather than decimal figures. One degree is divided in $60$ *arcminutes* (denoted with the symbol $'$), one arcminute is divided in 60 *arcseconds* (symbol $''$). Fractions of arcseconds are expressed as decimal part. The conversion from decimal degrees to sexagesimal degrees is obtained through three steps: 
+  1) $d = \int(\beta)$
+  2) $m = \int( (\beta - d)*60) $
+  3)  $s = ((\beta - d)*60 - m) * 60$
+where $\int$ is the integer part of the number ($\int(24.9) = 24$). 
+The inverse conversion is much simpler: $\beta = d + m/60 + s/3600$.
+- **Hours (dhms)**: again a *sexagesimal* system, with angles measured between $0$ and $24$ *hours*. Thus, *one hour* corresponds  to *15 degrees*.
+SSSSSSSSSSS 
+The conversion from decimal degrees to sexagesimal degrees is obtained through three steps: 
+  1) $h = \int(\beta / 15) 
+  3) $m = \int( (\beta/15 - h)*60) $
+  4) $s = ((\beta/15 - d)*60 - m) * 60$
+
 
 
