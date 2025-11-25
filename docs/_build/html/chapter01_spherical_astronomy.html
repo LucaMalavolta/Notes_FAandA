@@ -54,14 +54,14 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/js/hoverxref.js?v=85f38ef1"></script>
+    <script src="_static/js/hoverxref.js?v=6ff7264e"></script>
     <script src="_static/js/tooltipster.bundle.min.js?v=18bf091b"></script>
     <script src="_static/js/micromodal.min.js?v=04d6302d"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.5f1b78e6-ef7e-4d01-be05-588d726ecbe8.js"></script>
+    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.21ef1fd6-e842-4f2a-ae84-44f223a87a4d.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter01_spherical_astronomy';</script>
@@ -379,6 +379,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-celestial-sphere">The Celestial Sphere</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigonometry">Trigonometry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-trigonometry">Spherical trigonometry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
 </ul>
             </nav>
         </div>
@@ -393,7 +395,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="spherical-astronomy">
 <span id="chapter01-spherical-astronomy"></span><h1>Spherical Astronomy<a class="headerlink" href="#spherical-astronomy" title="Link to this heading">#</a></h1>
 <blockquote>
-<div><p>Oct 31, 2025 | 2 min read</p>
+<div><p>Nov 25, 2025 | 6 min read</p>
 </div></blockquote>
 <section id="the-celestial-sphere">
 <h2>The Celestial Sphere<a class="headerlink" href="#the-celestial-sphere" title="Link to this heading">#</a></h2>
@@ -407,7 +409,7 @@ Nowadays, the term <em>Celestial sphere</em> refers to an abstract construct use
 <p>Trigonometry is the branch of mathematics concerned with specific functions of angles and their application to calculations.
 Considering a circle with radius <span class="math notranslate nohighlight">\(r\)</span>, the arc <span class="math notranslate nohighlight">\(s\)</span> subtended on the circle by an angle <span class="math notranslate nohighlight">\(\theta\)</span> is equal to the radius multiplied by the angle <span class="math notranslate nohighlight">\(s = r \theta\)</span>.
 The first plot in <a class="reference internal" href="#fig01-trigonometry"><span class="std std-ref">Figure 1</span></a> exemplifies this case.  For this to work, the angle <span class="math notranslate nohighlight">\(\theta\)</span> must be a dimensionless quantity. We can see that <span class="math notranslate nohighlight">\(s=r\)</span> for <span class="math notranslate nohighlight">\(\theta = 1\)</span>, we thus define <em>one radian</em> as the angle formed at the centre of a circle by an arc whose length is equal to the radius of the circle (second plot in <a class="reference internal" href="#fig01-trigonometry"><span class="std std-ref">Figure 1</span></a>). Following this definition, an angle of 360° is equal to <span class="math notranslate nohighlight">\(2 \pi\)</span>, thus  1 radian = 57.296°.</p>
-<figure class="align-center" id="fig01-trigonometry">
+<figure class="align-default" id="fig01-trigonometry">
 <a class="reference internal image-reference" href="_images/fig01_trigonometry.png"><img alt="_images/fig01_trigonometry.png" src="_images/fig01_trigonometry.png" style="width: 100%;" />
 </a>
 <figcaption>
@@ -424,9 +426,78 @@ The first plot in <a class="reference internal" href="#fig01-trigonometry"><span
 </figure>
 <p>There are four standards to represent angles in Astronomy:</p>
 <ul class="simple">
-<li><p><strong>Radians</strong>: the standard way. Angles are measured between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(2 \pi\)</span>. Radians are the only accepted input by trigonometric functions.</p></li>
-<li><p><strong>Decimal degrees</strong>: angles vary between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(360°\)</span></p></li>
+<li><p><strong>Radians</strong>: the standard way. Angles are measured between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(2 \pi\)</span> radians. Radians are the only accepted input by trigonometric functions.</p></li>
+<li><p><strong>Decimal degrees</strong>: angles vary between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(360°\)</span>. Given <span class="math notranslate nohighlight">\(\alpha\)</span> the value of the angle in radians and <span class="math notranslate nohighlight">\(\beta\)</span> the same angle in decimal degrees, the relationship between the two is <span class="math notranslate nohighlight">\(\beta = \alpha * 180 / \pi\)</span></p></li>
+<li><p><strong>Degrees (dms)</strong>: it is a <em>sexagesimal</em> system where the angles still vary between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(360°\)</span>, but fractions of a degree are expressed as separate numbers rather than decimal figures. One degree is divided in <span class="math notranslate nohighlight">\(60\)</span> <em>arcminutes</em> (denoted with the symbol <span class="math notranslate nohighlight">\('\)</span>), one arcminute is divided in 60 <em>arcseconds</em> (symbol <span class="math notranslate nohighlight">\(''\)</span>). Fractions of arcseconds are expressed as a decimal part. The conversion from decimal degrees to sexagesimal degrees is obtained through several steps:</p>
+<ol class="arabic simple">
+<li><p>The whole number part of your decimal degrees gives you the <em>degrees</em> in <em>dms</em> system.</p></li>
+<li><p>Multiply by 60 the decimal part of your decimal degrees. The whole number part of the result is arcminutes.</p></li>
+<li><p>Multiply the decimal part of the last result by 60 to convert it to arcseconds.
+The sign is positioned before the degrees. The <em>whole number part</em> is the part before the decimal sign (e.g., <span class="math notranslate nohighlight">\(47\)</span> in <span class="math notranslate nohighlight">\(47.73\)</span>, <span class="math notranslate nohighlight">\(-17\)</span> in <span class="math notranslate nohighlight">\(-17.43\)</span>), the <em>decimal part</em> is the one <em>after</em> the decimal sign.
+The inverse conversion is much simpler: <span class="math notranslate nohighlight">\(\beta = d + m/60 + s/3600\)</span>.</p></li>
+</ol>
+</li>
+<li><p><strong>Hours (dhms)</strong>: again a <em>sexagesimal</em> system, with angles measured between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(24\)</span> <em>hours</em>. Thus, <em>one hour</em> corresponds to <em>15 degrees</em>.
+To avoid confusion with the degree (dms) system, the units composing an hour are called <em>minutes</em> and <em>seconds</em> rather than arcminutes and arcseconds.
+The conversion from decimal degrees to sexagesimal degrees is obtained through four steps:</p></li>
 </ul>
+<ol class="arabic simple">
+<li><p>Divide the decimal degrees by 24 to get the value in <em>decimal hours</em>.</p></li>
+<li><p>The whole number part of your decimal hours gives you the <em>hours</em> in <em>hms</em> system.</p></li>
+<li><p>Multiply by 60 the decimal part of your decimal hours. The whole number part of the result is the <em>minutes</em>.</p></li>
+<li><p>Multiply the decimal part of the last result by 60 to convert it to <em>seconds</em>.</p></li>
+</ol>
+<p>The inverse conversion is much simpler: <span class="math notranslate nohighlight">\(\beta = (h + m/60 + s/3600) * 15\)</span>.</p>
+<figure class="align-center" id="fig03-angles">
+<a class="reference internal image-reference" href="_images/fig03_angles.png"><img alt="_images/fig03_angles.png" src="_images/fig03_angles.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Graphical representation of angles in degrees, radians, and hours. [^Degrees, radians, hours]</span><a class="headerlink" href="#fig03-angles" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="spherical-trigonometry">
+<h2>Spherical trigonometry<a class="headerlink" href="#spherical-trigonometry" title="Link to this heading">#</a></h2>
+<p>Consider a sphere with radius <span class="math notranslate nohighlight">\(r\)</span> and centred at <span class="math notranslate nohighlight">\(C\)</span>. <br />
+A plane passing through the centre of the sphere <span class="math notranslate nohighlight">\(C\)</span> divides the sphere into two identical parts, called <strong>hemispheres</strong>. The intersection of this plane with the sphere is called a <strong>great circle</strong>. A great circle always separates two hemispheres. Consider now the perpendicular (or <em>normal</em>) to the same plane and passing to the center <span class="math notranslate nohighlight">\(C\)</span>: the intersection <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(P'\)</span> between this normal and the sphere are called <strong>poles</strong> .<br />
+The intersection between the sphere and any other plane <strong>not</strong> passing through the centre <span class="math notranslate nohighlight">\(C\)</span> is called a <strong>small circle</strong>. <br />
+The shortest path between two points on a sphere <span class="math notranslate nohighlight">\(Q\)</span> and <span class="math notranslate nohighlight">\(Q'\)</span> is always <strong>along a great circle</strong>.</p>
+<figure class="align-center" id="fig04-sphere-planes">
+<a class="reference internal image-reference" href="_images/fig04_sphere_planes.png"><img alt="_images/fig04_sphere_planes.png" src="_images/fig04_sphere_planes.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Representation of a <em>great circle</em> and a <em>small circle</em>. [^Great circles and small circles]</span><a class="headerlink" href="#fig04-sphere-planes" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If you identify three points on the surface of the sphere, and connect them with great circles, you obtain a <strong>spherical triangle</strong>. Considering the spherical triangle in the figure, the angle <em>c</em> subtended by the arc <em>AB</em> is called the <strong>central angle</strong> and is measured in radians or degrees. <br />
+The length of the arc <em>AB</em> is equal to the radius of the sphere multiplied by the subtended central angle, <span class="math notranslate nohighlight">\(AB = r* c\)</span>. If we consider a sphere with unit radius (<span class="math notranslate nohighlight">\(r=1\)</span>), then <span class="math notranslate nohighlight">\(AB = c\)</span>, and we can measure the arc <em>AB</em> in radians or degrees.</p>
+<figure class="align-center" id="fig05-spherical-triangle">
+<a class="reference internal image-reference" href="_images/fig05_spherical_triangle.png"><img alt="_images/fig05_spherical_triangle.png" src="_images/fig05_spherical_triangle.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">A spherical triangle <span class="math notranslate nohighlight">\(ABC\)</span> identified by the three arcs <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> and the corresponding central angles. [^Spherical triangle]</span><a class="headerlink" href="#fig05-spherical-triangle" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Other properties of spherical triangles:</p>
+<ul class="simple">
+<li><p>The sum of the internal angles is always greater than <span class="math notranslate nohighlight">\(2 \pi\)</span> (<span class="math notranslate nohighlight">\(180°\)</span>).</p></li>
+<li><p>The spherical excess <span class="math notranslate nohighlight">\(E\)</span> is defined as the sum of the internal angles of the spherical triangle, minus <span class="math notranslate nohighlight">\(2 \pi\)</span>, <span class="math notranslate nohighlight">\(E = A + B + C - 2\pi\)</span>.</p></li>
+<li><p>The <strong>area of the spherical triangle</strong> is equal to <span class="math notranslate nohighlight">\(E r^2\)</span>.</p></li>
+<li><p>The *<em>area of the sphere</em> is equal to <span class="math notranslate nohighlight">\(4\pi r^2\)</span></p></li>
+</ul>
+<p>If we assume <span class="math notranslate nohighlight">\(r=1\)</span>, as for example with the celestial sphere, we have that a portion of the sky identified by a spherical triangle has area equal to <span class="math notranslate nohighlight">\(E\)</span>. Equivalently to the radians for an arc length, we can measure this area as <strong>steradians</strong>, if the central angles are expressed in radians. The area of the celestial sphere is then equal to <span class="math notranslate nohighlight">\(4 \pi\)</span> <em>steradians</em>.</p>
+<p>From now on, we will always assume <span class="math notranslate nohighlight">\(r=1\)</span>.</p>
+</section>
+<section id="coordinate-systems">
+<h2>Coordinate systems<a class="headerlink" href="#coordinate-systems" title="Link to this heading">#</a></h2>
+<p>To describe the position of points in space using numbers (called <em>coordinates</em>), we need to define a reference structure so that every point can be uniquely identified. This mathematical framework is called <em>coordinate system</em>.</p>
+<p>Let’s suppose we want to identify the position of a point <em>on the surface of a sphere</em> with unit radius. In this specific case, we need only two ingredients to define a coordinate system:</p>
+<ul class="simple">
+<li><p>The direction of the perpendicular of a plane passing through the centre of the sphere (<span class="math notranslate nohighlight">\(z\)</span> in the figure).</p></li>
+<li><p>The direction of one axis lying on the plane (<span class="math notranslate nohighlight">\(x\)</span> in the figure)</p></li>
+</ul>
+<p>The perpendicular is often called <em>normal</em>. The definition of the plane alone is not sufficient; we also need to define the positive and negative sides of the hemispheres identified by the plane.</p>
+<p>In such a system, a given point <span class="math notranslate nohighlight">\(P\)</span> is uniquely identified by two angles, <span class="math notranslate nohighlight">\(\psi\)</span> and <span class="math notranslate nohighlight">\(theta\)</span>, in the figure. In a three-dimensional space, you would need three coordinates to constrain the position of an object uniquely. In our specific case, two coordinates are sufficient because we assumed we are on the two-dimensional surface of a fixed sphere. The third coordinate, i.e., the radial distance from the centre, is always equal to <span class="math notranslate nohighlight">\(1\)</span>.</p>
 </section>
 </section>
 <hr class="footnotes docutils" />
@@ -469,6 +540,8 @@ The first plot in <a class="reference internal" href="#fig01-trigonometry"><span
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-celestial-sphere">The Celestial Sphere</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigonometry">Trigonometry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-trigonometry">Spherical trigonometry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
 </ul>
   </nav></div>
 
