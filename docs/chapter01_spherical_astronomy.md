@@ -1,6 +1,6 @@
 (chapter01\_spherical\_astronomy)=
 
-# Spherical Astronomy
+# Spherical Astronomy and Coordinate Systems
 
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read
 
@@ -69,7 +69,7 @@ The inverse conversion is much simpler: $\beta = (h + m/60 + s/3600) * 15$.
 :align: center
 :name: fig03_angles
 
-Graphical representation of angles in degrees, radians, and hours. [^Degrees, radians, hours]
+Graphical representation of angles in degrees, radians, and hours.
 ```
 
 
@@ -85,7 +85,7 @@ The shortest path between two points on a sphere $Q$ and $Q'$ is always **along 
 :align: center
 :name: fig04_sphere_planes
 
-Representation of a *great circle* and a *small circle*. [^Great circles and small circles]
+Representation of a *great circle* and a *small circle*.
 ```
 
 
@@ -98,7 +98,7 @@ The length of the arc *AB* is equal to the radius of the sphere multiplied by th
 :align: center
 :name: fig05_spherical_triangle
 
-A spherical triangle $ABC$ identified by the three arcs $a$, $b$, $c$ and the corresponding central angles. [^Spherical triangle]
+A spherical triangle $ABC$ identified by the three arcs $a$, $b$, $c$ and the corresponding central angles.
 ```
 
 
@@ -124,20 +124,98 @@ Let's suppose we want to identify the position of a point *on the surface of a s
 
 The perpendicular is often called *normal*. The definition of the plane alone is not sufficient; we also need to define the positive and negative sides of the hemispheres identified by the plane.
 
-In such a system, a given point $P$ is uniquely identified by two angles, $\psi$ and $theta$, in the figure. In a three-dimensional space, you would need three coordinates to constrain the position of an object uniquely. In our specific case, two coordinates are sufficient because we assumed we are on the two-dimensional surface of a fixed sphere. The third coordinate, i.e., the radial distance from the centre, is always equal to $1$. 
+
+```{figure} _static/_chapter01/fig06_polar_coordinates.png
+:width: 70%
+:align: center
+:name: fig06_polar_coordinates
+
+The angles $\psi$ and $theta$ uniquely identify a point P on the sphere, assuming that the size of the sphere is fixed. Transformations to a new coordinate system can be obtained by rotating two axes around the third one, for example, by rotating $y$ and $z$ by an angle $\chi$ to $y'$ and $z'$ on the plane perpendicular to the axis $x$.
+```
+
+
+In such a system, a given point $P$ is uniquely identified by two angles, $\psi$ and $\theta$, in [Figure 6](fig06_polar_coordinates). In a three-dimensional space, you would need three coordinates to constrain the position of an object uniquely. In our specific case, two coordinates are sufficient because we assumed we are on the two-dimensional surface of a fixed sphere. The third coordinate, i.e., the radial distance from the centre, is always equal to $1$. 
+
+Coordinate transformations can be obtained by successive rotations around a single axis. In [Figure 6](fig06_polar_coordinates), the $x$ is kept fixed (thus coinciding with $x'$), while the $y$ and $z$ axes are rotated around the origin by an angle $\chi$ on the plane perpendicular to $x$. 
+
+```{figure} _static/_chapter01/fig07_coordinates_physics.png
+:width: 70%
+:align: center
+:name: fig07_coordinates_physics
+
+There is no general agreement on the definition of angles among disciplines. In Physics and Mathematics, the *polar coordinate* $\theta$ is measured starting from the normal to the plane, rather than the plane itself. In Mathematics, the angles' names $\theta$ and $\psi$ are swapped.
+```
+
+The definitions of angles can vary across disciplines. [Figure 7](fig07_coordinates_physics) shows the standard definition in Mathematics and Physics. 
+
+## Geographic Coordinate Systems
+
+### Geocentric coordinate system 
+
+In this system, the Earth is assumed to be a perfect sphere. The plane perpendicular to the *rotational axis* of the planet and passing through its centre is called the **Equatorial plane**, and it is the **reference plane** in this system. The intersection between the Equatorial plane and the sphere (in this case, the Earth) identifies the **Equator**. \
+The rotational axis intersects the Earth at two points: the *North Pole* in the Northern Hemisphere and the **South Pole** in the Southern Hemisphere.                                                                                                                                                 The angular momentum vector of Earth points to the North Pole, following the right-hand rule. When viewed from the North Pole, Earth rotates counterclockwise.  \
+**Meridians** are semi-circle from one pole to the opposite one. **Parallels** are small circles parallel to the Equator. \
+
+The meridian passing through the Royal Observatory Greenwich defines the direction of the *x* axis on the equatorial plane. For this reason, this meridian takes the name of **Prime Meridian**.
+
+The distance of a point on the surface of Earth (i.e., on the surface of the sphere) from the Equator, by definition measured across a great circle and hence through a great circle passing through the poles (as the arc connecting this point to the Equator must be perpendicular to the latter) is called **Latitude**. The latitude $\phi$ is positive for points in the Northern hemisphere, and negative for points in the Southern hemisphere. Sometimes the letters *N* and *S* are used as a replacement for the sign. $\phi$ is comprised between $-90°$ and $90°$. All the points on a Parallel have the same Latitude. 
+
+The **Longitude** is the distance from the Prime Meridian of the projection of the point on the Equator. First, you identify the projection on the Equator as the intersection between the Equator itself and a meridian passing through your point. Then, you measure the distance (over the surface of the sphere) from the Prime Meridian along the Equator. Longitude $\lambda$ is measured counterclockwise on a range between $-180°$ and $180°$: it is positive for points East of the Prime Meridian, and negative for points West of the Prime Meridian. Sometimes, the sign is replaced by $E$ for positive values, and $W$ for negative values. 
+
+```{figure} _static/_chapter01/fig08_geocentric_system.jpg
+:width: 70%
+:align: center
+:name: fig08_geocentric_system
+
+Geocentric coordinate system, with representation of **Latitude** $\phi$ and **Longitude** $\lambda$, **Equator** (latitude equal to zero) and **Prime Meridian** (longitude equal to zero).
+```
+
+When reporting coordinates, Latitude is conventionally expressed first. The coordinates of Padova are :
+
+| Latitude  | Longitude  |
+|---|---|
+| $45.40643°$  | $11.87676°$  | 
+| $45°\, 24' \, 23.17'' $  | $11°\, 52' \,  36.34'' $  |
+| $45°\, 24' \, 23.17'' $ N | $11°\, 52' \,  36.34'' $ W |
+
+Latitudes and Longitudes are both expressed in degrees, either in decimal form or in $dms$ format. 
+
+### Geodetic coordinate system
+
+The Geocentric coordinate system assumes that the Earth is a perfect sphere. However, all rotating bodies depart from a perfect sphere because their rotation creates centrifugal force that bulges them at the equator and flattens them at the poles. As a consequence, the **equatorial radius** (the distance of the surface from the centre, measured at the equator) will be greater than the **polar radius** (the distance of the surface from the centre, measured at one of the two poles). In a first approximation, we can assume axial symmetry around the rotation axis (all the *parallels* are perfect circles); in this case, the solid is called a **oblate spheroid**, or more commonly, just **ellipsoid** or **spheroid**. (Note: a *prolate spheroid* would have the polar radius larger than the equatorial radius.) The last two terms are the most common, though not entirely accurate. On our planet, the ellipsoid approximates the equilibrium shape of the oceans, as the real figure of Earth is more complicated than a simple rotationally symmetric solid. \
+The amount of flattening of a planet primarily depends on its composition and the time it takes to perform a full rotation around its axis (rotational period). The amount of flattening is usually parametrised at the fraction difference between the equatorial and polar radii, i.e., (equatorial-polar)/equatorial. See [Figure 9](fig09_saturn) for an extreme case in the Solar System. \
+
+
+|Planet | Equatorial radius (Km)  | Polar Radius (Km)  | Difference (Km) | Flattening | 
+|---|---|---|---|---|
+|Earth | $6378.137$ | $6356.752$ | $21.385$ | $3.35 \cdot 10^{-3}$ |
+| Saturn | $60268$ | $54364$ | $5904$ | $0.10$ |
+
+
+```{figure} _static/_chapter01/fig09_saturn.png
+:width: 70%
+:align: center
+:name: fig09_saturn
+
+The planet Saturn has a mean density below that of water, and it completes a rotation in 10 hours and 34 minutes. As a consequence, its flattening can be seen with the naked eye. The purple circle and the two orange axes highlight the 10\%  flattening of the planet. 
+```
+
+The oblateness of our planet introduces a problem in measuring the coordinates of an object when its distance from the surface changes.
+In a sphere, we can increase or decrease the distance of a point along any line passing through the centre without changing its geocentric coordinates. In other words, the coordinates are independent of the object's altitude, measured as a distance from the surface along a vertical (a line perpendicular to the surface). This is no longer the case in an ellipsoid, as illustrated in [Figure 10](fig10_geodetic_coordinates): for example, compare the angle with respect to the ellipsoid's centre for an object on the surface (green line) with the same object at altitude $h$ (blue line). $\phi_c$ changes with the altitudes of an object, i.e., the latitude changes even if the object is moving vertically to the surface. 
 
 
 
+```{figure} _static/_chapter01/fig10_geodetic_coordinates.png
+:width: 70%
+:align: center
+:name: fig10_geodetic_coordinates
 
+Geodetic coordinates.
+```
 
+To solve this problem, a 
 
-
-
-
- 
-
-
-
-
-
+Ellipsoid vs. Geoid
+Ellipsoid: A mathematical model that represents the Earth as a smooth, slightly flattened sphere. It ignores variations in the Earth's gravitational field.
+Geoid: The true, irregular shape that represents the mean sea level in a state of equilibrium. It is more accurately described as a "level" surface, meaning it is everywhere perpendicular to the local direction of gravity. 
 
