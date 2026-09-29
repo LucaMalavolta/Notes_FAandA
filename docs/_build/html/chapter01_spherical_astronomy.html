@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Spherical Astronomy &#8212; Notes_FAandA 0.1 documentation</title>
+    <title>Spherical Astronomy and Coordinate Systems &#8212; Notes_FAandA 0.1 documentation</title>
   
   
   
@@ -61,7 +61,7 @@
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.21ef1fd6-e842-4f2a-ae84-44f223a87a4d.js"></script>
+    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.97d02e6c-5931-4d0c-a0c5-4fd8ecf8a643.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter01_spherical_astronomy';</script>
@@ -181,7 +181,7 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Spherical Astronomy</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Spherical Astronomy and Coordinate Systems</a></li>
 </ul>
 
     </div>
@@ -367,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Spherical Astronomy</h1>
+    <h1>Spherical Astronomy and Coordinate Systems</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,6 +381,41 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigonometry">Trigonometry</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-trigonometry">Spherical trigonometry</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-coordinate-systems">Geographic Coordinate Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geocentric-coordinate-system">Geocentric coordinate system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geodetic-coordinate-system">Geodetic coordinate system</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-local-normal-and-geodetic-latitude">The local normal and geodetic latitude</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ellipsoid-geoid-and-astronomical-vertical">Ellipsoid, geoid, and astronomical vertical</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-world-geodetic-system">The World Geodetic System</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-earth-gravitational-model">The Earth Gravitational Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#celestial-coordinate-systems">Celestial Coordinate Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-coordinates">Horizontal coordinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zenith-distance-and-airmass">Zenith distance and airmass</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-celestial-equator-and-the-ecliptic">The celestial equator and the ecliptic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-coordinates">Equatorial coordinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hour-angle-and-local-sidereal-time">Hour angle and local sidereal time</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-equatorial-to-horizontal-coordinates">From equatorial to horizontal coordinates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-epoch-and-reference-frame">Reference epoch and reference frame</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecliptic-coordinates">Ecliptic coordinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relation-to-equatorial-coordinates">Relation to equatorial coordinates</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#galactic-coordinates">Galactic coordinates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-coordinate-system">Choosing a coordinate system</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-on-the-preserved-introductory-text">Notes on the preserved introductory text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references-and-figure-sources">References and figure sources</a></li>
 </ul>
             </nav>
         </div>
@@ -392,10 +427,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="spherical-astronomy">
-<span id="chapter01-spherical-astronomy"></span><h1>Spherical Astronomy<a class="headerlink" href="#spherical-astronomy" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="spherical-astronomy-and-coordinate-systems">
+<span id="chapter01-spherical-astronomy"></span><h1>Spherical Astronomy and Coordinate Systems<a class="headerlink" href="#spherical-astronomy-and-coordinate-systems" title="Link to this heading">#</a></h1>
 <blockquote>
-<div><p>Nov 25, 2025 | 6 min read</p>
+<div><p>Sep 29, 2026 | 36 min read</p>
 </div></blockquote>
 <section id="the-celestial-sphere">
 <h2>The Celestial Sphere<a class="headerlink" href="#the-celestial-sphere" title="Link to this heading">#</a></h2>
@@ -416,7 +451,7 @@ The first plot in <a class="reference internal" href="#fig01-trigonometry"><span
 <p><span class="caption-text">Basic concepts of trigonometry.</span><a class="headerlink" href="#fig01-trigonometry" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><a class="reference internal" href="#fig02-trigonometric-functions"><span class="std std-ref">Figure 2</span></a> shows the relationship among the <em>sine</em> (<span class="math notranslate nohighlight">\(\sin\)</span>), <em>cosine</em> (<span class="math notranslate nohighlight">\(\cos\)</span>), and <em>tangent</em> (<span class="math notranslate nohighlight">\(\tan\)</span>) trigonometric functions. The <em>secant</em> function (<span class="math notranslate nohighlight">\(\sec\)</span>), equivalent to the inverse of the cosine, is of relevance for Astronomy.</p>
+<p><a class="reference internal" href="#fig02-trigonometric-functions"><span class="std std-ref">Figure 2</span></a> shows the relationship among the <em>sine</em> (<span class="math notranslate nohighlight">\(\sin\)</span>), <em>cosine</em> (<span class="math notranslate nohighlight">\(\cos\)</span>), and <em>tangent</em> (<span class="math notranslate nohighlight">\(\tan\)</span>) trigonometric functions. The <em>secant</em> function (<span class="math notranslate nohighlight">\(\sec\)</span>), equivalente to the reciprocal of the cosine, <span class="math notranslate nohighlight">\(\sec\theta=1/\cos\theta\)</span>, is of relevance for Astronomy.</p>
 <figure class="align-center" id="fig02-trigonometric-functions">
 <a class="reference internal image-reference" href="_images/fig02_trigonometric_functions.png"><img alt="_images/fig02_trigonometric_functions.png" src="_images/fig02_trigonometric_functions.png" style="width: 70%;" />
 </a>
@@ -434,7 +469,8 @@ The first plot in <a class="reference internal" href="#fig01-trigonometry"><span
 <li><p>Multiply by 60 the decimal part of your decimal degrees. The whole number part of the result is arcminutes.</p></li>
 <li><p>Multiply the decimal part of the last result by 60 to convert it to arcseconds.
 The sign is positioned before the degrees. The <em>whole number part</em> is the part before the decimal sign (e.g., <span class="math notranslate nohighlight">\(47\)</span> in <span class="math notranslate nohighlight">\(47.73\)</span>, <span class="math notranslate nohighlight">\(-17\)</span> in <span class="math notranslate nohighlight">\(-17.43\)</span>), the <em>decimal part</em> is the one <em>after</em> the decimal sign.
-The inverse conversion is much simpler: <span class="math notranslate nohighlight">\(\beta = d + m/60 + s/3600\)</span>.</p></li>
+The inverse conversion is much simpler:
+<span class="math notranslate nohighlight">\(\beta=\operatorname{sgn}(\beta)(|d|+m/60+s/3600)\)</span>, with minutes and seconds non-negative. The sign must be retained separately for a negative angle whose degree field is zero.</p></li>
 </ol>
 </li>
 <li><p><strong>Hours (dhms)</strong>: again a <em>sexagesimal</em> system, with angles measured between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(24\)</span> <em>hours</em>. Thus, <em>one hour</em> corresponds to <em>15 degrees</em>.
@@ -442,17 +478,18 @@ To avoid confusion with the degree (dms) system, the units composing an hour are
 The conversion from decimal degrees to sexagesimal degrees is obtained through four steps:</p></li>
 </ul>
 <ol class="arabic simple">
-<li><p>Divide the decimal degrees by 24 to get the value in <em>decimal hours</em>.</p></li>
+<li><p>Divide the decimal degrees by 15 to get the value in <em>decimal hours</em>.</p></li>
 <li><p>The whole number part of your decimal hours gives you the <em>hours</em> in <em>hms</em> system.</p></li>
 <li><p>Multiply by 60 the decimal part of your decimal hours. The whole number part of the result is the <em>minutes</em>.</p></li>
 <li><p>Multiply the decimal part of the last result by 60 to convert it to <em>seconds</em>.</p></li>
 </ol>
-<p>The inverse conversion is much simpler: <span class="math notranslate nohighlight">\(\beta = (h + m/60 + s/3600) * 15\)</span>.</p>
+<p>The inverse conversion is much simpler:
+<span class="math notranslate nohighlight">\(\beta=\operatorname{sgn}(\beta)(|h|+m/60+s/3600)*15 \)</span>, with minutes and seconds non-negative. The sign must be retained separately for a negative angle whose degree field is zero.</p>
 <figure class="align-center" id="fig03-angles">
 <a class="reference internal image-reference" href="_images/fig03_angles.png"><img alt="_images/fig03_angles.png" src="_images/fig03_angles.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Graphical representation of angles in degrees, radians, and hours. [^Degrees, radians, hours]</span><a class="headerlink" href="#fig03-angles" title="Link to this image">#</a></p>
+<p><span class="caption-text">Graphical representation of angles in degrees, radians, and hours.</span><a class="headerlink" href="#fig03-angles" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -466,7 +503,7 @@ The shortest path between two points on a sphere <span class="math notranslate n
 <a class="reference internal image-reference" href="_images/fig04_sphere_planes.png"><img alt="_images/fig04_sphere_planes.png" src="_images/fig04_sphere_planes.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Representation of a <em>great circle</em> and a <em>small circle</em>. [^Great circles and small circles]</span><a class="headerlink" href="#fig04-sphere-planes" title="Link to this image">#</a></p>
+<p><span class="caption-text">Representation of a <em>great circle</em> and a <em>small circle</em>.</span><a class="headerlink" href="#fig04-sphere-planes" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If you identify three points on the surface of the sphere, and connect them with great circles, you obtain a <strong>spherical triangle</strong>. Considering the spherical triangle in the figure, the angle <em>c</em> subtended by the arc <em>AB</em> is called the <strong>central angle</strong> and is measured in radians or degrees. <br />
@@ -475,17 +512,18 @@ The length of the arc <em>AB</em> is equal to the radius of the sphere multiplie
 <a class="reference internal image-reference" href="_images/fig05_spherical_triangle.png"><img alt="_images/fig05_spherical_triangle.png" src="_images/fig05_spherical_triangle.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-text">A spherical triangle <span class="math notranslate nohighlight">\(ABC\)</span> identified by the three arcs <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> and the corresponding central angles. [^Spherical triangle]</span><a class="headerlink" href="#fig05-spherical-triangle" title="Link to this image">#</a></p>
+<p><span class="caption-text">A spherical triangle <span class="math notranslate nohighlight">\(ABC\)</span> identified by the three arcs <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> and the corresponding central angles.</span><a class="headerlink" href="#fig05-spherical-triangle" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Other properties of spherical triangles:</p>
 <ul class="simple">
-<li><p>The sum of the internal angles is always greater than <span class="math notranslate nohighlight">\(2 \pi\)</span> (<span class="math notranslate nohighlight">\(180°\)</span>).</p></li>
-<li><p>The spherical excess <span class="math notranslate nohighlight">\(E\)</span> is defined as the sum of the internal angles of the spherical triangle, minus <span class="math notranslate nohighlight">\(2 \pi\)</span>, <span class="math notranslate nohighlight">\(E = A + B + C - 2\pi\)</span>.</p></li>
+<li><p>The sum of the internal angles is always greater than <span class="math notranslate nohighlight">\(\pi\)</span> (<span class="math notranslate nohighlight">\(180°\)</span>).</p></li>
+<li><p>The spherical excess <span class="math notranslate nohighlight">\(E\)</span> is defined as the sum of the internal angles of the spherical triangle, minus <span class="math notranslate nohighlight">\(\pi\)</span>, <span class="math notranslate nohighlight">\(E = A + B + C - \pi\)</span>.</p></li>
 <li><p>The <strong>area of the spherical triangle</strong> is equal to <span class="math notranslate nohighlight">\(E r^2\)</span>.</p></li>
 <li><p>The *<em>area of the sphere</em> is equal to <span class="math notranslate nohighlight">\(4\pi r^2\)</span></p></li>
 </ul>
-<p>If we assume <span class="math notranslate nohighlight">\(r=1\)</span>, as for example with the celestial sphere, we have that a portion of the sky identified by a spherical triangle has area equal to <span class="math notranslate nohighlight">\(E\)</span>. Equivalently to the radians for an arc length, we can measure this area as <strong>steradians</strong>, if the central angles are expressed in radians. The area of the celestial sphere is then equal to <span class="math notranslate nohighlight">\(4 \pi\)</span> <em>steradians</em>.</p>
+<p>If we assume <span class="math notranslate nohighlight">\(r=1\)</span>, as for example with the celestial sphere, we have that a portion of the sky identified by a spherical triangle has area equal to <span class="math notranslate nohighlight">\(E\)</span>. Equivalently to the radians for an arc length, we can measure this area as <strong>steradians</strong>, if the central angles are expressed in radians.
+If the area of a spherical triangle is <span class="math notranslate nohighlight">\(Er^2\)</span>, then the corresponding solid angle is <span class="math notranslate nohighlight">\(E\)</span> steradians. The full celestial sphere subtends <span class="math notranslate nohighlight">\(4\pi\)</span> steradians. An octant of the sphere, with three right angles, provides a check: <span class="math notranslate nohighlight">\(E=3\pi/2-\pi=\pi/2\)</span>.</p>
 <p>From now on, we will always assume <span class="math notranslate nohighlight">\(r=1\)</span>.</p>
 </section>
 <section id="coordinate-systems">
@@ -497,7 +535,515 @@ The length of the arc <em>AB</em> is equal to the radius of the sphere multiplie
 <li><p>The direction of one axis lying on the plane (<span class="math notranslate nohighlight">\(x\)</span> in the figure)</p></li>
 </ul>
 <p>The perpendicular is often called <em>normal</em>. The definition of the plane alone is not sufficient; we also need to define the positive and negative sides of the hemispheres identified by the plane.</p>
-<p>In such a system, a given point <span class="math notranslate nohighlight">\(P\)</span> is uniquely identified by two angles, <span class="math notranslate nohighlight">\(\psi\)</span> and <span class="math notranslate nohighlight">\(theta\)</span>, in the figure. In a three-dimensional space, you would need three coordinates to constrain the position of an object uniquely. In our specific case, two coordinates are sufficient because we assumed we are on the two-dimensional surface of a fixed sphere. The third coordinate, i.e., the radial distance from the centre, is always equal to <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<figure class="align-center" id="fig06-polar-coordinates">
+<a class="reference internal image-reference" href="_images/fig06_polar_coordinates.png"><img alt="_images/fig06_polar_coordinates.png" src="_images/fig06_polar_coordinates.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The angles <span class="math notranslate nohighlight">\(\psi\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> uniquely identify a point P on the sphere, assuming that the size of the sphere is fixed. Transformations to a new coordinate system can be obtained by rotating two axes around the third one, for example, by rotating <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> by an angle <span class="math notranslate nohighlight">\(\chi\)</span> to <span class="math notranslate nohighlight">\(y'\)</span> and <span class="math notranslate nohighlight">\(z'\)</span> on the plane perpendicular to the axis <span class="math notranslate nohighlight">\(x\)</span>.</span><a class="headerlink" href="#fig06-polar-coordinates" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In such a system, a given point <span class="math notranslate nohighlight">\(P\)</span> is uniquely identified by two angles, <span class="math notranslate nohighlight">\(\psi\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>, in <a class="reference internal" href="#fig06-polar-coordinates"><span class="std std-ref">Figure 6</span></a>. In a three-dimensional space, you would need three coordinates to constrain the position of an object uniquely. In our specific case, two coordinates are sufficient because we assumed we are on the two-dimensional surface of a fixed sphere. The third coordinate, i.e., the radial distance from the centre, is always equal to <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<p>Coordinate transformations can be obtained by successive rotations around a single axis. In <a class="reference internal" href="#fig06-polar-coordinates"><span class="std std-ref">Figure 6</span></a>, the <span class="math notranslate nohighlight">\(x\)</span> is kept fixed (thus coinciding with <span class="math notranslate nohighlight">\(x'\)</span>), while the <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> axes are rotated around the origin by an angle <span class="math notranslate nohighlight">\(\chi\)</span> on the plane perpendicular to <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<figure class="align-center" id="fig07-coordinates-physics">
+<a class="reference internal image-reference" href="_images/fig07_coordinates_physics.png"><img alt="_images/fig07_coordinates_physics.png" src="_images/fig07_coordinates_physics.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">There is no general agreement on the definition of angles among disciplines. In Physics and Mathematics, the <em>polar coordinate</em> <span class="math notranslate nohighlight">\(\theta\)</span> is measured starting from the normal to the plane, rather than the plane itself. In Mathematics, the angles’ names <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\psi\)</span> are swapped.</span><a class="headerlink" href="#fig07-coordinates-physics" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The definitions of angles can vary across disciplines. <a class="reference internal" href="#fig07-coordinates-physics"><span class="std std-ref">Figure 7</span></a> shows the standard definition in Mathematics and Physics.</p>
+</section>
+<section id="geographic-coordinate-systems">
+<h2>Geographic Coordinate Systems<a class="headerlink" href="#geographic-coordinate-systems" title="Link to this heading">#</a></h2>
+<section id="geocentric-coordinate-system">
+<h3>Geocentric coordinate system<a class="headerlink" href="#geocentric-coordinate-system" title="Link to this heading">#</a></h3>
+<p>In this system, the Earth is assumed to be a perfect sphere. The plane perpendicular to the <em>rotational axis</em> of the planet and passing through its centre is called the <strong>Equatorial plane</strong>, and it is the <strong>reference plane</strong> in this system. The intersection between the Equatorial plane and the sphere (in this case, the Earth) identifies the <strong>Equator</strong>. <br />
+The rotational axis intersects the Earth at two points: the <em>North Pole</em> in the Northern Hemisphere and the <strong>South Pole</strong> in the Southern Hemisphere.                                                                                                                                                 The angular momentum vector of Earth points to the North Pole, following the right-hand rule. When viewed from the North Pole, Earth rotates counterclockwise.  <br />
+<strong>Meridians</strong> are semi-circle from one pole to the opposite one. <strong>Parallels</strong> are small circles parallel to the Equator. \</p>
+<p>The meridian passing through the Royal Observatory Greenwich defines the direction of the <em>x</em> axis on the equatorial plane. For this reason, this meridian takes the name of <strong>Prime Meridian</strong>.</p>
+<p>The distance of a point on the surface of Earth (i.e., on the surface of the sphere) from the Equator, by definition measured across a great circle and hence through a great circle passing through the poles (as the arc connecting this point to the Equator must be perpendicular to the latter) is called <strong>Latitude</strong>. The latitude <span class="math notranslate nohighlight">\(\phi\)</span> is positive for points in the Northern hemisphere, and negative for points in the Southern hemisphere. Sometimes the letters <em>N</em> and <em>S</em> are used as a replacement for the sign. <span class="math notranslate nohighlight">\(\phi\)</span> is comprised between <span class="math notranslate nohighlight">\(-90°\)</span> and <span class="math notranslate nohighlight">\(90°\)</span>. All the points on a Parallel have the same Latitude.</p>
+<p>The <strong>Longitude</strong> is the distance from the Prime Meridian of the projection of the point on the Equator. First, you identify the projection on the Equator as the intersection between the Equator itself and a meridian passing through your point. Then, you measure the distance (over the surface of the sphere) from the Prime Meridian along the Equator. Longitude <span class="math notranslate nohighlight">\(\lambda\)</span> is measured counterclockwise on a range between <span class="math notranslate nohighlight">\(-180°\)</span> and <span class="math notranslate nohighlight">\(180°\)</span>: it is positive for points East of the Prime Meridian, and negative for points West of the Prime Meridian. Sometimes, the sign is replaced by <span class="math notranslate nohighlight">\(E\)</span> for positive values, and <span class="math notranslate nohighlight">\(W\)</span> for negative values.</p>
+<figure class="align-center" id="fig08-geocentric-system">
+<a class="reference internal image-reference" href="_images/fig08_geocentric_system.jpg"><img alt="_images/fig08_geocentric_system.jpg" src="_images/fig08_geocentric_system.jpg" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Geocentric coordinate system, with representation of <strong>Latitude</strong> <span class="math notranslate nohighlight">\(\phi\)</span> and <strong>Longitude</strong> <span class="math notranslate nohighlight">\(\lambda\)</span>, <strong>Equator</strong> (latitude equal to zero) and <strong>Prime Meridian</strong> (longitude equal to zero).</span><a class="headerlink" href="#fig08-geocentric-system" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>When reporting coordinates, Latitude is conventionally expressed first. The coordinates of Padova are :</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Latitude</p></th>
+<th class="head"><p>Longitude</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(45.40643°\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(11.87676°\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(45°\, 24' \, 23.17'' \)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(11°\, 52' \,  36.34'' \)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(45°\, 24' \, 23.17'' \)</span> N</p></td>
+<td><p><span class="math notranslate nohighlight">\(11°\, 52' \,  36.34'' \)</span> E</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Latitudes and Longitudes are both expressed in degrees, either in decimal form or in <span class="math notranslate nohighlight">\(dms\)</span> format.</p>
+</section>
+<section id="geodetic-coordinate-system">
+<h3>Geodetic coordinate system<a class="headerlink" href="#geodetic-coordinate-system" title="Link to this heading">#</a></h3>
+<p>The Geocentric coordinate system assumes that the Earth is a perfect sphere. However, all rotating bodies depart from a perfect sphere because their rotation creates centrifugal force that bulges them at the equator and flattens them at the poles. As a consequence, the <strong>equatorial radius</strong> (the distance of the surface from the centre, measured at the equator) will be greater than the <strong>polar radius</strong> (the distance of the surface from the centre, measured at one of the two poles). In a first approximation, we can assume axial symmetry around the rotation axis (all the <em>parallels</em> are perfect circles); in this case, the solid is called a <strong>oblate spheroid</strong>, or more commonly, just <strong>ellipsoid</strong> or <strong>spheroid</strong>. (Note: a <em>prolate spheroid</em> would have the polar radius larger than the equatorial radius.) The last two terms are the most common, though not entirely accurate. On our planet, the ellipsoid approximates the equilibrium shape of the oceans, as the real figure of Earth is more complicated than a simple rotationally symmetric solid. <br />
+The amount of flattening of a planet primarily depends on its composition and the time it takes to perform a full rotation around its axis (rotational period). The amount of flattening is usually parametrised at the fraction difference between the equatorial and polar radii, i.e., (equatorial-polar)/equatorial. See <a class="reference internal" href="#fig09-saturn"><span class="std std-ref">Figure 9</span></a> for an extreme case in the Solar System. \</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Planet</p></th>
+<th class="head"><p>Equatorial radius (Km)</p></th>
+<th class="head"><p>Polar Radius (Km)</p></th>
+<th class="head"><p>Difference (Km)</p></th>
+<th class="head"><p>Flattening</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Earth</p></td>
+<td><p><span class="math notranslate nohighlight">\(6378.137\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(6356.752\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(21.385\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(3.35 \cdot 10^{-3}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Saturn</p></td>
+<td><p><span class="math notranslate nohighlight">\(60268\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(54364\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(5904\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.10\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="align-center" id="fig09-saturn">
+<a class="reference internal image-reference" href="_images/fig09_saturn.png"><img alt="_images/fig09_saturn.png" src="_images/fig09_saturn.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The planet Saturn has a mean density below that of water, and it completes a rotation in 10 hours and 34 minutes. As a consequence, its flattening can be seen with the naked eye. The purple circle and the two orange axes highlight the 10%  flattening of the planet.</span><a class="headerlink" href="#fig09-saturn" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The oblateness of our planet introduces a problem in measuring the coordinates of an object when its distance from the surface changes.
+In a sphere, we can increase or decrease the distance of a point along any line passing through the centre without changing its geocentric coordinates. In other words, the coordinates are independent of the object’s altitude, measured as a distance from the surface along a vertical (a line perpendicular to the surface). This is no longer the case in an ellipsoid, as illustrated in <a class="reference internal" href="#fig10-geodetic-coordinates"><span class="std std-ref">Figure 10</span></a>: for example, compare the angle with respect to the ellipsoid’s centre for an object on the surface (green line) with the same object at altitude <span class="math notranslate nohighlight">\(h\)</span> (blue line). <span class="math notranslate nohighlight">\(\phi_c\)</span> changes with the altitudes of an object, i.e., the latitude changes even if the object is moving vertically to the surface.</p>
+<figure class="align-center" id="fig10-geodetic-coordinates">
+<a class="reference internal image-reference" href="_images/fig10_geodetic_coordinates.png"><img alt="_images/fig10_geodetic_coordinates.png" src="_images/fig10_geodetic_coordinates.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Geodetic coordinates.</span><a class="headerlink" href="#fig10-geodetic-coordinates" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-local-normal-and-geodetic-latitude">
+<h4>The local normal and geodetic latitude<a class="headerlink" href="#the-local-normal-and-geodetic-latitude" title="Link to this heading">#</a></h4>
+<p>The solution to the altitude dependence discussed above is to define latitude using the <strong>normal to the reference ellipsoid</strong>, rather than the line joining the observer to the centre of the Earth. Consider a point on the ellipsoid and the plane tangent to its surface at that point. The perpendicular to this plane defines the <strong>geodetic vertical</strong>. The angle between this vertical and the equatorial plane is the <strong>geodetic latitude</strong>, which we will denote by <span class="math notranslate nohighlight">\(\phi\)</span>, keeping <span class="math notranslate nohighlight">\(\phi_c\)</span> for the geocentric latitude.</p>
+<p>An object situated at a height <span class="math notranslate nohighlight">\(h\)</span> along the same normal retains the same geodetic latitude and longitude. Its position is therefore specified by three coordinates: the geodetic latitude <span class="math notranslate nohighlight">\(\phi\)</span>, the longitude <span class="math notranslate nohighlight">\(\lambda\)</span>, and the <strong>ellipsoidal height</strong> <span class="math notranslate nohighlight">\(h\)</span>. The longitude is unchanged with respect to the geocentric system, because both definitions use the same meridian planes. The height is measured along the ellipsoid normal, starting from the reference ellipsoid; it is not necessarily the height above sea level.<label for='sidenote-role-2' class='margin-toggle'><span id="id2">
+<sup>2</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-2' name='sidenote-role-2' class='margin-toggle'><span class="sidenote"><sup>2</sup>Barbieri and Bertini (2021), Section 2.1, pp. 19–24, especially the definitions of the vertical and the geodetic-to-geocentric conversion; Karttunen et al. (2017), Section 2.2, pp. 14–16.</span></p>
+<p>The distinction between the two latitudes can be obtained directly from the equation of an ellipse. Let <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> be the equatorial and polar radii, respectively, and let <span class="math notranslate nohighlight">\(\rho\)</span> be the distance from the rotation axis. In a meridian plane, the surface of the ellipsoid satisfies</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\rho^2}{a^2}+\frac{z^2}{b^2}=1.
+\]</div>
+<p>The geocentric latitude satisfies <span class="math notranslate nohighlight">\(\tan\phi_c=z/\rho\)</span>. The normal to this ellipse is parallel to the vector <span class="math notranslate nohighlight">\((\rho/a^2,z/b^2)\)</span>, so that</p>
+<div class="math notranslate nohighlight">
+\[
+\tan\phi=\frac{a^2z}{b^2\rho},
+\qquad
+\tan\phi_c=\frac{b^2}{a^2}\tan\phi=(1-e^2)\tan\phi,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(e\)</span> is the <strong>eccentricity</strong> of the meridian ellipse. It is related to the flattening <span class="math notranslate nohighlight">\(f\)</span> by</p>
+<div class="math notranslate nohighlight">
+\[
+f=\frac{a-b}{a},
+\qquad
+e^2=1-\frac{b^2}{a^2}=2f-f^2.
+\]</div>
+<p>These relations between the latitudes apply to points <strong>on the ellipsoid</strong>, where <span class="math notranslate nohighlight">\(h=0\)</span>. Since <span class="math notranslate nohighlight">\(b&lt;a\)</span>, the absolute value of the geodetic latitude is greater than the absolute value of the geocentric latitude, except at the Equator and the poles, where the two coincide. In the Northern hemisphere, <span class="math notranslate nohighlight">\(\phi&gt;\phi_c\)</span>; in the Southern hemisphere, both are negative and <span class="math notranslate nohighlight">\(\phi&lt;\phi_c\)</span>. On Earth, the difference reaches approximately <span class="math notranslate nohighlight">\(11.5'\)</span> near a latitude of <span class="math notranslate nohighlight">\(45°\)</span>. Although the flattening is small, this difference cannot be neglected in accurate positional measurements.</p>
+<p>For completeness, we can include the height explicitly. Define the radius of curvature in the direction perpendicular to the meridian, usually called the <strong>prime vertical radius of curvature</strong>,</p>
+<div class="math notranslate nohighlight">
+\[
+\nu(\phi)=\frac{a}{\sqrt{1-e^2\sin^2\phi}}.
+\]</div>
+<p>The geocentric Cartesian coordinates of a point with geodetic coordinates <span class="math notranslate nohighlight">\((\phi,\lambda,h)\)</span> are then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+x&amp;=(\nu+h)\cos\phi\cos\lambda,\\
+y&amp;=(\nu+h)\cos\phi\sin\lambda,\\
+z&amp;=\bigl[\nu(1-e^2)+h\bigr]\sin\phi.
+\end{aligned}
+\end{split}\]</div>
+<p>Consequently,</p>
+<div class="math notranslate nohighlight">
+\[
+\tan\phi_c=\frac{\nu(1-e^2)+h}{\nu+h}\tan\phi.
+\]</div>
+<p>This equation expresses the effect illustrated in <a class="reference internal" href="#fig10-geodetic-coordinates"><span class="std std-ref">Figure 10</span></a>: changing <span class="math notranslate nohighlight">\(h\)</span> at fixed geodetic coordinates changes the direction from the centre of the Earth to the object.</p>
+</section>
+<section id="ellipsoid-geoid-and-astronomical-vertical">
+<h4>Ellipsoid, geoid, and astronomical vertical<a class="headerlink" href="#ellipsoid-geoid-and-astronomical-vertical" title="Link to this heading">#</a></h4>
+<p>The ellipsoid provides a simple mathematical surface, but the Earth’s mass is not distributed with perfect rotational symmetry. Mountains, ocean basins, and variations in density inside the planet affect the gravitational field. The direction indicated by a <strong>plumb line</strong> therefore does not, in general, coincide exactly with the normal to the reference ellipsoid.</p>
+<p>The <strong>geoid</strong> is a particular equipotential surface of the Earth’s gravity field, including the centrifugal contribution associated with rotation. It approximates mean sea level and is continued beneath the continents. It should not be confused with the physical surface of the continents or with the instantaneous sea surface, which is affected by tides, winds, and currents. The <strong>astronomical vertical</strong> is defined by the local direction of gravity; its upward direction identifies the astronomical zenith. The angle between this upward direction and the equatorial plane defines the <strong>astronomical latitude</strong>. The angular separation between the astronomical and geodetic verticals is called the <strong>deflection of the vertical</strong>.</p>
+<p>For many introductory calculations, the astronomical and geodetic latitudes can be treated as equal. Conceptually, however, they describe different things: one is determined by gravity, while the other is determined by the geometry of the adopted ellipsoid. This distinction becomes important when an observatory position is used to predict precise directions on the sky.</p>
+<figure class="align-center" id="fig11-geoid-ellipsoid">
+<a class="reference internal image-reference" href="_images/fig11_geoid_ellipsoid.png"><img alt="_images/fig11_geoid_ellipsoid.png" src="_images/fig11_geoid_ellipsoid.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The reference ellipsoid, geoid, and physical surface of the Earth. The departures of the geoid from the ellipsoid are exaggerated in the schematic representation and do not show measured gravity data. The local diagram illustrates the ellipsoidal height <span class="math notranslate nohighlight">\(h\)</span>, the height above the geoid <span class="math notranslate nohighlight">\(H\)</span>, and the geoid undulation <span class="math notranslate nohighlight">\(N\)</span>.</span><a class="headerlink" href="#fig11-geoid-ellipsoid" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The separation between the geoid and the reference ellipsoid is called the <strong>geoid undulation</strong>, conventionally denoted by <span class="math notranslate nohighlight">\(N\)</span>. It is positive when the geoid lies above the ellipsoid. To the accuracy required here, the ellipsoidal height <span class="math notranslate nohighlight">\(h\)</span> and the <strong>orthometric height</strong> <span class="math notranslate nohighlight">\(H\)</span>, usually interpreted as height above mean sea level, are related by</p>
+<div class="math notranslate nohighlight">
+\[
+h\simeq H+N.
+\]</div>
+<p>This is the local geometric relation shown in <a class="reference internal" href="#fig11-geoid-ellipsoid"><span class="std std-ref">Figure 11</span></a>. A more precise treatment must account for the different directions of the ellipsoid normal and the gravity vertical. For example, if <span class="math notranslate nohighlight">\(h=120\,\mathrm{m}\)</span> and <span class="math notranslate nohighlight">\(N=40\,\mathrm{m}\)</span>, the corresponding height above the geoid is approximately <span class="math notranslate nohighlight">\(80\,\mathrm{m}\)</span>. A height obtained from satellite positioning therefore requires a geoid model before it can be interpreted as a height above sea level.</p>
+</section>
+</section>
+<section id="the-world-geodetic-system">
+<h3>The World Geodetic System<a class="headerlink" href="#the-world-geodetic-system" title="Link to this heading">#</a></h3>
+<p>A practical terrestrial coordinate system requires more than a choice of latitude and longitude. We must specify the position of the origin, the directions of the axes, and the reference surface used to express heights. The <strong>World Geodetic System 1984</strong>, usually abbreviated as <strong>WGS 84</strong>, provides such a framework. It is widely used for satellite positioning and for reporting geographic coordinates.<label for='sidenote-role-3' class='margin-toggle'><span id="id3">
+<sup>3</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-3' name='sidenote-role-3' class='margin-toggle'><span class="sidenote"><sup>3</sup>Barbieri and Bertini (2021), Section 2.1, pp. 19–24, including the WGS 84 ellipsoid and the distinction between EGM96 and EGM2008. The presentation’s model names and resolutions have been reconciled with this discussion.</span></p>
+<p>Its origin is at the Earth’s centre of mass. The <span class="math notranslate nohighlight">\(z\)</span> axis follows the adopted terrestrial reference pole; the <span class="math notranslate nohighlight">\(x\)</span> axis lies in the reference equatorial plane and points toward the zero-longitude meridian; the <span class="math notranslate nohighlight">\(y\)</span> axis completes a right-handed system. These axes rotate with the Earth. An observatory attached to the ground therefore has approximately constant terrestrial coordinates, even though its direction relative to the stars changes throughout the day.</p>
+<p>The reference ellipsoid has an equatorial radius of <span class="math notranslate nohighlight">\(6378.137\,\mathrm{km}\)</span> and a polar radius of approximately <span class="math notranslate nohighlight">\(6356.752\,\mathrm{km}\)</span>, corresponding to <span class="math notranslate nohighlight">\(f\simeq1/298.26\)</span>. These parameters describe the smooth reference surface. The geoid is supplied by a gravity model and is a separate element of the conversion between ellipsoidal and physical heights.</p>
+<p>The modern zero of longitude is defined by the <strong>IERS Reference Meridian</strong>. It is close to the historical Greenwich meridian, but the two are not identical. The historical meridian was established by astronomical observations tied to the local gravity vertical, whereas the modern reference is part of a global geocentric system. Thus, even a familiar coordinate such as longitude depends on the precise reference system in which it is reported.</p>
+<section id="the-earth-gravitational-model">
+<h4>The Earth Gravitational Model<a class="headerlink" href="#the-earth-gravitational-model" title="Link to this heading">#</a></h4>
+<p>An <strong>Earth Gravitational Model</strong> describes the spatial variations of the Earth’s gravity field. From this model, we can derive the geoid height relative to a reference ellipsoid, or represent departures of the gravity field from a chosen reference field. These are related quantities, but a map of geoid heights and a map of gravity anomalies have different units and should not be confused.</p>
+<p>The mathematical description commonly uses <strong>spherical harmonics</strong>, functions defined over a sphere that represent variations on different angular scales. Low-degree terms describe broad features, while higher-degree terms describe finer structure. The degree of the expansion therefore influences the spatial resolution of the model.</p>
+<p>The sequence discussed in the reference textbook includes <strong>EGM96</strong>, expanded to degree 360 with a spatial resolution of approximately <span class="math notranslate nohighlight">\(100\,\mathrm{km}\)</span>, and <strong>EGM2008</strong>, whose much higher-degree expansion resolves features on scales of approximately <span class="math notranslate nohighlight">\(10\,\mathrm{km}\)</span>. These names identify specific models, rather than successive definitions of latitude and longitude. In particular, the degree-360 expansion belongs to EGM96 and should not be assigned to EGM2008. The mention of “EGM2009” in the presentation is treated here as a typographical error.<a class="footnote-reference brackets" href="#wgs-reference" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p>
+<p>Satellite missions such as <strong>CHAMP</strong>, <strong>GRACE</strong>, and <strong>GOCE</strong> have contributed measurements of the Earth’s gravity field. Their observations complement measurements made at the surface and help constrain both its large-scale structure and its variations. For the purposes of spherical astronomy, the central result is that the observer’s geometric position, height above sea level, and local vertical require related but distinct definitions.</p>
+</section>
+</section>
+</section>
+<section id="celestial-coordinate-systems">
+<h2>Celestial Coordinate Systems<a class="headerlink" href="#celestial-coordinate-systems" title="Link to this heading">#</a></h2>
+<p>We can now apply the same geometric ideas to the celestial sphere. Each system requires a <strong>reference plane</strong>, a choice of <strong>positive pole</strong>, and a <strong>zero direction</strong> in that plane. Two angular coordinates then identify the direction of an object. In the systems considered below, one angle is measured along the reference circle, and the other is measured perpendicular to it along a great circle.</p>
+<p>There is another choice that must be stated explicitly: the <strong>origin</strong> from which the object is observed. A <strong>topocentric</strong> system is centred on the observer, a <strong>geocentric</strong> system on the centre of the Earth, and a <strong>heliocentric</strong> system on the centre of the Sun. For distant stars, the differences may be negligible in an introductory treatment. For the Moon, planets, and nearby artificial satellites, changing the origin can change the observed direction through <strong>parallax</strong>.</p>
+<p>A change in the orientation of the axes is a rotation. A change in origin is a translation and generally requires the distance to the object as well as its angular coordinates. The names <em>equatorial</em>, <em>ecliptic</em>, and <em>galactic</em> describe the orientation of a system; by themselves, they do not specify every aspect of the origin or of the reference frame.</p>
+<section id="horizontal-coordinates">
+<h3>Horizontal coordinates<a class="headerlink" href="#horizontal-coordinates" title="Link to this heading">#</a></h3>
+<p>The most immediate way to describe the sky is to use the observer’s local vertical. The plane passing through the observer and perpendicular to this vertical is the <strong>horizontal plane</strong>. Its intersection with the celestial sphere is the <strong>astronomical horizon</strong>. This system is topocentric and is also called the <strong>horizon system</strong> or <strong>altitude-azimuth system</strong>.<label for='sidenote-role-4' class='margin-toggle'><span id="id5">
+<sup>4</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-4' name='sidenote-role-4' class='margin-toggle'><span class="sidenote"><sup>4</sup>Karttunen et al. (2017), Sections 2.3–2.4, pp. 16–17; Hanslmeier (2023), Section 2.1.2, pp. 6–7. Azimuth conventions differ across the sources; the equations here consistently use North through East.</span></p>
+<p>The two poles of the horizon are the <strong>zenith</strong>, directly above the observer, and the <strong>nadir</strong>, in the opposite direction. A great circle passing through the zenith and nadir is called a <strong>vertical circle</strong>. The vertical circle containing the celestial poles is the <strong>local meridian</strong>; it intersects the horizon at the North and South points. The East and West points lie <span class="math notranslate nohighlight">\(90°\)</span> from these along the horizon. At the geographic poles, some of these directional conventions become degenerate and require a chosen reference meridian.</p>
+<p>The <strong>altitude</strong>, or <strong>elevation</strong>, is the angle measured from the horizon to the object along its vertical circle. Following the notation of the presentation, we denote it by <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+-90°\leq a\leq90°.
+\]</div>
+<p>An object on the horizon has <span class="math notranslate nohighlight">\(a=0°\)</span>, an object at the zenith has <span class="math notranslate nohighlight">\(a=90°\)</span>, and an object with <span class="math notranslate nohighlight">\(a&lt;0°\)</span> lies below the astronomical horizon. The complementary angle is the <strong>zenith distance</strong>,</p>
+<div class="math notranslate nohighlight">
+\[
+z=90°-a.
+\]</div>
+<p>The <strong>azimuth</strong> <span class="math notranslate nohighlight">\(A\)</span> specifies the direction of the object’s vertical circle around the horizon. We will measure it <strong>from North toward East</strong>, over the interval <span class="math notranslate nohighlight">\(0°\leq A&lt;360°\)</span>. Therefore, North corresponds to <span class="math notranslate nohighlight">\(A=0°\)</span>, East to <span class="math notranslate nohighlight">\(90°\)</span>, South to <span class="math notranslate nohighlight">\(180°\)</span>, and West to <span class="math notranslate nohighlight">\(270°\)</span>. This convention is common, but not universal: some astronomical texts measure azimuth from South toward West. Equations must always be used with the convention for which they were derived.</p>
+<figure class="align-center" id="fig12-horizontal-coordinates">
+<a class="reference internal image-reference" href="_images/fig12_horizontal_coordinates.png"><img alt="_images/fig12_horizontal_coordinates.png" src="_images/fig12_horizontal_coordinates.png" style="width: 85%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The horizontal coordinate system, centred on the observer. Azimuth <span class="math notranslate nohighlight">\(A\)</span> is measured from North toward East along the horizon, while altitude <span class="math notranslate nohighlight">\(a\)</span> is measured upward along the object’s vertical circle. The zenith distance is <span class="math notranslate nohighlight">\(z=90°-a\)</span>.</span><a class="headerlink" href="#fig12-horizontal-coordinates" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>For example, a star with <span class="math notranslate nohighlight">\(A=90°\)</span> and <span class="math notranslate nohighlight">\(a=30°\)</span> lies due East, one third of the angular distance from the horizon to the zenith. At the zenith itself, all vertical circles meet and azimuth is undefined. This is a coordinate singularity, rather than an uncertainty in the actual direction of the star.</p>
+<p>The astronomical horizon is a geometric reference, not the visible outline of the landscape. Mountains can obscure objects with positive altitude, and an observer above the sea can see a sea horizon below the astronomical horizon. In addition, <strong>atmospheric refraction</strong> generally makes an object appear at a higher altitude than its unrefracted direction. We will use geometric, unrefracted directions in the coordinate transformations below.</p>
+<p>Both altitude and azimuth generally change as the Earth rotates. They also depend on the observer’s location. Consequently, horizontal coordinates are convenient for pointing a telescope at a particular time and place, but a catalogue must use a reference system that does not rotate with the local horizon.</p>
+<section id="zenith-distance-and-airmass">
+<h4>Zenith distance and airmass<a class="headerlink" href="#zenith-distance-and-airmass" title="Link to this heading">#</a></h4>
+<p>The zenith distance also determines how much atmosphere the light must cross. The <strong>airmass</strong> <span class="math notranslate nohighlight">\(X\)</span> is the atmospheric column along the line of sight divided by the column in the zenith direction, for the same observing site. It is a dimensionless relative quantity, with <span class="math notranslate nohighlight">\(X=1\)</span> at the zenith.</p>
+<p>Consider an atmosphere represented by horizontal, plane-parallel layers. A layer of vertical thickness <span class="math notranslate nohighlight">\(\mathrm{d}h\)</span> is crossed along a distance <span class="math notranslate nohighlight">\(\mathrm{d}s=\mathrm{d}h/\cos z\)</span>. If atmospheric density depends only on height and the light ray is taken to be straight, the ratio of the two column integrals is</p>
+<div class="math notranslate nohighlight">
+\[
+X=\frac{\int \rho_{\mathrm{air}}\,\mathrm{d}s}
+        {\int \rho_{\mathrm{air}}\,\mathrm{d}h}
+\simeq\frac{1}{\cos z}=\sec z=\frac{1}{\sin a}.
+\]</div>
+<figure class="align-center" id="fig13-airmass">
+<a class="reference internal image-reference" href="_images/fig13_airmass.png"><img alt="_images/fig13_airmass.png" src="_images/fig13_airmass.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The plane-parallel approximation to airmass. An inclined ray traverses a longer atmospheric path than a vertical ray. The curve shows <span class="math notranslate nohighlight">\(X=\sec z\)</span> within the illustrated range; it is an approximation and should not be extrapolated to the horizon.</span><a class="headerlink" href="#fig13-airmass" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>For <span class="math notranslate nohighlight">\(a=90°\)</span>, <span class="math notranslate nohighlight">\(60°\)</span>, and <span class="math notranslate nohighlight">\(30°\)</span>, this approximation gives <span class="math notranslate nohighlight">\(X=1\)</span>, <span class="math notranslate nohighlight">\(1.15\)</span>, and <span class="math notranslate nohighlight">\(2\)</span>, respectively. Observations at lower altitude generally suffer stronger atmospheric extinction and greater sensitivity to atmospheric conditions. This is one reason why observations are often scheduled near the time when an object reaches its greatest altitude.</p>
+<p>The approximation becomes increasingly inaccurate toward the horizon. The Earth and its atmosphere are curved, and refraction bends the light path. The divergence of <span class="math notranslate nohighlight">\(\sec z\)</span> at <span class="math notranslate nohighlight">\(z=90°\)</span> is a limitation of the plane-parallel model, not an infinite atmospheric column in the real atmosphere. The expression is not applicable to objects below the horizon.<label for='sidenote-role-5' class='margin-toggle'><span id="id6">
+<sup>5</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-5' name='sidenote-role-5' class='margin-toggle'><span class="sidenote"><sup>5</sup>The plane-parallel expression is developed from the geometry stated on slide 16. For atmospheric refraction and extinction, see Hanslmeier (2023), Section 2.3.2, pp. 21–22, and Karttunen et al. (2017), the atmospheric discussion in Chapter 2 and the treatment of magnitudes and extinction in Chapter 4.</span></p>
+</section>
+</section>
+<section id="the-celestial-equator-and-the-ecliptic">
+<h3>The celestial equator and the ecliptic<a class="headerlink" href="#the-celestial-equator-and-the-ecliptic" title="Link to this heading">#</a></h3>
+<p>The <strong>celestial equator</strong> is the intersection of the celestial sphere with the plane perpendicular to the Earth’s rotation axis. The <strong>North Celestial Pole</strong> and <strong>South Celestial Pole</strong> are the directions of that axis on the sphere. Neglecting slow changes in the axis and the motion of the objects themselves, stars appear to describe circles of constant angular distance from these poles as the Earth rotates.</p>
+<p>The <strong>ecliptic</strong> is the great circle associated with the Earth’s orbital plane. To a geocentric observer, it describes the Sun’s annual path against the distant stars, to the approximation in which the orbital plane is fixed. Its inclination to the celestial equator is the <strong>obliquity of the ecliptic</strong>, denoted by <span class="math notranslate nohighlight">\(\varepsilon\)</span>, approximately <span class="math notranslate nohighlight">\(23°\,26'\)</span> near the reference epoch J2000.0.</p>
+<p>Two distinct great circles intersect at two opposite points. For the equator and ecliptic, these are the <strong>equinox points</strong>. The <strong>vernal point</strong>, usually denoted by <span class="math notranslate nohighlight">\(\gamma\)</span>, is the intersection crossed by the Sun when it moves from the Southern to the Northern celestial hemisphere. The Sun passes through this direction at the March equinox. At the opposite intersection, it crosses from North to South at the September equinox.</p>
+<figure class="align-center" id="fig14-equator-ecliptic">
+<a class="reference internal image-reference" href="_images/fig14_equator_ecliptic.png"><img alt="_images/fig14_equator_ecliptic.png" src="_images/fig14_equator_ecliptic.png" style="width: 85%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The celestial equator and the ecliptic intersect at the equinox points. The vernal point <span class="math notranslate nohighlight">\(\gamma\)</span> is the ascending intersection of the Sun’s annual path with the equator. The angle between the planes, and between their corresponding north poles, is the obliquity <span class="math notranslate nohighlight">\(\varepsilon\)</span>.</span><a class="headerlink" href="#fig14-equator-ecliptic" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The vernal point is a direction, not a physical object or a particular star. Its importance is that it lies in both reference planes and can therefore serve as the zero direction for two different coordinate systems. The words <em>vernal</em> and <em>autumnal</em> refer to the seasons in the Northern hemisphere; the geometric definition of the crossing applies equally to observers in either hemisphere.</p>
+</section>
+<section id="equatorial-coordinates">
+<h3>Equatorial coordinates<a class="headerlink" href="#equatorial-coordinates" title="Link to this heading">#</a></h3>
+<p>The <strong>equatorial coordinate system</strong> uses the celestial equator as its reference circle and the North Celestial Pole as its positive pole. Its two angular coordinates are the <strong>right ascension</strong> <span class="math notranslate nohighlight">\(\alpha\)</span> and the <strong>declination</strong> <span class="math notranslate nohighlight">\(\delta\)</span>.<label for='sidenote-role-6' class='margin-toggle'><span id="id7">
+<sup>6</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-6' name='sidenote-role-6' class='margin-toggle'><span class="sidenote"><sup>6</sup>Barbieri and Bertini (2021), Sections 2.2–2.3, pp. 25–29; Karttunen et al. (2017), Section 2.5, pp. 17–20; Hanslmeier (2023), Sections 2.1.3 and 2.2.1, pp. 7–9 and 12–15.</span></p>
+<p>The declination is measured from the equator along the great circle passing through the object and both celestial poles. Such a circle is called an <strong>hour circle</strong>. Declination is positive to the North and negative to the South:</p>
+<div class="math notranslate nohighlight">
+\[
+-90°\leq\delta\leq90°.
+\]</div>
+<p>The right ascension is measured from the vernal point <strong>eastward</strong> along the celestial equator to the object’s hour circle. Equivalently, it increases counterclockwise when the equatorial plane is viewed from the North Celestial Pole. It is usually expressed in hours, minutes, and seconds:</p>
+<div class="math notranslate nohighlight">
+\[
+0^{\mathrm h}\leq\alpha&lt;24^{\mathrm h},
+\qquad
+24^{\mathrm h}=360°.
+\]</div>
+<p>These hours are an angular unit. In particular, <span class="math notranslate nohighlight">\(1^{\mathrm h}=15°\)</span>, <span class="math notranslate nohighlight">\(1^{\mathrm m}=15'\)</span>, and <span class="math notranslate nohighlight">\(1^{\mathrm s}=15''\)</span>. To convert decimal degrees to decimal hours, we divide by <span class="math notranslate nohighlight">\(15\)</span>.</p>
+<figure class="align-center" id="fig15-equatorial-coordinates">
+<a class="reference internal image-reference" href="_images/fig15_equatorial_coordinates.png"><img alt="_images/fig15_equatorial_coordinates.png" src="_images/fig15_equatorial_coordinates.png" style="width: 85%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Equatorial coordinates of an object on the celestial sphere. Right ascension <span class="math notranslate nohighlight">\(\alpha\)</span> is measured eastward from <span class="math notranslate nohighlight">\(\gamma\)</span> along the celestial equator, and declination <span class="math notranslate nohighlight">\(\delta\)</span> is measured along the object’s hour circle. Declination is positive in the Northern celestial hemisphere.</span><a class="headerlink" href="#fig15-equatorial-coordinates" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>For example, <span class="math notranslate nohighlight">\(\alpha=6^{\mathrm h}\)</span> and <span class="math notranslate nohighlight">\(\delta=30°\)</span> specify a direction whose hour circle lies <span class="math notranslate nohighlight">\(90°\)</span> east of the vernal point and whose angular distance north of the equator is <span class="math notranslate nohighlight">\(30°\)</span>. At a celestial pole, right ascension is undefined because all hour circles meet there.</p>
+<p>Unlike horizontal coordinates, equatorial coordinates of a distant star do not change merely because the Earth rotates during the night. They are therefore suitable for catalogues and for comparing observations obtained at different sites. This statement assumes that we use the same reference frame and neglect effects such as stellar proper motion and parallax over the interval considered.</p>
+<section id="hour-angle-and-local-sidereal-time">
+<h4>Hour angle and local sidereal time<a class="headerlink" href="#hour-angle-and-local-sidereal-time" title="Link to this heading">#</a></h4>
+<p>To connect a catalogue position to the local sky, we need to know how the observer’s meridian is oriented relative to the vernal point. This is the role of <strong>local sidereal time</strong>, which we denote by <span class="math notranslate nohighlight">\(\Theta\)</span>. Geometrically, <span class="math notranslate nohighlight">\(\Theta\)</span> is the hour angle of the vernal point, or equivalently the right ascension of the direction on the equator currently crossing the observer’s upper meridian.</p>
+<p>The <strong>hour angle</strong> <span class="math notranslate nohighlight">\(t\)</span> of an object is measured from the local upper meridian <strong>westward</strong> along the equator. Its direction of increase is opposite to that of right ascension. With all angles expressed in the same units,</p>
+<div class="math notranslate nohighlight">
+\[
+t=\Theta-\alpha\pmod{24^{\mathrm h}}.
+\]</div>
+<p>We may instead express <span class="math notranslate nohighlight">\(t\)</span> in the interval <span class="math notranslate nohighlight">\(-12^{\mathrm h}&lt;t\leq12^{\mathrm h}\)</span>: a negative value then places the object east of the meridian, before upper transit, and a positive value places it west of the meridian, after upper transit. At <strong>upper culmination</strong>, <span class="math notranslate nohighlight">\(t=0\)</span> and <span class="math notranslate nohighlight">\(\Theta=\alpha\)</span>. For instance, if the local sidereal time is <span class="math notranslate nohighlight">\(10^{\mathrm h}\)</span>, a star with <span class="math notranslate nohighlight">\(\alpha=8^{\mathrm h}\)</span> has <span class="math notranslate nohighlight">\(t=2^{\mathrm h}=30°\)</span> and lies west of the meridian.</p>
+<p>Sidereal time is tied to the rotation of the Earth relative to the celestial reference directions. It is not the civil time shown by an ordinary clock. A sidereal day is approximately <span class="math notranslate nohighlight">\(23^{\mathrm h}56^{\mathrm m}4^{\mathrm s}\)</span> of mean solar time. The difference arises because the Earth also moves around the Sun while it rotates.</p>
+<p>For a terrestrial longitude <span class="math notranslate nohighlight">\(\lambda\)</span> taken as positive eastward, the local and Greenwich sidereal times satisfy</p>
+<div class="math notranslate nohighlight">
+\[
+\Theta_{\mathrm{local}}=\Theta_{\mathrm{Greenwich}}+\lambda,
+\]</div>
+<p>with the longitude converted to hours if the sidereal times are in hours, and the result reduced modulo <span class="math notranslate nohighlight">\(24^{\mathrm h}\)</span>. This relation expresses why two observers at different longitudes see different objects on their meridians at the same instant.</p>
+</section>
+<section id="from-equatorial-to-horizontal-coordinates">
+<h4>From equatorial to horizontal coordinates<a class="headerlink" href="#from-equatorial-to-horizontal-coordinates" title="Link to this heading">#</a></h4>
+<p>The coordinate transformation depends on the observer’s latitude <span class="math notranslate nohighlight">\(\phi\)</span> and on the object’s hour angle <span class="math notranslate nohighlight">\(t\)</span>. Here <span class="math notranslate nohighlight">\(\phi\)</span> is the astronomical latitude; for the present calculation, we neglect the deflection of the vertical and use the geodetic value. With azimuth measured from North toward East, the transformation is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\sin a&amp;=\sin\phi\sin\delta+\cos\phi\cos\delta\cos t,\\
+\cos a\sin A&amp;=-\cos\delta\sin t,\\
+\cos a\cos A&amp;=\cos\phi\sin\delta-\sin\phi\cos\delta\cos t.
+\end{aligned}
+\end{split}\]</div>
+<p>The first relation gives the altitude. The other two determine the azimuth together, avoiding the ambiguity that would arise from using an inverse sine or cosine alone. In numerical calculations, this is conveniently done with the two-argument function <span class="math notranslate nohighlight">\(\operatorname{atan2}(y,x)\)</span>, using the right-hand sides of the second and third equations as its first and second arguments. The resulting azimuth is then placed in the interval <span class="math notranslate nohighlight">\(0°\leq A&lt;360°\)</span>.<label for='sidenote-role-7' class='margin-toggle'><span id="id8">
+<sup>7</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-7' name='sidenote-role-7' class='margin-toggle'><span class="sidenote"><sup>7</sup>Barbieri and Bertini (2021), Section 3.1, pp. 36–39; Karttunen et al. (2017), Sections 2.5–2.6, pp. 17–23. The azimuth components have been written for the North-through-East convention used in this chapter.</span></p>
+<p>At upper culmination, <span class="math notranslate nohighlight">\(t=0\)</span>, and the altitude reduces to</p>
+<div class="math notranslate nohighlight">
+\[
+a_{\mathrm{max}}=90°-|\phi-\delta|.
+\]</div>
+<p>For Padova, taking <span class="math notranslate nohighlight">\(\phi\simeq45.41°\)</span>, a star at <span class="math notranslate nohighlight">\(\delta=20°\)</span> culminates at approximately <span class="math notranslate nohighlight">\(64.59°\)</span>. A star at <span class="math notranslate nohighlight">\(\delta=\phi\)</span> passes through the zenith, whereas a star at the celestial equator culminates at approximately <span class="math notranslate nohighlight">\(44.59°\)</span>. Setting <span class="math notranslate nohighlight">\(\delta=90°\)</span> in the transformation also shows that the altitude of the North Celestial Pole equals <span class="math notranslate nohighlight">\(\phi\)</span>; in the Southern hemisphere, the altitude of the South Celestial Pole equals <span class="math notranslate nohighlight">\(|\phi|\)</span>.</p>
+<p>We can also determine whether an object crosses the horizon by setting <span class="math notranslate nohighlight">\(a=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\cos t_0=-\tan\phi\tan\delta.
+\]</div>
+<p>For a non-polar observer and an object away from the celestial poles, two crossings occur when the right-hand side lies strictly between <span class="math notranslate nohighlight">\(-1\)</span> and <span class="math notranslate nohighlight">\(1\)</span>. Equality corresponds to tangency at the horizon. If it lies outside this range, the object either remains above the horizon or never rises. In the Northern hemisphere, stars with <span class="math notranslate nohighlight">\(\delta&gt;90°-\phi\)</span> are <strong>circumpolar</strong>, while those with <span class="math notranslate nohighlight">\(\delta&lt;-(90°-\phi)\)</span> never rise. The corresponding statements in the Southern hemisphere follow by reversing the signs of both latitude and declination. These are geometric conditions; refraction and the local landscape modify actual visibility.</p>
+</section>
+<section id="reference-epoch-and-reference-frame">
+<h4>Reference epoch and reference frame<a class="headerlink" href="#reference-epoch-and-reference-frame" title="Link to this heading">#</a></h4>
+<p>The Earth’s rotation axis and orbital plane are not fixed for all time. <strong>Precession</strong> and <strong>nutation</strong> change the orientation of the equator and the position of the equinox. Consequently, a classical equatorial position must be associated with a specified equator and equinox, such as those of <strong>J2000.0</strong>. The epoch of a star’s position must also be stated when its proper motion is relevant. The epoch at which a position is valid and the orientation of the axes are distinct pieces of information.</p>
+<p>Modern astrometry also uses the <strong>International Celestial Reference System</strong>, or <strong>ICRS</strong>, whose axes are defined through distant extragalactic reference sources and are close to the classical J2000.0 orientation. It should not be identified exactly with an equator and equinox of date. At the level of this chapter, the classical construction explains the geometry; precise catalogue work additionally requires the catalogue’s stated reference frame and epoch.</p>
+</section>
+</section>
+<section id="ecliptic-coordinates">
+<h3>Ecliptic coordinates<a class="headerlink" href="#ecliptic-coordinates" title="Link to this heading">#</a></h3>
+<p>The <strong>ecliptic coordinate system</strong> takes the ecliptic as its reference plane. The directions perpendicular to this plane define the <strong>North Ecliptic Pole</strong> and <strong>South Ecliptic Pole</strong>. These must be distinguished from the celestial poles, which refer to the Earth’s rotation axis. The angle between the two north poles is <span class="math notranslate nohighlight">\(\varepsilon\)</span>.<label for='sidenote-role-8' class='margin-toggle'><span id="id9">
+<sup>8</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-8' name='sidenote-role-8' class='margin-toggle'><span class="sidenote"><sup>8</sup>Barbieri and Bertini (2021), Section 2.5, pp. 29–31, and Section 3.2; Hanslmeier (2023), Sections 2.1.4 and 2.1.6, pp. 9–12.</span></p>
+<p>The <strong>ecliptic longitude</strong> <span class="math notranslate nohighlight">\(\lambda\)</span> is measured from the vernal point along the ecliptic, eastward in the direction of the Sun’s annual motion, with <span class="math notranslate nohighlight">\(0°\leq\lambda&lt;360°\)</span>. The <strong>ecliptic latitude</strong> <span class="math notranslate nohighlight">\(\beta\)</span> is measured along a great circle perpendicular to the ecliptic, with <span class="math notranslate nohighlight">\(-90°\leq\beta\leq90°\)</span>. It is positive toward the North Ecliptic Pole. The symbol <span class="math notranslate nohighlight">\(\lambda\)</span> is also used for terrestrial longitude, but the reference plane and the zero direction are different; the context determines which quantity is meant.</p>
+<figure class="align-center" id="fig16-ecliptic-coordinates">
+<a class="reference internal image-reference" href="_images/fig16_ecliptic_coordinates.png"><img alt="_images/fig16_ecliptic_coordinates.png" src="_images/fig16_ecliptic_coordinates.png" style="width: 85%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ecliptic coordinates <span class="math notranslate nohighlight">\(\lambda\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. The vernal point provides the zero of longitude, as it provides the zero of right ascension. The positive pole is the North Ecliptic Pole, perpendicular to the Earth’s orbital plane.</span><a class="headerlink" href="#fig16-ecliptic-coordinates" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This system is particularly useful for Solar System objects because many of their orbital planes have relatively small inclinations to the ecliptic. The Sun has approximately <span class="math notranslate nohighlight">\(\beta=0°\)</span>, while its ecliptic longitude completes one revolution in a year. Planets and the Moon generally have non-zero ecliptic latitudes because their orbits are inclined to the Earth’s orbital plane. Their apparent motion also depends on the observer’s changing position.</p>
+<p>The geometric origin must still be specified. <strong>Geocentric ecliptic coordinates</strong> describe a direction from the Earth, while <strong>heliocentric ecliptic coordinates</strong> describe a direction from the Sun. Although their reference planes can be chosen parallel, their angular coordinates for the same nearby object need not be equal.</p>
+<section id="relation-to-equatorial-coordinates">
+<h4>Relation to equatorial coordinates<a class="headerlink" href="#relation-to-equatorial-coordinates" title="Link to this heading">#</a></h4>
+<p>Equatorial and ecliptic coordinates share the zero direction <span class="math notranslate nohighlight">\(\gamma\)</span>. If they also use the same origin and compatible reference planes, one system is obtained from the other by a rotation through the obliquity about that direction.</p>
+<p>In a Cartesian ecliptic system, the unit vector toward an object is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\boldsymbol{r}_{\mathrm{ecl}}=
+\begin{pmatrix}
+\cos\beta\cos\lambda\\
+\cos\beta\sin\lambda\\
+\sin\beta
+\end{pmatrix}.
+\end{split}\]</div>
+<p>With the <span class="math notranslate nohighlight">\(x\)</span> axis directed toward <span class="math notranslate nohighlight">\(\gamma\)</span>, its components in the equatorial system are</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix}
+\cos\delta\cos\alpha\\
+\cos\delta\sin\alpha\\
+\sin\delta
+\end{pmatrix}
+=
+\begin{pmatrix}
+1&amp;0&amp;0\\
+0&amp;\cos\varepsilon&amp;-\sin\varepsilon\\
+0&amp;\sin\varepsilon&amp;\cos\varepsilon
+\end{pmatrix}
+\begin{pmatrix}
+\cos\beta\cos\lambda\\
+\cos\beta\sin\lambda\\
+\sin\beta
+\end{pmatrix}.
+\end{split}\]</div>
+<p>The inverse transformation is obtained by replacing <span class="math notranslate nohighlight">\(\varepsilon\)</span> with <span class="math notranslate nohighlight">\(-\varepsilon\)</span>. As before, both sine and cosine components should be used to recover the correct quadrant of a longitude. The rotation does not account for a change between geocentric and heliocentric origins.</p>
+<p>For an object on the ecliptic, <span class="math notranslate nohighlight">\(\beta=0\)</span>, and the last component gives <span class="math notranslate nohighlight">\(\sin\delta=\sin\varepsilon\sin\lambda\)</span>. Applied to the Sun, this explains the four characteristic directions of its annual path:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Direction</p></th>
+<th class="head"><p>Ecliptic longitude <span class="math notranslate nohighlight">\(\lambda\)</span></p></th>
+<th class="head"><p>Right ascension <span class="math notranslate nohighlight">\(\alpha\)</span></p></th>
+<th class="head"><p>Declination <span class="math notranslate nohighlight">\(\delta\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>March equinox</p></td>
+<td><p><span class="math notranslate nohighlight">\(0°\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0^{\mathrm h}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0°\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>June solstice</p></td>
+<td><p><span class="math notranslate nohighlight">\(90°\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(6^{\mathrm h}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(+\varepsilon\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>September equinox</p></td>
+<td><p><span class="math notranslate nohighlight">\(180°\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(12^{\mathrm h}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0°\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>December solstice</p></td>
+<td><p><span class="math notranslate nohighlight">\(270°\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(18^{\mathrm h}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-\varepsilon\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These relations use the ideal geometric orbit and the equator and ecliptic of the chosen date. They also show that right ascension and ecliptic longitude are different angular coordinates, even though both begin at the vernal point.</p>
+</section>
+</section>
+<section id="galactic-coordinates">
+<h3>Galactic coordinates<a class="headerlink" href="#galactic-coordinates" title="Link to this heading">#</a></h3>
+<p>For studies of the Milky Way, a reference plane related to the Galaxy is often more useful than one related to the Earth’s rotation or orbit. The <strong>galactic coordinate system</strong> uses a conventional plane representing the orientation of the Galactic disc. The <strong>North Galactic Pole</strong> and <strong>South Galactic Pole</strong> are perpendicular to this plane.<label for='sidenote-role-9' class='margin-toggle'><span id="id10">
+<sup>9</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-9' name='sidenote-role-9' class='margin-toggle'><span class="sidenote"><sup>9</sup>Barbieri and Bertini (2021), Section 2.6, pp. 31–32; Karttunen et al. (2017), Section 2.7, pp. 23–25; Hanslmeier (2023), Section 2.1.5, p. 10. The approximate equatorial direction of the Galactic Centre also follows slide 20.</span></p>
+<p>The <strong>galactic latitude</strong> <span class="math notranslate nohighlight">\(b\)</span> measures the angular distance from the galactic plane along a great circle, with <span class="math notranslate nohighlight">\(-90°\leq b\leq90°\)</span>. The <strong>galactic longitude</strong> <span class="math notranslate nohighlight">\(l\)</span> is measured along the galactic equator from the adopted zero direction near the Galactic Centre, with <span class="math notranslate nohighlight">\(0°\leq l&lt;360°\)</span>. It increases counterclockwise when viewed from the North Galactic Pole.</p>
+<p>In the elementary construction, the observer is placed at the Sun. Thus, the system describes directions <strong>as seen from the Solar neighbourhood</strong>. It is not a coordinate system centred on the Galactic Centre. The finite distance between the Earth and Sun can usually be neglected for the large-scale Galactic applications considered here, although precise observed positions still require an explicitly stated origin.</p>
+<figure class="align-center" id="fig17-galactic-coordinates">
+<a class="reference internal image-reference" href="_images/fig17_galactic_coordinates.png"><img alt="_images/fig17_galactic_coordinates.png" src="_images/fig17_galactic_coordinates.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Galactic coordinates as seen from the Solar neighbourhood. The upper diagram shows the longitude directions in the Galactic plane; the lower diagram shows latitude measured above or below that plane. The construction is schematic, and the adopted longitude origin is represented by the direction toward the Galactic Centre.</span><a class="headerlink" href="#fig17-galactic-coordinates" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The direction <span class="math notranslate nohighlight">\(l=0°\)</span>, <span class="math notranslate nohighlight">\(b=0°\)</span> lies toward the central regions of the Milky Way; <span class="math notranslate nohighlight">\(l=180°\)</span>, <span class="math notranslate nohighlight">\(b=0°\)</span> points toward the <strong>Galactic anticentre</strong>. The directions <span class="math notranslate nohighlight">\(l=90°\)</span> and <span class="math notranslate nohighlight">\(270°\)</span> lie in the plane at right angles to the centre direction. Objects with <span class="math notranslate nohighlight">\(b\)</span> close to zero are seen near the Galactic plane, whereas objects with large <span class="math notranslate nohighlight">\(|b|\)</span> are seen away from it. As in the other systems, longitude is undefined at either pole.</p>
+<p>The Galactic Centre lies approximately at <span class="math notranslate nohighlight">\(\alpha=17^{\mathrm h}45.7^{\mathrm m}\)</span> and <span class="math notranslate nohighlight">\(\delta=-29°00'\)</span> in J2000.0 equatorial coordinates. This approximate direction is sufficient for identifying the region of the sky. The exact conventional direction <span class="math notranslate nohighlight">\((l,b)=(0°,0°)\)</span> does not coincide precisely with the measured position of the compact radio source <strong>Sagittarius A</strong>*. The system was fixed by an adopted orientation; it is not continually redefined whenever measurements of the physical centre improve.</p>
+<p>Likewise, the conventional galactic plane should not be interpreted as a perfectly flat material surface containing every Galactic object. The Milky Way has finite thickness and a more complicated structure, and the Sun is slightly displaced from the physical mid-plane. The coordinate system supplies a fixed geometric reference with which to describe that structure.</p>
+<p>Galactic coordinates are useful for mapping stars, gas, dust, and diffuse radiation. A narrow concentration around <span class="math notranslate nohighlight">\(b=0°\)</span>, for example, immediately reveals a population associated with the disc. However, an angular position alone does not tell us the object’s distance or its location within the Galaxy. To obtain a three-dimensional <strong>Galactocentric</strong> position, we must also specify the object’s distance, the position of the Sun relative to the Galactic Centre, and the adopted orientation of the Galactocentric axes.</p>
+<p>Transforming between equatorial and galactic directions with the same origin is again a rotation of a unit vector. In contrast to the equatorial-ecliptic transformation, the two systems do not share their zero axis, so the transformation requires the full relative orientation of the two frames. The defining pole and zero-longitude direction must be expressed in the same equatorial reference frame as the input coordinates. Mixing, for example, a Galactic definition quoted in B1950.0 coordinates with untransformed J2000.0 coordinates introduces a systematic error.</p>
+</section>
+<section id="choosing-a-coordinate-system">
+<h3>Choosing a coordinate system<a class="headerlink" href="#choosing-a-coordinate-system" title="Link to this heading">#</a></h3>
+<p>The same direction on the sky can be described in any of these systems. The choice depends on the question we want to answer.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>System</p></th>
+<th class="head"><p>Reference plane</p></th>
+<th class="head"><p>Zero direction</p></th>
+<th class="head"><p>Angular coordinates</p></th>
+<th class="head"><p>Typical application</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Horizontal</p></td>
+<td><p>Local horizontal plane</p></td>
+<td><p>North, with the convention used here</p></td>
+<td><p>Azimuth <span class="math notranslate nohighlight">\(A\)</span>, altitude <span class="math notranslate nohighlight">\(a\)</span></p></td>
+<td><p>Telescope pointing and visibility</p></td>
+</tr>
+<tr class="row-odd"><td><p>Equatorial</p></td>
+<td><p>Celestial equator</p></td>
+<td><p>Vernal point in the classical construction</p></td>
+<td><p>Right ascension <span class="math notranslate nohighlight">\(\alpha\)</span>, declination <span class="math notranslate nohighlight">\(\delta\)</span></p></td>
+<td><p>Stellar positions and catalogues</p></td>
+</tr>
+<tr class="row-even"><td><p>Ecliptic</p></td>
+<td><p>Earth’s orbital plane</p></td>
+<td><p>Vernal point</p></td>
+<td><p>Longitude <span class="math notranslate nohighlight">\(\lambda\)</span>, latitude <span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p>Apparent and orbital geometry in the Solar System</p></td>
+</tr>
+<tr class="row-odd"><td><p>Galactic</p></td>
+<td><p>Conventional Galactic plane</p></td>
+<td><p>Adopted direction near the Galactic Centre</p></td>
+<td><p>Longitude <span class="math notranslate nohighlight">\(l\)</span>, latitude <span class="math notranslate nohighlight">\(b\)</span></p></td>
+<td><p>Structure of the Milky Way</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The reference plane, angle convention, origin, and reference frame must all be consistent when coordinates are compared or transformed. A pair of numbers becomes an astronomical position only when these definitions are known.</p>
+</section>
+</section>
+<section id="notes-on-the-preserved-introductory-text">
+<h2>Notes on the preserved introductory text<a class="headerlink" href="#notes-on-the-preserved-introductory-text" title="Link to this heading">#</a></h2>
+<p>The introductory text has been retained without alteration, including its unfinished transition before the discussion of the geoid. The following corrections specify the conventions and formulae to use when studying or applying that material:</p>
+<ul class="simple">
+<li><p>In the conversion from decimal degrees to decimal hours, divide by <strong>15</strong>, not by 24. For a signed sexagesimal angle, the sign applies to the entire magnitude: <span class="math notranslate nohighlight">\(\beta=\operatorname{sgn}(\beta)(|d|+m/60+s/3600)\)</span>, with minutes and seconds non-negative. The sign must be retained separately for a negative angle whose degree field is zero.</p></li>
+<li><p>For an ordinary convex spherical triangle bounded by minor great-circle arcs, the sum of the internal angles exceeds <strong><span class="math notranslate nohighlight">\(\pi\)</span> radians, or <span class="math notranslate nohighlight">\(180°\)</span></strong>. Its spherical excess is <span class="math notranslate nohighlight">\(E=A+B+C-\pi\)</span>, not <span class="math notranslate nohighlight">\(A+B+C-2\pi\)</span>. The area is <span class="math notranslate nohighlight">\(Er^2\)</span>, and its solid angle is <span class="math notranslate nohighlight">\(E\)</span> steradians. The full sphere subtends <span class="math notranslate nohighlight">\(4\pi\)</span> steradians. An octant of the sphere, with three right angles, provides a check: <span class="math notranslate nohighlight">\(E=3\pi/2-\pi=\pi/2\)</span>.</p></li>
+<li><p>The longitude of Padova quoted as <span class="math notranslate nohighlight">\(+11.87676°\)</span> corresponds to approximately <span class="math notranslate nohighlight">\(11°\,52'\,36.34''\)</span> <strong>E</strong>, not W.</p></li>
+<li><p>A unit celestial sphere represents <strong>directions</strong>. Physical objects are not assumed to be at the same actual distance, and the observer need not always be at the Earth’s centre. A particular calculation must distinguish topocentric, geocentric, and other origins.</p></li>
+<li><p>The secant is the <strong>reciprocal</strong> of the cosine, <span class="math notranslate nohighlight">\(\sec\theta=1/\cos\theta\)</span>; it is not the inverse function <span class="math notranslate nohighlight">\(\arccos\)</span>. Angle symbols are conventions that must be defined for each source, rather than universal rules separating Mathematics, Physics, and Astronomy. In <a class="reference internal" href="#fig06-polar-coordinates"><span class="std std-ref">Figure 6</span></a>, the latitude-like angle is <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>The astronomical plumb line and the ellipsoid normal agree only within an approximation. Likewise, the geoid represents an equipotential reference surface, rather than the physical topography of the whole Earth. These distinctions are made explicitly in the completed geodetic discussion.</p></li>
+</ul>
+</section>
+<section id="references-and-figure-sources">
+<h2>References and figure sources<a class="headerlink" href="#references-and-figure-sources" title="Link to this heading">#</a></h2>
+<p>The order of the main topics follows <em>Lesson 01 - Spherical Astronomy and Coordinate Systems</em>, slides 1–20. The explanation and formulae have been developed using the following textbooks; page numbers refer to the printed pages of the supplied editions.</p>
+<ul class="simple">
+<li><p><strong>Barbieri, C., and Bertini, I. (2021)</strong>, <em>Fundamentals of Astronomy</em>, second edition, CRC Press. Chapters 1–3, especially Sections 2.1–2.6 for terrestrial and celestial systems and Sections 3.1–3.2 for coordinate transformations.</p></li>
+<li><p><strong>Karttunen, H., Kröger, P., Oja, H., Poutanen, M., and Donner, K. J. (eds., 2017)</strong>, <em>Fundamental Astronomy</em>, sixth edition, Springer. Chapter 2, <em>Spherical Astronomy</em>, particularly the discussions of the Earth, horizontal and equatorial coordinates, and other coordinate systems.</p></li>
+<li><p><strong>Hanslmeier, A. (2023)</strong>, <em>Introduction to Astronomy and Astrophysics</em>, Springer. Chapter 2, <em>Spherical Astronomy</em>, especially Sections 2.1–2.3.</p></li>
+</ul>
+<p>Figures 1–3 are newly drawn geometric diagrams following the corresponding examples in slides 4–5. Figures 4–10 reproduce or convert the corresponding embedded illustrations in slides 6–12; original source markings are retained where present. Figures 11–17 are newly drawn scientific schematics based on the topics and geometric constructions in slides 12–20 and the textbooks above. They are illustrative diagrams rather than observational data. All figures are supplied in PNG format; a JPEG copy of Figure 8 is also provided to preserve the original Markdown reference.</p>
 </section>
 </section>
 <hr class="footnotes docutils" />
@@ -542,6 +1088,41 @@ The length of the arc <em>AB</em> is equal to the radius of the sphere multiplie
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trigonometry">Trigonometry</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spherical-trigonometry">Spherical trigonometry</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coordinate-systems">Coordinate systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-coordinate-systems">Geographic Coordinate Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geocentric-coordinate-system">Geocentric coordinate system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geodetic-coordinate-system">Geodetic coordinate system</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-local-normal-and-geodetic-latitude">The local normal and geodetic latitude</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ellipsoid-geoid-and-astronomical-vertical">Ellipsoid, geoid, and astronomical vertical</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-world-geodetic-system">The World Geodetic System</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-earth-gravitational-model">The Earth Gravitational Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#celestial-coordinate-systems">Celestial Coordinate Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-coordinates">Horizontal coordinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zenith-distance-and-airmass">Zenith distance and airmass</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-celestial-equator-and-the-ecliptic">The celestial equator and the ecliptic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-coordinates">Equatorial coordinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hour-angle-and-local-sidereal-time">Hour angle and local sidereal time</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-equatorial-to-horizontal-coordinates">From equatorial to horizontal coordinates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-epoch-and-reference-frame">Reference epoch and reference frame</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecliptic-coordinates">Ecliptic coordinates</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relation-to-equatorial-coordinates">Relation to equatorial coordinates</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#galactic-coordinates">Galactic coordinates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-coordinate-system">Choosing a coordinate system</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-on-the-preserved-introductory-text">Notes on the preserved introductory text</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references-and-figure-sources">References and figure sources</a></li>
 </ul>
   </nav></div>
 
