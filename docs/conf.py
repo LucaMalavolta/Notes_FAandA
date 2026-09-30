@@ -139,7 +139,7 @@ html_theme_options = {
     "use_issues_button": True,
     #"home_page_in_toc": True,
     "show_navbar_depth": 3,
-    "logo_only": False,
+    #"logo_only": False,
     "use_sidenotes": True,
     #"show_related": True
     "logo": {
