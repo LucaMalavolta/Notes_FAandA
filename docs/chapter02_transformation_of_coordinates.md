@@ -4,6 +4,10 @@
 
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read
 
+:::{danger}
+This page still need sustantial revision to match the content presented during the lectures
+:::
+
 ## From a direction to its coordinates
 
 In the previous chapter, we introduced several ways of describing the position of an object on the celestial sphere. The same star can be identified by its equatorial coordinates, its ecliptic coordinates, or its altitude and azimuth. The direction of the star does not depend on our choice of coordinate system, but the numbers used to describe that direction do.

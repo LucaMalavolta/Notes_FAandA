@@ -15,6 +15,7 @@ The Celestial Sphere has an infinite radius, in the sense that all the objects o
 
 Dealing with a sphere with unitary radius is not dissimilar to dealing with a circle with unitary radius, which is the goal of *trigonometry*. For this reason,  we talk about **spherical trigonometry**, also called **spherical astronomy** when referring to the Celestial Sphere.
 
+(trigonometry)=
 ## Trigonometry
 
 Trigonometry is the branch of mathematics concerned with specific functions of angles and their application to calculations. 
