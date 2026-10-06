@@ -14,9 +14,10 @@ Edit directly on GitHub page
 
 ```{toctree}
 :maxdepth: 1
-#chapter00_introduction
+chapter00_introduction
 chapter01_spherical_astronomy
 chapter02_transformation_of_coordinates
+chapter03_telescope_mounts
 ```
 
 
