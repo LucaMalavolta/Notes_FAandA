@@ -468,58 +468,6 @@ For example, $\alpha=6^{\mathrm h}$ and $\delta=30°$ specify a direction whose 
 Unlike horizontal coordinates, equatorial coordinates of a distant star do not change merely because the Earth rotates during the night. They are therefore suitable for catalogues and for comparing observations obtained at different sites. This statement assumes that we use the same reference frame and neglect effects such as stellar proper motion and parallax over the interval considered.
 
 
-#### Hour angle and local sidereal time
-
-To connect a catalogue position to the local sky, we need to know how the observer's meridian is oriented relative to the vernal point. This is the role of **local sidereal time**, which we denote by $\Theta$. Geometrically, $\Theta$ is the hour angle of the vernal point, or equivalently the right ascension of the direction on the equator currently crossing the observer's upper meridian.
-
-The **hour angle** $t$ of an object is measured from the local upper meridian **westward** along the equator. Its direction of increase is opposite to that of right ascension. With all angles expressed in the same units,
-
-$$
-t=\Theta-\alpha\pmod{24^{\mathrm h}}.
-$$
-
-We may instead express $t$ in the interval $-12^{\mathrm h}<t\leq12^{\mathrm h}$: a negative value then places the object east of the meridian, before upper transit, and a positive value places it west of the meridian, after upper transit. At **upper culmination**, $t=0$ and $\Theta=\alpha$. For instance, if the local sidereal time is $10^{\mathrm h}$, a star with $\alpha=8^{\mathrm h}$ has $t=2^{\mathrm h}=30°$ and lies west of the meridian.
-
-Sidereal time is tied to the rotation of the Earth relative to the celestial reference directions. It is not the civil time shown by an ordinary clock. A sidereal day is approximately $23^{\mathrm h}56^{\mathrm m}4^{\mathrm s}$ of mean solar time. The difference arises because the Earth also moves around the Sun while it rotates.
-
-For a terrestrial longitude $\lambda$ taken as positive eastward, the local and Greenwich sidereal times satisfy
-
-$$
-\Theta_{\mathrm{local}}=\Theta_{\mathrm{Greenwich}}+\lambda,
-$$
-
-with the longitude converted to hours if the sidereal times are in hours, and the result reduced modulo $24^{\mathrm h}$. This relation expresses why two observers at different longitudes see different objects on their meridians at the same instant.
-
-#### From equatorial to horizontal coordinates
-
-The coordinate transformation depends on the observer's latitude $\phi$ and on the object's hour angle $t$. Here $\phi$ is the astronomical latitude; for the present calculation, we neglect the deflection of the vertical and use the geodetic value. With azimuth measured from South toward West, the transformation is
-
-$$
-\begin{aligned}
-\sin a&=\sin\phi\sin\delta+\cos\phi\cos\delta\cos t,\\
-\cos a\sin A&=\cos\delta\sin t,\\
-\cos a\cos A&=\sin\phi\cos\delta\cos t-\cos\phi\sin\delta.
-\end{aligned}
-$$
-
-The first relation gives the altitude. The other two determine the azimuth together, avoiding the ambiguity that would arise from using an inverse sine or cosine alone. In numerical calculations, this is conveniently done with the two-argument function $\operatorname{atan2}(y,x)$, using the right-hand sides of the second and third equations as its first and second arguments. The resulting azimuth is then placed in the interval $0°\leq A<360°$.[^transform_reference]
-
-At upper culmination, $t=0$, and the altitude reduces to
-
-$$
-a_{\mathrm{max}}=90°-|\phi-\delta|.
-$$
-
-For Padova, taking $\phi\simeq45.41°$, a star at $\delta=20°$ culminates at approximately $64.59°$. A star at $\delta=\phi$ passes through the zenith, whereas a star at the celestial equator culminates at approximately $44.59°$. Setting $\delta=90°$ in the transformation also shows that the altitude of the North Celestial Pole equals $\phi$; in the Southern hemisphere, the altitude of the South Celestial Pole equals $|\phi|$.
-
-We can also determine whether an object crosses the horizon by setting $a=0$:
-
-$$
-\cos t_0=-\tan\phi\tan\delta.
-$$
-
-For a non-polar observer and an object away from the celestial poles, two crossings occur when the right-hand side lies strictly between $-1$ and $1$. Equality corresponds to tangency at the horizon. If it lies outside this range, the object either remains above the horizon or never rises. In the Northern hemisphere, stars with $\delta>90°-\phi$ are **circumpolar**, while those with $\delta<-(90°-\phi)$ never rise. The corresponding statements in the Southern hemisphere follow by reversing the signs of both latitude and declination. These are geometric conditions; refraction and the local landscape modify actual visibility.
-
 #### Reference epoch and reference frame
 
 The Earth's rotation axis and orbital plane are not fixed for all time. **Precession** and **nutation** change the orientation of the equator and the position of the equinox. Consequently, a classical equatorial position must be associated with a specified equator and equinox, such as those of **J2000.0**. The epoch of a star's position must also be stated when its proper motion is relevant. The epoch at which a position is valid and the orientation of the axes are distinct pieces of information.

@@ -61,7 +61,7 @@
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.63167a53-f534-4fcf-906b-fc650cdd7dea.js"></script>
+    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.ba97c11e-b5a9-4d1e-bfcf-36202174032f.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter01_spherical_astronomy';</script>
@@ -405,8 +405,6 @@ document.write(`
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-celestial-equator-and-the-ecliptic">The celestial equator and the ecliptic</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-coordinates">Equatorial coordinates</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hour-angle-and-local-sidereal-time">Hour angle and local sidereal time</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-equatorial-to-horizontal-coordinates">From equatorial to horizontal coordinates</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-epoch-and-reference-frame">Reference epoch and reference frame</a></li>
 </ul>
 </li>
@@ -433,7 +431,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="spherical-astronomy-and-coordinate-systems">
 <span id="chapter01-spherical-astronomy"></span><h1>Spherical Astronomy and Coordinate Systems<a class="headerlink" href="#spherical-astronomy-and-coordinate-systems" title="Link to this heading">#</a></h1>
 <blockquote>
-<div><p>Sep 30, 2026 | 36 min read</p>
+<div><p>Oct 06, 2026 | 33 min read</p>
 </div></blockquote>
 <section id="the-celestial-sphere">
 <h2>The Celestial Sphere<a class="headerlink" href="#the-celestial-sphere" title="Link to this heading">#</a></h2>
@@ -858,51 +856,6 @@ X=\frac{\int \rho_{\mathrm{air}}\,\mathrm{d}s}
 </figure>
 <p>For example, <span class="math notranslate nohighlight">\(\alpha=6^{\mathrm h}\)</span> and <span class="math notranslate nohighlight">\(\delta=30°\)</span> specify a direction whose hour circle lies <span class="math notranslate nohighlight">\(90°\)</span> east of the vernal point and whose angular distance north of the equator is <span class="math notranslate nohighlight">\(30°\)</span>. At a celestial pole, right ascension is undefined because all hour circles meet there.</p>
 <p>Unlike horizontal coordinates, equatorial coordinates of a distant star do not change merely because the Earth rotates during the night. They are therefore suitable for catalogues and for comparing observations obtained at different sites. This statement assumes that we use the same reference frame and neglect effects such as stellar proper motion and parallax over the interval considered.</p>
-<section id="hour-angle-and-local-sidereal-time">
-<h4>Hour angle and local sidereal time<a class="headerlink" href="#hour-angle-and-local-sidereal-time" title="Link to this heading">#</a></h4>
-<p>To connect a catalogue position to the local sky, we need to know how the observer’s meridian is oriented relative to the vernal point. This is the role of <strong>local sidereal time</strong>, which we denote by <span class="math notranslate nohighlight">\(\Theta\)</span>. Geometrically, <span class="math notranslate nohighlight">\(\Theta\)</span> is the hour angle of the vernal point, or equivalently the right ascension of the direction on the equator currently crossing the observer’s upper meridian.</p>
-<p>The <strong>hour angle</strong> <span class="math notranslate nohighlight">\(t\)</span> of an object is measured from the local upper meridian <strong>westward</strong> along the equator. Its direction of increase is opposite to that of right ascension. With all angles expressed in the same units,</p>
-<div class="math notranslate nohighlight">
-\[
-t=\Theta-\alpha\pmod{24^{\mathrm h}}.
-\]</div>
-<p>We may instead express <span class="math notranslate nohighlight">\(t\)</span> in the interval <span class="math notranslate nohighlight">\(-12^{\mathrm h}&lt;t\leq12^{\mathrm h}\)</span>: a negative value then places the object east of the meridian, before upper transit, and a positive value places it west of the meridian, after upper transit. At <strong>upper culmination</strong>, <span class="math notranslate nohighlight">\(t=0\)</span> and <span class="math notranslate nohighlight">\(\Theta=\alpha\)</span>. For instance, if the local sidereal time is <span class="math notranslate nohighlight">\(10^{\mathrm h}\)</span>, a star with <span class="math notranslate nohighlight">\(\alpha=8^{\mathrm h}\)</span> has <span class="math notranslate nohighlight">\(t=2^{\mathrm h}=30°\)</span> and lies west of the meridian.</p>
-<p>Sidereal time is tied to the rotation of the Earth relative to the celestial reference directions. It is not the civil time shown by an ordinary clock. A sidereal day is approximately <span class="math notranslate nohighlight">\(23^{\mathrm h}56^{\mathrm m}4^{\mathrm s}\)</span> of mean solar time. The difference arises because the Earth also moves around the Sun while it rotates.</p>
-<p>For a terrestrial longitude <span class="math notranslate nohighlight">\(\lambda\)</span> taken as positive eastward, the local and Greenwich sidereal times satisfy</p>
-<div class="math notranslate nohighlight">
-\[
-\Theta_{\mathrm{local}}=\Theta_{\mathrm{Greenwich}}+\lambda,
-\]</div>
-<p>with the longitude converted to hours if the sidereal times are in hours, and the result reduced modulo <span class="math notranslate nohighlight">\(24^{\mathrm h}\)</span>. This relation expresses why two observers at different longitudes see different objects on their meridians at the same instant.</p>
-</section>
-<section id="from-equatorial-to-horizontal-coordinates">
-<h4>From equatorial to horizontal coordinates<a class="headerlink" href="#from-equatorial-to-horizontal-coordinates" title="Link to this heading">#</a></h4>
-<p>The coordinate transformation depends on the observer’s latitude <span class="math notranslate nohighlight">\(\phi\)</span> and on the object’s hour angle <span class="math notranslate nohighlight">\(t\)</span>. Here <span class="math notranslate nohighlight">\(\phi\)</span> is the astronomical latitude; for the present calculation, we neglect the deflection of the vertical and use the geodetic value. With azimuth measured from South toward West, the transformation is</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\sin a&amp;=\sin\phi\sin\delta+\cos\phi\cos\delta\cos t,\\
-\cos a\sin A&amp;=\cos\delta\sin t,\\
-\cos a\cos A&amp;=\sin\phi\cos\delta\cos t-\cos\phi\sin\delta.
-\end{aligned}
-\end{split}\]</div>
-<p>The first relation gives the altitude. The other two determine the azimuth together, avoiding the ambiguity that would arise from using an inverse sine or cosine alone. In numerical calculations, this is conveniently done with the two-argument function <span class="math notranslate nohighlight">\(\operatorname{atan2}(y,x)\)</span>, using the right-hand sides of the second and third equations as its first and second arguments. The resulting azimuth is then placed in the interval <span class="math notranslate nohighlight">\(0°\leq A&lt;360°\)</span>.<label for='sidenote-role-7' class='margin-toggle'><span id="id9">
-<sup>7</sup></span>
-
-</label><input type='checkbox' id='sidenote-role-7' name='sidenote-role-7' class='margin-toggle'><span class="sidenote"><sup>7</sup>Barbieri and Bertini (2021), Section 3.1, pp. 36–39; Karttunen et al. (2017), Sections 2.5–2.6, pp. 17–23. The azimuth components have been written for the South-through-West convention used in this chapter.</span></p>
-<p>At upper culmination, <span class="math notranslate nohighlight">\(t=0\)</span>, and the altitude reduces to</p>
-<div class="math notranslate nohighlight">
-\[
-a_{\mathrm{max}}=90°-|\phi-\delta|.
-\]</div>
-<p>For Padova, taking <span class="math notranslate nohighlight">\(\phi\simeq45.41°\)</span>, a star at <span class="math notranslate nohighlight">\(\delta=20°\)</span> culminates at approximately <span class="math notranslate nohighlight">\(64.59°\)</span>. A star at <span class="math notranslate nohighlight">\(\delta=\phi\)</span> passes through the zenith, whereas a star at the celestial equator culminates at approximately <span class="math notranslate nohighlight">\(44.59°\)</span>. Setting <span class="math notranslate nohighlight">\(\delta=90°\)</span> in the transformation also shows that the altitude of the North Celestial Pole equals <span class="math notranslate nohighlight">\(\phi\)</span>; in the Southern hemisphere, the altitude of the South Celestial Pole equals <span class="math notranslate nohighlight">\(|\phi|\)</span>.</p>
-<p>We can also determine whether an object crosses the horizon by setting <span class="math notranslate nohighlight">\(a=0\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
-\cos t_0=-\tan\phi\tan\delta.
-\]</div>
-<p>For a non-polar observer and an object away from the celestial poles, two crossings occur when the right-hand side lies strictly between <span class="math notranslate nohighlight">\(-1\)</span> and <span class="math notranslate nohighlight">\(1\)</span>. Equality corresponds to tangency at the horizon. If it lies outside this range, the object either remains above the horizon or never rises. In the Northern hemisphere, stars with <span class="math notranslate nohighlight">\(\delta&gt;90°-\phi\)</span> are <strong>circumpolar</strong>, while those with <span class="math notranslate nohighlight">\(\delta&lt;-(90°-\phi)\)</span> never rise. The corresponding statements in the Southern hemisphere follow by reversing the signs of both latitude and declination. These are geometric conditions; refraction and the local landscape modify actual visibility.</p>
-</section>
 <section id="reference-epoch-and-reference-frame">
 <h4>Reference epoch and reference frame<a class="headerlink" href="#reference-epoch-and-reference-frame" title="Link to this heading">#</a></h4>
 <p>The Earth’s rotation axis and orbital plane are not fixed for all time. <strong>Precession</strong> and <strong>nutation</strong> change the orientation of the equator and the position of the equinox. Consequently, a classical equatorial position must be associated with a specified equator and equinox, such as those of <strong>J2000.0</strong>. The epoch of a star’s position must also be stated when its proper motion is relevant. The epoch at which a position is valid and the orientation of the axes are distinct pieces of information.</p>
@@ -911,10 +864,10 @@ a_{\mathrm{max}}=90°-|\phi-\delta|.
 </section>
 <section id="ecliptic-coordinates">
 <h3>Ecliptic coordinates<a class="headerlink" href="#ecliptic-coordinates" title="Link to this heading">#</a></h3>
-<p>The <strong>ecliptic coordinate system</strong> takes the ecliptic as its reference plane. The directions perpendicular to this plane define the <strong>North Ecliptic Pole</strong> and <strong>South Ecliptic Pole</strong>. These must be distinguished from the celestial poles, which refer to the Earth’s rotation axis. The angle between the two north poles is <span class="math notranslate nohighlight">\(\varepsilon\)</span>.<label for='sidenote-role-8' class='margin-toggle'><span id="id10">
-<sup>8</sup></span>
+<p>The <strong>ecliptic coordinate system</strong> takes the ecliptic as its reference plane. The directions perpendicular to this plane define the <strong>North Ecliptic Pole</strong> and <strong>South Ecliptic Pole</strong>. These must be distinguished from the celestial poles, which refer to the Earth’s rotation axis. The angle between the two north poles is <span class="math notranslate nohighlight">\(\varepsilon\)</span>.<label for='sidenote-role-7' class='margin-toggle'><span id="id9">
+<sup>7</sup></span>
 
-</label><input type='checkbox' id='sidenote-role-8' name='sidenote-role-8' class='margin-toggle'><span class="sidenote"><sup>8</sup>Barbieri and Bertini (2021), Section 2.5, pp. 29–31, and Section 3.2; Hanslmeier (2023), Sections 2.1.4 and 2.1.6, pp. 9–12.</span></p>
+</label><input type='checkbox' id='sidenote-role-7' name='sidenote-role-7' class='margin-toggle'><span class="sidenote"><sup>7</sup>Barbieri and Bertini (2021), Section 2.5, pp. 29–31, and Section 3.2; Hanslmeier (2023), Sections 2.1.4 and 2.1.6, pp. 9–12.</span></p>
 <p>The <strong>ecliptic longitude</strong> <span class="math notranslate nohighlight">\(\lambda\)</span> is measured from the vernal point along the ecliptic, eastward in the direction of the Sun’s annual motion, with <span class="math notranslate nohighlight">\(0°\leq\lambda&lt;360°\)</span>. The <strong>ecliptic latitude</strong> <span class="math notranslate nohighlight">\(\beta\)</span> is measured along a great circle perpendicular to the ecliptic, with <span class="math notranslate nohighlight">\(-90°\leq\beta\leq90°\)</span>. It is positive toward the North Ecliptic Pole. The symbol <span class="math notranslate nohighlight">\(\lambda\)</span> is also used for terrestrial longitude, but the reference plane and the zero direction are different; the context determines which quantity is meant.</p>
 <figure class="align-center" id="fig19-ecliptic-coordinates">
 <a class="reference internal image-reference" href="_images/fig19_ecliptic_coordinates.png"><img alt="_images/fig19_ecliptic_coordinates.png" src="_images/fig19_ecliptic_coordinates.png" style="width: 70%;" />
@@ -1004,10 +957,10 @@ a_{\mathrm{max}}=90°-|\phi-\delta|.
 </section>
 <section id="galactic-coordinates">
 <h3>Galactic coordinates<a class="headerlink" href="#galactic-coordinates" title="Link to this heading">#</a></h3>
-<p>For studies of the Milky Way, a reference plane related to the Galaxy is often more useful than one related to the Earth’s rotation or orbit. The <strong>galactic coordinate system</strong> uses a conventional plane representing the orientation of the Galactic disc. The <strong>North Galactic Pole</strong> and <strong>South Galactic Pole</strong> are perpendicular to this plane.<label for='sidenote-role-9' class='margin-toggle'><span id="id11">
-<sup>9</sup></span>
+<p>For studies of the Milky Way, a reference plane related to the Galaxy is often more useful than one related to the Earth’s rotation or orbit. The <strong>galactic coordinate system</strong> uses a conventional plane representing the orientation of the Galactic disc. The <strong>North Galactic Pole</strong> and <strong>South Galactic Pole</strong> are perpendicular to this plane.<label for='sidenote-role-8' class='margin-toggle'><span id="id10">
+<sup>8</sup></span>
 
-</label><input type='checkbox' id='sidenote-role-9' name='sidenote-role-9' class='margin-toggle'><span class="sidenote"><sup>9</sup>Barbieri and Bertini (2021), Section 2.6, pp. 31–32; Karttunen et al. (2017), Section 2.7, pp. 23–25; Hanslmeier (2023), Section 2.1.5, p. 10. The approximate equatorial direction of the Galactic Centre also follows slide 20.</span></p>
+</label><input type='checkbox' id='sidenote-role-8' name='sidenote-role-8' class='margin-toggle'><span class="sidenote"><sup>8</sup>Barbieri and Bertini (2021), Section 2.6, pp. 31–32; Karttunen et al. (2017), Section 2.7, pp. 23–25; Hanslmeier (2023), Section 2.1.5, p. 10. The approximate equatorial direction of the Galactic Centre also follows slide 20.</span></p>
 <p>The <strong>galactic latitude</strong> <span class="math notranslate nohighlight">\(b\)</span> measures the angular distance from the galactic plane along a great circle, with <span class="math notranslate nohighlight">\(-90°\leq b\leq90°\)</span>. The <strong>galactic longitude</strong> <span class="math notranslate nohighlight">\(l\)</span> is measured along the galactic equator from the adopted zero direction near the Galactic Centre, with <span class="math notranslate nohighlight">\(0°\leq l&lt;360°\)</span>. It increases counterclockwise when viewed from the North Galactic Pole.</p>
 <p>In the elementary construction, the observer is placed at the Sun. Thus, the system describes directions <strong>as seen from the Solar neighbourhood</strong>. It is not a coordinate system centred on the Galactic Centre. The finite distance between the Earth and Sun can usually be neglected for the large-scale Galactic applications considered here, although precise observed positions still require an explicitly stated origin.</p>
 <figure class="align-center" id="fig21-galactic-coordinates">
@@ -1084,6 +1037,12 @@ a_{\mathrm{max}}=90°-|\phi-\delta|.
 </section>
 </section>
 <hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="transform-reference" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></span>
+<p>Barbieri and Bertini (2021), Section 3.1, pp. 36–39; Karttunen et al. (2017), Sections 2.5–2.6, pp. 17–23. The azimuth components have been written for the South-through-West convention used in this chapter.</p>
+</aside>
+</aside>
 
 
                 </article>
@@ -1156,8 +1115,6 @@ a_{\mathrm{max}}=90°-|\phi-\delta|.
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-celestial-equator-and-the-ecliptic">The celestial equator and the ecliptic</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equatorial-coordinates">Equatorial coordinates</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hour-angle-and-local-sidereal-time">Hour angle and local sidereal time</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#from-equatorial-to-horizontal-coordinates">From equatorial to horizontal coordinates</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-epoch-and-reference-frame">Reference epoch and reference frame</a></li>
 </ul>
 </li>

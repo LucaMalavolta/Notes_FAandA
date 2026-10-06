@@ -6,7 +6,7 @@
 
 The coordinate systems introduced in the previous chapter describe the same physical direction using different reference planes, poles, and zero points. A star does not move merely because we replace right ascension and declination with ecliptic longitude and latitude; only its numerical description changes. The purpose of a **coordinate transformation** is to perform this change without altering the geometric direction represented by the coordinates.
 
-In this chapter, all transformations between systems with the same origin are treated as rotations. We first develop the Cartesian description of a rotation, then apply it to spherical coordinates. The same formalism leads naturally to the transformations between equatorial, ecliptic, and horizontal coordinates. The final sections use these relations to discuss sidereal time, rising and setting, the annual motion of the Sun, and the apparent angular velocity of a celestial target.
+In this chapter, **all transformations between systems with the same origin are treated as rotations**. We first develop the Cartesian description of a rotation, then apply it to spherical coordinates. The same formalism leads naturally to the transformations between equatorial, ecliptic, and horizontal coordinates. The final sections use these relations to discuss sidereal time, rising and setting, the annual motion of the Sun, and the apparent angular velocity of a celestial target.
 
 Unless explicitly stated otherwise, angles appearing in trigonometric functions are understood to be in radians. Numerical angles may also be quoted in degrees or hours for convenience.
 
@@ -37,7 +37,7 @@ in the second one. The vector itself is unchanged. Only the axes onto which it i
 :align: center
 :name: fig01_rotation_frames
 
-The same point $P$ described in two Cartesian frames that share the origin. The lowercase and uppercase axes are related by a rigid rotation. Extracted from *Lesson 02 - Transformation of Coordinates*, slide 2.
+**Figure 1** The same point $P$ described in two Cartesian frames that share the origin. The lowercase and uppercase axes are related by a rigid rotation. 
 ```
 
 Let $\theta_{xX}$ be the angle between the positive $x$ and $X$ axes, and define the other angles between pairs of old and new axes in the same way. The new components are the projections of the vector onto the new axes:
@@ -101,7 +101,7 @@ Astronomical positions are most naturally expressed using spherical, or polar, c
 :align: center
 :name: fig02_polar_coordinates
 
-Definition of the polar coordinates $(r,\lambda,\beta)$ used in this chapter. The latitude-like angle $\beta$ is measured from the reference plane. Extracted from slide 3 and converted from TIFF to PNG without altering its content.
+**Figure 2** Definition of the polar coordinates $(r,\lambda,\beta)$ used in this chapter. The latitude-like angle $\beta$ is measured from the reference plane. 
 ```
 
 The corresponding Cartesian components are
@@ -154,14 +154,14 @@ We use the passive convention of the presentation. A rotation of the coordinate 
 :align: center
 :name: fig03_rotation_x
 
-A passive rotation about the common $x=X$ axis. The $y$ and $z$ axes rotate into $Y$ and $Z$. Extracted from slide 4 and converted from TIFF to PNG without altering its content.
+**Figure 3** A passive rotation about the common $x=X$ axis.
 ```
 
 The relevant direction angles are
 
 $$
 \begin{aligned}
-&\theta_{xX}=0,\qquad \theta_{yX}=\theta_{zX}=\frac{\pi}{2},\\
+&\theta_{xX}=0,\qquad \theta_{yX}=\frac{\pi}{2},\qquad \theta_{zX}=\frac{\pi}{2},\\
 &\theta_{xY}=\frac{\pi}{2},\qquad \theta_{yY}=\phi_1,
 \qquad \theta_{zY}=\frac{3\pi}{2}+\phi_1,\\
 &\theta_{xZ}=\frac{\pi}{2},\qquad \theta_{yZ}=\frac{\pi}{2}+\phi_1,
@@ -216,12 +216,12 @@ The matrix on the right acts first. Rotations do not generally commute, so inter
 :align: center
 :name: fig04_successive_rotations
 
-An example of three successive rotations. The order is an essential part of the definition. Extracted from slide 5.
+**Figure 4** An example of three successive rotations. The order is an essential part of the definition. 
 ```
 
 ## From equatorial to ecliptic coordinates
 
-The equatorial system $(\alpha,\delta)$ and the ecliptic system $(\lambda,\beta)$ share the same origin and the same positive $x$ axis, directed toward the vernal point $\gamma$. Their reference planes are inclined by the obliquity of the ecliptic,
+The **equatorial system** $(\alpha,\delta)$ and the **ecliptic system** $(\lambda,\beta)$ share the same origin and the same positive $x$ axis, directed toward the vernal point $\gamma$. Their reference planes are inclined by the obliquity of the ecliptic,
 
 $$
 \varepsilon\simeq23^\circ26'=23.43^\circ\simeq0.409\ \mathrm{rad}.
@@ -234,7 +234,7 @@ Only one rotation, about the common $x$ axis, is required ([Figure 5](fig05_equa
 :align: center
 :name: fig05_equatorial_ecliptic
 
-The celestial equator and ecliptic share the vernal direction but have different poles. Their relative orientation is a rotation through the obliquity $\varepsilon$. Extracted from slide 6.
+**Figure 5** The celestial equator and ecliptic share the vernal direction but have different poles. Their relative orientation is a rotation through the obliquity $\varepsilon$. 
 ```
 
 With the passive convention introduced above, the transformation from equatorial to ecliptic Cartesian components is
@@ -282,7 +282,24 @@ Although only two angular coordinates are unknown, three component equations are
 
 ## From horizontal to equatorial coordinates
 
-The horizontal and equatorial reference planes intersect along the East--West direction. Their relative inclination is fixed by the observer's astronomical latitude $\phi$: the altitude of the North Celestial Pole is $\phi$ in the Northern hemisphere.
+Before checking the transformation between the **horizontal** and **equatorial** systems, we must remeber that the horizontal system is a *topocentric* system, i.e., it is centered on the observer (usually but not necessarily on the surface of the planet) while the equatorial system is *geocentric*, i.e., centered on the barycenter of our planet. To simplyfy the equations, we translate the observer to the center of Earth, noting that celetials objects are usually so far that  a shift of thousands of kilometers should not matter. This may not be true for objects in a Low Earth Orbit.
+
+The **horizontal** and **equatorial** reference planes intersect along the East--West direction. Their relative inclination is fixed by the observer's astronomical latitude $\phi$: the altitude of the North Celestial Pole is $\phi$ in the Northern hemisphere.
+
+
+### Hour angle
+
+The **hour angle** $HA$ of an object is measured from the local upper meridian **westward** along the **equator**. Its direction of increase is opposite to that of right ascension. 
+
+We express $HA$ in the interval $-12^{\mathrm h}<t\leq12^{\mathrm h}$: a negative value then places the object east of the meridian, before upper transit, and a positive value places it west of the meridian, after upper transit. At **upper culmination**, when the target is passing through the local meridian on the South side, $HA=0$. 
+
+```{figure} _static/_chapter02/fig06a_horizontal_system.png
+:width: 65%
+:align: center
+:name: fig06a_horizontal_system
+
+**Figure 6** The hour angle $HA$ simplify the transformation between the equatorial and the horizontal system, by allowing a rotation around the East-West axis.
+```
 
 ### Adopted azimuth convention
 
@@ -293,18 +310,20 @@ S=0^\circ,\qquad W=90^\circ,\qquad N=180^\circ,\qquad E=270^\circ,
 \qquad 0^\circ\leq A<360^\circ.
 $$
 
-The altitude is denoted by $a$, with $-90^\circ\leq a\leq90^\circ$. The slides use the letter $h$ for this same quantity; we retain $a$ to avoid confusing altitude with the hour angle. The hour angle is denoted by $H$ and increases westward from the local meridian.
+The altitude is denoted by $h$, with $-90^\circ\leq h\leq90^\circ$.  The hour angle is denoted by $HA$ and increases westward from the local meridian.
 
-With these conventions, the transformation from horizontal coordinates $(A,a)$ to hour angle and declination $(H,\delta)$ is
+### Transformations
+
+With these conventions, the transformation from horizontal coordinates $(A,h)$ to hour angle and declination $(HA,\delta)$ is
 
 $$
 \begin{aligned}
-\cos\delta\sin H
-  &=\cos a\sin A,\\
-\cos\delta\cos H
-  &=\cos a\cos A\sin\phi+\sin a\cos\phi,\\
+\cos\delta\sin HA
+  &=\cos h\sin A,\\
+\cos\delta\cos HA
+  &=\cos h\cos A\sin\phi+\sin h\cos\phi,\\
 \sin\delta
-  &=-\cos a\cos A\cos\phi+\sin a\sin\phi.
+  &=-\cos h\cos A\cos\phi+\sin h\sin\phi.
 \end{aligned}
 $$
 
@@ -312,23 +331,23 @@ The first two relations determine the hour angle with the correct quadrant,
 
 $$
 H=\operatorname{atan2}\!\left(
-\cos a\sin A,
-\cos a\cos A\sin\phi+\sin a\cos\phi
+\cos h\sin A,
+\cos h\cos A\sin\phi+\sin h\cos\phi
 \right),
 $$
 
 while the third gives the declination.
 
-The inverse transformation, from $(H,\delta)$ to $(A,a)$, is
+The inverse transformation, from $(HA,\delta)$ to $(A,h)$, is
 
 $$
 \begin{aligned}
-\cos a\sin A
-  &=\cos\delta\sin H,\\
-\cos a\cos A
-  &=\cos\delta\cos H\sin\phi-\sin\delta\cos\phi,\\
-\sin a
-  &=\cos\delta\cos H\cos\phi+\sin\delta\sin\phi.
+\cos h\sin A
+  &=\cos\delta\sin HA,\\
+\cos h\cos A
+  &=\cos\delta\cos HA\sin\phi-\sin\delta\cos\phi,\\
+\sin h
+  &=\cos\delta\cos HA\cos\phi+\sin\delta\sin\phi.
 \end{aligned}
 $$
 
@@ -336,8 +355,8 @@ Thus,
 
 $$
 A=\operatorname{atan2}\!\left(
-\cos\delta\sin H,
-\cos\delta\cos H\sin\phi-\sin\delta\cos\phi
+\cos\delta\sin HA,
+\cos\delta\cos HA\sin\phi-\sin\delta\cos\phi
 \right)
 $$
 
@@ -347,14 +366,14 @@ reduced to $0^\circ\leq A<360^\circ$. An inverse sine or cosine alone cannot dis
 
 For an ideal rotation, the matrices above are sufficient. Accurate astronomical work must additionally specify the reference frame, epoch, observation time, observer location, Earth orientation, atmospheric refraction, and sometimes the distance and velocity of the target. Modern software packages keep these pieces of information attached to the coordinates and apply a chain of transformations rather than relying on a pair of unlabeled angles.
 
-The `astropy.coordinates` package, shown in [Figure 6](fig06_astropy_coordinates), represents positions with objects such as `SkyCoord` and transforms them between explicitly defined frames. A conversion to a topocentric `AltAz` frame, for example, requires an observing time and an Earth location.[^astropy_coordinates]
+The `astropy.coordinates` package, shown in [Figure 7](fig06_astropy_coordinates), represents positions with objects such as `SkyCoord` and transforms them between explicitly defined frames. A conversion to a topocentric `AltAz` frame, for example, requires an observing time and an Earth location.[^astropy_coordinates]
 
 ```{figure} _static/_chapter02/fig06_astropy_coordinates.png
 :width: 100%
 :align: center
 :name: fig06_astropy_coordinates
 
-The coordinate-system documentation of Astropy, as shown in slide 8. The screenshot is extracted directly from the presentation.
+**Figure 7** The coordinate-system documentation of Astropy, as shown in slide 8.
 ```
 
 There is an important convention change: Astropy's `AltAz` azimuth is measured eastward from North, so $N=0^\circ$ and $E=90^\circ$. If $A_{\mathrm{Astropy}}$ is returned by Astropy, the convention used in this chapter is obtained from
@@ -367,10 +386,10 @@ The same conversion applies in the opposite direction. Refraction is another exp
 
 ## Sidereal time
 
-Right ascension, hour angle, and sidereal time are three angles measured on the celestial equator ([Figure 7](fig07_sidereal_geometry)):
+Right ascension, hour angle, and sidereal time are three angles measured on the celestial equator ([Figure 8](fig07_sidereal_geometry)):
 
 - the **right ascension** $\alpha$ is measured eastward, or counterclockwise when viewed from the North Celestial Pole, from the vernal point to the object's hour circle;
-- the **hour angle** $H$ is measured westward, or clockwise in the same view, from the local meridian to the object's hour circle;
+- the **hour angle** $HA$ is measured westward, or clockwise in the same view, from the local meridian to the object's hour circle;
 - the **local sidereal time** $\Theta$ is the hour angle of the vernal point, equivalently the right ascension currently crossing the local upper meridian.
 
 ```{figure} _static/_chapter02/fig07_sidereal_geometry.png
@@ -378,18 +397,29 @@ Right ascension, hour angle, and sidereal time are three angles measured on the 
 :align: center
 :name: fig07_sidereal_geometry
 
-Geometric relation among right ascension, hour angle, and local sidereal time. Extracted from slide 9.
+**Figure 8** Geometric relation among right ascension, hour angle, and local sidereal time.
 ```
+
+Sidereal time is tied to the rotation of the Earth relative to the celestial reference directions. It is not the civil time shown by an ordinary clock. A sidereal day is approximately $23^{\mathrm h}56^{\mathrm m}4^{\mathrm s}$ of mean solar time. The difference arises because the Earth also moves around the Sun while it rotates.
+
+For a terrestrial longitude $\lambda$ taken as positive eastward, the local and Greenwich sidereal times satisfy
+
+$$
+\Theta_{\mathrm{local}}=\Theta_{\mathrm{Greenwich}}+\lambda,
+$$
+
+with the longitude converted to hours if the sidereal times are in hours, and the result reduced modulo $24^{\mathrm h}$. This relation expresses why two observers at different longitudes see different objects on their meridians at the same instant.
+
 
 Because right ascension and hour angle increase in opposite directions,
 
 $$
-\boxed{\Theta=H+\alpha},
+\boxed{\Theta=HA+\alpha},
 \qquad
-\boxed{H=\Theta-\alpha}.
+\boxed{HA=\Theta-\alpha}.
 $$
 
-All three quantities must be expressed in the same angular unit. It is often convenient to use hours, with $24^{\mathrm h}=360^\circ$. A star on the upper meridian has $H=0$ and therefore $\alpha=\Theta$. Before upper culmination its hour angle is negative; after culmination it is positive. Angles may instead be reduced to the interval $0^{\mathrm h}\leq H<24^{\mathrm h}$, but the signed interval $-12^{\mathrm h}<H\leq12^{\mathrm h}$ makes the before/after distinction more transparent.[^sidereal_reference]
+All three quantities must be expressed in the same angular unit. It is often convenient to use hours, with $24^{\mathrm h}=360^\circ$. A star on the upper meridian has $H=0$ and therefore $\alpha=\Theta$. Before upper culmination its hour angle is negative; after culmination it is positive. Angles may instead be reduced to the interval $0^{\mathrm h}\leq HA<24^{\mathrm h}$, but the signed interval $-12^{\mathrm h}<HA\leq12^{\mathrm h}$ makes the before/after distinction more transparent.[^sidereal_reference]
 
 ### Example: the passage of Vega across the meridian
 
@@ -404,23 +434,23 @@ $$
 At $\Theta=18^{\mathrm h}00^{\mathrm m}00^{\mathrm s}$,
 
 $$
-H=-0^{\mathrm h}37^{\mathrm m}43.2^{\mathrm s},
+HA=-0^{\mathrm h}37^{\mathrm m}43.2^{\mathrm s},
 $$
 
-so Vega is still east of the meridian. The horizontal transformation for $\phi\simeq45.4^\circ$ gives approximately $a=80.4^\circ$ and $A=310^\circ$ in the South-through-West convention, as illustrated in [Figure 8](fig08_sidereal_1800).
+so Vega is still east of the meridian. The horizontal transformation for $\phi\simeq45.4^\circ$ gives approximately $a=80.4^\circ$ and $A=310^\circ$ in the South-through-West convention, as illustrated in [Figure 9](fig08_sidereal_1800).
 
 ```{figure} _static/_chapter02/fig08_sidereal_1800.png
 :width: 90%
 :align: center
 :name: fig08_sidereal_1800
 
-Vega shortly before upper culmination, when the local sidereal time is $18^{\mathrm h}$. The Stellarium azimuth readout in this extracted slide image uses North through East; the text of this chapter converts it to South through West.
+**Figure 9** Vega shortly before upper culmination, when the local sidereal time is $18^{\mathrm h}$. The Stellarium azimuth readout in this extracted slide image uses North through East; the text of this chapter converts it to South through West.
 ```
 
-At $\Theta=18^{\mathrm h}38^{\mathrm m}10^{\mathrm s}$, the hour angle is only about $+27$ seconds of time. Vega is therefore essentially on the upper meridian ([Figure 9](fig09_sidereal_183810)). Its altitude is
+At $\Theta=18^{\mathrm h}38^{\mathrm m}10^{\mathrm s}$, the hour angle is only about $+27$ seconds of time. Vega is therefore essentially on the upper meridian ([Figure 10](fig09_sidereal_183810)). Its altitude is
 
 $$
-a_{\mathrm{upper}}=90^\circ-|\phi-\delta|
+h_{\mathrm{upper}}=90^\circ-|\phi-\delta|
 \simeq83.4^\circ,
 $$
 
@@ -431,13 +461,13 @@ and its azimuth is close to $A=0^\circ$, due South.
 :align: center
 :name: fig09_sidereal_183810
 
-Vega at upper culmination. Its right ascension is nearly equal to the local sidereal time. Extracted from slide 11; the displayed software azimuth follows the North-through-East convention.
+**Figure 10** Vega at upper culmination. Its right ascension is nearly equal to the local sidereal time. The displayed software azimuth follows the North-through-East convention.
 ```
 
-Finally, at $\Theta=20^{\mathrm h}40^{\mathrm m}00^{\mathrm s}$ ([Figure 10](fig10_sidereal_204000)),
+Finally, at $\Theta=20^{\mathrm h}40^{\mathrm m}00^{\mathrm s}$ ([Figure 11](fig10_sidereal_204000)),
 
 $$
-H\simeq+2^{\mathrm h}02^{\mathrm m}17^{\mathrm s},
+HA\simeq+2^{\mathrm h}02^{\mathrm m}17^{\mathrm s},
 $$
 
 so Vega has moved west of the meridian. The ideal transformation gives approximately $a=66.5^\circ$ and $A=84.6^\circ$, close to the West direction in our convention.
@@ -447,7 +477,7 @@ so Vega has moved west of the meridian. The ideal transformation gives approxima
 :align: center
 :name: fig10_sidereal_204000
 
-Vega after upper culmination, at local sidereal time $20^{\mathrm h}40^{\mathrm m}$. Extracted from slide 12; the software azimuth must again be shifted by $180^\circ$ to match this chapter.
+**Figure 11** Vega after upper culmination, at local sidereal time $20^{\mathrm h}40^{\mathrm m}$. The software azimuth must again be shifted by $180^\circ$ to match this chapter.
 ```
 
 The small differences between the values calculated above and the values visible in the screenshots can arise from the exact site coordinates, epoch, precession, nutation, refraction settings, and the equatorial coordinates adopted by the software.
@@ -462,28 +492,28 @@ $$
 23^{\mathrm h}56^{\mathrm m}04.1^{\mathrm s}.
 $$
 
-During one sidereal day the Earth completes one rotation relative to the stars, but it has also advanced along its orbit. It must rotate by about one additional degree before the Sun returns to the meridian. The solar day is consequently about $3^{\mathrm m}56^{\mathrm s}$ longer than the sidereal day ([Figure 11](fig11_sidereal_solar_day)).
+During one sidereal day the Earth completes one rotation relative to the stars, but it has also advanced along its orbit. It must rotate by about one additional degree before the Sun returns to the meridian. The solar day is consequently about $3^{\mathrm m}56^{\mathrm s}$ longer than the sidereal day ([Figure 12](fig11_sidereal_solar_day)).
 
 ```{figure} _static/_chapter02/fig11_sidereal_solar_day.png
 :width: 55%
 :align: center
 :name: fig11_sidereal_solar_day
 
-The sidereal day ends when a distant reference star returns to the meridian. The mean solar day ends only after the additional rotation needed to compensate for the Earth's orbital motion. Extracted from slide 13.
+**Figure 11** The sidereal day ends when a distant reference star returns to the meridian. The mean solar day ends only after the additional rotation needed to compensate for the Earth's orbital motion. 
 ```
 
 Equivalently, at a fixed civil time the local sidereal time advances by almost four minutes from one date to the next. A given star therefore crosses the meridian approximately four minutes earlier on each successive solar day.
 
 ### Example: the Sun and Betelgeuse
 
-On 20 June in the example from the presentation, the Sun and Betelgeuse lie close to the local meridian at the selected civil time ([Figure 12](fig12_betelgeuse_june20)).
+On 20 June in the example from the presentation, the Sun and Betelgeuse lie close to the local meridian at the selected civil time ([Figure 13](fig12_betelgeuse_june20)).
 
 ```{figure} _static/_chapter02/fig12_betelgeuse_june20.png
 :width: 90%
 :align: center
 :name: fig12_betelgeuse_june20
 
-The Sun and Betelgeuse close to the local meridian on 20 June. Extracted from slide 14. The azimuth readout uses the software's North-through-East convention.
+**Figure 13** The Sun and Betelgeuse close to the local meridian on 20 June. The azimuth readout uses the software's North-through-East convention.
 ```
 
 One week later, at the same civil time, the local sidereal time has advanced by approximately
@@ -492,28 +522,28 @@ $$
 7\times3^{\mathrm m}56^{\mathrm s}\simeq27^{\mathrm m}32^{\mathrm s}.
 $$
 
-Betelgeuse has therefore already crossed the meridian, while the Sun is again close to it ([Figure 13](fig13_betelgeuse_june27)). This is the observational meaning of the statement that the sidereal clock runs faster than the solar clock.
+Betelgeuse has therefore already crossed the meridian, while the Sun is again close to it ([Figure 14](fig13_betelgeuse_june27)). This is the observational meaning of the statement that the sidereal clock runs faster than the solar clock.
 
 ```{figure} _static/_chapter02/fig13_betelgeuse_june27.png
 :width: 90%
 :align: center
 :name: fig13_betelgeuse_june27
 
-At the same civil time one week later, Betelgeuse is already west of the meridian. Extracted from slide 15.
+**Figure 14** At the same civil time one week later, Betelgeuse is already west of the meridian. 
 ```
 
 ## The apparent daily motion of the stars
 
 The altitude of the North Celestial Pole equals the observer's latitude $\phi$. As the Earth rotates, a star with fixed declination describes a small circle parallel to the celestial equator. Its altitude generally changes continuously, but its angular distance from the celestial pole remains constant.
 
-A star reaches an extremum of altitude whenever it crosses the meridian. The **upper culmination** is the transit closest to the zenith and normally provides the greatest altitude. The **lower culmination** occurs twelve sidereal hours later, on the opposite branch of the meridian. [Figure 14](fig14_daily_star_motion) shows these daily circles, while [Figure 15](fig15_star_trails) records them as star trails around the celestial pole.
+A star reaches an extremum of altitude whenever it crosses the meridian. The **upper culmination** is the transit closest to the zenith and normally provides the greatest altitude. The **lower culmination** occurs twelve sidereal hours later, on the opposite branch of the meridian. [Figure 15](fig14_daily_star_motion) shows these daily circles, while [Figure 16](fig15_star_trails) records them as star trails around the celestial pole.
 
 ```{figure} _static/_chapter02/fig14_daily_star_motion.png
 :width: 55%
 :align: center
 :name: fig14_daily_star_motion
 
-Daily paths of stars at different declinations. A sufficiently high positive declination produces a circumpolar path for an observer in the Northern hemisphere. Extracted from slides 17--19.
+**Figure 15** Daily paths of stars at different declinations. A sufficiently high positive declination produces a circumpolar path for an observer in the Northern hemisphere. 
 ```
 
 ```{figure} _static/_chapter02/fig15_star_trails.png
@@ -521,7 +551,7 @@ Daily paths of stars at different declinations. A sufficiently high positive dec
 :align: center
 :name: fig15_star_trails
 
-Long-exposure star trails centred approximately on a celestial pole. Extracted from slide 17.
+**Figure 16** Long-exposure star trails centred approximately on a celestial pole.
 ```
 
 If the entire daily circle remains above the horizon, the star is **circumpolar**. If the entire circle remains below the horizon, the star never rises. The intermediate case is a star that rises and sets once during each sidereal day.
@@ -531,28 +561,28 @@ If the entire daily circle remains above the horizon, the star is **circumpolar*
 Given $(\alpha,\delta)$ and the local sidereal time, the first step is always
 
 $$
-H=\Theta-\alpha.
+HA=\Theta-\alpha.
 $$
 
-The altitude then follows from
+The altitude $h$ then follows from
 
 $$
-\sin a=\cos\delta\cos H\cos\phi+\sin\delta\sin\phi.
+\sin h=\cos\delta\cos HA\cos\phi+\sin\delta\sin\phi.
 $$
 
-An ideal point source is on the astronomical horizon when $a=0$. Setting $\sin a=0$ gives the hour angle at rising or setting:
+An ideal point source is on the astronomical horizon when $h=0$. Setting $\sin h=0$ gives the hour angle at rising or setting:
 
 $$
-\boxed{\cos H_0=-\tan\phi\tan\delta}.
+\boxed{\cos HA_0=-\tan\phi\tan\delta}.
 $$
 
-When a crossing exists, $H=-H_0$ is the rising solution and $H=+H_0$ is the setting solution. The corresponding horizon azimuth satisfies
+When a crossing exists, $HA=-HA_0$ is the rising solution and $HA=+HA_0$ is the setting solution. The corresponding horizon azimuth satisfies
 
 $$
 \boxed{\cos A_0=-\frac{\sin\delta}{\cos\phi}}.
 $$
 
-The sign of $\sin A$ selects the event. Since a rising star has $H<0$, it also has $\sin A<0$; a setting star has $H>0$ and $\sin A>0$. In the South-through-West convention,
+The sign of $\sin A$ selects the event. Since a rising star has $HA<0$, it also has $\sin A<0$; a setting star has $HA>0$ and $\sin A>0$. In the South-through-West convention,
 
 $$
 A_{\mathrm{rise}}=360^\circ-\arccos\!\left(-\frac{\sin\delta}{\cos\phi}\right),
@@ -593,20 +623,20 @@ The criteria are the mirror image of the Northern-hemisphere case. A compact sta
 At upper and lower culmination, the geometric altitudes are
 
 $$
-\boxed{a_{\mathrm{upper}}=90^\circ-|\phi-\delta|},
+\boxed{h_{\mathrm{upper}}=90^\circ-|\phi-\delta|},
 $$
 
 and
 
 $$
-\boxed{a_{\mathrm{lower}}=|\phi+\delta|-90^\circ}.
+\boxed{h_{\mathrm{lower}}=|\phi+\delta|-90^\circ}.
 $$
 
 The labels are important: the first expression is the maximum altitude and the second is the minimum. Thus:
 
-- a circumpolar star has $a_{\mathrm{lower}}\geq0$;
-- a rising and setting star has $a_{\mathrm{upper}}>0>a_{\mathrm{lower}}$;
-- a star that never rises has $a_{\mathrm{upper}}\leq0$.
+- a circumpolar star has $h_{\mathrm{lower}}\geq0$;
+- a rising and setting star has $h_{\mathrm{upper}}>0>h_{\mathrm{lower}}$;
+- a star that never rises has $h_{\mathrm{upper}}\leq0$.
 
 For Padova, $\phi\simeq45.4^\circ$, so the circumpolar limit is $\delta\simeq+44.6^\circ$. A star at $\delta=+60^\circ$ is circumpolar, a star on the celestial equator rises and sets, and a star at $\delta=-60^\circ$ never rises. Vega, with $\delta\simeq+38.8^\circ$, lies below the circumpolar limit and therefore sets for an ideal observer at Padova, even though it spends a large fraction of the sidereal day above the horizon.[^rising_setting_reference]
 
@@ -631,14 +661,14 @@ $$
 \boxed{\sin\alpha_\odot=\frac{\tan\delta_\odot}{\tan\varepsilon}}.
 $$
 
-At the equinoxes $\delta_\odot=0$; at the June solstice $\delta_\odot\simeq+\varepsilon$; and at the December solstice $\delta_\odot\simeq-\varepsilon$. The changing declination alters the maximum solar altitude, the azimuths of sunrise and sunset, and the interval for which the Sun remains above the horizon ([Figures 16](fig16_sun_paths_solstices) and [17](fig17_sun_paths_year)).
+At the equinoxes $\delta_\odot=0$; at the June solstice $\delta_\odot\simeq+\varepsilon$; and at the December solstice $\delta_\odot\simeq-\varepsilon$. The changing declination alters the maximum solar altitude, the azimuths of sunrise and sunset, and the interval for which the Sun remains above the horizon ([Figures 17](fig16_sun_paths_solstices) and [18](fig17_sun_paths_year)).
 
 ```{figure} _static/_chapter02/fig16_sun_paths_solstices.png
 :width: 60%
 :align: center
 :name: fig16_sun_paths_solstices
 
-The daily solar paths at the summer and winter solstices for a Northern-hemisphere observer. Extracted from slide 20.
+**Figure 17** The daily solar paths at the summer and winter solstices for a Northern-hemisphere observer. Extracted from slide 20.
 ```
 
 ```{figure} _static/_chapter02/fig17_sun_paths_year.png
@@ -646,7 +676,7 @@ The daily solar paths at the summer and winter solstices for a Northern-hemisphe
 :align: center
 :name: fig17_sun_paths_year
 
-Seasonal change in the Sun's path across the local sky. Extracted from slide 20.
+**Figure 18** Seasonal change in the Sun's path across the local sky. Extracted from slide 20.
 ```
 
 As a geometric example, take $\phi=45.4^\circ$ and neglect refraction and the finite angular radius of the Sun. At the equinoxes, sunrise occurs at $A=270^\circ$ and sunset at $A=90^\circ$, with a $12$-hour interval between them. At the June solstice, the equations give approximately
@@ -678,9 +708,9 @@ $$
 For a distant star, neglecting proper motion and other slow perturbations over one night,
 
 $$
-H=\Theta-\alpha,
+HA=\Theta-\alpha,
 \qquad
-\dot H=1,
+\dot{HA}=1,
 \qquad
 \dot\delta=0.
 $$
@@ -700,35 +730,35 @@ Examples of target motion in apparent altitude and azimuth. Extracted from slide
 Differentiate
 
 $$
-\sin a=\cos\delta\cos H\cos\phi+\sin\delta\sin\phi
+\sin h=\cos\delta\cos H\cos\phi+\sin\delta\sin\phi
 $$
 
 with respect to $\Theta$:
 
 $$
-\dot a\cos a=-\cos\delta\sin H\cos\phi.
+\dot h\cos h=-\cos\delta\sin HA\cos\phi.
 $$
 
-Using $\cos a\sin A=\cos\delta\sin H$, we obtain
+Using $\cos h\sin A=\cos\delta\sin HA$, we obtain
 
 $$
-\boxed{\dot a=-\sin A\cos\phi}.
+\boxed{\dot h=-\sin A\cos\phi}.
 $$
 
 The altitude is stationary on the meridian, where $\sin A=0$. It increases for a rising target and decreases for a setting target. Since $|\sin A|\leq1$,
 
 $$
-|\dot a|\leq|\cos\phi|\leq1.
+|\dot h|\leq|\cos\phi|\leq1.
 $$
 
 The value $1$ means one radian of altitude per radian of sidereal rotation, equivalent to $15^\circ$ per sidereal hour. The greatest possible altitude rate occurs at the equator. At either terrestrial pole, $\cos\phi=0$, every star moves parallel to the horizon and its altitude remains constant.
 
 ### Azimuth velocity
 
-Differentiating the remaining horizontal relations and eliminating $H$ and $\delta$ gives
+Differentiating the remaining horizontal relations and eliminating $HA$ and $\delta$ gives
 
 $$
-\boxed{\dot A=\sin\phi+\cos A\tan a\cos\phi}.
+\boxed{\dot A=\sin\phi+\cos A\tan h\cos\phi}.
 $$
 
 An equivalent form that is useful close to the zenith is
@@ -736,11 +766,11 @@ An equivalent form that is useful close to the zenith is
 $$
 \boxed{
 \dot A=
-\frac{\sin\phi-\sin\delta\sin a}{\cos^2 a}
+\frac{\sin\phi-\sin\delta\sin h}{\cos^2 h}
 }.
 $$
 
-At the horizon, $a=0$, so
+At the horizon, $h=0$, so
 
 $$
 \dot A_{\mathrm{horizon}}=\sin\phi.
