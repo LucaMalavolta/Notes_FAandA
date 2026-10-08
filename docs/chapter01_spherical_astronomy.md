@@ -357,7 +357,7 @@ We can now apply the same geometric ideas to the celestial sphere. Each system r
 
 There is another choice that must be stated explicitly: the **origin** from which the object is observed. A **topocentric** system is centred on the observer, a **geocentric** system on the centre of the Earth, and a **heliocentric** system on the centre of the Sun. For distant stars, the differences may be negligible in an introductory treatment. For the Moon, planets, and nearby artificial satellites, changing the origin can change the observed direction through **parallax**.
 
-A change in the orientation of the axes is a rotation. A change in origin is a translation and generally requires the distance to the object as well as its angular coordinates. The names *equatorial*, *ecliptic*, and *galactic* describe the orientation of a system; by themselves, they do not specify every aspect of the origin or of the reference frame.
+A change in the orientation of the axes is a rotation. A change in origin is a translation and generally requires the distance to the object as well as its angular coordinates. The names *equatorial*, *ecliptic*, and *galactic* describe the orientation of a system; by themselves, they do not specify every aspect of the origin or of the reference frame.[^transform_reference]
 
 ### Horizontal coordinates
 

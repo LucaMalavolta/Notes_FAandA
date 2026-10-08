@@ -61,7 +61,7 @@ myst_number_code_blocks = ["yaml"]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
-suppress_warnings = ["myst.header"]
+suppress_warnings = ["myst.header", "tippy.wiki"]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -103,7 +103,7 @@ language = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'requirements.txt']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -174,4 +174,3 @@ html_css_files = ["tippy.css"]
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Notes_FAandA'
-
