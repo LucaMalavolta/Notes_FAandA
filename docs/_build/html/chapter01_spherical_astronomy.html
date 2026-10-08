@@ -61,7 +61,7 @@
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.ba97c11e-b5a9-4d1e-bfcf-36202174032f.js"></script>
+    <script defer="defer" src="_static/tippy/chapter01_spherical_astronomy.3170f6b9-9337-47ff-8017-42c53b0ceba7.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter01_spherical_astronomy';</script>
@@ -184,6 +184,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Spherical Astronomy and Coordinate Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter02_transformation_of_coordinates.html">Transformation of Coordinates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter03_telescope_mounts.html">Telescope Mounts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter04_perturbation_of_coordinates.html">Perturbations of Coordinates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter05_movements_of_the_earth.html">Movements of the Earth</a></li>
 </ul>
 
     </div>
@@ -431,7 +434,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="spherical-astronomy-and-coordinate-systems">
 <span id="chapter01-spherical-astronomy"></span><h1>Spherical Astronomy and Coordinate Systems<a class="headerlink" href="#spherical-astronomy-and-coordinate-systems" title="Link to this heading">#</a></h1>
 <blockquote>
-<div><p>Oct 06, 2026 | 33 min read</p>
+<div><p>Oct 08, 2026 | 33 min read</p>
 </div></blockquote>
 <section id="the-celestial-sphere">
 <h2>The Celestial Sphere<a class="headerlink" href="#the-celestial-sphere" title="Link to this heading">#</a></h2>
@@ -761,13 +764,16 @@ h\simeq H+N.
 <h2>Celestial Coordinate Systems<a class="headerlink" href="#celestial-coordinate-systems" title="Link to this heading">#</a></h2>
 <p>We can now apply the same geometric ideas to the celestial sphere. Each system requires a <strong>reference plane</strong>, a choice of <strong>positive pole</strong>, and a <strong>zero direction</strong> in that plane. Two angular coordinates then identify the direction of an object. In the systems considered below, one angle is measured along the reference circle, and the other is measured perpendicular to it along a great circle.</p>
 <p>There is another choice that must be stated explicitly: the <strong>origin</strong> from which the object is observed. A <strong>topocentric</strong> system is centred on the observer, a <strong>geocentric</strong> system on the centre of the Earth, and a <strong>heliocentric</strong> system on the centre of the Sun. For distant stars, the differences may be negligible in an introductory treatment. For the Moon, planets, and nearby artificial satellites, changing the origin can change the observed direction through <strong>parallax</strong>.</p>
-<p>A change in the orientation of the axes is a rotation. A change in origin is a translation and generally requires the distance to the object as well as its angular coordinates. The names <em>equatorial</em>, <em>ecliptic</em>, and <em>galactic</em> describe the orientation of a system; by themselves, they do not specify every aspect of the origin or of the reference frame.</p>
-<section id="horizontal-coordinates">
-<h3>Horizontal coordinates<a class="headerlink" href="#horizontal-coordinates" title="Link to this heading">#</a></h3>
-<p>The most immediate way to describe the sky is to use the observer’s local vertical. The plane passing through the observer and perpendicular to this vertical is the <strong>horizontal plane</strong>. Its intersection with the celestial sphere is the <strong>astronomical horizon</strong>. This system is topocentric and is also called the <strong>horizon system</strong> or <strong>altitude-azimuth system</strong>.<label for='sidenote-role-4' class='margin-toggle'><span id="id6">
+<p>A change in the orientation of the axes is a rotation. A change in origin is a translation and generally requires the distance to the object as well as its angular coordinates. The names <em>equatorial</em>, <em>ecliptic</em>, and <em>galactic</em> describe the orientation of a system; by themselves, they do not specify every aspect of the origin or of the reference frame.<label for='sidenote-role-4' class='margin-toggle'><span id="id6">
 <sup>4</sup></span>
 
-</label><input type='checkbox' id='sidenote-role-4' name='sidenote-role-4' class='margin-toggle'><span class="sidenote"><sup>4</sup>Karttunen et al. (2017), Sections 2.3–2.4, pp. 16–17; Hanslmeier (2023), Section 2.1.2, pp. 6–7. Azimuth conventions differ across the sources; the equations here consistently use South through West.</span></p>
+</label><input type='checkbox' id='sidenote-role-4' name='sidenote-role-4' class='margin-toggle'><span class="sidenote"><sup>4</sup>Barbieri and Bertini (2021), Section 3.1, pp. 36–39; Karttunen et al. (2017), Sections 2.5–2.6, pp. 17–23. The azimuth components have been written for the South-through-West convention used in this chapter.</span></p>
+<section id="horizontal-coordinates">
+<h3>Horizontal coordinates<a class="headerlink" href="#horizontal-coordinates" title="Link to this heading">#</a></h3>
+<p>The most immediate way to describe the sky is to use the observer’s local vertical. The plane passing through the observer and perpendicular to this vertical is the <strong>horizontal plane</strong>. Its intersection with the celestial sphere is the <strong>astronomical horizon</strong>. This system is topocentric and is also called the <strong>horizon system</strong> or <strong>altitude-azimuth system</strong>.<label for='sidenote-role-5' class='margin-toggle'><span id="id7">
+<sup>5</sup></span>
+
+</label><input type='checkbox' id='sidenote-role-5' name='sidenote-role-5' class='margin-toggle'><span class="sidenote"><sup>5</sup>Karttunen et al. (2017), Sections 2.3–2.4, pp. 16–17; Hanslmeier (2023), Section 2.1.2, pp. 6–7. Azimuth conventions differ across the sources; the equations here consistently use South through West.</span></p>
 <p>The two poles of the horizon are the <strong>zenith</strong>, directly above the observer, and the <strong>nadir</strong>, in the opposite direction. A great circle passing through the zenith and nadir is called a <strong>vertical circle</strong>. The vertical circle containing the celestial poles is the <strong>local meridian</strong>; it intersects the horizon at the North and South points. The East and West points lie <span class="math notranslate nohighlight">\(90°\)</span> from these along the horizon. At the geographic poles, some of these directional conventions become degenerate and require a chosen reference meridian.</p>
 <p>The <strong>altitude</strong>, or <strong>elevation</strong>, is the angle measured from the horizon to the object along its vertical circle. Following the notation of the presentation, we denote it by <span class="math notranslate nohighlight">\(a\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -808,10 +814,10 @@ X=\frac{\int \rho_{\mathrm{air}}\,\mathrm{d}s}
 </figcaption>
 </figure>
 <p>For <span class="math notranslate nohighlight">\(a=90°\)</span>, <span class="math notranslate nohighlight">\(60°\)</span>, and <span class="math notranslate nohighlight">\(30°\)</span>, this approximation gives <span class="math notranslate nohighlight">\(X=1\)</span>, <span class="math notranslate nohighlight">\(1.15\)</span>, and <span class="math notranslate nohighlight">\(2\)</span>, respectively. Observations at lower altitude generally suffer stronger atmospheric extinction and greater sensitivity to atmospheric conditions. This is one reason why observations are often scheduled near the time when an object reaches its greatest altitude.</p>
-<p>The approximation becomes increasingly inaccurate toward the horizon. The Earth and its atmosphere are curved, and refraction bends the light path. The divergence of <span class="math notranslate nohighlight">\(\sec z\)</span> at <span class="math notranslate nohighlight">\(z=90°\)</span> is a limitation of the plane-parallel model, not an infinite atmospheric column in the real atmosphere. The expression is not applicable to objects below the horizon.<label for='sidenote-role-5' class='margin-toggle'><span id="id7">
-<sup>5</sup></span>
+<p>The approximation becomes increasingly inaccurate toward the horizon. The Earth and its atmosphere are curved, and refraction bends the light path. The divergence of <span class="math notranslate nohighlight">\(\sec z\)</span> at <span class="math notranslate nohighlight">\(z=90°\)</span> is a limitation of the plane-parallel model, not an infinite atmospheric column in the real atmosphere. The expression is not applicable to objects below the horizon.<label for='sidenote-role-6' class='margin-toggle'><span id="id8">
+<sup>6</sup></span>
 
-</label><input type='checkbox' id='sidenote-role-5' name='sidenote-role-5' class='margin-toggle'><span class="sidenote"><sup>5</sup>The plane-parallel expression is developed from the geometry stated on slide 16. For atmospheric refraction and extinction, see Hanslmeier (2023), Section 2.3.2, pp. 21–22, and Karttunen et al. (2017), the atmospheric discussion in Chapter 2 and the treatment of magnitudes and extinction in Chapter 4.</span></p>
+</label><input type='checkbox' id='sidenote-role-6' name='sidenote-role-6' class='margin-toggle'><span class="sidenote"><sup>6</sup>The plane-parallel expression is developed from the geometry stated on slide 16. For atmospheric refraction and extinction, see Hanslmeier (2023), Section 2.3.2, pp. 21–22, and Karttunen et al. (2017), the atmospheric discussion in Chapter 2 and the treatment of magnitudes and extinction in Chapter 4.</span></p>
 </section>
 </section>
 <section id="the-celestial-equator-and-the-ecliptic">
@@ -830,10 +836,10 @@ X=\frac{\int \rho_{\mathrm{air}}\,\mathrm{d}s}
 </section>
 <section id="equatorial-coordinates">
 <h3>Equatorial coordinates<a class="headerlink" href="#equatorial-coordinates" title="Link to this heading">#</a></h3>
-<p>The <strong>equatorial coordinate system</strong> uses the celestial equator as its reference circle and the North Celestial Pole as its positive pole. Its two angular coordinates are the <strong>right ascension</strong> <span class="math notranslate nohighlight">\(\alpha\)</span> and the <strong>declination</strong> <span class="math notranslate nohighlight">\(\delta\)</span>.<label for='sidenote-role-6' class='margin-toggle'><span id="id8">
-<sup>6</sup></span>
+<p>The <strong>equatorial coordinate system</strong> uses the celestial equator as its reference circle and the North Celestial Pole as its positive pole. Its two angular coordinates are the <strong>right ascension</strong> <span class="math notranslate nohighlight">\(\alpha\)</span> and the <strong>declination</strong> <span class="math notranslate nohighlight">\(\delta\)</span>.<label for='sidenote-role-7' class='margin-toggle'><span id="id9">
+<sup>7</sup></span>
 
-</label><input type='checkbox' id='sidenote-role-6' name='sidenote-role-6' class='margin-toggle'><span class="sidenote"><sup>6</sup>Barbieri and Bertini (2021), Sections 2.2–2.3, pp. 25–29; Karttunen et al. (2017), Section 2.5, pp. 17–20; Hanslmeier (2023), Sections 2.1.3 and 2.2.1, pp. 7–9 and 12–15.</span></p>
+</label><input type='checkbox' id='sidenote-role-7' name='sidenote-role-7' class='margin-toggle'><span class="sidenote"><sup>7</sup>Barbieri and Bertini (2021), Sections 2.2–2.3, pp. 25–29; Karttunen et al. (2017), Section 2.5, pp. 17–20; Hanslmeier (2023), Sections 2.1.3 and 2.2.1, pp. 7–9 and 12–15.</span></p>
 <p>The declination is measured from the equator along the great circle passing through the object and both celestial poles. Such a circle is called an <strong>hour circle</strong>. Declination is positive to the North and negative to the South:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -864,10 +870,10 @@ X=\frac{\int \rho_{\mathrm{air}}\,\mathrm{d}s}
 </section>
 <section id="ecliptic-coordinates">
 <h3>Ecliptic coordinates<a class="headerlink" href="#ecliptic-coordinates" title="Link to this heading">#</a></h3>
-<p>The <strong>ecliptic coordinate system</strong> takes the ecliptic as its reference plane. The directions perpendicular to this plane define the <strong>North Ecliptic Pole</strong> and <strong>South Ecliptic Pole</strong>. These must be distinguished from the celestial poles, which refer to the Earth’s rotation axis. The angle between the two north poles is <span class="math notranslate nohighlight">\(\varepsilon\)</span>.<label for='sidenote-role-7' class='margin-toggle'><span id="id9">
-<sup>7</sup></span>
+<p>The <strong>ecliptic coordinate system</strong> takes the ecliptic as its reference plane. The directions perpendicular to this plane define the <strong>North Ecliptic Pole</strong> and <strong>South Ecliptic Pole</strong>. These must be distinguished from the celestial poles, which refer to the Earth’s rotation axis. The angle between the two north poles is <span class="math notranslate nohighlight">\(\varepsilon\)</span>.<label for='sidenote-role-8' class='margin-toggle'><span id="id10">
+<sup>8</sup></span>
 
-</label><input type='checkbox' id='sidenote-role-7' name='sidenote-role-7' class='margin-toggle'><span class="sidenote"><sup>7</sup>Barbieri and Bertini (2021), Section 2.5, pp. 29–31, and Section 3.2; Hanslmeier (2023), Sections 2.1.4 and 2.1.6, pp. 9–12.</span></p>
+</label><input type='checkbox' id='sidenote-role-8' name='sidenote-role-8' class='margin-toggle'><span class="sidenote"><sup>8</sup>Barbieri and Bertini (2021), Section 2.5, pp. 29–31, and Section 3.2; Hanslmeier (2023), Sections 2.1.4 and 2.1.6, pp. 9–12.</span></p>
 <p>The <strong>ecliptic longitude</strong> <span class="math notranslate nohighlight">\(\lambda\)</span> is measured from the vernal point along the ecliptic, eastward in the direction of the Sun’s annual motion, with <span class="math notranslate nohighlight">\(0°\leq\lambda&lt;360°\)</span>. The <strong>ecliptic latitude</strong> <span class="math notranslate nohighlight">\(\beta\)</span> is measured along a great circle perpendicular to the ecliptic, with <span class="math notranslate nohighlight">\(-90°\leq\beta\leq90°\)</span>. It is positive toward the North Ecliptic Pole. The symbol <span class="math notranslate nohighlight">\(\lambda\)</span> is also used for terrestrial longitude, but the reference plane and the zero direction are different; the context determines which quantity is meant.</p>
 <figure class="align-center" id="fig19-ecliptic-coordinates">
 <a class="reference internal image-reference" href="_images/fig19_ecliptic_coordinates.png"><img alt="_images/fig19_ecliptic_coordinates.png" src="_images/fig19_ecliptic_coordinates.png" style="width: 70%;" />
@@ -957,10 +963,10 @@ X=\frac{\int \rho_{\mathrm{air}}\,\mathrm{d}s}
 </section>
 <section id="galactic-coordinates">
 <h3>Galactic coordinates<a class="headerlink" href="#galactic-coordinates" title="Link to this heading">#</a></h3>
-<p>For studies of the Milky Way, a reference plane related to the Galaxy is often more useful than one related to the Earth’s rotation or orbit. The <strong>galactic coordinate system</strong> uses a conventional plane representing the orientation of the Galactic disc. The <strong>North Galactic Pole</strong> and <strong>South Galactic Pole</strong> are perpendicular to this plane.<label for='sidenote-role-8' class='margin-toggle'><span id="id10">
-<sup>8</sup></span>
+<p>For studies of the Milky Way, a reference plane related to the Galaxy is often more useful than one related to the Earth’s rotation or orbit. The <strong>galactic coordinate system</strong> uses a conventional plane representing the orientation of the Galactic disc. The <strong>North Galactic Pole</strong> and <strong>South Galactic Pole</strong> are perpendicular to this plane.<label for='sidenote-role-9' class='margin-toggle'><span id="id11">
+<sup>9</sup></span>
 
-</label><input type='checkbox' id='sidenote-role-8' name='sidenote-role-8' class='margin-toggle'><span class="sidenote"><sup>8</sup>Barbieri and Bertini (2021), Section 2.6, pp. 31–32; Karttunen et al. (2017), Section 2.7, pp. 23–25; Hanslmeier (2023), Section 2.1.5, p. 10. The approximate equatorial direction of the Galactic Centre also follows slide 20.</span></p>
+</label><input type='checkbox' id='sidenote-role-9' name='sidenote-role-9' class='margin-toggle'><span class="sidenote"><sup>9</sup>Barbieri and Bertini (2021), Section 2.6, pp. 31–32; Karttunen et al. (2017), Section 2.7, pp. 23–25; Hanslmeier (2023), Section 2.1.5, p. 10. The approximate equatorial direction of the Galactic Centre also follows slide 20.</span></p>
 <p>The <strong>galactic latitude</strong> <span class="math notranslate nohighlight">\(b\)</span> measures the angular distance from the galactic plane along a great circle, with <span class="math notranslate nohighlight">\(-90°\leq b\leq90°\)</span>. The <strong>galactic longitude</strong> <span class="math notranslate nohighlight">\(l\)</span> is measured along the galactic equator from the adopted zero direction near the Galactic Centre, with <span class="math notranslate nohighlight">\(0°\leq l&lt;360°\)</span>. It increases counterclockwise when viewed from the North Galactic Pole.</p>
 <p>In the elementary construction, the observer is placed at the Sun. Thus, the system describes directions <strong>as seen from the Solar neighbourhood</strong>. It is not a coordinate system centred on the Galactic Centre. The finite distance between the Earth and Sun can usually be neglected for the large-scale Galactic applications considered here, although precise observed positions still require an explicitly stated origin.</p>
 <figure class="align-center" id="fig21-galactic-coordinates">
@@ -1037,12 +1043,6 @@ X=\frac{\int \rho_{\mathrm{air}}\,\mathrm{d}s}
 </section>
 </section>
 <hr class="footnotes docutils" />
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="transform-reference" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></span>
-<p>Barbieri and Bertini (2021), Section 3.1, pp. 36–39; Karttunen et al. (2017), Sections 2.5–2.6, pp. 17–23. The azimuth components have been written for the South-through-West convention used in this chapter.</p>
-</aside>
-</aside>
 
 
                 </article>
