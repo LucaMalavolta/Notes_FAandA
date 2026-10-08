@@ -3,7 +3,7 @@
 # Perturbations of Coordinates
 
 :::{danger}
-This page still need sustantial revision to match the content presented during the lectures
+This page still nneeds substantial revision to match the content presented during the lectures
 :::
 
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read

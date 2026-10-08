@@ -3,24 +3,24 @@
 # Telescope Mounts
 
 :::{danger}
-This page still need sustantial revision to match the content presented during the lectures
+This page still needs substantial revision to match the content presented during the lectures
 :::
 
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read
 
-A telescope mount supports the optical system, points it at a celestial target, and follows that target while the Earth rotates. Its axes are therefore a mechanical expression of the coordinate systems introduced in the previous chapters. An **equatorial mount** has an axis parallel to the Earth's rotation axis; an **altitude-azimuth mount** has one vertical and one horizontal axis. A meridian transit instrument is a particularly instructive limiting case: it has only one pointing axis and waits for the sky to carry a star through its field of view.
+A telescope mount supports the optical system, points it at a celestial target, and follows that target while the Earth rotates. Its axes are therefore a mechanical expression of the coordinate systems introduced in the previous chapters.  An **altazimuth mount** (shortened from *altitue-azimuth*) has the main axis along the plumb line. An **equatorial mount** has an axis parallel to the Earth's rotation axis; A meridian transit instrument is a particularly instructive limiting case: it has only one pointing axis and waits for the sky to carry a star through its field of view.
 
-We begin with meridian instruments, then examine the principal altazimuthal and equatorial designs, compare their operation, and consider the Giant Magellan Telescope and ESO's Extremely Large Telescope. The horizontal azimuth $A$ used in the equations is measured from South toward West, as in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>`. Some diagrams use the more common North-through-East convention; their geometry is unaffected by this change of zero point.
+We begin with meridian instruments, then examine the principal altazimuthal and equatorial designs, compare their operation, and see which mount represents the best choice for next generation instruments such as the ESO's Extremely Large Telescope. The horizontal azimuth $A$ used in the equations is measured from South toward West, as in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>`. Some diagrams use the more common North-through-East convention; their geometry is unaffected by this change of zero point.
 
 ## From sky coordinates to a mechanical axis
 
-The right ascension $\alpha$ and declination $\delta$ of a star refer to the celestial equator and its pole. Altitude $h$ and azimuth $A$ refer to the observer's horizon and zenith ([Figure 1](fig01_mounts_horizontal_coordinates)). At a given site, a star's equatorial coordinates are nearly constant over one night, whereas its horizontal coordinates vary continuously. The hour angle $H$ connects the two descriptions:
+The right ascension $\alpha$ and declination $\delta$ of a star refer to the celestial equator and its pole. Altitude $h$ and azimuth $A$ refer to the observer's horizon and zenith ([Figure 1](fig01_mounts_horizontal_coordinates)). At a given site, a star's equatorial coordinates are nearly constant over one night, whereas its horizontal coordinates vary continuously. The hour angle $HA$ connects the two descriptions:
 
 $$
-H=\Theta-\alpha,
+HA=\Theta-\alpha,
 $$
 
-where $\Theta$ is local sidereal time. For a star, $H$ grows at approximately $15^\circ$ per sidereal hour. The mount must cancel this apparent motion by rotating about appropriately oriented axes. Throughout this chapter, “tracking” means keeping the selected celestial direction fixed in the telescope's field despite the Earth's rotation; real instruments also correct small effects such as refraction, flexure, and pointing errors.[^mount_sources]
+where $\Theta$ is local sidereal time. For a star, $HA$ grows at approximately $15^\circ$ per sidereal hour. The mount must cancel this apparent motion by rotating about appropriately oriented axes. Throughout this chapter, “tracking” means keeping the selected celestial direction fixed in the telescope's field despite the Earth's rotation; real instruments also correct small effects such as refraction, flexure, and pointing errors.[^mount_sources]
 
 ```{figure} _static/_chapter03/fig01_horizontal_coordinates.png
 :width: 65%
@@ -42,7 +42,7 @@ The earliest accurate positional catalogues relied heavily on **meridian circles
 **Figure 2** Historical meridian transit telescope. Its horizontal axis permits motion only within the meridian plane.
 ```
 
-At **upper meridian transit**, $H=0$, and therefore
+At **upper meridian transit**, $HA=0$, and therefore the sidereal time at the transit moment $\Theta_{\mathrm{transit}$ is equal to the right ascension of the star $\alpha$:
 
 $$
 \boxed{\Theta_{\mathrm{transit}}=\alpha}.
@@ -55,7 +55,7 @@ Recording the time at which a star of known right ascension crosses the meridian
 :align: center
 :name: fig03_mounts_meridian_geometry
 
-**Figure 3** Right ascension, hour angle, and sidereal time on the celestial sphere. The relation $\Theta=H+\alpha$ reduces to $\Theta=\alpha$ on the upper meridian.
+**Figure 3** Right ascension, hour angle, and sidereal time on the celestial sphere. The relation $\Theta=HA+\alpha$ reduces to $\Theta=\alpha$ on the upper meridian.
 ```
 
 The meridian altitude supplies declination. For an observer at latitude $\phi$, the ideal upper-transit altitude is
@@ -64,7 +64,7 @@ $$
 \boxed{h_{\mathrm{upper}}=90^\circ-|\phi-\delta|}.
 $$
 
-The absolute value matters: a star may cross the meridian to either side of the zenith. One must know which side was observed to infer $\delta$ from $h$. The shortcut $h=\delta+\phi$ is not the general upper-transit relation. The formula above assumes the geometric horizon and ignores atmospheric refraction.[^transit_geometry]
+The absolute value matters: a star may cross the meridian to either side of the zenith. One must know which side was observed to infer $\delta$ from $h$. The shortcut $h=\delta+\phi$ is not a general relation, but it is valid when the target is transiting the meridian toward the South direction, or equivalently, it is transiting the meridian from East to West, in the Northern hemisphere. The formula above assumes the geometric horizon and ignores atmospheric refraction.[^transit_geometry]
 
 The focal plane of a classical transit instrument contains a finely marked **reticle**. Timing the passage of the stellar image across its reference line is more precise than estimating the centre of an unmarked field. [Figure 4](fig04_mounts_meridian_instrument) shows such an instrument, while [Figure 5](fig05_mounts_specola) shows the meridian room at *La Specola* in Padova. There, a narrow opening gave the telescope a view along the meridian; the instrument could change its elevation while its observing plane remained fixed.
 
