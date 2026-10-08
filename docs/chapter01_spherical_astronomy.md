@@ -27,7 +27,7 @@ The first plot in [Figure 1](fig01_trigonometry) exemplifies this case.  For thi
 :align: center
 :name: fig01_trigonometry
 
-Basic concepts of trigonometry.
+**Figure 1** Basic concepts of trigonometry.
 ```
 
 [Figure 2](fig02_trigonometric_functions) shows the relationship among the *sine* ($\sin$), *cosine* ($\cos$), and *tangent* ($\tan$) trigonometric functions. The *secant* function ($\sec$), equivalente to the reciprocal of the cosine, $\sec\theta=1/\cos\theta$, is of relevance for Astronomy.
@@ -38,7 +38,7 @@ Basic concepts of trigonometry.
 :align: center
 :name: fig02_trigonometric_functions
 
-The most essential trigonometric functions[^margin_trigonometric_functions]
+**Figure 2** The most essential trigonometric functions[^margin_trigonometric_functions]
 ```
 
 [^margin_trigonometric_functions]: {-} [Wikipedia link to trigonometric functions](https://en.wikipedia.org/wiki/Trigonometric_functions)
@@ -73,7 +73,7 @@ The inverse conversion is much simpler:
 :align: center
 :name: fig03_angles
 
-Graphical representation of angles in degrees, radians, and hours.
+**Figure 3** Graphical representation of angles in degrees, radians, and hours.
 ```
 
 
@@ -89,7 +89,7 @@ The shortest path between two points on a sphere $Q$ and $Q'$ is always **along 
 :align: center
 :name: fig04_sphere_planes
 
-Representation of a *great circle* and a *small circle*.
+**Figure 4** Representation of a *great circle* and a *small circle*.
 ```
 
 
@@ -102,7 +102,7 @@ The length of the arc *AB* is equal to the radius of the sphere multiplied by th
 :align: center
 :name: fig05_spherical_triangle
 
-A spherical triangle $ABC$ identified by the three arcs $a$, $b$, $c$ and the corresponding central angles.
+**Figure 5** A spherical triangle $ABC$ identified by the three arcs $a$, $b$, $c$ and the corresponding central angles.
 ```
 
 
@@ -135,7 +135,7 @@ The perpendicular is often called *normal*. The definition of the plane alone is
 :align: center
 :name: fig06_polar_coordinates
 
-The angles $\psi$ and $\theta$ uniquely identify a point P on the sphere, assuming that the size of the sphere is fixed. Transformations to a new coordinate system can be obtained by rotating two axes around the third one, for example, by rotating $y$ and $z$ by an angle $\chi$ to $y'$ and $z'$ on the plane perpendicular to the axis $x$.
+**Figure 6** The angles $\psi$ and $\theta$ uniquely identify a point P on the sphere, assuming that the size of the sphere is fixed. Transformations to a new coordinate system can be obtained by rotating two axes around the third one, for example, by rotating $y$ and $z$ by an angle $\chi$ to $y'$ and $z'$ on the plane perpendicular to the axis $x$.
 ```
 
 
@@ -148,7 +148,7 @@ Coordinate transformations can be obtained by successive rotations around a sing
 :align: center
 :name: fig07_coordinates_physics
 
-There is no general agreement on the definition of angles among disciplines. In Physics and Mathematics, the *polar coordinate* $\theta$ is measured starting from the normal to the plane, rather than the plane itself. In Mathematics, the angles' names $\theta$ and $\psi$ are swapped.
+**Figure 7** There is no general agreement on the definition of angles among disciplines. In Physics and Mathematics, the *polar coordinate* $\theta$ is measured starting from the normal to the plane, rather than the plane itself. In Mathematics, the angles' names $\theta$ and $\psi$ are swapped.
 ```
 
 The definitions of angles can vary across disciplines. [Figure 7](fig07_coordinates_physics) shows the standard definition in Mathematics and Physics. 
@@ -172,7 +172,7 @@ The **Longitude** is the distance from the Prime Meridian of the projection of t
 :align: center
 :name: fig08_geocentric_system
 
-Geocentric coordinate system, with representation of **Latitude** $\phi$ and **Longitude** $\lambda$, **Equator** (latitude equal to zero) and **Prime Meridian** (longitude equal to zero).
+**Figure 8** Geocentric coordinate system, with representation of **Latitude** $\phi$ and **Longitude** $\lambda$, **Equator** (latitude equal to zero) and **Prime Meridian** (longitude equal to zero).
 ```
 
 When reporting coordinates, Latitude is conventionally expressed first. The coordinates of Padova are :
@@ -202,7 +202,7 @@ The amount of flattening of a planet primarily depends on its composition and th
 :align: center
 :name: fig09_saturn
 
-The planet Saturn has a mean density below that of water, and it completes a rotation in 10 hours and 34 minutes. As a consequence, its flattening can be seen with the naked eye. The purple circle and the two orange axes highlight the 10\%  flattening of the planet. 
+**Figure 9** The planet Saturn has a mean density below that of water, and it completes a rotation in 10 hours and 34 minutes. As a consequence, its flattening can be seen with the naked eye. The purple circle and the two orange axes highlight the 10\%  flattening of the planet. 
 ```
 
 The oblateness of our planet introduces a problem in measuring the coordinates of an object when its distance from the surface changes.
@@ -215,7 +215,7 @@ In a sphere, we can increase or decrease the distance of a point along any line 
 :align: center
 :name: fig10_geodetic_coordinates
 
-Geodetic coordinates.
+**Figure 10** Geodetic coordinates.
 ```
 
 #### The local normal and geodetic latitude
@@ -285,7 +285,7 @@ For many introductory calculations, the astronomical and geodetic latitudes can 
 :align: center
 :name: fig11_geoid_ellipsoid
 
-The reference ellipsoid, geoid, and physical surface of the Earth. The departures of the geoid from the ellipsoid are exaggerated in the schematic representation and do not show measured gravity data. The local diagram illustrates the ellipsoidal height $h$, the height above the geoid $H$, and the geoid undulation $N$.
+**Figure 11** The reference ellipsoid, geoid, and physical surface of the Earth. The departures of the geoid from the ellipsoid are exaggerated in the schematic representation and do not show measured gravity data. The local diagram illustrates the ellipsoidal height $h$, the height above the geoid $H$, and the geoid undulation $N$.
 ```
 
 The separation between the geoid and the reference ellipsoid is called the **geoid undulation**, conventionally denoted by $N$. It is positive when the geoid lies above the ellipsoid. To the accuracy required here, the ellipsoidal height $h$ and the **orthometric height** $H$, usually interpreted as height above mean sea level, are related by
@@ -314,7 +314,7 @@ Its origin is at the Earth's centre of mass. The $z$ axis follows the adopted te
 :align: center
 :name: fig12_geoid_reference_system
 
-Definition of the standard coordinate system of the World Geodetic System 1984. *BIH* stands for *Bureau International de l'Heur*
+**Figure 12** Definition of the standard coordinate system of the World Geodetic System 1984. *BIH* stands for *Bureau International de l'Heur*
 ```
 
 The modern zero of longitude is defined by the **IERS Reference Meridian**. It is close to the historical Greenwich meridian, at $5.31’’$ ($102.5$ m) east of the Greenwich Meridian at the latitude of the Royal Observatory, but the two are not identical. The historical meridian was established by astronomical observations tied to the local gravity vertical, whereas the modern reference is part of a global geocentric system. Thus, even a familiar coordinate such as longitude depends on the precise reference system in which it is reported.
@@ -384,7 +384,7 @@ The **azimuth** $A$ specifies the direction of the object's vertical circle arou
 :align: center
 :name: fig15_horizontal_coordinates
 
-The horizontal coordinate system, centred on the observer. Azimuth $A$ is measured from South toward West (clockwise direction) along the horizon, while altitude $a$ is measured upward along the object's vertical circle. The zenith distance is $z=90°-a$.
+**Figure 15** The horizontal coordinate system, centred on the observer. Azimuth $A$ is measured from South toward West (clockwise direction) along the horizon, while altitude $a$ is measured upward along the object's vertical circle. The zenith distance is $z=90°-a$.
 ```
 
 For example, a star with $A=270°$ and $a=30°$ lies due East, one third of the angular distance from the horizon to the zenith. At the zenith itself, all vertical circles meet and azimuth is undefined. This is a coordinate singularity, rather than an uncertainty in the actual direction of the star.
