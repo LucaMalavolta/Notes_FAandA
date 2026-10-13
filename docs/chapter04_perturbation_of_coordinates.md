@@ -2,32 +2,40 @@
 
 # Perturbations of Coordinates
 
-:::{danger}
-This page still nneeds substantial revision to match the content presented during the lectures
-:::
+:
 
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read
 
-The coordinate transformations developed in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>` relate directions expressed in different reference systems. An actual observation involves an additional question: does the measured direction coincide with the direction from the observer to the object? In general it does not. The atmosphere bends incoming light; the motion of the observer changes its apparent direction; and a nearby object is seen from different directions when the observing position changes. These effects are called **refraction**, **aberration**, and **parallax**. Each has a distinct physical cause, time dependence, and angular scale.
+The coordinate transformations developed in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>` relate directions expressed in different reference systems. An actual observation involves an additional question: does the measured direction coincide with the direction from the observer to the object? In general, it does not. The atmosphere bends incoming light; the motion of the observer changes its apparent direction; and a nearby object is seen from different directions when the observing position changes. These effects are called **refraction**, **aberration**, and **parallax**. Each has a distinct physical cause, time dependence, and angular scale.
 
-We shall consider refraction first, then annual and diurnal aberration, and finally the forms of parallax that lead to the direct measurement of stellar distances. Precession, nutation, polar motion, and stellar proper motion also change coordinates with time, but they describe changes in the reference axes or the source position rather than the three effects developed here.
+In this chapter we will introduce the most important effects that cause an **apparent variation of the position of a star in the sky**. In the next chapter, we will study effects that cause a **variation of the coordinates as reported in the catalogue*** but that do not affect the observed position of a star, such as **precession, nutation, polar motion**: these effects change coordinates with time, but they describe changes in the reference axes or the source position rather than the three effects developed here.
 
 ## Atmospheric refraction
 
-The **refractive index** of a medium is $n=c/v_{\rm ph}$, where $c$ is the speed of light in vacuum and $v_{\rm ph}$ is the phase speed in the medium. At the boundary between two homogeneous media, the incoming and refracted rays obey **Snell's law**:
+The **refractive index** of a medium is $n=c/v_{\rm ph}$, where $c$ is the speed of light in vacuum and $v_{\rm ph}$ is the phase speed in the medium (the average velocity of light in a medium). At the boundary between two homogeneous media, the incoming and refracted rays obey **Snell's law**:
 
 $$
-n_1\sin i=n_2\sin r,
+n_1\sin \theta_1=n_2\sin \theta_2,
 $$
 
-where $i$ and $r$ are measured from the normal to the boundary. The terrestrial atmosphere is not a single uniform layer. Its pressure and density generally decrease upward, and its refractive index approaches the vacuum value $n=1$ at high altitude. Temperature also affects $n$, although temperature itself need not decrease monotonically with height. The stack of layers in [Figure 1](fig01_refraction_layers) is a useful approximation: as a ray travels downward into denser air, it bends gradually toward the local vertical.[^refraction]
+where $\theta_1$ and $\theta_2$ are measured from the normal to the interface. A graphical representation is reported in  [Figure 1](fig01_snell_law).
+
+```{figure} _static/_chapter04/fig01_snell_law.png
+:width: 50%
+:align: center
+:name: fig01_snell_law
+
+**Figure 1** Graphical representation of the Snell's law.
+```
+
+The terrestrial atmosphere is not a single uniform layer. Its pressure and density generally decrease upward, and its refractive index approaches the vacuum value $n=1$ at high altitude. Temperature also affects $n$, although temperature itself need not decrease monotonically with height. The stack of layers in [Figure 2](fig01_refraction_layers) is a useful approximation: as a ray travels downward into denser air, it bends gradually toward the local vertical.[^refraction]
 
 ```{figure} _static/_chapter04/fig01_atmospheric_layers.png
 :width: 50%
 :align: center
 :name: fig01_refraction_layers
 
-**Figure 1** A ray crossing atmospheric layers of increasing refractive index. The successive changes of direction approximate the continuously curved path through the real atmosphere.
+**Figure 2** A ray crossing atmospheric layers of increasing refractive index. The successive changes of direction approximate the continuously curved path through the real atmosphere.
 ```
 
 The observer sees the star along the direction in which the light *arrives*, as though its final path were extended backward in a straight line. If $z_{\rm true}$ is the zenith distance in the absence of the atmosphere and $z_{\rm obs}$ is the observed zenith distance, the **astronomical refraction** is
@@ -44,28 +52,42 @@ $$
 
 where $n_0$ is the refractive index near the observer. This expression explains why refraction grows rapidly as one approaches the horizon; it must not be used at $z=90^\circ$, where its divergence is an artefact of the flat-layer approximation. For a standard sea-level atmosphere, a commonly adopted value at the horizon is about $34'$—comparable to the Sun's apparent diameter. The actual correction depends on pressure, temperature, wavelength, and the vertical structure of the atmosphere.[^horizon_refraction]
 
-By symmetry, a stratified atmosphere produces zero *systematic* refraction exactly at the zenith. Local turbulence can still make an image wander and blur. Long-exposure star trails close to the horizon can show changes in the apparent path as the light traverses a longer and more variable atmospheric column ([Figure 2](fig02_refraction_trails)). Clouds and the landscape in the same photograph also remind us that the visible horizon is an observational scene, whereas the astronomical horizon is a geometric plane.
+By symmetry, a stratified atmosphere produces zero *systematic* refraction exactly at the zenith. Local turbulence can still make an image wander and blur. Long-exposure star trails close to the horizon can show changes in the apparent path as the light traverses a longer and more variable atmospheric column ([Figure 3](fig02_refraction_trails)). The presence of clouds near the horizon amplifies the atmospheric refraction, due to their variable density and temperature.
 
 ```{figure} _static/_chapter04/fig02_refracted_star_trails.png
 :width: 85%
 :align: center
 :name: fig02_refraction_trails
 
-**Figure 2** Star trails above a low horizon. The trails near the horizon show how atmospheric conditions can affect the apparent paths of stars.
+**Figure 3** Star trails above a low horizon. The trails near the horizon show how atmospheric conditions can affect the apparent paths of stars.
 ```
 
 ## Aberration of light
 
-Even in a vacuum, a moving observer measures a direction that differs from the direction measured by an observer at rest in the chosen reference frame. During the finite travel time of a photon through a telescope, the telescope moves. The familiar analogy is rain falling vertically for a stationary observer but appearing to arrive obliquely for someone who runs through it. A telescope must similarly be pointed slightly toward the direction of its motion to receive the light from a star ([Figure 3](fig03_aberration)).
+Even in a vacuum, a moving observer measures a direction that differs from the direction measured by an observer at rest in the chosen reference frame. During the finite travel time of a photon through a telescope, the telescope moves. The familiar analogy is rain falling vertically for a stationary observer but appearing to arrive obliquely for someone who runs through it ([Figure 4](fig03_person_aberration
+)). 
+
+
+```{figure} _static/_chapter04/fig03_person_aberration.png
+:width: 62%
+:align: center
+:name: fig03_person_aberration
+
+**Figure 4** Analogy of aberration with a person standing or running under the rain.
+```
+
+A telescope in motion will see the target in an apparent position slightly towards the direction of the observer ([Figure 5](fig03_aberration)).
+
 
 ```{figure} _static/_chapter04/fig03_stellar_aberration.png
 :width: 62%
 :align: center
 :name: fig03_aberration
 
-**Figure 3** Aberration of starlight: the telescope moves laterally while light traverses it, so its apparent pointing direction is displaced toward the observer's motion.
+**Figure 5** Aberration of starlight: the telescope moves laterally while light traverses it, so its apparent pointing direction is displaced toward the observer's motion.
 ```
 
+The aberration is maximum when the *true* direction of the target is perpendicular to the velocity of the observer. 
 For speed $v\ll c$, let $v_\perp$ be the component of the observer's velocity perpendicular to the incoming stellar direction. The small angular displacement is approximately
 
 $$
@@ -81,9 +103,39 @@ $$
 
 The term on the right is the projection of velocity onto the tangent plane of the celestial sphere. This vector form specifies the direction of the shift as well as its size. It is a first-order approximation to relativistic aberration, sufficient for the angular scales considered here.[^aberration]
 
-### Annual and diurnal aberration
+### Annual aberration
 
 The Earth's orbital velocity is approximately $30\ {\rm km\,s^{-1}}$. The corresponding maximum annual aberration is $v_\oplus/c\simeq20.5''$, called the **constant of aberration** to the accuracy needed here. As the direction of orbital velocity changes during the year, the apparent position of a fixed star describes a small ellipse. For a star at the ecliptic pole, the locus is nearly a circle with angular radius about $20.5''$; for a star near the ecliptic plane, it becomes nearly a line segment. The approximately $41''$ end-to-end span is twice the angular amplitude, not the amplitude itself.[^aberration]
+
+Since Earth's velocity vector always lies in the ecliptic plane (by definition of orbit), the annual aberration effect is greater for a star perpendicular to the ecliptic plane, i.e., at the ecliptic poles. A star with ecliptic latitude $\pm$ 90° will always apparently lie at a distance  $\approx 20.5''$ from its true position, regardless of the moment of the year. Its position along this circle will depend on the direction of the Earth's velocity vector, which rotates along the year. 
+
+```{figure} _static/_chapter04/fig03_stellar_aberration_from_Earth.png
+:width: 62%
+:align: center
+:name: fig03_aberration_along_orbit
+
+**Figure 6** Aberration of a star at the ecliptic pole (purple direction) and on the ecliptic plane (orange direction) during the year. Solid lines represent the true direction, while dashed lines represent the apparent direction due to aberration. The Earth velocity vector is shown in green. 
+```
+
+Conversely, if a star lies on the ecliptic (ecliptic latitude $\lambda=0 \degree$), the Earth's velocity vector will be parallel or antiparallel to the star's direction every six months, causing no aberration in the star's position. After three months, and every six months, the Earth's velocity vector will be perpendicular to the star's direction, causing the maximum deviation of its position, but still on the ecliptic plane. Thus, along the year, the star will move back and forth from its true position along a line on the ecliptic.
+
+Recapping, the star will describe a circle if it is on the ecliptic pole ($\lambda = \pm 90 \degree$), and a line if it is on the ecliptic plane ($\lambda = 0 \degree$). For intermediate latitudes, the shape is an ellipse that flattens more along the vertical as it approaches the ecliptic plane. The position along this ellipse will depend on the ecliptic longitude $\beta$ of the star [Figure 7](fig03_aberration_during_year
+)
+
+
+```{figure} _static/_chapter04/fig03_stellar_aberration_during_the_year.png
+:width: 62%
+:align: center
+:name: fig03_aberration_during_year
+
+**Figure 7** Annual aberration at varyng ecliptic latitudes $\lambda$ for a star with ecliptic longitude $\beta = 270°$. The star has the same ecliptic longitude of the target in [Figure 6](fig03_aberration_along_orbit).
+```
+
+
+Remember that latitudes are measured from the $\gamma$ point in the clockwise sense. Using the Earth's orbit, you have to take the position of the Sun as seen from the Earth during the spring Equinox (at the end of March), i.e., in [Figure 6](fig03_aberration_along_orbit) the ecliptic latitude $\beta$ starts from the blue point labelled with \texttt{Sep} in the Figure. 
+
+
+### Diurnal aberration
 
 The rotation of the Earth gives an observatory a second velocity. At geodetic latitude $\phi$, its magnitude is approximately
 

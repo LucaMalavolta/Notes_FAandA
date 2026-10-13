@@ -2,10 +2,6 @@
 
 # Telescope Mounts
 
-:::{danger}
-This page still needs substantial revision to match the content presented during the lectures
-:::
-
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read
 
 A telescope mount supports the optical system, points it at a celestial target, and follows that target while the Earth rotates. Its axes are therefore a mechanical expression of the coordinate systems introduced in the previous chapters.  An **altazimuth mount** (shortened from *altitue-azimuth*) has the main axis along the plumb line. An **equatorial mount** has an axis parallel to the Earth's rotation axis; A meridian transit instrument is a particularly instructive limiting case: it has only one pointing axis and waits for the sky to carry a star through its field of view.
@@ -42,7 +38,7 @@ The earliest accurate positional catalogues relied heavily on **meridian circles
 **Figure 2** Historical meridian transit telescope. Its horizontal axis permits motion only within the meridian plane.
 ```
 
-At **upper meridian transit**, $HA=0$, and therefore the sidereal time at the transit moment $\Theta_{\mathrm{transit}$ is equal to the right ascension of the star $\alpha$:
+At **upper meridian transit**, $HA=0$, and therefore the sidereal time at the transit moment $\Theta_{\mathrm{transit}}$ is equal to the right ascension of the star $\alpha$:
 
 $$
 \boxed{\Theta_{\mathrm{transit}}=\alpha}.
@@ -150,15 +146,25 @@ The counterweight balances the torque of the telescope about the declination axi
 
 ### Open fork mount
 
-In an **open fork**, the telescope tube lies between two fork arms. The fork rotates about the polar axis, while the tube turns between the arms about the declination axis. This leaves one end of the telescope comparatively accessible and avoids the long external counterweight shaft of a German mount. The *Telescopio Copernico* at Cima Ekar, Asiago, illustrates this arrangement ([Figure 11](fig11_mounts_copernico)).
+In an **open fork**, the telescope tube lies between two fork arms. The fork rotates about the polar axis, while the tube turns between the arms about the declination axis. This leaves one end of the telescope comparatively accessible and avoids the long external counterweight shaft of a German mount. The *Telescopio Copernico* at Cima Ekar, Asiago, illustrates this arrangement ([Figure 11 a](fig11_mounts_copernico_b) and [b](fig11_mounts_copernico_c)).
 
-```{figure} _static/_chapter03/fig11_copernico_fork.png
+```{figure} _static/_chapter03/fig11_copernico_fork_b.png
 :width: 55%
 :align: center
-:name: fig11_mounts_copernico
+:name: fig11_mounts_copernico_b
 
-**Figure 11** The *Telescopio Copernico* at Cima Ekar, Asiago, mounted in an open equatorial fork.
+**Figure 11 a** The *Telescopio Copernico* at Cima Ekar, Asiago, mounted in an open equatorial fork.
 ```
+
+```{figure} _static/_chapter03/fig11_copernico_fork_c.png
+:width: 55%
+:align: center
+:name: fig11_mounts_copernico_c
+
+**Figure 11 b** The *Telescopio Copernico* at Cima Ekar, Asiago, mounted in an open equatorial fork.
+```
+
+
 
 ### English or yoke mount
 
@@ -174,7 +180,7 @@ In an **English**, or **yoke**, mount the polar axis is supported at both ends o
 
 ### Horseshoe mount
 
-A **horseshoe mount** opens one end of the yoke into a large curved bearing. The opening allows the telescope to point much closer to the celestial pole while preserving substantial support for the polar axis. The Mayall 4-m Telescope at Kitt Peak, Arizona, and NASA's MCAT telescope illustrate this design ([Figures 13](fig13_mounts_mayall) and [14](fig14_mounts_mcat)).
+A **horseshoe mount** opens one end of the yoke into a large curved bearing. The goal is to support the weight of a 4-meter mirror, which is substantially heavier than the previous telescopes seen before and cannot be held by the previous equatorial mounts. The opening allows the telescope to point much closer to the celestial pole while preserving substantial support for the polar axis. The Mayall 4-m Telescope at Kitt Peak, Arizona, and NASA's MCAT telescope illustrate this design ([Figures 13](fig13_mounts_mayall) and [14](fig14_mounts_mcat)).
 
 ```{figure} _static/_chapter03/fig13_mayall_horseshoe.png
 :width: 70%
@@ -206,17 +212,25 @@ In a **cross-axis mount**, the polar axis is supported at both ends and the decl
 
 ## Return to large altazimuthal telescopes
 
-The *Telescopio Nazionale Galileo* (TNG) has the same two basic pointing axes as a Dobsonian, although it is a fully engineered observatory instrument with precision drives and field-rotation compensation ([Figure 16](fig16_mounts_tng)). Barbieri and Bertini describe its altitude and azimuth axes and the counter-rotation of the field at its Nasmyth focus.[^mount_sources]
+The *Telescopio Nazionale Galileo* (TNG) has the same two basic pointing axes as a Dobsonian, although it is a fully engineered observatory instrument with precision drives and field-rotation compensation ([Figure 16 a](fig16_mounts_tng_a) and [b](fig16_mounts_tng_b)). Barbieri and Bertini describe its altitude and azimuth axes and the counter-rotation of the field at its Nasmyth focus.[^mount_sources]
 
-```{figure} _static/_chapter03/fig16_tng_altaz.png
+```{figure} _static/_chapter03/fig16_tng_altaz_a.png
 :width: 70%
 :align: center
-:name: fig16_mounts_tng
+:name: fig16_mounts_tng_a
 
-**Figure 16** The TNG altitude-azimuth structure. Its two principal axes are evident despite the much larger scale than the preceding Dobsonian example.
+**Figure 16 a** The TNG altitude-azimuth structure. Its two principal axes are evident despite the much larger scale than the preceding Dobsonian example.
 ```
 
-The Very Large Telescope (VLT) of the European Southern Observatory and the Gran Telescopio Canarias (GTC) continue the same design line ([Figures 17](fig17_mounts_vlt) and [18](fig18_mounts_gtc)). Their size makes the structural advantages of keeping one axis vertical and the other horizontal especially important. This geometry can use compact load paths and a more economical enclosure than a comparable, large inclined equatorial structure. The benefit is an engineering tendency, rather than a theorem about every telescope building.
+```{figure} _static/_chapter03/fig16_tng_altaz_b.png
+:width: 70%
+:align: center
+:name: fig16_mounts_tng_b
+
+**Figure 16 b** The TNG altitude-azimuth structure. Its two principal axes are evident despite the much larger scale than the preceding Dobsonian example.
+```
+
+The Very Large Telescope (VLT) of the European Southern Observatory and the Gran Telescopio Canarias (GTC) continue the same design line ([Figures 17](fig17_mounts_vlt) and [18](fig18_mounts_gtc)). Their size makes the structural advantages of keeping one axis vertical and the other horizontal especially important. This geometry can use compact load paths and a more economical enclosure than a comparable, large inclined equatorial structure. A smaller dome will also reduce the turbulence around the telescope, improving the quality of the scientific data.
 
 ```{figure} _static/_chapter03/fig17_vlt_altaz.png
 :width: 50%
@@ -240,7 +254,7 @@ The consequences of axis orientation provide a basis for comparing the two desig
 
 ### Pointing and tracking
 
-An equatorial mount is naturally parameterised by hour angle and declination. After a target is acquired, ideal sidereal tracking requires the polar axis to move steadily. An altazimuthal mount requires the current $A$ and $h$ for every target and continuously changing speeds on both axes. The transformation from $(\alpha,\delta)$ to $(A,h)$ was derived in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>`; computers can perform it accurately, so the operational difference is in the required motion, not in any inability to calculate the pointing.
+An equatorial mount is naturally parameterised by hour angle and declination. After a target is acquired, ideal sidereal tracking requires the telescope to move steadily (constant angular velocity) around the polar axis. An altazimuthal mount requires the current $A$ and $h$ for every target and continuously changing speeds on both axes. The transformation from $(\alpha,\delta)$ to $(A,h)$ was derived in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>`; computers can perform it accurately, so the operational difference is in the required motion, not in any inability to calculate the pointing.
 
 The curves in [Figure 19](fig19_mounts_tracking_rates) show that tracks at different distances from the zenith can demand very different horizontal-axis rates. The blue and green examples pass especially close to the zenith. There, azimuth becomes undefined: a tiny displacement on the sky can correspond to a very large change in $A$. For a track approaching arbitrarily close to the exact zenith, the required azimuth rate can grow without bound in the ideal coordinates; a real mount has finite speed and acceleration and therefore a **zenith avoidance region**. The star itself does not acquire an infinite angular velocity.[^zenith_geometry]
 
@@ -275,7 +289,7 @@ An ideal equatorial mount rotates with the celestial sphere. If its polar alignm
 The changing field orientation can be described by the **parallactic angle** $q$, the angle at the target between the great circles toward the celestial pole and toward the zenith. With hour angle positive westward, one convenient expression is
 
 $$
-q=\operatorname{atan2}\!\left(\sin H,\,\tan\phi\cos\delta-\sin\delta\cos H\right).
+q=\operatorname{atan2}\!\left(\sin HA,\,\tan\phi\cos\delta-\sin\delta\cos HA\right).
 $$
 
 The required counter-rotation rate is the negative of the field's rate, $-\dot q$, for this choice of angle sense. The formula also shows why the precise centre of the zenith region needs special care: the direction toward the zenith is not defined when the target itself is at the zenith. In practice, the instrument rotator is coordinated with both pointing axes.
@@ -296,11 +310,12 @@ There is **no physical aperture limit** near 2.5 m for an equatorial mount: the 
 
 | Aspect | Equatorial mount | Altazimuthal mount |
 | --- | --- | --- |
-| Principal axes | Polar/hour axis and declination axis | Azimuth and altitude axes |
-| Ideal sidereal tracking | Mainly one axis at nearly constant rate | Both axes at time-dependent rates |
-| Near the celestial pole or zenith | Access depends on equatorial design; a closed yoke has a pole obstruction | Azimuth is singular at the zenith; finite drives impose an avoidance region |
-| Stellar field during tracking | Approximately fixed relative to the instrument | Rotates unless compensated |
-| Very large structures | Inclined axis and support become demanding | Vertical and horizontal bearings are generally easier to scale |
+| Principal axes | 	Polar/hour axis and declination axis | Azimuth and altitude axes |
+| Pointing| <span style="color:green">Pointing is easy – directly from coordinates with small adjustment</span> | Conversion of coordinates at every pointing |
+| Ideal sidereal tracking |  <span style="color:green">Stars move parallel to the equator at constant rate – ”simple” engine</span>  | Stars move both in azimuth and altitude simultaneously, at time-dependent rates during the night |
+| Near the celestial pole or zenith | <span style="color:green">Access depends on equatorial design; a closed yoke has a pole obstruction</span> | Azimuth is singular (becomes indefinite) at the zenith; finite drives impose an avoidance region |
+| Stellar field during tracking |  <span style="color:green">Approximately fixed relative to the instrument</span> | Rotates unless compensated |
+| Very large structures | Inclined axis and support become extremely demanding and expensive | <span style="color:green">Vertical and horizontal bearings are generally easier to scale</span> |
 
 ## The Giant Magellan Telescope and the Extremely Large Telescope
 
