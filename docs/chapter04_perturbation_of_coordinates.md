@@ -124,7 +124,7 @@ Recapping, the star will describe a circle if it is on the ecliptic pole ($\lamb
 
 
 ```{figure} _static/_chapter04/fig03_stellar_aberration_during_the_year.png
-:width: 62%
+:width: 40%
 :align: center
 :name: fig03_aberration_during_year
 
@@ -143,20 +143,29 @@ $$
 v_{\rm rot}=\omega_\oplus R_\oplus\cos\phi,
 $$
 
-with $R_\oplus$ the Earth's equatorial radius. The maximum speed at the equator is about $0.465\ {\rm km\,s^{-1}}$, producing a maximum **diurnal aberration** of about $0.32''$. The effect decreases with latitude and vanishes at a pole for an observer fixed to the rotating Earth. Its instantaneous value also depends on the direction to the object because only the transverse component of velocity changes the apparent direction.
+with $R_\oplus$ the Earth's equatorial radius. The maximum speed at the equator is about $0.46\ {\rm km\,s^{-1}}$ ([Figure 8](fig03_aberration_dirunal
+)),  producing a maximum **diurnal aberration** of about $0.32''$. The effect decreases with latitude and vanishes at a pole for an observer fixed to the rotating Earth. Its instantaneous value also depends on the direction to the object because only the transverse component of velocity changes the apparent direction.
+
+```{figure} _static/_chapter04/fig03_diurnal_velocity.png
+:width: 70%
+:align: center
+:name: fig03_aberration_dirunal
+
+**Figure 8** Velocity at the Earth's surface at different latitudes.
+```
 
 Aberration must not be confused with parallax. Aberration depends primarily on the **velocity** of the observer and affects even objects so distant that their parallax is negligible. Parallax depends on the observer's **position** relative to a source at finite distance.
 
 ## Parallax: changing the observing position
 
-Hold a finger at arm's length and view it alternately with the left and right eye. The finger seems to move against objects in the distance ([Figure 4](fig04_finger_parallax)). Its apparent displacement is greater when the finger is closer, or when the two observing positions are farther apart. A stereoscopic film exploits the same geometry: two cameras record slightly different views, and each eye is shown its corresponding image ([Figure 5](fig05_stereo_camera)). Three-dimensional cinema glasses separate these left-eye and right-eye views, whether they use colour, polarisation, or another optical method.
+Hold a finger at arm's length and view it alternately with the left and right eye. The finger seems to move against objects in the distance ([Figure 9](fig04_finger_parallax)). Its apparent displacement is greater when the finger is closer, or when the two observing positions are farther apart. A stereoscopic film exploits the same geometry: two cameras record slightly different views, and each eye is shown its corresponding image ([Figure 10](fig05_stereo_camera)). Three-dimensional cinema glasses separate these left-eye and right-eye views, whether they use colour, polarisation, or another optical method.
 
 ```{figure} _static/_chapter04/fig04_finger_parallax.png
 :width: 60%
 :align: center
 :name: fig04_finger_parallax
 
-**Figure 4** A nearby finger changes apparent position against a distant background when the observing eye is changed.
+**Figure 9** A nearby finger changes apparent position against a distant background when the observing eye is changed.
 ```
 
 ```{figure} _static/_chapter04/fig05_stereo_camera.png
@@ -164,7 +173,7 @@ Hold a finger at arm's length and view it alternately with the left and right ey
 :align: center
 :name: fig05_stereo_camera
 
-**Figure 5** A stereoscopic camera records two views from slightly separated positions, reproducing the geometry used by our two eyes.
+**Figure 10** A stereoscopic camera records two views from slightly separated positions, reproducing the geometry used by our two eyes.
 ```
 
 Let an object be at distance $r$ and let the observer's position change by a baseline $b$. Only the component $b_\perp$ perpendicular to the line of sight contributes to the first-order angular shift:
@@ -177,30 +186,30 @@ This immediately gives the two practical rules: a longer baseline gives a larger
 
 ### Diurnal parallax
 
-A terrestrial observer is displaced from the Earth's centre by approximately one Earth radius. For Solar System objects this displacement can make a measurable difference between a geocentric direction and a **topocentric** direction. As the Earth rotates, the observer's position changes relative to the distant object, giving **diurnal parallax** ([Figure 6](fig06_diurnal_geometry)). The precise shift depends on the object's distance, the observer's location and hour angle, and the angle between the Earth-centre-to-observer vector and the line of sight.
+A terrestrial observer is displaced from the Earth's centre by approximately one Earth radius. For Solar System objects this displacement can make a measurable difference between a geocentric direction and a **topocentric** direction. As the Earth rotates, the observer's position changes relative to the distant object, giving **diurnal parallax** ([Figure 11](fig06_diurnal_geometry)). The precise shift depends on the object's distance, the observer's location and hour angle, and the angle between the Earth-centre-to-observer vector and the line of sight.
 
 ```{figure} _static/_chapter04/fig06_diurnal_geometry.png
 :width: 58%
 :align: center
 :name: fig06_diurnal_geometry
 
-**Figure 6** Directions from two positions on the Earth's surface to the same object $P$. Their difference is the topocentric parallax.
+**Figure 11** Directions from two positions on the Earth's surface to the same object $P$. Their difference is the topocentric parallax.
 ```
 
-The standard reference baseline for **horizontal parallax** is the Earth's equatorial radius, $R_\oplus\simeq6378\ {\rm km}$ ([Figure 8](fig08_earth_radius)). For an object at geocentric distance $r$, the horizontal parallax $\pi_{\rm h}$ is defined by
+The standard reference baseline for **horizontal parallax** is the Earth's equatorial radius, $R_\oplus\simeq6378\ {\rm km}$ ([Figure 13](fig08_earth_radius)). For an object at geocentric distance $r$, the horizontal parallax $\pi_{\rm h}$ is defined by
 
 $$
 \sin\pi_{\rm h}=\frac{R_\oplus}{r}.
 $$
 
-At the Moon's typical distance, about $384,400\ {\rm km}$, this is nearly $57'$, large enough that observers at different terrestrial locations can see the Moon in noticeably different directions. The simultaneous images in [Figure 7](fig07_lunar_parallax) illustrate how the Moon's location against the background differs between observing sites. The baseline here is a radius measured from the Earth's centre; it is not the full distance traversed by a surface observer over a day.
+At the Moon's typical distance, about $384,400\ {\rm km}$, this is nearly $57'$, large enough that observers at different terrestrial locations can see the Moon in noticeably different directions. The simultaneous images in [Figure 12](fig07_lunar_parallax) illustrate how the Moon's location against the background differs between observing sites. The baseline here is a radius measured from the Earth's centre; it is not the full distance traversed by a surface observer over a day.
 
 ```{figure} _static/_chapter04/fig07_lunar_parallax.png
 :width: 55%
 :align: center
 :name: fig07_lunar_parallax
 
-**Figure 7** Composite of the Moon photographed simultaneously from separated sites during a lunar eclipse. Its apparent position relative to background stars depends on the observer's location.
+**Figure 12** Composite of the Moon photographed simultaneously from separated sites during a lunar eclipse. Its apparent position relative to background stars depends on the observer's location.
 ```
 
 ```{figure} _static/_chapter04/fig08_earth_radius_baseline.png
@@ -208,38 +217,38 @@ At the Moon's typical distance, about $384,400\ {\rm km}$, this is nearly $57'$,
 :align: center
 :name: fig08_earth_radius
 
-**Figure 8** The Earth-centre-to-observer radius supplies the reference baseline for horizontal parallax.
+**Figure 13** The Earth-centre-to-observer radius supplies the reference baseline for horizontal parallax.
 ```
 
 ### Annual parallax
 
-For a star, the Earth's radius is usually too small a baseline. The motion of the Earth around the Sun supplies a much larger one: approximately **one astronomical unit** from the Solar System barycentre to the Earth, or about $2\ {\rm au}$ between observations made on opposite sides of the orbit. The astronomical unit is defined to be exactly $149,597,870,700\ {\rm m}$.[^au] Against much more distant stars, a nearby star then executes an annual apparent displacement ([Figure 9](fig09_annual_parallax)).
+For a star, the Earth's radius is usually too small a baseline. The motion of the Earth around the Sun supplies a much larger one: approximately **one astronomical unit** from the Solar System barycentre to the Earth, or about $2\ {\rm au}$ between observations made on opposite sides of the orbit. The astronomical unit is defined to be exactly $149,597,870,700\ {\rm m}$.[^au] Against much more distant stars, a nearby star then executes an annual apparent displacement ([Figure 14](fig09_annual_parallax)).
 
 ```{figure} _static/_chapter04/fig09_annual_parallax.png
 :width: 73%
 :align: center
 :name: fig09_annual_parallax
 
-**Figure 9** A nearby star appears in different directions from opposite parts of the Earth's orbit. The annual parallax is the angular amplitude associated with a one-au baseline.
+**Figure 14** A nearby star appears in different directions from opposite parts of the Earth's orbit. The annual parallax is the angular amplitude associated with a one-au baseline.
 ```
 
 **Annual parallax**, generally called simply **stellar parallax**, is the angle $\pi$ subtended by one astronomical unit at the star. The apparent track can be an ellipse or nearly a line depending on the star's ecliptic latitude. Its angular size shrinks inversely with stellar distance. It is independent of the star's luminosity, so it provides a geometric distance measurement rather than one based on an assumed intrinsic brightness.
 
 ### Secular parallax
 
-The Sun also moves through the Galaxy. Over sufficiently long intervals its displacement can provide a baseline longer than the Earth's orbit, producing what is called **secular parallax** ([Figure 10](fig10_secular_parallax)). The Sun completes an orbit around the Milky Way in roughly $230$ million years.[^solar_motion] Unlike the controlled one-year geometry of annual parallax, a secular measurement is entangled with the stars' own motions. Its interpretation therefore requires a model of relative velocities; one cannot infer an individual stellar distance from the Solar displacement alone.
+The Sun also moves through the Galaxy. Over sufficiently long intervals its displacement can provide a baseline longer than the Earth's orbit, producing what is called **secular parallax** ([Figure 15](fig10_secular_parallax)). The Sun completes an orbit around the Milky Way in roughly $230$ million years.[^solar_motion] Unlike the controlled one-year geometry of annual parallax, a secular measurement is entangled with the stars' own motions. Its interpretation therefore requires a model of relative velocities; one cannot infer an individual stellar distance from the Solar displacement alone.
 
 ```{figure} _static/_chapter04/fig10_solar_galactic_motion.png
 :width: 65%
 :align: center
 :name: fig10_secular_parallax
 
-**Figure 10** The Sun's motion around the Milky Way provides a progressively longer baseline for secular parallax.
+**Figure 15** The Sun's motion around the Milky Way provides a progressively longer baseline for secular parallax.
 ```
 
 ## Trigonometric distances and the parsec
 
-The geometry of stellar parallax is represented in [Figure 11](fig11_parallax_triangle). If $r$ is the distance to a star and $\pi$ is the small angle subtended by a transverse baseline of one au, then
+The geometry of stellar parallax is represented in [Figure 16](fig11_parallax_triangle). If $r$ is the distance to a star and $\pi$ is the small angle subtended by a transverse baseline of one au, then
 
 $$
 \tan\pi=\frac{1\ {\rm au}}{r}
@@ -254,7 +263,7 @@ Because stellar parallaxes are tiny, the differences between $\tan\pi$, $\sin\pi
 :align: center
 :name: fig11_parallax_triangle
 
-**Figure 11** The angle $\pi$ subtended by a one-au baseline at a star a distance $r$ away.
+**Figure 16** The angle $\pi$ subtended by a one-au baseline at a star a distance $r$ away.
 ```
 
 A **parsec** is the distance corresponding to a parallax of one arcsecond for a one-au baseline. Since one radian contains $206,264.806$ arcseconds,
@@ -272,86 +281,86 @@ The nearest-star examples show the scale. A parallax of $0.762''$ corresponds to
 
 ## Space astrometry: Hipparcos
 
-**Hipparcos**—the *High Precision Parallax Collecting Satellite*—was ESA's first space astrometry mission ([Figure 12](fig12_hipparcos)). Its name also recalls Hipparchus, the ancient astronomer associated with the discovery of precession. It was launched in August 1989 and observed for about three and a half years. Its planned geostationary orbit was not reached because an apogee motor failed; the spacecraft nevertheless operated in a highly elliptical Earth orbit. Its annual stellar parallax still arose predominantly from the Earth's motion around the Sun, not from the radius of the spacecraft's Earth orbit.[^hipparcos]
+**Hipparcos**—the *High Precision Parallax Collecting Satellite*—was ESA's first space astrometry mission ([Figure 17](fig12_hipparcos)). Its name also recalls Hipparchus, the ancient astronomer associated with the discovery of precession. It was launched in August 1989 and observed for about three and a half years. Its planned geostationary orbit was not reached because an apogee motor failed; the spacecraft nevertheless operated in a highly elliptical Earth orbit. Its annual stellar parallax still arose predominantly from the Earth's motion around the Sun, not from the radius of the spacecraft's Earth orbit.[^hipparcos]
 
 ```{figure} _static/_chapter04/fig12_hipparcos.png
 :width: 62%
 :align: center
 :name: fig12_hipparcos
 
-**Figure 12** Artist's view of the Hipparcos satellite, which brought precise stellar astrometry above the Earth's atmosphere.
+**Figure 17** Artist's view of the Hipparcos satellite, which brought precise stellar astrometry above the Earth's atmosphere.
 ```
 
 The **Hipparcos Catalogue** contains $118,218$ stars with astrometry at roughly the milliarcsecond level. Its auxiliary star mapper produced the **Tycho Catalogue** with about $1.06$ million stars, generally at lower precision; the later **Tycho-2 Catalogue** contains about $2.54$ million stars.[^hipparcos] A milliarcsecond (mas) is $10^{-3}$ arcsecond. At this scale, measuring a star's apparent position at several epochs is essential: the solution must separate a constant position, a nearly linear **proper motion**, and the annually repeating parallax signature.
 
 ## Gaia: a global astrometric survey
 
-ESA's **Gaia** mission extended this method to an enormous stellar sample ([Figure 13](fig13_gaia)). The name originally expanded to *Global Astrometric Interferometer for Astrophysics*, although the flown design is a scanning astrometry mission rather than the proposed interferometer. Launched in December 2013, Gaia carried out science observations from July 2014 until January 2025. Gaia Data Release 3, published in June 2022, provides full astrometric solutions—positions, parallaxes, and proper motions—for about $1.46$ billion sources. The precision depends strongly on source brightness, colour, crowding, and the number and geometry of observations; no single uncertainty describes the whole catalogue.[^gaia_status]
+ESA's **Gaia** mission extended this method to an enormous stellar sample ([Figure 18](fig13_gaia)). The name originally expanded to *Global Astrometric Interferometer for Astrophysics*, although the flown design is a scanning astrometry mission rather than the proposed interferometer. Launched in December 2013, Gaia carried out science observations from July 2014 until January 2025. Gaia Data Release 3, published in June 2022, provides full astrometric solutions—positions, parallaxes, and proper motions—for about $1.46$ billion sources. The precision depends strongly on source brightness, colour, crowding, and the number and geometry of observations; no single uncertainty describes the whole catalogue.[^gaia_status]
 
 ```{figure} _static/_chapter04/fig13_gaia_spacecraft.png
 :width: 70%
 :align: center
 :name: fig13_gaia
 
-**Figure 13** Gaia, designed to measure the positions and motions of stars across the entire sky.
+**Figure 18** Gaia, designed to measure the positions and motions of stars across the entire sky.
 ```
 
 ### Two viewing directions and a common focal plane
 
-Gaia used two telescopes with rectangular primary mirrors approximately $1.45\times0.50\ {\rm m}$ in size. Their lines of sight were separated by a fixed **basic angle** of $106.5^\circ$. Light from the two fields was directed onto one common focal plane ([Figure 14](fig14_gaia_optics)). Measuring angular separations between widely spaced regions of sky ties local observations into a single global astrometric solution. The stability and calibration of the basic angle were therefore central to the mission.[^gaia_instrument]
+Gaia used two telescopes with rectangular primary mirrors approximately $1.45\times0.50\ {\rm m}$ in size. Their lines of sight were separated by a fixed **basic angle** of $106.5^\circ$. Light from the two fields was directed onto one common focal plane ([Figure 19](fig14_gaia_optics)). Measuring angular separations between widely spaced regions of sky ties local observations into a single global astrometric solution. The stability and calibration of the basic angle were therefore central to the mission.[^gaia_instrument]
 
 ```{figure} _static/_chapter04/fig14_gaia_optics.png
 :width: 70%
 :align: center
 :name: fig14_gaia_optics
 
-**Figure 14** Optical layout of Gaia's two telescopes and their common focal-plane assembly.
+**Figure 19** Optical layout of Gaia's two telescopes and their common focal-plane assembly.
 ```
 
-The focal plane contained **106 CCD detectors**, together providing about $938$ million pixels ([Figure 15](fig15_gaia_ccd)). As Gaia rotated, stellar images crossed the detector array; their transit times supplied exceptionally precise position information along the scan direction. Repeated measurements from different scan angles made it possible to solve jointly for stellar positions, proper motions, parallaxes, the spacecraft attitude, and instrumental calibration.[^gaia_instrument]
+The focal plane contained **106 CCD detectors**, together providing about $938$ million pixels ([Figure 20](fig15_gaia_ccd)). As Gaia rotated, stellar images crossed the detector array; their transit times supplied exceptionally precise position information along the scan direction. Repeated measurements from different scan angles made it possible to solve jointly for stellar positions, proper motions, parallaxes, the spacecraft attitude, and instrumental calibration.[^gaia_instrument]
 
 ```{figure} _static/_chapter04/fig15_gaia_focal_plane.png
 :width: 78%
 :align: center
 :name: fig15_gaia_ccd
 
-**Figure 15** The layout of Gaia's CCD focal plane. The different detector strips support source detection, astrometry, photometry, and spectroscopy.
+**Figure 20** The layout of Gaia's CCD focal plane. The different detector strips support source detection, astrometry, photometry, and spectroscopy.
 ```
 
 ### Location near L2 and the parallax baseline
 
-Gaia observed from a Lissajous-type orbit around the Sun–Earth **L2** region, roughly $1.5$ million kilometres beyond the Earth in the direction away from the Sun ([Figure 16](fig16_l2)). This location permitted a stable thermal environment and efficient, repeated observations of the sky. An orbit about L2 requires station-keeping; the L2 equilibrium is not dynamically stable. The distance from the Earth to L2 is **not** Gaia's annual parallax baseline. Like a terrestrial observatory, Gaia follows the Earth around the Sun, so the annual geometric baseline remains of order one au.[^gaia_orbit]
+Gaia observed from a Lissajous-type orbit around the Sun–Earth **L2** region, roughly $1.5$ million kilometres beyond the Earth in the direction away from the Sun ([Figure 21](fig16_l2)). This location permitted a stable thermal environment and efficient, repeated observations of the sky. An orbit about L2 requires station-keeping; the L2 equilibrium is not dynamically stable. The distance from the Earth to L2 is **not** Gaia's annual parallax baseline. Like a terrestrial observatory, Gaia follows the Earth around the Sun, so the annual geometric baseline remains of order one au.[^gaia_orbit]
 
 ```{figure} _static/_chapter04/fig16_lagrange_points.png
 :width: 61%
 :align: center
 :name: fig16_l2
 
-**Figure 16** The Sun–Earth Lagrange points. Gaia observed near L2, beyond the Earth as viewed from the Sun.
+**Figure 21** The Sun–Earth Lagrange points. Gaia observed near L2, beyond the Earth as viewed from the Sun.
 ```
 
 ### Scanning the celestial sphere
 
-Gaia did not point at one selected target for a long exposure. It rotated once every approximately **six hours**, sweeping its two fields of view along great circles. Its spin axis maintained an angle of about $45^\circ$ to the Sun and precessed around the Sun direction in about **63 days**. Combined with the Earth's annual motion, this scanning law repeatedly covered the entire sky with different orientations ([Figure 17](fig17_gaia_scanning)). The time-dependent pattern of observations is what separates annual parallax from proper motion in the global fit.[^gaia_scanning]
+Gaia did not point at one selected target for a long exposure. It rotated once every approximately **six hours**, sweeping its two fields of view along great circles. Its spin axis maintained an angle of about $45^\circ$ to the Sun and precessed around the Sun direction in about **63 days**. Combined with the Earth's annual motion, this scanning law repeatedly covered the entire sky with different orientations ([Figure 22](fig17_gaia_scanning)). The time-dependent pattern of observations is what separates annual parallax from proper motion in the global fit.[^gaia_scanning]
 
 ```{figure} _static/_chapter04/fig17_gaia_scanning_law.png
 :width: 70%
 :align: center
 :name: fig17_gaia_scanning
 
-**Figure 17** Gaia's scanning geometry: two lines of sight, spacecraft spin, and slow precession of the spin axis.
+**Figure 22** Gaia's scanning geometry: two lines of sight, spacecraft spin, and slow precession of the spin axis.
 ```
 
 ### Turning measurements into a catalogue
 
-The spacecraft's measurements were only the beginning of the astrometric result. The **Gaia Data Processing and Analysis Consortium** (DPAC) designed simulations and reduction algorithms, calibrated the instruments and attitude, processed the very large data volume, validated the results, and prepared the public catalogues. Its work drew on scientists, engineers, and software specialists across more than twenty countries ([Figure 18](fig18_dpac)).[^dpac] The scientific lifetime of an astrometric mission extends beyond the spacecraft's operating lifetime: Gaia stopped observing in 2025, while further processing and data releases continue. As of October 2026, ESA lists Data Release 4 as planned for December 2026 and the final Data Release 5 no earlier than the end of 2030; these are schedules, not completed releases.[^gaia_status]
+The spacecraft's measurements were only the beginning of the astrometric result. The **Gaia Data Processing and Analysis Consortium** (DPAC) designed simulations and reduction algorithms, calibrated the instruments and attitude, processed the very large data volume, validated the results, and prepared the public catalogues. Its work drew on scientists, engineers, and software specialists across more than twenty countries ([Figure 23](fig18_dpac)).[^dpac] The scientific lifetime of an astrometric mission extends beyond the spacecraft's operating lifetime: Gaia stopped observing in 2025, while further processing and data releases continue. As of October 2026, ESA lists Data Release 4 as planned for December 2026 and the final Data Release 5 no earlier than the end of 2030; these are schedules, not completed releases.[^gaia_status]
 
 ```{figure} _static/_chapter04/fig18_dpac_map.png
 :width: 48%
 :align: center
 :name: fig18_dpac
 
-**Figure 18** Historical map of the European distribution of contributors to Gaia data analysis. Producing an astrometric catalogue is a large collaborative computation as well as a space observation.
+**Figure 23** Historical map of the European distribution of contributors to Gaia data analysis. Producing an astrometric catalogue is a large collaborative computation as well as a space observation.
 ```
 
 ## References
