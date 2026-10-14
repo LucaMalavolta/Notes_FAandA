@@ -2,6 +2,8 @@
 
 Elenco permanente dei PDF indicati dall’utente come fonti per gli appunti di Fundamentals of Astronomy and Astrophysics. Registrato il 30 settembre 2026.
 
+Ultimo aggiornamento: 14 ottobre 2026.
+
 I PDF restano nelle cartelle originali: questo elenco ne conserva i riferimenti, senza copiarli nel repository. I titoli e i nomi sono ripresi dai file; i dati bibliografici completi e le edizioni devono essere verificati nei frontespizi prima di produrre citazioni formali.
 
 ## Barbieri — Fundamentals of Astronomy
@@ -21,6 +23,12 @@ I PDF restano nelle cartelle originali: questo elenco ne conserva i riferimenti,
 - File: `Kartunnen _ Fundamental Astronomy (PDF).pdf`
 - Percorso Windows: `E:/OneDrive - Università degli Studi di Padova/Fundamentals_AandA/Books/Kartunnen _ Fundamental Astronomy (PDF).pdf`
 - Percorso in questo ambiente: `/mnt/e/OneDrive - Università degli Studi di Padova/Fundamentals_AandA/Books/Kartunnen _ Fundamental Astronomy (PDF).pdf`
+
+## Seeds e Backman — Foundations of Astronomy
+
+- File: `Seeds M., Backman D. Foundations of Astronomy 15ed 2026.pdf`
+- Percorso Windows: `C:/Users/malavolta/OneDrive - Università degli Studi di Padova/Fundamentals_AandA/Books/Seeds M., Backman D. Foundations of Astronomy 15ed 2026.pdf`
+- Percorso in questo ambiente: `/mnt/c/Users/malavolta/OneDrive - Università degli Studi di Padova/Fundamentals_AandA/Books/Seeds M., Backman D. Foundations of Astronomy 15ed 2026.pdf`
 
 ## Consultazione e citazioni
 
