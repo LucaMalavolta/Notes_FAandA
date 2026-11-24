@@ -12,7 +12,7 @@ The Earth's rotation and revolution establish the familiar daily and yearly cycl
 
 ## Sidereal and tropical cycles
 
-A **solar day** is the interval between successive passages of the Sun across the local meridian. Because the apparent Sun moves at a variable rate during the year, successive *apparent* solar days are not all equal. The **mean solar day**, defined using a uniformly moving fictitious Sun, is the approximately 24-hour unit used below. A **sidereal day** measures one rotation with respect to a nearly fixed celestial direction. During one solar day, the Earth has advanced in its orbit and must rotate a little more than one full turn to bring the Sun back to the meridian. Consequently, the sidereal day is shorter than the mean solar day.[^time_cycles]
+A **solar day** is the interval between two consecutive passages of the Sun across the local meridian. Because the apparent Sun moves at a variable rate during the year, successive *apparent* solar days are not all equal. The **mean solar day**, defined using a uniformly moving fictitious Sun, is the approximately 24-hour unit used below. A **sidereal day** measures one rotation with respect to a nearly fixed celestial direction. During one solar day, the Earth has advanced in its orbit and must rotate a little more than one full turn to bring the Sun back to the meridian. Consequently, the sidereal day is shorter than the mean solar day.[^time_cycles] 
 
 Let $\tau$ be the mean solar day, $\tau_*$ the sidereal day, and $P_*$ the sidereal year, all expressed in the same units. In the circular-orbit approximation, the Earth's rotation rate with respect to the stars is the sum of its rotation rate with respect to the mean Sun and its orbital rate:
 
@@ -20,9 +20,9 @@ $$
 \frac{1}{\tau_*}=\frac{1}{\tau}+\frac{1}{P_*}.
 $$
 
-Taking $\tau=1$ mean solar day and $P_*\simeq365.2564$ mean solar days gives $\tau_*\simeq0.99727$ day, or approximately **23 h 56 min 4 s**. This relation describes mean rates: the exact interval between observed transits of a particular star is affected by the definitions of the celestial reference direction and by small changes in Earth rotation.
+Taking $\tau=1$ mean solar day and $P_*\simeq365.2564$ mean solar days gives $\tau_*\simeq0.99727$ day, or approximately **23 h 56 min 4 s**. This relation describes mean rates: the exact interval between observed transits of a particular star is affected by the definitions of the celestial reference direction and by small changes in Earth's rotation. You can find a detailed discussion in the chapter [Measuring the time](#chapter06_measuring_the_time).
 
-Two different orbital years are needed. The **sidereal year** is the time for the Sun's apparent direction to return to the same orientation relative to the distant stars; equivalently, it measures one terrestrial revolution in an approximately fixed frame. The **tropical year** follows the cycle of seasons. In elementary geometry it is described as the interval between successive passages of the Sun through the **vernal equinox**, the intersection at which the Sun passes from south to north of the celestial equator. More precisely, the *mean* tropical year is defined by a $360^\circ$ increase of the Sun's mean ecliptic longitude measured from the moving equinox. These definitions must be distinguished when precision better than a few minutes is required.[^time_cycles]
+Similarly to the day, you can define the duration of a year in different ways, depending on the reference point you use. For the year, we always use the Sun as the reference object, but we change what we measure the time against. The **sidereal year** is the time for the Sun's apparent direction to return to the same orientation relative to the *distant stars*; equivalently, it measures one terrestrial revolution in an approximately fixed frame. The **tropical year** is the interval between successive passages of the Sun through the **vernal equinox**, the intersection at which the Sun passes from south to north of the celestial equator, and it follows the cycle of seasons. More precisely, the *mean* tropical year is defined by a $360^\circ$ increase of the Sun's mean ecliptic longitude measured from the moving equinox. These definitions must be distinguished when precision better than a few minutes is required.[^time_cycles]
 
 ```{figure} _static/_chapter05/fig01_tropical_sidereal_year.png
 :width: 75%
@@ -36,7 +36,7 @@ Near the present epoch, the sidereal year is about $365.2564$ days and the mean 
 
 ## Discovery of the precession of the equinox
 
-Around 129 BCE, **Hipparchus of Nicaea** compared his measurement of the position of Spica ($\alpha$ Virginis) with observations attributed to **Timocharis** roughly 144 years earlier. Its ecliptic longitude had changed by about $2^\circ$, while its ecliptic latitude was nearly unchanged. The same systematic longitude shift appeared for other stars. An interpretation in which all stars moved together was less economical than one in which the coordinate origin—the vernal equinox, traditionally denoted $\gamma$—had moved along the ecliptic.[^precession]
+Around 129 BCE, **Hipparchus of Nicaea** compared his measurement of the position of Spica ($\alpha$ Virginis) with observations attributed to **Timocharis** roughly 144 years earlier. Its ecliptic longitude had changed by about $2^\circ$, while its ecliptic latitude was nearly unchanged. The same systematic longitude shift appeared for other stars. An interpretation in which all stars moved together was less logical than one in which the coordinate origin—the vernal equinox, traditionally denoted $\gamma$—had moved along the ecliptic.[^precession]
 
 Two degrees in 144 years corresponds to about $50''$ per year. Seen from the north ecliptic pole, the Sun moves eastward along the ecliptic over a year, whereas the equinox shifts westward. The Sun therefore reaches the moving equinox a little *before* completing a full circuit relative to the stars. This westward displacement is the **precession of the equinox**. The zodiac diagram in [Figure 2](fig02_equinox_zodiac) provides a geometric picture of the equinox moving against the stellar background.
 
@@ -48,7 +48,7 @@ Two degrees in 144 years corresponds to about $50''$ per year. Seen from the nor
 **Figure 2** The ecliptic and celestial equator cross at the equinoxes. Precession changes the stellar background against which their intersection is seen.
 ```
 
-The vernal equinox lay in the constellation Aries in antiquity and is now in Pisces; its continuing westward motion will eventually carry it into Aquarius ([Figure 3](fig03_equinox_sky)). The names of the twelve astrological signs are conventional $30^\circ$ divisions of the ecliptic and do not track the present boundaries of the astronomical constellations.
+The vernal equinox lay in the constellation Aries in antiquity and is now in Pisces; its continuing westward motion will eventually carry it into Aquarius ([Figure 3](fig03_equinox_sky)). The names of the twelve astrological signs are conventional $30^\circ$ divisions of the ecliptic and do not track the current boundaries of the astronomical constellations or the Sun's actual position within them over the year.
 
 ```{figure} _static/_chapter05/fig03_vernal_equinox_map.png
 :width: 85%
@@ -82,6 +82,11 @@ The Earth's mass is not distributed spherically. Rotation produces an equatorial
 **Figure 5** Exaggerated view of spatial variations in the terrestrial gravity field. It illustrates why the real Earth cannot be represented exactly by a uniform sphere.
 ```
 
+The distribution of the terrestrial masses is not spherical and does not have azimuthal symmetry; as a consequence, the instantaneous rotation axis is influenced by the presence of the Moon and of the Sun, causing 
+**precession** and **nutation**. The irregular and variable mass distribution on the surface (winds, tides, currents) and in the interior of Earth (earthquakes) will cause a short-term shift of the *instantaneous* rotation axis compared to the minor axis of the geometrically best-fitting ellipsoid, causing the **polar motions* or **Eulerian nutation**. In general, the rotation cannot be uniform for arbitrarily long periods. 
+
+
+
 ## Lunisolar precession
 
 The Moon and Sun exert gravitational forces on the Earth's equatorial bulge. Because their directions are generally outside the equatorial plane, the forces on opposite parts of the bulge create a **torque**. For a rotating body, a torque changes the direction of angular momentum rather than simply pushing the axis toward the disturbing body. The spinning-top analogy in [Figure 6](fig06_precession_top) illustrates this response. The detailed direction of the terrestrial torque differs from that on a top under gravity, so the analogy is one of gyroscopic motion rather than an exact force diagram.[^precession]
@@ -93,6 +98,19 @@ The Moon and Sun exert gravitational forces on the Earth's equatorial bulge. Bec
 
 **Figure 6** A spinning top whose axis traces a cone under an external torque. Earth's axis undergoes an analogous slow change of orientation under lunar and solar torques.
 ```
+
+
+
+```{figure} _static/_chapter05/figure06b_spnning_earth_precession.png
+:width: 48%
+:align: center
+:name: fig06_precession_top
+
+**Figure 6** ______.
+```
+
+
+
 
 The celestial pole consequently describes, to first approximation, a circle around the north ecliptic pole. The angular radius is approximately the obliquity, $23.4^\circ$, and a circuit takes about **26,000 years**. The equinox shifts in the opposite sense along the ecliptic at about $50.3''$ per year. These are approximate, epoch-dependent numbers: the exact path is modified by nutation and by slow changes in the ecliptic itself. [Figure 7](fig07_pole_path) shows why different stars serve as pole stars at different epochs.
 

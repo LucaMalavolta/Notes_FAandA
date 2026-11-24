@@ -8,7 +8,7 @@
 
 The coordinate transformations developed in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>` relate directions expressed in different reference systems. An actual observation involves an additional question: does the measured direction coincide with the direction from the observer to the object? In general, it does not. The atmosphere bends incoming light; the motion of the observer changes its apparent direction; and a nearby object is seen from different directions when the observing position changes. These effects are called **refraction**, **aberration**, and **parallax**. Each has a distinct physical cause, time dependence, and angular scale.
 
-In this chapter we will introduce the most important effects that cause an **apparent variation of the position of a star in the sky**. In the next chapter, we will study effects that cause a **variation of the coordinates as reported in the catalogue*** but that do not affect the observed position of a star, such as **precession, nutation, polar motion**: these effects change coordinates with time, but they describe changes in the reference axes or the source position rather than the three effects developed here.
+In this chapter we will introduce the most important effects that cause an **apparent variation of the position of a star in the sky**. In the next chapter, we will study effects that cause a **variation of the coordinates as reported in a catalogue**, but that do not affect the observed position of a star, such as **precession, nutation, polar motion**: these effects change coordinates with time, but they describe changes in the reference axes or the source position rather than the three effects developed here.
 
 ## Atmospheric refraction
 
@@ -25,7 +25,7 @@ where $\theta_1$ and $\theta_2$ are measured from the normal to the interface. A
 :align: center
 :name: fig01_snell_law
 
-**Figure 1** Graphical representation of the Snell's law.
+**Figure 1** Graphical representation of Snell's law.
 ```
 
 The terrestrial atmosphere is not a single uniform layer. Its pressure and density generally decrease upward, and its refractive index approaches the vacuum value $n=1$ at high altitude. Temperature also affects $n$, although temperature itself need not decrease monotonically with height. The stack of layers in [Figure 2](fig01_refraction_layers) is a useful approximation: as a ray travels downward into denser air, it bends gradually toward the local vertical.[^refraction]
@@ -38,7 +38,7 @@ The terrestrial atmosphere is not a single uniform layer. Its pressure and densi
 **Figure 2** A ray crossing atmospheric layers of increasing refractive index. The successive changes of direction approximate the continuously curved path through the real atmosphere.
 ```
 
-The observer sees the star along the direction in which the light *arrives*, as though its final path were extended backward in a straight line. If $z_{\rm true}$ is the zenith distance in the absence of the atmosphere and $z_{\rm obs}$ is the observed zenith distance, the **astronomical refraction** is
+The observer sees the star along the direction in which the light *arrives*, as though its final path were extended backwards in a straight line. If $z_{\rm true}$ is the zenith distance in the absence of the atmosphere and $z_{\rm obs}$ is the observed zenith distance, the **astronomical refraction** is
 
 $$
 R=z_{\rm true}-z_{\rm obs}=h_{\rm obs}-h_{\rm true}.
@@ -52,7 +52,7 @@ $$
 
 where $n_0$ is the refractive index near the observer. This expression explains why refraction grows rapidly as one approaches the horizon; it must not be used at $z=90^\circ$, where its divergence is an artefact of the flat-layer approximation. For a standard sea-level atmosphere, a commonly adopted value at the horizon is about $34'$—comparable to the Sun's apparent diameter. The actual correction depends on pressure, temperature, wavelength, and the vertical structure of the atmosphere.[^horizon_refraction]
 
-By symmetry, a stratified atmosphere produces zero *systematic* refraction exactly at the zenith. Local turbulence can still make an image wander and blur. Long-exposure star trails close to the horizon can show changes in the apparent path as the light traverses a longer and more variable atmospheric column ([Figure 3](fig02_refraction_trails)). The presence of clouds near the horizon amplifies the atmospheric refraction, due to their variable density and temperature.
+By symmetry, a stratified atmosphere produces zero *systematic* refraction exactly at the zenith. Local turbulence can still make an image wander and blur. Long-exposure star trails close to the horizon can show changes in the apparent path as the light traverses a longer and more variable atmospheric column ([Figure 3](fig02_refraction_trails)). Clouds near the horizon amplify atmospheric refraction due to their variable density and temperature. The full video is available [here](https://youtu.be/E11-07WfdjU?t=40)
 
 ```{figure} _static/_chapter04/fig02_refracted_star_trails.png
 :width: 85%
@@ -64,7 +64,7 @@ By symmetry, a stratified atmosphere produces zero *systematic* refraction exact
 
 ## Aberration of light
 
-Even in a vacuum, a moving observer measures a direction that differs from the direction measured by an observer at rest in the chosen reference frame. During the finite travel time of a photon through a telescope, the telescope moves. The familiar analogy is rain falling vertically for a stationary observer but appearing to arrive obliquely for someone who runs through it ([Figure 4](fig03_person_aberration
+Even in a vacuum, a moving observer measures a direction that differs from the direction measured by an observer at rest in the chosen reference frame.  The familiar analogy is rain falling vertically for a stationary observer but appearing to arrive obliquely for someone who runs through it ([Figure 4](fig03_person_aberration
 )). 
 
 
@@ -76,7 +76,7 @@ Even in a vacuum, a moving observer measures a direction that differs from the d
 **Figure 4** Analogy of aberration with a person standing or running under the rain.
 ```
 
-A telescope in motion will see the target in an apparent position slightly towards the direction of the observer ([Figure 5](fig03_aberration)).
+Substitute the rain with photons, and the umbrella with a telescope. During the finite travel time of a photon through a telescope, the telescope moves. A telescope in motion will see the target in an apparent position slightly towards the direction of the observer ([Figure 5](fig03_aberration)).
 
 
 ```{figure} _static/_chapter04/fig03_stellar_aberration.png
@@ -88,7 +88,7 @@ A telescope in motion will see the target in an apparent position slightly towar
 ```
 
 The aberration is maximum when the *true* direction of the target is perpendicular to the velocity of the observer. 
-For speed $v\ll c$, let $v_\perp$ be the component of the observer's velocity perpendicular to the incoming stellar direction. The small angular displacement is approximately
+For speed $v\ll c$, let $v_\perp$ be the component of the observer's velocity perpendicular to the incoming stellar direction. The small angular displacement is approximately.
 
 $$
 \Delta\theta\simeq\frac{v_\perp}{c} \quad\text{(radians)}.
@@ -101,13 +101,13 @@ $$
 \simeq\frac{\boldsymbol{v}-(\boldsymbol{v}\cdot\boldsymbol{s})\boldsymbol{s}}{c}.
 $$
 
-The term on the right is the projection of velocity onto the tangent plane of the celestial sphere. This vector form specifies the direction of the shift as well as its size. It is a first-order approximation to relativistic aberration, sufficient for the angular scales considered here.[^aberration]
+The term on the right is the projection of velocity onto the tangent plane of the celestial sphere. This vector form specifies the direction and magnitude of the shift. It is a first-order approximation to relativistic aberration, sufficient for the angular scales considered here.[^aberration]
 
 ### Annual aberration
 
 The Earth's orbital velocity is approximately $30\ {\rm km\,s^{-1}}$. The corresponding maximum annual aberration is $v_\oplus/c\simeq20.5''$, called the **constant of aberration** to the accuracy needed here. As the direction of orbital velocity changes during the year, the apparent position of a fixed star describes a small ellipse. For a star at the ecliptic pole, the locus is nearly a circle with angular radius about $20.5''$; for a star near the ecliptic plane, it becomes nearly a line segment. The approximately $41''$ end-to-end span is twice the angular amplitude, not the amplitude itself.[^aberration]
 
-Since Earth's velocity vector always lies in the ecliptic plane (by definition of orbit), the annual aberration effect is greater for a star perpendicular to the ecliptic plane, i.e., at the ecliptic poles. A star with ecliptic latitude $\pm$ 90° will always apparently lie at a distance  $\approx 20.5''$ from its true position, regardless of the moment of the year. Its position along this circle will depend on the direction of the Earth's velocity vector, which rotates along the year. 
+Since Earth's velocity vector always lies in the ecliptic plane (by definition of orbit), the annual aberration effect is greater for a star perpendicular to the ecliptic plane, i.e., at the ecliptic poles. A star with ecliptic latitude $\pm$ 90° will always appear at a distance $\approx 20.5''$ from its true position, regardless of the time of year. Its position along this circle depends on the direction of the Earth's velocity vector, which rotates over the year. 
 
 ```{figure} _static/_chapter04/fig03_stellar_aberration_from_Earth.png
 :width: 62%
@@ -117,9 +117,9 @@ Since Earth's velocity vector always lies in the ecliptic plane (by definition o
 **Figure 6** Aberration of a star at the ecliptic pole (purple direction) and on the ecliptic plane (orange direction) during the year. Solid lines represent the true direction, while dashed lines represent the apparent direction due to aberration. The Earth velocity vector is shown in green. 
 ```
 
-Conversely, if a star lies on the ecliptic (ecliptic latitude $\lambda=0 \degree$), the Earth's velocity vector will be parallel or antiparallel to the star's direction every six months, causing no aberration in the star's position. After three months, and every six months, the Earth's velocity vector will be perpendicular to the star's direction, causing the maximum deviation of its position, but still on the ecliptic plane. Thus, along the year, the star will move back and forth from its true position along a line on the ecliptic.
+Conversely, if a star lies on the ecliptic (ecliptic latitude $\lambda=0°$), the Earth's velocity vector will be parallel or antiparallel to the star's direction every six months, causing no aberration in the star's position. After three months, and every six months, the Earth's velocity vector will be perpendicular to the star's direction, causing the maximum deviation of its position, but still on the ecliptic plane. Thus, along the year, the star will move back and forth from its true position along a line on the ecliptic.
 
-Recapping, the star will describe a circle if it is on the ecliptic pole ($\lambda = \pm 90 \degree$), and a line if it is on the ecliptic plane ($\lambda = 0 \degree$). For intermediate latitudes, the shape is an ellipse that flattens more along the vertical as it approaches the ecliptic plane. The position along this ellipse will depend on the ecliptic longitude $\beta$ of the star [Figure 7](fig03_aberration_during_year
+Recapping, the star will describe a circle if it is on the ecliptic pole ($\lambda = \pm 90°$), and a line if it is on the ecliptic plane ($\lambda = 0°$). For intermediate latitudes, the shape is an ellipse that flattens more along the vertical as it approaches the ecliptic plane. The position along this ellipse will depend on the ecliptic longitude $\beta$ of the star [Figure 7](fig03_aberration_during_year
 )
 
 
@@ -128,7 +128,7 @@ Recapping, the star will describe a circle if it is on the ecliptic pole ($\lamb
 :align: center
 :name: fig03_aberration_during_year
 
-**Figure 7** Annual aberration at varyng ecliptic latitudes $\lambda$ for a star with ecliptic longitude $\beta = 270°$. The star has the same ecliptic longitude of the target in [Figure 6](fig03_aberration_along_orbit).
+**Figure 7** Annual aberration at varyng ecliptic latitudes $\lambda$ for a star with ecliptic longitude $\beta = 270°$. The star has the same ecliptic longitude as the target in [Figure 6](fig03_aberration_along_orbit).
 ```
 
 
@@ -186,7 +186,7 @@ This immediately gives the two practical rules: a longer baseline gives a larger
 
 ### Diurnal parallax
 
-A terrestrial observer is displaced from the Earth's centre by approximately one Earth radius. For Solar System objects this displacement can make a measurable difference between a geocentric direction and a **topocentric** direction. As the Earth rotates, the observer's position changes relative to the distant object, giving **diurnal parallax** ([Figure 11](fig06_diurnal_geometry)). The precise shift depends on the object's distance, the observer's location and hour angle, and the angle between the Earth-centre-to-observer vector and the line of sight.
+A terrestrial observer is displaced from the Earth's centre by approximately one Earth radius. For Solar System objects, this displacement can make a measurable difference between a geocentric direction and a **topocentric** direction. As the Earth rotates, the observer's position changes relative to the distant object, giving **diurnal parallax** ([Figure 11](fig06_diurnal_geometry)). The precise shift depends on the object's distance, the observer's location and hour angle, and the angle between the Earth-centre-to-observer vector and the line of sight.
 
 ```{figure} _static/_chapter04/fig06_diurnal_geometry.png
 :width: 58%
@@ -202,7 +202,7 @@ $$
 \sin\pi_{\rm h}=\frac{R_\oplus}{r}.
 $$
 
-At the Moon's typical distance, about $384,400\ {\rm km}$, this is nearly $57'$, large enough that observers at different terrestrial locations can see the Moon in noticeably different directions. The simultaneous images in [Figure 12](fig07_lunar_parallax) illustrate how the Moon's location against the background differs between observing sites. The baseline here is a radius measured from the Earth's centre; it is not the full distance traversed by a surface observer over a day.
+At the Moon's typical distance, about $384,400\ {\rm km}$, this is nearly $57'$, large enough that observers at different terrestrial locations can see the Moon in noticeably different directions. The simultaneous images in [Figure 12](fig07_lunar_parallax) illustrate how the Moon's location against the background differs between observing sites. The baseline here is a radius measured from the Earth's centre; it is not the full distance a surface observer traverses over a day.
 
 ```{figure} _static/_chapter04/fig07_lunar_parallax.png
 :width: 55%
@@ -236,7 +236,7 @@ For a star, the Earth's radius is usually too small a baseline. The motion of th
 
 ### Secular parallax
 
-The Sun also moves through the Galaxy. Over sufficiently long intervals its displacement can provide a baseline longer than the Earth's orbit, producing what is called **secular parallax** ([Figure 15](fig10_secular_parallax)). The Sun completes an orbit around the Milky Way in roughly $230$ million years.[^solar_motion] Unlike the controlled one-year geometry of annual parallax, a secular measurement is entangled with the stars' own motions. Its interpretation therefore requires a model of relative velocities; one cannot infer an individual stellar distance from the Solar displacement alone.
+The Sun also moves through the Galaxy. Over sufficiently long intervals, its displacement can provide a baseline longer than the Earth's orbit, producing what is called **secular parallax** ([Figure 15](fig10_secular_parallax)). The Sun completes an orbit around the Milky Way in roughly $230$ million years.[^solar_motion] Unlike the controlled one-year geometry of annual parallax, a secular measurement is entangled with the stars' own motions. Its interpretation therefore requires a model of relative velocities; one cannot infer an individual stellar distance from the Solar displacement alone.
 
 ```{figure} _static/_chapter04/fig10_solar_galactic_motion.png
 :width: 65%
@@ -248,7 +248,7 @@ The Sun also moves through the Galaxy. Over sufficiently long intervals its disp
 
 ## Trigonometric distances and the parsec
 
-The geometry of stellar parallax is represented in [Figure 16](fig11_parallax_triangle). If $r$ is the distance to a star and $\pi$ is the small angle subtended by a transverse baseline of one au, then
+The geometry of stellar parallax is represented in [Figure 16](fig11_parallax_triangle). If $r$ is the distance to a star and $\pi$ is the small angle subtended by a transverse baseline of one au, then.
 
 $$
 \tan\pi=\frac{1\ {\rm au}}{r}
@@ -329,7 +329,7 @@ The focal plane contained **106 CCD detectors**, together providing about $938$ 
 
 ### Location near L2 and the parallax baseline
 
-Gaia observed from a Lissajous-type orbit around the Sun–Earth **L2** region, roughly $1.5$ million kilometres beyond the Earth in the direction away from the Sun ([Figure 21](fig16_l2)). This location permitted a stable thermal environment and efficient, repeated observations of the sky. An orbit about L2 requires station-keeping; the L2 equilibrium is not dynamically stable. The distance from the Earth to L2 is **not** Gaia's annual parallax baseline. Like a terrestrial observatory, Gaia follows the Earth around the Sun, so the annual geometric baseline remains of order one au.[^gaia_orbit]
+Gaia observed from a Lissajous-type orbit around the Sun–Earth **L2** region, roughly $1.5$ million kilometres beyond the Earth in the direction away from the Sun ([Figure 21](fig16_l2)). This location permitted a stable thermal environment and efficient, repeated observations of the sky. An orbit about L2 requires station-keeping; the L2 equilibrium is not dynamically stable. The distance from the Earth to L2 is **not** Gaia's annual parallax baseline. Like a terrestrial observatory, Gaia follows the Earth around the Sun, so the annual geometric baseline remains on the order of 1 au.[^gaia_orbit]
 
 ```{figure} _static/_chapter04/fig16_lagrange_points.png
 :width: 61%
@@ -372,7 +372,7 @@ The spacecraft's measurements were only the beginning of the astrometric result.
 - **US Naval Observatory**, [Rise, Set, and Twilight Definitions](https://aa.usno.navy.mil/faq/RST_defs), for the conventional mean horizon-refraction correction.
 - **European Space Agency**, [Hipparcos mission](https://www.cosmos.esa.int/web/Hipparcos), [Gaia mission](https://www.esa.int/content/view/full/416066), [Gaia DR3 contents](https://www.cosmos.esa.int/web/gaia/dr3), and [Gaia scanning law](https://gea.esac.esa.int/archive/documentation/GDR2/Introduction/chap_cu0int/cu0int_sec_mission/cu0int_ssec_scanning_law.html), for mission history, instrumentation, and data.
 
-[^refraction]: Barbieri and Bertini (2021), Chapters 2–3; Karttunen et al. (2017), Chapter 2. The layered picture is an approximation to a continuously varying refractive index.
+[^refraction]: Barbieri and Bertini (2021), Chapters 2–3; Karttunen et al. (2017), Chapter 2. The layered picture approximates a continuously varying refractive index.
 
 [^horizon_refraction]: [US Naval Observatory, Rise, Set, and Twilight Definitions](https://aa.usno.navy.mil/faq/RST_defs) and [First Sunrise of the New Year](https://aa.usno.navy.mil/faq/first_sunrise.html). The $34'$ value is an adopted average at sea level, not a fixed correction for every atmosphere.
 
