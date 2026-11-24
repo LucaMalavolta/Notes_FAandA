@@ -72,7 +72,7 @@ Ecliptic longitude $\lambda$ and latitude $\beta$ use the plane of the Earth's o
 
 For high-precision work, the orbital motion of the Earth–Moon system is described through its barycentre and a specified reference plane and epoch. The Moon's monthly displacement of Earth around that barycentre must not be mistaken for a corresponding monthly change of the *mean* ecliptic. Likewise, a real observatory uses a terrestrial reference frame tied to Earth and a celestial frame tied to distant objects. The transformation between them requires the measured orientation and rotation of Earth, rather than a single immutable axis.[^earth_orientation]
 
-The Earth's mass is not distributed spherically. Rotation produces an equatorial bulge, while continents, oceans, atmosphere, and internal structures introduce further departures from a simple ellipsoid. [Figure 5](fig05_earth_mass) visualizes variations in the gravity field that reflect this uneven distribution. The **geoid** is an equipotential surface of that field; an oblate ellipsoid is a convenient simpler approximation to Earth's figure. Winds, ocean currents, tides, and earthquakes redistribute mass and can change the rotation rate and the orientation of the instantaneous rotation axis. Even the duration of a day is therefore not exactly constant over arbitrarily long intervals.[^earth_orientation]
+The Earth's mass is not distributed spherically. Rotation produces an equatorial bulge, while continents, oceans, atmosphere, and internal structures introduce further departures from a simple ellipsoid. [Figure 5](fig05_earth_mass) visualises variations in the gravity field that reflect this uneven distribution. The **geoid** is an equipotential surface of that field; an oblate ellipsoid is a convenient simpler approximation to Earth's figure. Winds, ocean currents, tides, and earthquakes redistribute mass and can change the rotation rate and the orientation of the instantaneous rotation axis. Even the duration of a day is therefore not exactly constant over arbitrarily long intervals.[^earth_orientation]
 
 ```{figure} _static/_chapter05/fig05_earth_mass_distribution.png
 :width: 70%
@@ -89,7 +89,9 @@ The distribution of the terrestrial masses is not spherical and does not have az
 
 ## Lunisolar precession
 
-The Moon and Sun exert gravitational forces on the Earth's equatorial bulge. Because their directions are generally outside the equatorial plane, the forces on opposite parts of the bulge create a **torque**. For a rotating body, a torque changes the direction of angular momentum rather than simply pushing the axis toward the disturbing body. The spinning-top analogy in [Figure 6](fig06_precession_top) illustrates this response. The detailed direction of the terrestrial torque differs from that on a top under gravity, so the analogy is one of gyroscopic motion rather than an exact force diagram.[^precession]
+The Moon and Sun exert gravitational forces on the Earth's equatorial bulge. Because their directions are generally outside the equatorial plane, the forces on opposite parts of the bulge create a **torque**. For a rotating body, a torque changes the direction of angular momentum rather than simply pushing the axis toward the disturbing body. The spinning-top analogy in [Figure 6](fig06_precession_top) illustrates this response. In a spinning top, the *pivot of rotation* $O$ is the contact point between the spinning top and the surface, and the *applied force* on the centre of mass $CM$ is the force of gravity $M\vec g$ (towards the ground, in red); as a consequence, the resulting *torque* $\vec \tau$ is pointing away from the reader.  The angular momentum $\vec L$ is perpendicular to the torque, so its magnitude does not change, only its direction, by ${\rm d}\vec L = \vec \tau {\rm d}t$
+
+
 
 ```{figure} _static/_chapter05/fig06_spinning_top_precession.png
 :width: 48%
@@ -99,17 +101,17 @@ The Moon and Sun exert gravitational forces on the Earth's equatorial bulge. Bec
 **Figure 6** A spinning top whose axis traces a cone under an external torque. Earth's axis undergoes an analogous slow change of orientation under lunar and solar torques.
 ```
 
+The detailed direction of the terrestrial torque differs from that on a top under gravity, so the analogy is one of gyroscopic motion rather than an exact force diagram [Figure 7](fig06_precession_earth). In a first approximation, the pivot of rotation corresponds to the centre of mass of Earth; the combined gravitational pull of the Moon and the Sun on the equatorial bulge is the applied force, now pulling towards the ecliptic plane, if we ignore for a moment the $5°$ inclination between the Moon's orbit and the ecliptic. The torque is now towards the reader, and the rotational axis rotates in a **clockwise sense**, hence *it precedes* (and so, we have **precession**). 
 
+[^precession] 
 
 ```{figure} _static/_chapter05/figure06b_spnning_earth_precession.png
 :width: 48%
 :align: center
-:name: fig06_precession_top
+:name: fig06_precession_earth
 
-**Figure 6** ______.
+**Figure 7** Earth's axis undergoes an analogous slow change of orientation as the spinning top, with the main difference being the direction of the lunar and solar torques. Ignore $$\omega_p and the black arrow, since they are referring to the case of the spinning top.
 ```
-
-
 
 
 The celestial pole consequently describes, to first approximation, a circle around the north ecliptic pole. The angular radius is approximately the obliquity, $23.4^\circ$, and a circuit takes about **26,000 years**. The equinox shifts in the opposite sense along the ecliptic at about $50.3''$ per year. These are approximate, epoch-dependent numbers: the exact path is modified by nutation and by slow changes in the ecliptic itself. [Figure 7](fig07_pole_path) shows why different stars serve as pole stars at different epochs.
