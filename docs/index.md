@@ -22,6 +22,8 @@ chapter05_movements_of_the_earth
 chapter06_measuring_the_time
 chapter07_radiation_mechanisms
 chapter08_photometric_concepts
+chapter09_spectroscopic_concepts
+chapter10_stellar_structure_and_evolution
 ```
 
 

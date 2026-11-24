@@ -19,6 +19,9 @@ chapter02_transformation_of_coordinates
 chapter03_telescope_mounts
 chapter04_perturbation_of_coordinates
 chapter05_movements_of_the_earth
+chapter06_measuring_the_time
+chapter07_radiation_mechanisms
+chapter08_photometric_concepts
 ```
 
 
