@@ -2,10 +2,6 @@
 
 # Movements of the Earth
 
-:::{danger}
-This page still need sustantial revision to match the content presented during the lectures
-:::
-
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read
 
 The Earth's rotation and revolution establish the familiar daily and yearly cycles, but neither the terrestrial axis nor the orbital plane remains exactly fixed. The direction of the axis changes through **precession** and **nutation**; the rotation pole also moves with respect to the solid Earth. These changes alter the equator, the equinox, and therefore the coordinates assigned to a celestial object. A star has its own motion as well. To predict where it will appear at a telescope, we must distinguish motion of the reference system from motion of the star and from observational effects such as parallax, aberration, and refraction.
@@ -183,7 +179,6 @@ The two nodes are not fixed in inertial space because the Sun perturbs the plane
 The declination of the Moon varies between $\pm 18.8°$ and $\pm 28.8°$ during a nutation period, according to the ecliptic longitude of the node $\lambda (N)$
 The ascending node $N’$ will oscillate around γ with an amplitude of about $\pm 13°$ in 18.6 years .  
 
-
 James Bradley detected the principal nutation observationally through a long series of stellar positions. In a simple leading-term approximation, with $\lambda (N)$ the ecliptic longitude of the Moon's ascending node, nutation changes the origin of the ecliptic longitude and the obliquity by these amounts[^nutation]:
 
 $$
@@ -193,7 +188,7 @@ $$
 
 The two amplitudes refer to *different angles*: $17.2''$ in longitude and $9.2''$ in obliquity. Their common principal period is about $18.6$ years. Hence, the variation in longitude speeds up or slows down the precession of the equinoxes; the variation in obliquity changes the tilt of Earth's axis relative to the ecliptic.
 
-[Figure 10](fig10_nutation_from_outside) shows the movement of the celestial pole from the outside of the celestial sphere. This movement can be visualised as the instantaneous celestial pole $P_v$ describing a retrograde cone around the mean celestial pole $P_m$ (first image of [Figure 10](fig10b_precession_nutation_from_outside), which in turn describes a cone of aperture $\epsilon$ around the ecliptic pole $E$ due to precession  (second image of [Figure 10](fig10b_precession_nutation_from_outside)). 
+[Figure 10](fig10b_precession_nutation_from_outside) shows the movement of the celestial pole from the outside of the celestial sphere. This movement can be visualised as the instantaneous celestial pole $P_v$ describing a retrograde cone around the mean celestial pole $P_m$ (first image of [Figure 10](fig10b_precession_nutation_from_outside)), which in turn describes a cone of aperture $\epsilon$ around the ecliptic pole $E$ due to precession  (second image of [Figure 10](fig10b_precession_nutation_from_outside)). 
 
 ```{figure} _static/_chapter05/fig10b_precession_nutation_from_outside.png
 :width: 68%
@@ -203,13 +198,13 @@ The two amplitudes refer to *different angles*: $17.2''$ in longitude and $9.2''
 **Figure 10** The ecliptic, equator, and inclined lunar orbit. Their distinct intersections identify the lunar nodes used to describe the changing orientation of the Moon's orbit.
 ```
 
-The instantaneous celestial pole $P_v$ draws an ellipse around $P_m$ with the mìsemimajor axis oriented towards the ecliptic pole    
+The instantaneous celestial pole $P_v$ draws an ellipse around $P_m$ with the semimajor axis oriented towards the ecliptic pole. The axis along the small circle parallel to the ecliptic ($x$ axis in the first image of [Figure 10](fig10b_precession_nutation_from_outside)) is shorter than the one towards the ecliptic pole (y axis in the first image of[Figure 10](fig10b_precession_nutation_from_outside)) even if the coefficient of Bradley's equation is larger in absolute value ($17.2''$ versus $9.2''$) because $\Delta \psi$ is the variation in ecliptic longitude, not the actual real angle variation in the sky. 
 
  A full nutation theory includes many additional terms, so these two expressions are explanatory approximations rather than a precision ephemeris. 
 
 ## Motion of the ecliptic and obliquity
 
-The ecliptic is itself affected by planetary perturbations, particularly from the massive planets. This slow change is called **planetary precession**. It combines with lunisolar precession in the **general precession** used to describe the motion of the equinox. The diagram in [Figure 11](fig11_ecliptic_motion) separates a moving equator from a moving ecliptic: either change can displace their intersection. Planetary terms also have periodic components, often called planetary nutation.[^precession]
+The ecliptic is itself affected by planetary perturbations, particularly from the massive planets. This slow change is called **planetary precession**. It combines with lunisolar precession in the **general precession** used to describe the motion of the equinox. The diagram in [Figure 11](fig11_ecliptic_motion) separates a moving equator from a moving ecliptic: either change can displace their intersection. Planetary terms also have periodic components, often called **planetary nutation**.[^precession] The movements of the ecliptic change only the common origin of the right ascension. A small circle at a distance $\delta$ from the great circle will be smaller by a factor $\cos{\delta}$, hence the actual length of the axis ellipse would be $17.2'' \cos{90* - \epsilon} = 6.8" $, hance smaller than the variation towards the ecliptic pole.
 
 ```{figure} _static/_chapter05/fig11_moving_ecliptic.png
 :width: 70%
@@ -218,6 +213,8 @@ The ecliptic is itself affected by planetary perturbations, particularly from th
 
 **Figure 11** The equatorial plane and the ecliptic can both change orientation. Their moving intersection is the equinox, the classical zero point of right ascension.
 ```
+
+The speed of the Vernal point due to **general precession** can be expressed as a function of time: $G=50''.290966 + 0''.02222T$. The time $T$ is expressed in Julian centuries, where one year corresponds exactly to 365.25 days of 86400 seconds, starting from 12:00 on the first of January 2000, also referred to as J2000.0.
 
 Near J2000.0 the **mean obliquity** decreases by about $0.47''$ per year, or $47''$ per century. This is a local rate, not a law to extrapolate linearly for tens of thousands of years. The long-term behaviour of the Earth's orbital and rotational planes is more complex, and modern precession models represent it with epoch-dependent series.[^obliquity]
 
@@ -257,7 +254,8 @@ The distinction between the two frames is essential. Precession and nutation mov
 
 ## Mean and true fundamental planes
 
-At two dates $t_1$ and $t_2$, the equator and ecliptic have slightly different orientations. Their intersections define different equinox directions $\gamma_1$ and $\gamma_2$; their mutual inclinations give different obliquities $\varepsilon_1$ and $\varepsilon_2$. [Figure 15](fig15_fundamental_planes) illustrates the shift of the equator and equinox between two nearby epochs. The change in a general orientation angle $J$ can be separated conceptually into a smooth part and a periodic part:
+At two dates $t_1$ and $t_2$, the equator and ecliptic have slightly different orientations. Their intersections define different equinox directions $\gamma_1$ and $\gamma_2$; their mutual inclinations give different obliquities $\varepsilon_1$ and $\varepsilon_2$. [Figure 15](fig15_fundamental_planes) illustrates the shift of the equator and equinox between two nearby epochs. The change in a general orientation angle $J$ can be separated conceptually into a **secular part** (a smooth part actually corresponding to a periodic one 
+with an extremely long period) and a **periodic** part (with longest period equal to 18.6 years due to nutation, and many shorter ones):
 
 $$
 J(t)=J(t_0)+a(t-t_0)+b(t-t_0)^2+\cdots
@@ -269,7 +267,7 @@ where the polynomial approximates the slowly varying precessional contribution n
 ```{figure} _static/_chapter05/fig15_fundamental_planes.png
 :width: 68%
 :align: center
-:name: fig15_fundamental_planes
+:name: fig15_new_fundamental_planes
 
 **Figure 15** The equator at two nearby dates intersects the reference ecliptic in different equinox directions. The geometric angles entering the coordinate system are therefore functions of time.
 ```
