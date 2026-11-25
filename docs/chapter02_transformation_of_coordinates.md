@@ -499,7 +499,7 @@ During one sidereal day the Earth completes one rotation relative to the stars, 
 :align: center
 :name: fig11_sidereal_solar_day
 
-**Figure 11** The sidereal day ends when a distant reference star returns to the meridian. The mean solar day ends only after the additional rotation needed to compensate for the Earth's orbital motion. 
+**Figure 12** The sidereal day ends when a distant reference star returns to the meridian. The mean solar day ends only after the additional rotation needed to compensate for the Earth's orbital motion.
 ```
 
 Equivalently, at a fixed civil time the local sidereal time advances by almost four minutes from one date to the next. A given star therefore crosses the meridian approximately four minutes earlier on each successive solar day.
@@ -715,14 +715,14 @@ HA=\Theta-\alpha,
 \dot\delta=0.
 $$
 
-[Figure 18](fig18_altaz_targets) shows examples of horizontal-coordinate tracks for several targets. Its polar diagram follows the widespread North-through-East azimuth convention, so every plotted azimuth must be shifted by $180^\circ$ to obtain the convention used in the equations below. This constant shift changes the zero point of $A$, but not the magnitude of its angular velocity.
+[Figure 19](fig18_altaz_targets) shows examples of horizontal-coordinate tracks for several targets. Its polar diagram follows the widespread North-through-East azimuth convention, so every plotted azimuth must be shifted by $180^\circ$ to obtain the convention used in the equations below. This constant shift changes the zero point of $A$, but not the magnitude of its angular velocity.
 
 ```{figure} _static/_chapter02/fig18_altaz_targets.png
 :width: 90%
 :align: center
 :name: fig18_altaz_targets
 
-Examples of target motion in apparent altitude and azimuth. Extracted from slide 22. The original plot uses $N=0^\circ$, $E=90^\circ$; the text and equations of this chapter use $S=0^\circ$, $W=90^\circ$.
+**Figure 19** Examples of target motion in apparent altitude and azimuth. Extracted from slide 22. The original plot uses $N=0^\circ$, $E=90^\circ$; the text and equations of this chapter use $S=0^\circ$, $W=90^\circ$.
 ```
 
 ### Altitude velocity
@@ -778,14 +778,14 @@ $$
 
 The azimuth rate is therefore positive at rising and setting in the Northern hemisphere, negative in the Southern hemisphere, and zero at the equator. At Padova it is approximately $0.712$ radians per radian of sidereal rotation, or $10.7^\circ$ per sidereal hour.
 
-At the zenith, $\cos a=0$ and azimuth is undefined. A target passing very close to the zenith can consequently require an extremely rapid change of azimuth even though its true angular speed on the celestial sphere remains finite. This is the familiar **zenith blind spot** of an altitude-azimuth mount, illustrated qualitatively by the trails in [Figure 19](fig19_star_trails_zenith). The divergence is a coordinate singularity, not a physical infinite velocity.
+At the zenith, $\cos a=0$ and azimuth is undefined. A target passing very close to the zenith can consequently require an extremely rapid change of azimuth even though its true angular speed on the celestial sphere remains finite. This is the familiar **zenith blind spot** of an altitude-azimuth mount, illustrated qualitatively by the trails in [Figure 20](fig19_star_trails_zenith). The divergence is a coordinate singularity, not a physical infinite velocity.
 
 ```{figure} _static/_chapter02/fig19_star_trails_zenith.png
 :width: 90%
 :align: center
 :name: fig19_star_trails_zenith
 
-Star trails passing near the zenith. An altitude-azimuth description changes azimuth very rapidly for tracks close to the zenith. Extracted from slide 22.
+**Figure 20** Star trails passing near the zenith. An altitude-azimuth description changes azimuth very rapidly for tracks close to the zenith. Extracted from slide 22.
 ```
 
 These angular rates concern the coordinate axes of an ideal altitude-azimuth system. A real telescope must also account for tracking errors, atmospheric refraction, mechanical acceleration limits, and field rotation.

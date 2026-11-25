@@ -146,14 +146,14 @@ The counterweight balances the torque of the telescope about the declination axi
 
 ### Open fork mount
 
-In an **open fork**, the telescope tube lies between two fork arms. The fork rotates about the polar axis, while the tube turns between the arms about the declination axis. This leaves one end of the telescope comparatively accessible and avoids the long external counterweight shaft of a German mount. The *Telescopio Copernico* at Cima Ekar, Asiago, illustrates this arrangement ([Figure 11 a](fig11_mounts_copernico_b) and [b](fig11_mounts_copernico_c)).
+In an **open fork**, the telescope tube lies between two fork arms. The fork rotates about the polar axis, while the tube turns between the arms about the declination axis. This leaves one end of the telescope comparatively accessible and avoids the long external counterweight shaft of a German mount. The *Telescopio Copernico* at Cima Ekar, Asiago, illustrates this arrangement ([Figures 11](fig11_mounts_copernico_b) and [12](fig11_mounts_copernico_c)).
 
 ```{figure} _static/_chapter03/fig11_copernico_fork_b.png
 :width: 55%
 :align: center
 :name: fig11_mounts_copernico_b
 
-**Figure 11 a** The *Telescopio Copernico* at Cima Ekar, Asiago, mounted in an open equatorial fork.
+**Figure 11** The *Telescopio Copernico* at Cima Ekar, Asiago, mounted in an open equatorial fork.
 ```
 
 ```{figure} _static/_chapter03/fig11_copernico_fork_c.png
@@ -161,33 +161,33 @@ In an **open fork**, the telescope tube lies between two fork arms. The fork rot
 :align: center
 :name: fig11_mounts_copernico_c
 
-**Figure 11 b** The *Telescopio Copernico* at Cima Ekar, Asiago, mounted in an open equatorial fork.
+**Figure 12** The *Telescopio Copernico* at Cima Ekar, Asiago, mounted in an open equatorial fork.
 ```
 
 
 
 ### English or yoke mount
 
-In an **English**, or **yoke**, mount the polar axis is supported at both ends of a long frame, and the telescope turns across the frame about its declination axis. The two supports provide stiffness for a heavy telescope, but the closed end of the yoke obstructs directions close to the celestial pole. The 2.5-m Hooker Telescope at Mount Wilson, California, is a historical example ([Figure 12](fig12_mounts_hooker)). Its pole obstruction is a property of this layout, not of all equatorial mounts.
+In an **English**, or **yoke**, mount the polar axis is supported at both ends of a long frame, and the telescope turns across the frame about its declination axis. The two supports provide stiffness for a heavy telescope, but the closed end of the yoke obstructs directions close to the celestial pole. The 2.5-m Hooker Telescope at Mount Wilson, California, is a historical example ([Figure 13](fig12_mounts_hooker)). Its pole obstruction is a property of this layout, not of all equatorial mounts.
 
 ```{figure} _static/_chapter03/fig12_hooker_yoke.png
 :width: 70%
 :align: center
 :name: fig12_mounts_hooker
 
-**Figure 12** Hooker Telescope at Mount Wilson in an English or yoke mount. The supporting frame limits access to the celestial pole.
+**Figure 13** Hooker Telescope at Mount Wilson in an English or yoke mount. The supporting frame limits access to the celestial pole.
 ```
 
 ### Horseshoe mount
 
-A **horseshoe mount** opens one end of the yoke into a large curved bearing. The goal is to support the weight of a 4-meter mirror, which is substantially heavier than the previous telescopes seen before and cannot be held by the previous equatorial mounts. The opening allows the telescope to point much closer to the celestial pole while preserving substantial support for the polar axis. The Mayall 4-m Telescope at Kitt Peak, Arizona, and NASA's MCAT telescope illustrate this design ([Figures 13](fig13_mounts_mayall) and [14](fig14_mounts_mcat)).
+A **horseshoe mount** opens one end of the yoke into a large curved bearing. The goal is to support the weight of a 4-meter mirror, which is substantially heavier than the previous telescopes seen before and cannot be held by the previous equatorial mounts. The opening allows the telescope to point much closer to the celestial pole while preserving substantial support for the polar axis. The Mayall 4-m Telescope at Kitt Peak, Arizona, and NASA's MCAT telescope illustrate this design ([Figures 14](fig13_mounts_mayall) and [15](fig14_mounts_mcat)).
 
 ```{figure} _static/_chapter03/fig13_mayall_horseshoe.png
 :width: 70%
 :align: center
 :name: fig13_mounts_mayall
 
-**Figure 13** Mayall 4-m Telescope, Kitt Peak, illustrating a large equatorial horseshoe bearing.
+**Figure 14** Mayall 4-m Telescope, Kitt Peak, illustrating a large equatorial horseshoe bearing.
 ```
 
 ```{figure} _static/_chapter03/fig14_mcat_horseshoe.png
@@ -195,31 +195,31 @@ A **horseshoe mount** opens one end of the yoke into a large curved bearing. The
 :align: center
 :name: fig14_mounts_mcat
 
-**Figure 14** NASA MCAT telescope, another horseshoe-mount example.
+**Figure 15** NASA MCAT telescope, another horseshoe-mount example.
 ```
 
 ### Cross-axis mount
 
-In a **cross-axis mount**, the polar axis is supported at both ends and the declination axis meets it near the middle. Loads are carried through a cross-shaped structure instead of a long unsupported arm. The *Telescopio Galileo* at Asiago illustrates this arrangement ([Figure 15](fig15_mounts_galileo)). The different geometries of the German, fork, yoke, horseshoe, and cross-axis designs all preserve the central equatorial idea: one axis is parallel to the Earth's spin axis.
+In a **cross-axis mount**, the polar axis is supported at both ends and the declination axis meets it near the middle. Loads are carried through a cross-shaped structure instead of a long unsupported arm. The *Telescopio Galileo* at Asiago illustrates this arrangement ([Figure 16](fig15_mounts_galileo)). The different geometries of the German, fork, yoke, horseshoe, and cross-axis designs all preserve the central equatorial idea: one axis is parallel to the Earth's spin axis.
 
 ```{figure} _static/_chapter03/fig15_galileo_cross_axis.png
 :width: 70%
 :align: center
 :name: fig15_mounts_galileo
 
-**Figure 15** *Telescopio Galileo* at Asiago, illustrating the cross-axis equatorial mount.
+**Figure 16** *Telescopio Galileo* at Asiago, illustrating the cross-axis equatorial mount.
 ```
 
 ## Return to large altazimuthal telescopes
 
-The *Telescopio Nazionale Galileo* (TNG) has the same two basic pointing axes as a Dobsonian, although it is a fully engineered observatory instrument with precision drives and field-rotation compensation ([Figure 16 a](fig16_mounts_tng_a) and [b](fig16_mounts_tng_b)). Barbieri and Bertini describe its altitude and azimuth axes and the counter-rotation of the field at its Nasmyth focus.[^mount_sources]
+The *Telescopio Nazionale Galileo* (TNG) has the same two basic pointing axes as a Dobsonian, although it is a fully engineered observatory instrument with precision drives and field-rotation compensation ([Figures 17](fig16_mounts_tng_a) and [18](fig16_mounts_tng_b)). Barbieri and Bertini describe its altitude and azimuth axes and the counter-rotation of the field at its Nasmyth focus.[^mount_sources]
 
 ```{figure} _static/_chapter03/fig16_tng_altaz_a.png
 :width: 70%
 :align: center
 :name: fig16_mounts_tng_a
 
-**Figure 16 a** The TNG altitude-azimuth structure. Its two principal axes are evident despite the much larger scale than the preceding Dobsonian example.
+**Figure 17** The TNG altitude-azimuth structure. Its two principal axes are evident despite the much larger scale than the preceding Dobsonian example.
 ```
 
 ```{figure} _static/_chapter03/fig16_tng_altaz_b.png
@@ -227,17 +227,17 @@ The *Telescopio Nazionale Galileo* (TNG) has the same two basic pointing axes as
 :align: center
 :name: fig16_mounts_tng_b
 
-**Figure 16 b** The TNG altitude-azimuth structure. Its two principal axes are evident despite the much larger scale than the preceding Dobsonian example.
+**Figure 18** The TNG altitude-azimuth structure. Its two principal axes are evident despite the much larger scale than the preceding Dobsonian example.
 ```
 
-The Very Large Telescope (VLT) of the European Southern Observatory and the Gran Telescopio Canarias (GTC) continue the same design line ([Figures 17](fig17_mounts_vlt) and [18](fig18_mounts_gtc)). Their size makes the structural advantages of keeping one axis vertical and the other horizontal especially important. This geometry can use compact load paths and a more economical enclosure than a comparable, large inclined equatorial structure. A smaller dome will also reduce the turbulence around the telescope, improving the quality of the scientific data.
+The Very Large Telescope (VLT) of the European Southern Observatory and the Gran Telescopio Canarias (GTC) continue the same design line ([Figures 19](fig17_mounts_vlt) and [20](fig18_mounts_gtc)). Their size makes the structural advantages of keeping one axis vertical and the other horizontal especially important. This geometry can use compact load paths and a more economical enclosure than a comparable, large inclined equatorial structure. A smaller dome will also reduce the turbulence around the telescope, improving the quality of the scientific data.
 
 ```{figure} _static/_chapter03/fig17_vlt_altaz.png
 :width: 50%
 :align: center
 :name: fig17_mounts_vlt
 
-**Figure 17** An ESO VLT unit telescope with a large altazimuthal mount.
+**Figure 19** An ESO VLT unit telescope with a large altazimuthal mount.
 ```
 
 ```{figure} _static/_chapter03/fig18_gtc_altaz.png
@@ -245,7 +245,7 @@ The Very Large Telescope (VLT) of the European Southern Observatory and the Gran
 :align: center
 :name: fig18_mounts_gtc
 
-**Figure 18** The Gran Telescopio Canarias, another large altazimuthal telescope.
+**Figure 20** The Gran Telescopio Canarias, another large altazimuthal telescope.
 ```
 
 ## Equatorial and altazimuthal mounts compared
@@ -256,26 +256,26 @@ The consequences of axis orientation provide a basis for comparing the two desig
 
 An equatorial mount is naturally parameterised by hour angle and declination. After a target is acquired, ideal sidereal tracking requires the telescope to move steadily (constant angular velocity) around the polar axis. An altazimuthal mount requires the current $A$ and $h$ for every target and continuously changing speeds on both axes. The transformation from $(\alpha,\delta)$ to $(A,h)$ was derived in {doc}`Chapter 2 <chapter02_transformation_of_coordinates>`; computers can perform it accurately, so the operational difference is in the required motion, not in any inability to calculate the pointing.
 
-The curves in [Figure 19](fig19_mounts_tracking_rates) show that tracks at different distances from the zenith can demand very different horizontal-axis rates. The blue and green examples pass especially close to the zenith. There, azimuth becomes undefined: a tiny displacement on the sky can correspond to a very large change in $A$. For a track approaching arbitrarily close to the exact zenith, the required azimuth rate can grow without bound in the ideal coordinates; a real mount has finite speed and acceleration and therefore a **zenith avoidance region**. The star itself does not acquire an infinite angular velocity.[^zenith_geometry]
+The curves in [Figure 21](fig19_mounts_tracking_rates) show that tracks at different distances from the zenith can demand very different horizontal-axis rates. The blue and green examples pass especially close to the zenith. There, azimuth becomes undefined: a tiny displacement on the sky can correspond to a very large change in $A$. For a track approaching arbitrarily close to the exact zenith, the required azimuth rate can grow without bound in the ideal coordinates; a real mount has finite speed and acceleration and therefore a **zenith avoidance region**. The star itself does not acquire an infinite angular velocity.[^zenith_geometry]
 
 ```{figure} _static/_chapter03/fig19_tracking_rates.png
 :width: 100%
 :align: center
 :name: fig19_mounts_tracking_rates
 
-**Figure 19** Horizontal-coordinate tracks and apparent angular rates for several targets. The polar panel is labelled with North-through-East azimuth; the rate argument also applies to the South-through-West convention.
+**Figure 21** Horizontal-coordinate tracks and apparent angular rates for several targets. The polar panel is labelled with North-through-East azimuth; the rate argument also applies to the South-through-West convention.
 ```
 
 ### Rotation of the observed field
 
-An ideal equatorial mount rotates with the celestial sphere. If its polar alignment and tracking are accurate, the orientation of the stellar field remains fixed relative to the camera during an exposure ([Figure 20](fig20_mounts_equatorial_field)). An altazimuthal mount can hold the *centre* of the field on target while the surrounding stars rotate about that centre relative to a detector rigidly attached to the telescope ([Figure 21](fig21_mounts_altaz_field)). Long exposures therefore require an instrument or field rotator, or a later combination of suitably short exposures. Tracking both axes alone does not remove field rotation.[^mount_sources]
+An ideal equatorial mount rotates with the celestial sphere. If its polar alignment and tracking are accurate, the orientation of the stellar field remains fixed relative to the camera during an exposure ([Figure 22](fig20_mounts_equatorial_field)). An altazimuthal mount can hold the *centre* of the field on target while the surrounding stars rotate about that centre relative to a detector rigidly attached to the telescope ([Figure 23](fig21_mounts_altaz_field)). Long exposures therefore require an instrument or field rotator, or a later combination of suitably short exposures. Tracking both axes alone does not remove field rotation.[^mount_sources]
 
 ```{figure} _static/_chapter03/fig20_equatorial_field.png
 :width: 90%
 :align: center
 :name: fig20_mounts_equatorial_field
 
-**Figure 20** Successive fields carried by an equatorial mount: the detector orientation follows the sky.
+**Figure 22** Successive fields carried by an equatorial mount: the detector orientation follows the sky.
 ```
 
 ```{figure} _static/_chapter03/fig21_altaz_field.png
@@ -283,7 +283,7 @@ An ideal equatorial mount rotates with the celestial sphere. If its polar alignm
 :align: center
 :name: fig21_mounts_altaz_field
 
-**Figure 21** Successive fields on an altazimuthal mount: the detector frame remains tied to altitude and azimuth while the stellar pattern rotates.
+**Figure 23** Successive fields on an altazimuthal mount: the detector frame remains tied to altitude and azimuth while the stellar pattern rotates.
 ```
 
 The changing field orientation can be described by the **parallactic angle** $q$, the angle at the target between the great circles toward the celestial pole and toward the zenith. With hour angle positive westward, one convenient expression is
@@ -296,17 +296,17 @@ The required counter-rotation rate is the negative of the field's rate, $-\dot q
 
 ### Structures, domes, and scale
 
-As the aperture increases, the mass of the mirrors, tube, support structure, and instruments grows. An equatorial mount must support and turn a large structure about an inclined polar axis. An altazimuthal mount distributes loads around vertical and horizontal bearings, which is generally easier to make stiff at great size. The *Telescopio Galileo* at Asiago and the much larger GTC illustrate this difference in scale ([Figure 22](fig22_mounts_gtc_dome)). Altazimuthal structures can also permit relatively compact enclosures.
+As the aperture increases, the mass of the mirrors, tube, support structure, and instruments grows. An equatorial mount must support and turn a large structure about an inclined polar axis. An altazimuthal mount distributes loads around vertical and horizontal bearings, which is generally easier to make stiff at great size. The *Telescopio Galileo* at Asiago and the much larger GTC illustrate this difference in scale ([Figure 24](fig22_mounts_gtc_dome)). Altazimuthal structures can also permit relatively compact enclosures.
 
 ```{figure} _static/_chapter03/fig22_gtc_dome.png
 :width: 50%
 :align: center
 :name: fig22_mounts_gtc_dome
 
-**Figure 22** The GTC inside its dome. Mount geometry affects the size and shape of the surrounding enclosure.
+**Figure 24** The GTC inside its dome. Mount geometry affects the size and shape of the surrounding enclosure.
 ```
 
-There is **no physical aperture limit** near 2.5 m for an equatorial mount: the Mayall Telescope in [Figure 13](fig13_mounts_mayall) has a 4-m mirror and an equatorial horseshoe mount. Altazimuthal mounting nevertheless becomes increasingly attractive as aperture and structural mass increase. The table summarises the comparison.
+There is **no physical aperture limit** near 2.5 m for an equatorial mount: the Mayall Telescope in [Figure 14](fig13_mounts_mayall) has a 4-m mirror and an equatorial horseshoe mount. Altazimuthal mounting nevertheless becomes increasingly attractive as aperture and structural mass increase. The table summarises the comparison.
 
 | Aspect | Equatorial mount | Altazimuthal mount |
 | --- | --- | --- |
@@ -319,14 +319,14 @@ There is **no physical aperture limit** near 2.5 m for an equatorial mount: the 
 
 ## The Giant Magellan Telescope and the Extremely Large Telescope
 
-Two extremely large observatories show where mount design and mirror technology meet. The **Giant Magellan Telescope** (GMT) uses seven circular primary-mirror segments, each 8.4 m in diameter, arranged across a 25.4-m span. [Figure 24](fig24_mounts_gmt_mirrors) shows the distinctive seven-mirror pattern. The **Extremely Large Telescope** (ELT) of ESO uses a 39-m segmented primary mirror comprising 798 segments ([Figures 23](fig23_mounts_elt_concept) and [25](fig25_mounts_elt_mirror_segments)). Both projects use altitude-azimuth mounting: supporting and moving an inclined equatorial assembly of this size would be exceptionally difficult.[^large_telescopes]
+Two extremely large observatories show where mount design and mirror technology meet. The **Giant Magellan Telescope** (GMT) uses seven circular primary-mirror segments, each 8.4 m in diameter, arranged across a 25.4-m span. [Figure 26](fig24_mounts_gmt_mirrors) shows the distinctive seven-mirror pattern. The **Extremely Large Telescope** (ELT) of ESO uses a 39-m segmented primary mirror comprising 798 segments ([Figures 25](fig23_mounts_elt_concept) and [27](fig25_mounts_elt_mirror_segments)). Both projects use altitude-azimuth mounting: supporting and moving an inclined equatorial assembly of this size would be exceptionally difficult.[^large_telescopes]
 
 ```{figure} _static/_chapter03/fig23_elt_concept.png
 :width: 75%
 :align: center
 :name: fig23_mounts_elt_concept
 
-**Figure 23** Design rendering of ESO's ELT and its enclosure.
+**Figure 25** Design rendering of ESO's ELT and its enclosure.
 ```
 
 ```{figure} _static/_chapter03/fig24_gmt_mirrors.png
@@ -334,7 +334,7 @@ Two extremely large observatories show where mount design and mirror technology 
 :align: center
 :name: fig24_mounts_gmt_mirrors
 
-**Figure 24** The seven primary mirrors of the GMT.
+**Figure 26** The seven primary mirrors of the GMT.
 ```
 
 ```{figure} _static/_chapter03/fig25_elt_mirror_segments.png
@@ -342,21 +342,21 @@ Two extremely large observatories show where mount design and mirror technology 
 :align: center
 :name: fig25_mounts_elt_mirror_segments
 
-**Figure 25** Full-scale layout conveying the number and arrangement of the ELT primary-mirror segments.
+**Figure 27** Full-scale layout conveying the number and arrangement of the ELT primary-mirror segments.
 ```
 
 Mirror segmentation solves a different problem from the mount: it permits a collecting surface larger than a single practical monolithic mirror. Each segment must be supported and kept aligned so that the primary acts as one optical system. The mount must then carry this mirror assembly, the secondary optics, and the instruments while tracking precisely. Thus optical design, active support, and mechanical mounting have to be designed together.[^large_telescopes]
 
 ### Construction at Cerro Armazones
 
-The photographs trace construction at the ELT site on Cerro Armazones, Chile. They begin with summit preparation and foundation work ([Figures 26](fig26_mounts_elt_site_preparation)–[28](fig28_mounts_elt_civil_works)), then show the rising telescope structure and dome ([Figures 29](fig29_mounts_elt_structure)–[31](fig31_mounts_elt_site_later)). They make the engineering scale tangible: an altazimuthal telescope of this size is a building-sized moving structure, not simply a larger version of the small mount in [Figure 7](fig07_mounts_types).
+The photographs trace construction at the ELT site on Cerro Armazones, Chile. They begin with summit preparation and foundation work ([Figures 28](fig26_mounts_elt_site_preparation)–[30](fig28_mounts_elt_civil_works)), then show the rising telescope structure and dome ([Figures 31](fig29_mounts_elt_structure)–[33](fig31_mounts_elt_site_later)). They make the engineering scale tangible: an altazimuthal telescope of this size is a building-sized moving structure, not simply a larger version of the small mount in [Figure 7](fig07_mounts_types).
 
 ```{figure} _static/_chapter03/fig26_elt_site_preparation.png
 :width: 65%
 :align: center
 :name: fig26_mounts_elt_site_preparation
 
-**Figure 26** Early summit preparation at the ELT site.
+**Figure 28** Early summit preparation at the ELT site.
 ```
 
 ```{figure} _static/_chapter03/fig27_elt_foundations.png
@@ -364,7 +364,7 @@ The photographs trace construction at the ELT site on Cerro Armazones, Chile. Th
 :align: center
 :name: fig27_mounts_elt_foundations
 
-**Figure 27** The circular foundations and site works at Cerro Armazones.
+**Figure 29** The circular foundations and site works at Cerro Armazones.
 ```
 
 ```{figure} _static/_chapter03/fig28_elt_civil_works.png
@@ -372,7 +372,7 @@ The photographs trace construction at the ELT site on Cerro Armazones, Chile. Th
 :align: center
 :name: fig28_mounts_elt_civil_works
 
-**Figure 28** Later civil works at Cerro Armazones.
+**Figure 30** Later civil works at Cerro Armazones.
 ```
 
 ```{figure} _static/_chapter03/fig29_elt_structure.png
@@ -380,7 +380,7 @@ The photographs trace construction at the ELT site on Cerro Armazones, Chile. Th
 :align: center
 :name: fig29_mounts_elt_structure
 
-**Figure 29** The ELT dome structure taking shape.
+**Figure 31** The ELT dome structure taking shape.
 ```
 
 ```{figure} _static/_chapter03/fig30_elt_dome.png
@@ -388,7 +388,7 @@ The photographs trace construction at the ELT site on Cerro Armazones, Chile. Th
 :align: center
 :name: fig30_mounts_elt_dome
 
-**Figure 30** A later view inside the partly completed ELT enclosure.
+**Figure 32** A later view inside the partly completed ELT enclosure.
 ```
 
 ```{figure} _static/_chapter03/fig31_elt_site_later.png
@@ -396,19 +396,19 @@ The photographs trace construction at the ELT site on Cerro Armazones, Chile. Th
 :align: center
 :name: fig31_mounts_elt_site_later
 
-**Figure 31** The developing ELT enclosure at Cerro Armazones.
+**Figure 33** The developing ELT enclosure at Cerro Armazones.
 ```
 
 ESO dates the blasting of the summit to June 2014. Its current project schedule lists telescope test observations in 2029 and first scientific observations with instruments in December 2030; these are **planned milestones**, not completed events.[^elt_schedule]
 
-A LEGO model of the ELT ([Figure 32](fig32_mounts_lego_elt)) is a useful reminder that a mount is a geometric construction as well as a system of motors. Even at model scale, one can identify the vertical azimuth axis, the altitude-bearing arrangement, and the enclosure surrounding the moving telescope.
+A LEGO model of the ELT ([Figure 34](fig32_mounts_lego_elt)) is a useful reminder that a mount is a geometric construction as well as a system of motors. Even at model scale, one can identify the vertical azimuth axis, the altitude-bearing arrangement, and the enclosure surrounding the moving telescope.
 
 ```{figure} _static/_chapter03/fig32_lego_elt.png
 :width: 75%
 :align: center
 :name: fig32_mounts_lego_elt
 
-**Figure 32** LEGO model of the ELT, showing the principal moving structure and its enclosure.
+**Figure 34** LEGO model of the ELT, showing the principal moving structure and its enclosure.
 ```
 
 ## References

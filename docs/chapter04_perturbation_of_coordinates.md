@@ -64,8 +64,7 @@ By symmetry, a stratified atmosphere produces zero *systematic* refraction exact
 
 ## Aberration of light
 
-Even in a vacuum, a moving observer measures a direction that differs from the direction measured by an observer at rest in the chosen reference frame.  The familiar analogy is rain falling vertically for a stationary observer but appearing to arrive obliquely for someone who runs through it ([Figure 4](fig03_person_aberration
-)). 
+Even in a vacuum, a moving observer measures a direction that differs from the direction measured by an observer at rest in the chosen reference frame.  The familiar analogy is rain falling vertically for a stationary observer but appearing to arrive obliquely for someone who runs through it ([Figure 4](fig03_person_aberration)).
 
 
 ```{figure} _static/_chapter04/fig03_person_aberration.png
@@ -119,8 +118,7 @@ Since Earth's velocity vector always lies in the ecliptic plane (by definition o
 
 Conversely, if a star lies on the ecliptic (ecliptic latitude $\lambda=0°$), the Earth's velocity vector will be parallel or antiparallel to the star's direction every six months, causing no aberration in the star's position. After three months, and every six months, the Earth's velocity vector will be perpendicular to the star's direction, causing the maximum deviation of its position, but still on the ecliptic plane. Thus, along the year, the star will move back and forth from its true position along a line on the ecliptic.
 
-Recapping, the star will describe a circle if it is on the ecliptic pole ($\lambda = \pm 90°$), and a line if it is on the ecliptic plane ($\lambda = 0°$). For intermediate latitudes, the shape is an ellipse that flattens more along the vertical as it approaches the ecliptic plane. The position along this ellipse will depend on the ecliptic longitude $\beta$ of the star [Figure 7](fig03_aberration_during_year
-)
+Recapping, the star will describe a circle if it is on the ecliptic pole ($\lambda = \pm 90°$), and a line if it is on the ecliptic plane ($\lambda = 0°$). For intermediate latitudes, the shape is an ellipse that flattens more along the vertical as it approaches the ecliptic plane. The position along this ellipse will depend on the ecliptic longitude $\beta$ of the star [Figure 7](fig03_aberration_during_year).
 
 
 ```{figure} _static/_chapter04/fig03_stellar_aberration_during_the_year.png
@@ -143,8 +141,7 @@ $$
 v_{\rm rot}=\omega_\oplus R_\oplus\cos\phi,
 $$
 
-with $R_\oplus$ the Earth's equatorial radius. The maximum speed at the equator is about $0.46\ {\rm km\,s^{-1}}$ ([Figure 8](fig03_aberration_dirunal
-)),  producing a maximum **diurnal aberration** of about $0.32''$. The effect decreases with latitude and vanishes at a pole for an observer fixed to the rotating Earth. Its instantaneous value also depends on the direction to the object because only the transverse component of velocity changes the apparent direction.
+with $R_\oplus$ the Earth's equatorial radius. The maximum speed at the equator is about $0.46\ {\rm km\,s^{-1}}$ ([Figure 8](fig03_aberration_dirunal)),  producing a maximum **diurnal aberration** of about $0.32''$. The effect decreases with latitude and vanishes at a pole for an observer fixed to the rotating Earth. Its instantaneous value also depends on the direction to the object because only the transverse component of velocity changes the apparent direction.
 
 ```{figure} _static/_chapter04/fig03_diurnal_velocity.png
 :width: 70%

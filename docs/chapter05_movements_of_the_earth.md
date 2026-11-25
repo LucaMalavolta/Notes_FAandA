@@ -101,7 +101,7 @@ The detailed direction of the terrestrial torque differs from that on a top unde
 
 [^precession] 
 
-```{figure} _static/_chapter05/fig06b_spinning_earth_precession.png
+```{figure} _static/_chapter05/fig6b_spinning_earth_precession.png
 :width: 48%
 :align: center
 :name: fig06_precession_earth
@@ -110,69 +110,68 @@ The detailed direction of the terrestrial torque differs from that on a top unde
 ```
 
 
-The celestial pole consequently describes, to first approximation, a circle around the north ecliptic pole. The celestial pole is always on a point of the small circle distant $\epsilon$ from the ecliptic pole,  i.e., the parallel of ecliptic latitude $\beta = 90°- \epsilon$. See [Figure 7](fig07_precession_cone
-) 
+The celestial pole consequently describes, to first approximation, a circle around the north ecliptic pole. The celestial pole is always on a point of the small circle distant $\epsilon$ from the ecliptic pole,  i.e., the parallel of ecliptic latitude $\beta = 90°- \epsilon$. See [Figure 8](fig07_precession_cone).
 
 ```{figure} _static/_chapter05/fig07b_precession_cone.png
 :width: 65%
 :align: center
 :name: fig07_precession_cone
 
-**Figure 7** The North Celestial Pole (PCN) describes a cone around the North Ecliptic Pole (PEN).
+**Figure 8** The North Celestial Pole (PCN) describes a cone around the North Ecliptic Pole (PEN).
 ```
 
-The angular radius is approximately the obliquity, $23.4^\circ$, and a circuit takes about **26,000 years**. The equinox shifts in the opposite sense along the ecliptic at about $50.3''$ per year. These are approximate, epoch-dependent numbers: the exact path is modified by nutation and by slow changes in the ecliptic itself. [Figure 7](fig07_pole_path) shows why different stars serve as pole stars at different epochs.
+The angular radius is approximately the obliquity, $23.4^\circ$, and a circuit takes about **26,000 years**. The equinox shifts in the opposite sense along the ecliptic at about $50.3''$ per year. These are approximate, epoch-dependent numbers: the exact path is modified by nutation and by slow changes in the ecliptic itself. [Figure 9](fig07_pole_path) shows why different stars serve as pole stars at different epochs.
 
 ```{figure} _static/_chapter05/fig07_precessing_celestial_pole.png
 :width: 65%
 :align: center
 :name: fig07_pole_path
 
-**Figure 7** Approximate path of the north celestial pole against the stars over many millennia. Its changing location follows from precession of the terrestrial axis.
+**Figure 9** Approximate path of the north celestial pole against the stars over many millennia. Its changing location follows from precession of the terrestrial axis.
 ```
 
 The relevant torque is approximately proportional to the disturbing body's mass and to the inverse cube of its distance, $M/r^3$, for a given terrestrial figure. The Sun is about $2.7\times10^7$ times as massive as the Moon but about $400$ times farther away. The distance-cube ratio is about $400^3=6.4\times10^7$, making the lunar contribution roughly $6.4/2.7\simeq2.4$ times the solar one. This order-of-magnitude calculation explains the name **lunisolar precession**. A precise rate also depends on the Earth's moments of inertia, obliquity, and the orbits of the perturbing bodies.[^precession]
 
 ## Nutation: periodic motion around the mean axis
 
-A smooth precession cone assumes an averaged, regular lunar and solar torque. In reality, the lunar orbit is inclined by about $5.1^\circ$ to the ecliptic, and its line of nodes rotates with a period of about **18.6 years**. The Moon and Sun also change distance from Earth during their orbits.  ([Figure 8](fig08_orbital_configuration_earth_moon))
+A smooth precession cone assumes an averaged, regular lunar and solar torque. In reality, the lunar orbit is inclined by about $5.1^\circ$ to the ecliptic, and its line of nodes rotates with a period of about **18.6 years**. The Moon and Sun also change distance from Earth during their orbits.  ([Figure 10](fig08_orbital_configuration_earth_moon))
 
 ```{figure} _static/_chapter05/fig08a_orbital_configuration_earth_moon.png
 :width: 65%
 :align: center
 :name: fig08_orbital_configuration_earth_moon
 
-**Figure 8** Schematic representation of the Earth-Moon orbital parameters. Size and distances are not drawn to scale.
+**Figure 10** Schematic representation of the Earth-Moon orbital parameters. Size and distances are not drawn to scale.
 ```
 
-The torque therefore has periodic components. The resulting shorter-period changes of the celestial pole and equator are collectively called **nutation**. The instantaneous pole follows a small wavering path around the precessing mean pole ([Figure 8](fig08_nutation_cone)).[^nutation]
+The torque therefore has periodic components. The resulting shorter-period changes of the celestial pole and equator are collectively called **nutation**. The instantaneous pole follows a small wavering path around the precessing mean pole ([Figure 11](fig08_nutation_cone)).[^nutation]
 
 ```{figure} _static/_chapter05/fig08_nutation_cone.png
 :width: 65%
 :align: center
 :name: fig08_nutation_cone
 
-**Figure 8** The small wavering path of the rotation axis superposed on its much larger precessional cone. The amplitudes of the two motions are not drawn to scale.
+**Figure 11** The small wavering path of the rotation axis superposed on its much larger precessional cone. The amplitudes of the two motions are not drawn to scale.
 ```
 
-The importance of changes in the Moon's distance can be appreciated without a full orbital calculation. The Earth's distance from the Sun ranges approximately from $147.1$ to $152.1$ million kilometres over an orbit, a difference of about $3.4\%$ relative to the smaller distance. The Moon's distance ranges from approximately $356,700$ km (at *perigee*, when the Moon is at its minimum distance from Earth) to $406,300$ km (at *apogee*, the maximum distance from Earth), a difference of about $14\%$ relative to perigee. The visual difference between lunar perigee and apogee is shown in [Figure 9](fig09_moon_distance). Since the torque varies approximately as $r^{-3}$, these distance changes contribute periodic terms. They are not, by themselves, the explanation for the 18.6-year principal term: that period is associated with regression of the lunar nodes.[^nutation]
+The importance of changes in the Moon's distance can be appreciated without a full orbital calculation. The Earth's distance from the Sun ranges approximately from $147.1$ to $152.1$ million kilometres over an orbit, a difference of about $3.4\%$ relative to the smaller distance. The Moon's distance ranges from approximately $356,700$ km (at *perigee*, when the Moon is at its minimum distance from Earth) to $406,300$ km (at *apogee*, the maximum distance from Earth), a difference of about $14\%$ relative to perigee. The visual difference between lunar perigee and apogee is shown in [Figure 12](fig09_moon_distance). Since the torque varies approximately as $r^{-3}$, these distance changes contribute periodic terms. They are not, by themselves, the explanation for the 18.6-year principal term: that period is associated with regression of the lunar nodes.[^nutation]
 
 ```{figure} _static/_chapter05/fig09_lunar_perigee_apogee.png
 :width: 78%
 :align: center
 :name: fig09_moon_distance
 
-**Figure 9** The Moon photographed near perigee and apogee. The difference in apparent size reflects the change in Earth–Moon distance.
+**Figure 12** The Moon photographed near perigee and apogee. The difference in apparent size reflects the change in Earth–Moon distance.
 ```
 
-Let $N$ be the ascending node at which the Moon crosses the ecliptic from south to north, and let $N'$ be the corresponding crossing of the celestial equator ([Figure 10](fig10_lunar_nodes)). These directions differ because the ecliptic and equator are inclined. Solar perturbations cause the lunar node to regress around the ecliptic, so the orientation of the lunar orbital plane and the direction of its torque change continuously.
+Let $N$ be the ascending node at which the Moon crosses the ecliptic from south to north, and let $N'$ be the corresponding crossing of the celestial equator ([Figure 13](fig10_lunar_nodes)). These directions differ because the ecliptic and equator are inclined. Solar perturbations cause the lunar node to regress around the ecliptic, so the orientation of the lunar orbital plane and the direction of its torque change continuously.
 
 ```{figure} _static/_chapter05/fig10_lunar_nodes.png
 :width: 68%
 :align: center
 :name: fig10_lunar_nodes
 
-**Figure 10** The ecliptic, equator, and inclined lunar orbit. Their distinct intersections identify the lunar nodes used to describe the changing orientation of the Moon's orbit.
+**Figure 13** The ecliptic, equator, and inclined lunar orbit. Their distinct intersections identify the lunar nodes used to describe the changing orientation of the Moon's orbit.
 ```
 
 The two nodes are not fixed in inertial space because the Sun perturbs the plane of the Moon’s orbit (similarly to precession). $N$ precesses along the ecliptic in clockwise sense, by $\about 191”$ each day, making a full turn in 18.6 years. Correspondingly, the pole $M$ of the lunar orbit describes a small circle of radius $i$ around the ecliptic pole $E$. 
@@ -188,30 +187,30 @@ $$
 
 The two amplitudes refer to *different angles*: $17.2''$ in longitude and $9.2''$ in obliquity. Their common principal period is about $18.6$ years. Hence, the variation in longitude speeds up or slows down the precession of the equinoxes; the variation in obliquity changes the tilt of Earth's axis relative to the ecliptic.
 
-[Figure 10](fig10b_precession_nutation_from_outside) shows the movement of the celestial pole from the outside of the celestial sphere. This movement can be visualised as the instantaneous celestial pole $P_v$ describing a retrograde cone around the mean celestial pole $P_m$ (first image of [Figure 10](fig10b_precession_nutation_from_outside)), which in turn describes a cone of aperture $\epsilon$ around the ecliptic pole $E$ due to precession  (second image of [Figure 10](fig10b_precession_nutation_from_outside)). 
+[Figure 14](fig10b_precession_nutation_from_outside) shows the movement of the celestial pole from the outside of the celestial sphere. This movement can be visualised as the instantaneous celestial pole $P_v$ describing a retrograde cone around the mean celestial pole $P_m$ (first image of [Figure 14](fig10b_precession_nutation_from_outside)), which in turn describes a cone of aperture $\epsilon$ around the ecliptic pole $E$ due to precession  (second image of [Figure 14](fig10b_precession_nutation_from_outside)).
 
 ```{figure} _static/_chapter05/fig10b_precession_nutation_from_outside.png
 :width: 68%
 :align: center
 :name: fig10b_precession_nutation_from_outside
 
-**Figure 10** The ecliptic, equator, and inclined lunar orbit. Their distinct intersections identify the lunar nodes used to describe the changing orientation of the Moon's orbit.
+**Figure 14** The ecliptic, equator, and inclined lunar orbit. Their distinct intersections identify the lunar nodes used to describe the changing orientation of the Moon's orbit.
 ```
 
-The instantaneous celestial pole $P_v$ draws an ellipse around $P_m$ with the semimajor axis oriented towards the ecliptic pole. The axis along the small circle parallel to the ecliptic ($x$ axis in the first image of [Figure 10](fig10b_precession_nutation_from_outside)) is shorter than the one towards the ecliptic pole (y axis in the first image of[Figure 10](fig10b_precession_nutation_from_outside)) even if the coefficient of Bradley's equation is larger in absolute value ($17.2''$ versus $9.2''$) because $\Delta \psi$ is the variation in ecliptic longitude, not the actual real angle variation in the sky. 
+The instantaneous celestial pole $P_v$ draws an ellipse around $P_m$ with the semimajor axis oriented towards the ecliptic pole. The axis along the small circle parallel to the ecliptic ($x$ axis in the first image of [Figure 14](fig10b_precession_nutation_from_outside)) is shorter than the one towards the ecliptic pole (y axis in the first image of[Figure 14](fig10b_precession_nutation_from_outside)) even if the coefficient of Bradley's equation is larger in absolute value ($17.2''$ versus $9.2''$) because $\Delta \psi$ is the variation in ecliptic longitude, not the actual real angle variation in the sky.
 
  A full nutation theory includes many additional terms, so these two expressions are explanatory approximations rather than a precision ephemeris. 
 
 ## Motion of the ecliptic and obliquity
 
-The ecliptic is itself affected by planetary perturbations, particularly from the massive planets. This slow change is called **planetary precession**. It combines with lunisolar precession in the **general precession** used to describe the motion of the equinox. The diagram in [Figure 11](fig11_ecliptic_motion) separates a moving equator from a moving ecliptic: either change can displace their intersection. Planetary terms also have periodic components, often called **planetary nutation**.[^precession] The movements of the ecliptic change only the common origin of the right ascension. A small circle at a distance $\delta$ from the great circle will be smaller by a factor $\cos{\delta}$, hence the actual length of the axis ellipse would be $17.2'' \cos{90* - \epsilon} = 6.8" $, hance smaller than the variation towards the ecliptic pole.
+The ecliptic is itself affected by planetary perturbations, particularly from the massive planets. This slow change is called **planetary precession**. It combines with lunisolar precession in the **general precession** used to describe the motion of the equinox. The diagram in [Figure 15](fig11_ecliptic_motion) separates a moving equator from a moving ecliptic: either change can displace their intersection. Planetary terms also have periodic components, often called **planetary nutation**.[^precession] The movements of the ecliptic change only the common origin of the right ascension. A small circle at a distance $\delta$ from the great circle will be smaller by a factor $\cos{\delta}$, hence the actual length of the axis ellipse would be $17.2'' \cos{90* - \epsilon} = 6.8" $, hance smaller than the variation towards the ecliptic pole.
 
 ```{figure} _static/_chapter05/fig11_moving_ecliptic.png
 :width: 70%
 :align: center
 :name: fig11_ecliptic_motion
 
-**Figure 11** The equatorial plane and the ecliptic can both change orientation. Their moving intersection is the equinox, the classical zero point of right ascension.
+**Figure 15** The equatorial plane and the ecliptic can both change orientation. Their moving intersection is the equinox, the classical zero point of right ascension.
 ```
 
 The speed of the Vernal point due to **general precession** can be expressed as a function of time: $G=50''.290966 + 0''.02222T$. The time $T$ is expressed in Julian centuries, where one year corresponds exactly to 365.25 days of 86400 seconds, starting from 12:00 on the first of January 2000, also referred to as J2000.0.
@@ -220,26 +219,26 @@ Near J2000.0 the **mean obliquity** decreases by about $0.47''$ per year, or $47
 
 ## Free wobble and polar motion
 
-Precession and nutation describe the orientation of the axis **in celestial space** under external torques. A different question concerns the location of the instantaneous rotation pole **within a frame attached to the Earth**. A rotating body whose spin axis is slightly displaced from a principal axis of inertia can exhibit a free wobble. Euler's rigid-body analysis predicts such a motion; [Figure 12](fig12_euler_wobble) depicts the changing relation between angular momentum, angular velocity, and the body's figure axis. The real Earth is deformable, with a fluid core and mobile oceans and atmosphere, so its observed free oscillation differs from the ideal rigid-body result.[^polar_motion]
+Precession and nutation describe the orientation of the axis **in celestial space** under external torques. A different question concerns the location of the instantaneous rotation pole **within a frame attached to the Earth**. A rotating body whose spin axis is slightly displaced from a principal axis of inertia can exhibit a free wobble. Euler's rigid-body analysis predicts such a motion; [Figure 16](fig12_euler_wobble) depicts the changing relation between angular momentum, angular velocity, and the body's figure axis. The real Earth is deformable, with a fluid core and mobile oceans and atmosphere, so its observed free oscillation differs from the ideal rigid-body result.[^polar_motion]
 
 ```{figure} _static/_chapter05/fig12_euler_wobble.png
 :width: 72%
 :align: center
 :name: fig12_euler_wobble
 
-**Figure 12** Free wobble of a rotating body. Its angular-momentum direction, instantaneous spin axis, and principal figure axis need not coincide.
+**Figure 16** Free wobble of a rotating body. Its angular-momentum direction, instantaneous spin axis, and principal figure axis need not coincide.
 ```
 
 The observed wandering of the pole relative to Earth is **polar motion**. One important component, the **Chandler wobble**, has a period of about $430$ days, or roughly 14 months. An annual component is associated with seasonal redistribution of mass in the atmosphere, oceans, and hydrosphere. The amplitudes vary with time; excursions of order a few tenths of an arcsecond correspond to several metres on Earth's surface. For scale, $0.3''$ at a terrestrial radius of $6370$ km is approximately $9$ m. Smaller forced components and a slower drift are also present.[^polar_motion]
 
-The observed path is consequently not a perfect circle ([Figures 13](fig13_polar_motion_record) and [14](fig14_polar_motion_path)). It combines the Chandler and annual components with irregular excitation and longer-term changes. Measurements of the pole coordinates, often written $x_p$ and $y_p$, are supplied as Earth-orientation parameters and are needed to connect terrestrial station positions to celestial directions.[^earth_orientation]
+The observed path is consequently not a perfect circle ([Figures 17](fig13_polar_motion_record) and [18](fig14_polar_motion_path)). It combines the Chandler and annual components with irregular excitation and longer-term changes. Measurements of the pole coordinates, often written $x_p$ and $y_p$, are supplied as Earth-orientation parameters and are needed to connect terrestrial station positions to celestial directions.[^earth_orientation]
 
 ```{figure} _static/_chapter05/fig13_polar_motion_record.png
 :width: 90%
 :align: center
 :name: fig13_polar_motion_record
 
-**Figure 13** Examples of observed polar-motion paths in coordinates attached to Earth. The mixture of periodic components and variable excitation produces an irregular trajectory.
+**Figure 17** Examples of observed polar-motion paths in coordinates attached to Earth. The mixture of periodic components and variable excitation produces an irregular trajectory.
 ```
 
 ```{figure} _static/_chapter05/fig14_polar_motion_path.png
@@ -247,14 +246,14 @@ The observed path is consequently not a perfect circle ([Figures 13](fig13_polar
 :align: center
 :name: fig14_polar_motion_path
 
-**Figure 14** A detailed polar-coordinate track over successive years. Its loops arise chiefly from the superposition of the annual and Chandler oscillations.
+**Figure 18** A detailed polar-coordinate track over successive years. Its loops arise chiefly from the superposition of the annual and Chandler oscillations.
 ```
 
 The distinction between the two frames is essential. Precession and nutation move the celestial pole with respect to an approximately inertial celestial frame; polar motion changes the relation between the pole and points fixed on the Earth. A complete Earth-orientation model must include both, together with the spin angle and its variations.
 
 ## Mean and true fundamental planes
 
-At two dates $t_1$ and $t_2$, the equator and ecliptic have slightly different orientations. Their intersections define different equinox directions $\gamma_1$ and $\gamma_2$; their mutual inclinations give different obliquities $\varepsilon_1$ and $\varepsilon_2$. [Figure 15](fig15_fundamental_planes) illustrates the shift of the equator and equinox between two nearby epochs. The change in a general orientation angle $J$ can be separated conceptually into a **secular part** (a smooth part actually corresponding to a periodic one 
+At two dates $t_1$ and $t_2$, the equator and ecliptic have slightly different orientations. Their intersections define different equinox directions $\gamma_1$ and $\gamma_2$; their mutual inclinations give different obliquities $\varepsilon_1$ and $\varepsilon_2$. [Figure 19](fig15_new_fundamental_planes) illustrates the shift of the equator and equinox between two nearby epochs. The change in a general orientation angle $J$ can be separated conceptually into a **secular part** (a smooth part actually corresponding to a periodic one
 with an extremely long period) and a **periodic** part (with longest period equal to 18.6 years due to nutation, and many shorter ones):
 
 $$
@@ -269,7 +268,7 @@ where the polynomial approximates the slowly varying precessional contribution n
 :align: center
 :name: fig15_new_fundamental_planes
 
-**Figure 15** The equator at two nearby dates intersects the reference ecliptic in different equinox directions. The geometric angles entering the coordinate system are therefore functions of time.
+**Figure 19** The equator at two nearby dates intersects the reference ecliptic in different equinox directions. The geometric angles entering the coordinate system are therefore functions of time.
 ```
 
 The **mean equator and equinox of date** retain the smooth precessional motion but omit the short-period nutation. The **true equator and equinox of date** include nutation at that instant. Accordingly one distinguishes mean and true obliquity, and mean and true equinox. “Mean” here identifies a defined reference system; it does not mean that an observed coordinate has merely been averaged over several nights. Modern IAU reference frames may use origins independent of the equinox, but the mean/true distinction remains useful for understanding classical equatorial coordinates and sidereal time.[^mean_true]
@@ -298,38 +297,38 @@ v_\perp\simeq4.74047\,\mu\,[{\rm arcsec\,yr^{-1}}],d\,[{\rm pc}]
 \quad{\rm km\,s^{-1}}.
 $$
 
-The two tabulated components are usually $\mu_{\alpha *}=\dot\alpha\cos\delta$ and $\mu_\delta=\dot\delta$, with $\mu=\sqrt{\mu_{\alpha *}^2+\mu_\delta^2}$. The factor $\cos\delta$ converts a rate in right ascension into a true angular rate along the small circle at that declination. The radial and transverse components together describe the star's three-dimensional velocity ([Figure 16](fig16_velocity_components)).[^proper_motion]
+The two tabulated components are usually $\mu_{\alpha *}=\dot\alpha\cos\delta$ and $\mu_\delta=\dot\delta$, with $\mu=\sqrt{\mu_{\alpha *}^2+\mu_\delta^2}$. The factor $\cos\delta$ converts a rate in right ascension into a true angular rate along the small circle at that declination. The radial and transverse components together describe the star's three-dimensional velocity ([Figure 20](fig16_velocity_components)).[^proper_motion]
 
 ```{figure} _static/_chapter05/fig17_space_velocity.png
 :width: 72%
 :align: center
 :name: fig16_velocity_components
 
-**Figure 16** A star's space velocity decomposed into a radial component along the sightline and a transverse component on the sky. The transverse component produces proper motion.
+**Figure 20** A star's space velocity decomposed into a radial component along the sightline and a transverse component on the sky. The transverse component produces proper motion.
 ```
 
-**Barnard's star**, a nearby red dwarf at about $1.8$ pc, provides a conspicuous example. Its proper motion is about $10.3''$ per year, unusually large because it is nearby and has substantial transverse velocity. In a series of images taken years apart, its position shifts against the more distant stellar background ([Figure 17](fig17_barnard_motion)). On a finer annual timescale, its position also oscillates because Earth observes it from changing points on its orbit. Thus a measured astrometric track combines an approximately linear proper-motion trend with annual parallax and the relevant observational corrections. Proper motion and parallax are physically distinct even when both are visible in one sequence.[^proper_motion]
+**Barnard's star**, a nearby red dwarf at about $1.8$ pc, provides a conspicuous example. Its proper motion is about $10.3''$ per year, unusually large because it is nearby and has substantial transverse velocity. In a series of images taken years apart, its position shifts against the more distant stellar background ([Figure 21](fig17_barnard_motion)). On a finer annual timescale, its position also oscillates because Earth observes it from changing points on its orbit. Thus a measured astrometric track combines an approximately linear proper-motion trend with annual parallax and the relevant observational corrections. Proper motion and parallax are physically distinct even when both are visible in one sequence.[^proper_motion]
 
 ```{figure} _static/_chapter05/fig16_barnards_star.png
 :width: 72%
 :align: center
 :name: fig17_barnard_motion
 
-**Figure 17** Successive positions of Barnard's star against background stars. The large long-term displacement is proper motion; annual parallax adds a smaller periodic displacement.
+**Figure 21** Successive positions of Barnard's star against background stars. The large long-term displacement is proper motion; annual parallax adds a smaller periodic displacement.
 ```
 
 ## Catalogue coordinates and the position seen by an observer
 
 A catalogue must state both the coordinate **frame** and the **reference epoch** of a stellar position. The epoch tells us when the listed position applies; proper motion transports the star's direction to a different time. For coordinates tied to a moving equator and equinox, the reference equinox or date of the axes must also be specified. A label such as “J2000” alone should not be taken to describe every part of an astrometric record: modern ICRS coordinates use axes designed to remain fixed, although their source positions still have reference epochs.[^catalogues]
 
-The catalogue excerpt in [Figure 18](fig18_catalogue_example) illustrates these distinctions. It gives one star's coordinates in several frames and lists proper-motion components in milliarcseconds per year. The numbers are a snapshot of a catalogue entry; the example demonstrates why a position and a proper motion must be read together, rather than treating the displayed direction as timeless.
+The catalogue excerpt in [Figure 22](fig18_catalogue_example) illustrates these distinctions. It gives one star's coordinates in several frames and lists proper-motion components in milliarcseconds per year. The numbers are a snapshot of a catalogue entry; the example demonstrates why a position and a proper motion must be read together, rather than treating the displayed direction as timeless.
 
 ```{figure} _static/_chapter05/fig18_simbad_catalogue.png
 :width: 90%
 :align: center
 :name: fig18_catalogue_example
 
-**Figure 18** Example stellar catalogue entry for HD 219134, showing coordinates in different frames and the two components of proper motion. The frame and epoch labels are part of the coordinate information.
+**Figure 22** Example stellar catalogue entry for HD 219134, showing coordinates in different frames and the two components of proper motion. The frame and epoch labels are part of the coordinate information.
 ```
 
 To predict the direction actually observed, first propagate the source's astrometric position and, where significant, distance and velocity to the required date. Then transform the reference axes to the date and apply the relevant geometric and light-propagation effects, including precession, nutation, parallax, aberration, and any required gravitational deflection. Finally, specify the observing site and account for Earth rotation, polar motion, diurnal effects, and atmospheric refraction. These operations depend on the desired accuracy and on whether the target is a star or a Solar System body. Their purpose is to transform a well-defined catalogue position into the **apparent**, and ultimately **topocentric observed**, direction needed to point a telescope.[^catalogues]
