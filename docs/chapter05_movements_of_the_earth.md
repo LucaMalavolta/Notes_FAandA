@@ -105,7 +105,7 @@ The detailed direction of the terrestrial torque differs from that on a top unde
 
 [^precession] 
 
-```{figure} _static/_chapter05/figure06b_spnning_earth_precession.png
+```{figure} _static/_chapter05/fig06b_spinning_earth_precession.png
 :width: 48%
 :align: center
 :name: fig06_precession_earth
@@ -114,7 +114,18 @@ The detailed direction of the terrestrial torque differs from that on a top unde
 ```
 
 
-The celestial pole consequently describes, to first approximation, a circle around the north ecliptic pole. The angular radius is approximately the obliquity, $23.4^\circ$, and a circuit takes about **26,000 years**. The equinox shifts in the opposite sense along the ecliptic at about $50.3''$ per year. These are approximate, epoch-dependent numbers: the exact path is modified by nutation and by slow changes in the ecliptic itself. [Figure 7](fig07_pole_path) shows why different stars serve as pole stars at different epochs.
+The celestial pole consequently describes, to first approximation, a circle around the north ecliptic pole. The celestial pole is always on a point of the small circle distant $\epsilon$ from the ecliptic pole,  i.e., the parallel of ecliptic latitude $\beta = 90°- \epsilon$. See [Figure 7](fig07_precession_cone
+) 
+
+```{figure} _static/_chapter05/fig07b_precession_cone.png
+:width: 65%
+:align: center
+:name: fig07_precession_cone
+
+**Figure 7** The North Celestial Pole (PCN) describes a cone around the North Ecliptic Pole (PEN).
+```
+
+The angular radius is approximately the obliquity, $23.4^\circ$, and a circuit takes about **26,000 years**. The equinox shifts in the opposite sense along the ecliptic at about $50.3''$ per year. These are approximate, epoch-dependent numbers: the exact path is modified by nutation and by slow changes in the ecliptic itself. [Figure 7](fig07_pole_path) shows why different stars serve as pole stars at different epochs.
 
 ```{figure} _static/_chapter05/fig07_precessing_celestial_pole.png
 :width: 65%
@@ -128,7 +139,17 @@ The relevant torque is approximately proportional to the disturbing body's mass 
 
 ## Nutation: periodic motion around the mean axis
 
-A smooth precession cone assumes an averaged, regular lunar and solar torque. In reality, the lunar orbit is inclined by about $5.1^\circ$ to the ecliptic, and its line of nodes rotates with a period of about **18.6 years**. The Moon and Sun also change distance from Earth during their orbits. The torque therefore has periodic components. The resulting shorter-period changes of the celestial pole and equator are collectively called **nutation**. The instantaneous pole follows a small wavering path around the precessing mean pole ([Figure 8](fig08_nutation_cone)).[^nutation]
+A smooth precession cone assumes an averaged, regular lunar and solar torque. In reality, the lunar orbit is inclined by about $5.1^\circ$ to the ecliptic, and its line of nodes rotates with a period of about **18.6 years**. The Moon and Sun also change distance from Earth during their orbits.  ([Figure 8](fig08_orbital_configuration_earth_moon))
+
+```{figure} _static/_chapter05/fig08a_orbital_configuration_earth_moon.png
+:width: 65%
+:align: center
+:name: fig08_orbital_configuration_earth_moon
+
+**Figure 8** Schematic representation of the Earth-Moon orbital parameters. Size and distances are not drawn to scale.
+```
+
+The torque therefore has periodic components. The resulting shorter-period changes of the celestial pole and equator are collectively called **nutation**. The instantaneous pole follows a small wavering path around the precessing mean pole ([Figure 8](fig08_nutation_cone)).[^nutation]
 
 ```{figure} _static/_chapter05/fig08_nutation_cone.png
 :width: 65%
@@ -138,7 +159,7 @@ A smooth precession cone assumes an averaged, regular lunar and solar torque. In
 **Figure 8** The small wavering path of the rotation axis superposed on its much larger precessional cone. The amplitudes of the two motions are not drawn to scale.
 ```
 
-The importance of changing distance can be appreciated without a full orbital calculation. The Earth's distance from the Sun ranges approximately from $147.1$ to $152.1$ million kilometres over an orbit, a difference of about $3.4\%$ relative to the smaller distance. The Moon's distance ranges approximately from $356,700$ to $406,300$ km, a difference of about $14\%$ relative to perigee. The visual difference between lunar perigee and apogee is shown in [Figure 9](fig09_moon_distance). Since the torque varies approximately as $r^{-3}$, these distance changes contribute periodic terms. They are not, by themselves, the explanation for the 18.6-year principal term: that period is associated with regression of the lunar nodes.[^nutation]
+The importance of changes in the Moon's distance can be appreciated without a full orbital calculation. The Earth's distance from the Sun ranges approximately from $147.1$ to $152.1$ million kilometres over an orbit, a difference of about $3.4\%$ relative to the smaller distance. The Moon's distance ranges from approximately $356,700$ km (at *perigee*, when the Moon is at its minimum distance from Earth) to $406,300$ km (at *apogee*, the maximum distance from Earth), a difference of about $14\%$ relative to perigee. The visual difference between lunar perigee and apogee is shown in [Figure 9](fig09_moon_distance). Since the torque varies approximately as $r^{-3}$, these distance changes contribute periodic terms. They are not, by themselves, the explanation for the 18.6-year principal term: that period is associated with regression of the lunar nodes.[^nutation]
 
 ```{figure} _static/_chapter05/fig09_lunar_perigee_apogee.png
 :width: 78%
@@ -158,14 +179,33 @@ Let $N$ be the ascending node at which the Moon crosses the ecliptic from south 
 **Figure 10** The ecliptic, equator, and inclined lunar orbit. Their distinct intersections identify the lunar nodes used to describe the changing orientation of the Moon's orbit.
 ```
 
-James Bradley detected the principal nutation observationally through a long series of stellar positions. In a simple leading-term approximation, with $\Omega$ the ecliptic longitude of the Moon's ascending node, the nutation in ecliptic longitude and obliquity is[^nutation]
+The two nodes are not fixed in inertial space because the Sun perturbs the plane of the Moon’s orbit (similarly to precession). $N$ precesses along the ecliptic in clockwise sense, by $\about 191”$ each day, making a full turn in 18.6 years. Correspondingly, the pole $M$ of the lunar orbit describes a small circle of radius $i$ around the ecliptic pole $E$. 
+The declination of the Moon varies between $\pm 18.8°$ and $\pm 28.8°$ during a nutation period, according to the ecliptic longitude of the node $\lambda (N)$
+The ascending node $N’$ will oscillate around γ with an amplitude of about $\pm 13°$ in 18.6 years .  
+
+
+James Bradley detected the principal nutation observationally through a long series of stellar positions. In a simple leading-term approximation, with $\lambda (N)$ the ecliptic longitude of the Moon's ascending node, nutation changes the origin of the ecliptic longitude and the obliquity by these amounts[^nutation]:
 
 $$
-\boxed{\Delta\psi\simeq-17.2''\sin\Omega,\qquad
-\Delta\varepsilon\simeq+9.2''\cos\Omega.}
+\boxed{\Delta\psi\simeq-17.2''\sin{\lambda (N)},\qquad
+\Delta\varepsilon\simeq+9.2''\cos{\lambda (N)}.}
 $$
 
-The two amplitudes refer to *different angles*: $17.2''$ in longitude and $9.2''$ in obliquity. Their common principal period is about $18.6$ years. A full nutation theory includes many additional terms, so these two expressions are explanatory approximations rather than a precision ephemeris.
+The two amplitudes refer to *different angles*: $17.2''$ in longitude and $9.2''$ in obliquity. Their common principal period is about $18.6$ years. Hence, the variation in longitude speeds up or slows down the precession of the equinoxes; the variation in obliquity changes the tilt of Earth's axis relative to the ecliptic.
+
+[Figure 10](fig10_nutation_from_outside) shows the movement of the celestial pole from the outside of the celestial sphere. This movement can be visualised as the instantaneous celestial pole $P_v$ describing a retrograde cone around the mean celestial pole $P_m$ (first image of [Figure 10](fig10b_precession_nutation_from_outside), which in turn describes a cone of aperture $\epsilon$ around the ecliptic pole $E$ due to precession  (second image of [Figure 10](fig10b_precession_nutation_from_outside)). 
+
+```{figure} _static/_chapter05/fig10b_precession_nutation_from_outside.png
+:width: 68%
+:align: center
+:name: fig10b_precession_nutation_from_outside
+
+**Figure 10** The ecliptic, equator, and inclined lunar orbit. Their distinct intersections identify the lunar nodes used to describe the changing orientation of the Moon's orbit.
+```
+
+The instantaneous celestial pole $P_v$ draws an ellipse around $P_m$ with the mìsemimajor axis oriented towards the ecliptic pole    
+
+ A full nutation theory includes many additional terms, so these two expressions are explanatory approximations rather than a precision ephemeris. 
 
 ## Motion of the ecliptic and obliquity
 
