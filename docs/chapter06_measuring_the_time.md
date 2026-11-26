@@ -2,10 +2,6 @@
 
 # Measuring the Time
 
-:::{danger}
-This page still needs substantial revision to match the content presented during the lectures
-:::
-
 > {sub-ref}`today` | {sub-ref}`wordcount-minutes` min read
 
 The daily motion of the sky, the succession of lunar phases, and the annual return of the seasons provide three natural ways of measuring time. They do not, however, define equivalent clocks. The Earth rotates at a slightly variable rate, the Moon follows a perturbed orbit, and the equinox moves with respect to the stars. A time scale intended to describe the orientation of a telescope therefore serves a different purpose from one used to integrate a planetary orbit or synchronize a navigation system.
@@ -105,14 +101,14 @@ $$
 \simeq24\ \mathrm{h}\ 3\ \mathrm{min}\ 56.56\ \mathrm{s\ of\ sidereal\ time}.
 $$
 
-Equivalently, 24 sidereal hours correspond to approximately **23 h 56 min 4 s** of mean solar time. These expressions compare the readings of two differently graduated clocks over the same physical interval; they do not imply that the SI second has two definitions. [Figure 4](fig04_time_day_lengths_another) shows another representation of the same concept.
+Equivalently, 24 sidereal hours correspond to approximately **23 h 56 min 4 s** of mean solar time. These expressions compare the readings of two differently graduated clocks over the same physical interval; they do not imply that the SI second has two definitions. [Figure 5](fig04_time_day_lengths_another) shows another representation of the same concept.
 
 ```{figure} _static/_chapter06/fig04_sidereal_solar_day_another.png
 :width: 57%
 :align: center
 :name: fig04_time_day_lengths_another
 
-**Figure 4** After rotating once relative to a distant celestial direction, the Earth must turn a little farther to face the Sun again. The orbital displacement is exaggerated for clarity.
+**Figure 5** After rotating once relative to a distant celestial direction, the Earth must turn a little farther to face the Sun again. The orbital displacement is exaggerated for clarity.
 ```
 
 
@@ -156,14 +152,14 @@ The distinction concerns the sense of rotation relative to orbital motion. These
 
 ## Using the Sun to measure the year
 
-The Sun's annual motion supplies two different years. The **sidereal year**, approximately $365.2564\ \mathrm{d}$, measures a complete revolution relative to distant stars; in other words, it is the time between two passages of the Sun in the same position with respect to the fixed stars. The **tropical year**, approximately $365.2422\ \mathrm{d}$, is the time between two passages of the Sun on the vernal equinox. The tropical year follows the moving equinox and therefore the seasonal cycle. It is shorter than the sidereal year by approximately 20 minutes because the equinox moves westward, against the Sun's apparent eastward motion ([Figure 5](fig05_time_tropical_year)).[^ch06_years]
+The Sun's annual motion supplies two different years. The **sidereal year**, approximately $365.2564\ \mathrm{d}$, measures a complete revolution relative to distant stars; in other words, it is the time between two passages of the Sun in the same position with respect to the fixed stars. The **tropical year**, approximately $365.2422\ \mathrm{d}$, is the time between two passages of the Sun on the vernal equinox. The tropical year follows the moving equinox and therefore the seasonal cycle. It is shorter than the sidereal year by approximately 20 minutes because the equinox moves westward, against the Sun's apparent eastward motion ([Figure 6](fig05_time_tropical_year)).[^ch06_years]
 
 ```{figure} _static/_chapter06/fig05_tropical_year.png
 :width: 65%
 :align: center
 :name: fig05_time_tropical_year
 
-**Figure 5** The moving equinox is reached before the Earth completes one revolution relative to the stars. The numerical annotations refer to an older reference epoch; the geometry explains the distinction between tropical and sidereal years.
+**Figure 6** The moving equinox is reached before the Earth completes one revolution relative to the stars. The numerical annotations refer to an older reference epoch; the geometry explains the distinction between tropical and sidereal years.
 ```
 
 At an elementary level, a tropical year is the interval between successive vernal equinoxes. More precisely, the **mean tropical year** is the interval during which the Sun's mean ecliptic longitude, measured from the mean equinox of date, increases by $360^\circ$. An individual equinox-to-equinox interval differs slightly from this mean definition because of orbital perturbations and the changing geometry of the reference system.
@@ -182,14 +178,14 @@ The few-minute variation in these intervals should not be interpreted as a compa
 
 ## The mean Sun and mean solar time
 
-The real Sun does not move uniformly in right ascension. Two effects contribute. First, it travels along the **ecliptic**, inclined to the celestial equator, so equal ecliptic arcs project into unequal right-ascension arcs. Second, the Earth's orbit is **elliptical**. Kepler's second law makes its orbital angular speed greater near perihelion, in early January, than near aphelion, in early July. The Sun's apparent angular speed reflects this variation. The geometries are illustrated in [Figures 6](fig06_time_sun_planes) and [7](fig07_time_elliptical_orbit).[^ch06_solar_time]
+The real Sun does not move uniformly in right ascension. Two effects contribute. First, it travels along the **ecliptic**, inclined to the celestial equator, so equal ecliptic arcs project into unequal right-ascension arcs. Second, the Earth's orbit is **elliptical**. Kepler's second law makes its orbital angular speed greater near perihelion, in early January, than near aphelion, in early July. The Sun's apparent angular speed reflects this variation. The geometries are illustrated in [Figures 7](fig06_time_sun_planes) and [8](fig07_time_elliptical_orbit).[^ch06_solar_time]
 
 ```{figure} _static/_chapter06/fig06_sun_ecliptic_equator.png
 :width: 48%
 :align: center
 :name: fig06_time_sun_planes
 
-**Figure 6** The Sun's annual path lies along the ecliptic rather than the celestial equator. Its varying declination accompanies a non-uniform increase of right ascension.
+**Figure 7** The Sun's annual path lies along the ecliptic rather than the celestial equator. Its varying declination accompanies a non-uniform increase of right ascension.
 ```
 
 ```{figure} _static/_chapter06/fig07_earth_elliptical_orbit.png
@@ -197,7 +193,7 @@ The real Sun does not move uniformly in right ascension. Two effects contribute.
 :align: center
 :name: fig07_time_elliptical_orbit
 
-**Figure 7** The Earth's elliptical orbit, perihelion, aphelion, equinoxes, and solstices. Orbital eccentricity and axial inclination are independent contributions to the variation of apparent solar time.
+**Figure 8** The Earth's elliptical orbit, perihelion, aphelion, equinoxes, and solstices. Orbital eccentricity and axial inclination are independent contributions to the variation of apparent solar time.
 ```
 
 For a Sun on the ecliptic, neglecting its small ecliptic latitude,
@@ -248,14 +244,14 @@ $$
 T_{\mathrm{M}}=T_\odot-E.
 $$
 
-The eccentricity contribution has a main period of one year, while the obliquity contribution has a main period of half a year. Their superposition gives the characteristic curve in [Figure 8](fig08_time_equation). The equation of time reaches approximately $+16\ \mathrm{min}$ in early November and $-14\ \mathrm{min}$ in mid-February, and crosses zero about four times per year.[^ch06_equation_of_time]
+The eccentricity contribution has a main period of one year, while the obliquity contribution has a main period of half a year. Their superposition gives the characteristic curve in [Figure 9](fig08_time_equation). The equation of time reaches approximately $+16\ \mathrm{min}$ in early November and $-14\ \mathrm{min}$ in mid-February, and crosses zero about four times per year.[^ch06_equation_of_time]
 
 ```{figure} _static/_chapter06/fig08_equation_of_time.png
 :width: 70%
 :align: center
 :name: fig08_time_equation
 
-**Figure 8** Contributions of orbital eccentricity and axial inclination to the equation of time, and their combined effect. The ordinate is apparent solar time minus mean solar time, in minutes.
+**Figure 9** Contributions of orbital eccentricity and axial inclination to the equation of time, and their combined effect. The ordinate is apparent solar time minus mean solar time, in minutes.
 ```
 
 For example, if $E=+16\ \mathrm{min}$, the real Sun crosses the meridian when local mean solar time is approximately $11{:}44$. Apparent noon is then earlier than mean noon. This comparison concerns **local** time. A civil clock also includes the offset of the adopted time zone and, where applicable, daylight saving time; those conventions are considered below.
@@ -264,14 +260,14 @@ More information about the equation of time can be found at [this webiste](https
 
 ### The analemma
 
-Observe the Sun from one location at the same mean solar time throughout a year. Its position changes in two coordinates: declination follows the seasonal north–south displacement, while the equation of time produces an east–west displacement. The resulting curve is the **analemma**. On Earth it resembles an unequal figure eight ([Figures 9](fig09_time_analemma) and [10](fig10_time_analemma_photo)). The apparent orientation of the figure depends on latitude and the time of day chosen for the observations.
+Observe the Sun from one location at the same mean solar time throughout a year. Its position changes in two coordinates: declination follows the seasonal north–south displacement, while the equation of time produces an east–west displacement. The resulting curve is the **analemma**. On Earth it resembles an unequal figure eight ([Figures 10](fig09_time_analemma) and [11](fig10_time_analemma_photo)). The apparent orientation of the figure depends on latitude and the time of day chosen for the observations.
 
 ```{figure} _static/_chapter06/fig09_analemma_diagram.png
 :width: 42%
 :align: center
 :name: fig09_time_analemma
 
-**Figure 9** The terrestrial analemma plotted in declination and equation of time. The dates label successive positions during the year; the horizontal axis identifies when the apparent Sun is fast or slow relative to mean time.
+**Figure 10** The terrestrial analemma plotted in declination and equation of time. The dates label successive positions during the year; the horizontal axis identifies when the apparent Sun is fast or slow relative to mean time.
 ```
 
 ```{figure} _static/_chapter06/fig10_analemma_photograph.png
@@ -279,7 +275,7 @@ Observe the Sun from one location at the same mean solar time throughout a year.
 :align: center
 :name: fig10_time_analemma_photo
 
-**Figure 10** A photographic composite of the Sun observed at a fixed clock time through the year. The positions trace the figure-eight analemma.
+**Figure 11** A photographic composite of the Sun observed at a fixed clock time through the year. The positions trace the figure-eight analemma.
 ```
 
 Three limiting cases separate the physical causes:
@@ -288,36 +284,36 @@ Three limiting cases separate the physical causes:
 2. **No axial tilt and an eccentric orbit.** Declination remains constant, but the equation of time changes. The Sun moves back and forth along a segment.
 3. **Axial tilt and a circular orbit.** Declination varies, and projection onto the equator produces an equation of time even though the orbital speed is uniform. A symmetric figure eight results in a declination–time plot.
 
-The Earth combines tilt and eccentricity. Their relative phase makes the two lobes unequal, as the annual example in [Figure 11](fig11_time_analemma_year) also shows. A fixed civil-clock observing time must be corrected for any seasonal clock change if it is to represent one fixed mean-time observing schedule.
+The Earth combines tilt and eccentricity. Their relative phase makes the two lobes unequal, as the annual example in [Figure 12](fig11_time_analemma_year) also shows. A fixed civil-clock observing time must be corrected for any seasonal clock change if it is to represent one fixed mean-time observing schedule.
 
 ```{figure} _static/_chapter06/fig11_analemma_2011.png
 :width: 90%
 :align: center
 :name: fig11_time_analemma_year
 
-**Figure 11** An annual example of the Earth's analemma, with dates and the orbital geometry that produces its unequal lobes.
+**Figure 12** An annual example of the Earth's analemma, with dates and the orbital geometry that produces its unequal lobes.
 ```
 
 ### An analemma on Mars
 
-The same reasoning applies to other planets. Mars has a larger orbital eccentricity than Earth, approximately $0.093$ rather than $0.017$, and an axial tilt of about $25^\circ$. A Martian year lasts about 687 terrestrial days, or 669 **sols**, where a sol is a Martian solar day ([Figure 12](fig12_time_mars_orbit)). The eccentricity contribution is sufficiently strong that the Martian analemma has a stretched, pear-like form rather than Earth's familiar figure eight.
+The same reasoning applies to other planets. Mars has a larger orbital eccentricity than Earth, approximately $0.093$ rather than $0.017$, and an axial tilt of about $25^\circ$. A Martian year lasts about 687 terrestrial days, or 669 **sols**, where a sol is a Martian solar day ([Figure 13](fig12_time_mars_orbit)). The eccentricity contribution is sufficiently strong that the Martian analemma has a stretched, pear-like form rather than Earth's familiar figure eight.
 
 ```{figure} _static/_chapter06/fig12_mars_earth_orbits.png
 :width: 60%
 :align: center
 :name: fig12_time_mars_orbit
 
-**Figure 12** Comparison of the Earth and Mars orbital cycles. A Martian year contains approximately 687 Earth days or 669 Martian solar days.
+**Figure 13** Comparison of the Earth and Mars orbital cycles. A Martian year contains approximately 687 Earth days or 669 Martian solar days.
 ```
 
-[Figure 13](fig13_time_martian_analemma) is a simulation placed over the Mars Pathfinder panorama. It represents the Sun in the late afternoon at intervals of **30 sols**, beginning on Pathfinder sol 24, corresponding to 29 July 1997. The simulated sequence makes the planetary dependence of the analemma immediately visible.[^ch06_martian_analemma]
+[Figure 14](fig13_time_martian_analemma) is a simulation placed over the Mars Pathfinder panorama. It represents the Sun in the late afternoon at intervals of **30 sols**, beginning on Pathfinder sol 24, corresponding to 29 July 1997. The simulated sequence makes the planetary dependence of the analemma immediately visible.[^ch06_martian_analemma]
 
 ```{figure} _static/_chapter06/fig13_martian_analemma.png
 :width: 80%
 :align: center
 :name: fig13_time_martian_analemma
 
-**Figure 13** Simulated Martian analemma over the Pathfinder landing-site panorama, with one solar position every 30 sols. Digital illustration: Dennis Mammana; NASA Astronomy Picture of the Day, 30 December 2006.
+**Figure 14** Simulated Martian analemma over the Pathfinder landing-site panorama, with one solar position every 30 sols. Digital illustration: Dennis Mammana; NASA Astronomy Picture of the Day, 30 December 2006.
 ```
 
 ## Measuring time with the Moon
@@ -338,7 +334,7 @@ P_{\mathrm{Moon}}=27.32166\ \mathrm{d}
 \simeq27\ \mathrm{d}\ 7\ \mathrm{h}\ 43\ \mathrm{min}\ 12\ \mathrm{s}.
 $$
 
-These are mean values, rather than identical durations for every individual cycle. During one sidereal month, the Earth–Moon system advances along its orbit around the Sun. The Moon must move farther around Earth to recover the original phase alignment ([Figure 14](fig14_time_lunar_months)). In the approximation of uniform, coplanar motion,
+These are mean values, rather than identical durations for every individual cycle. During one sidereal month, the Earth–Moon system advances along its orbit around the Sun. The Moon must move farther around Earth to recover the original phase alignment ([Figure 15](fig14_time_lunar_months)). In the approximation of uniform, coplanar motion,
 
 $$
 \boxed{\frac{1}{S}=\frac{1}{P_{\mathrm{Moon}}}-\frac{1}{P_{\mathrm{Earth}}}}.
@@ -351,19 +347,19 @@ Taking $P_{\mathrm{Earth}}\simeq365.2564\ \mathrm{d}$ recovers a synodic period 
 :align: center
 :name: fig14_time_lunar_months
 
-**Figure 14** The Moon returns to the same stellar direction after about 27.32 days, but requires about 29.53 days to restore its alignment with the Sun. The Earth's orbital displacement changes the Sun's direction during the interval.
+**Figure 15** The Moon returns to the same stellar direction after about 27.32 days, but requires about 29.53 days to restore its alignment with the Sun. The Earth's orbital displacement changes the Sun's direction during the interval.
 ```
 
 ### Why lunations have different lengths
 
-An individual lunation can differ from the mean by several hours. [Figure 15](fig15_time_lunation_short) shows this variability during 2008–2010. Its left axis gives the departure from the mean duration, while its right axis gives the Moon's **true anomaly** at New Moon. True anomaly is the angle measured from perigee to the Moon's instantaneous position, in the direction of orbital motion ([Figure 16](fig16_time_true_anomaly)).[^ch06_lunar_variations]
+An individual lunation can differ from the mean by several hours. [Figure 16](fig15_time_lunation_short) shows this variability during 2008–2010. Its left axis gives the departure from the mean duration, while its right axis gives the Moon's **true anomaly** at New Moon. True anomaly is the angle measured from perigee to the Moon's instantaneous position, in the direction of orbital motion ([Figure 17](fig16_time_true_anomaly)).[^ch06_lunar_variations]
 
 ```{figure} _static/_chapter06/fig15_lunation_2008_2010.png
 :width: 80%
 :align: center
 :name: fig15_time_lunation_short
 
-**Figure 15** Departures of individual lunations from their mean duration during 2008–2010, compared with the Moon's true anomaly at New Moon. The two ordinates represent different quantities.
+**Figure 16** Departures of individual lunations from their mean duration during 2008–2010, compared with the Moon's true anomaly at New Moon. The two ordinates represent different quantities.
 ```
 
 ```{figure} _static/_chapter06/fig16_lunar_true_anomaly.png
@@ -371,17 +367,17 @@ An individual lunation can differ from the mean by several hours. [Figure 15](fi
 :align: center
 :name: fig16_time_true_anomaly
 
-**Figure 16** Perigee, apogee, the line of apsides, and true anomaly in an elliptical lunar orbit. The eccentricity is exaggerated to make the geometry clear.
+**Figure 17** Perigee, apogee, the line of apsides, and true anomaly in an elliptical lunar orbit. The eccentricity is exaggerated to make the geometry clear.
 ```
 
-The Moon moves faster near **perigee** and slower near **apogee**. The extra angular distance required to regain the Sun is therefore traversed at different speeds depending on where New Moon falls in the orbit. [Figure 17](fig17_time_synodic_geometry) compares two cases. In orbits **A–B**, New Moon occurs near perigee. After returning to the same position relative to perigee, the Moon covers the remaining arc rapidly. In orbits **C–D**, New Moon occurs near apogee, and the remaining arc takes longer.
+The Moon moves faster near **perigee** and slower near **apogee**. The extra angular distance required to regain the Sun is therefore traversed at different speeds depending on where New Moon falls in the orbit. [Figure 18](fig17_time_synodic_geometry) compares two cases. In orbits **A–B**, New Moon occurs near perigee. After returning to the same position relative to perigee, the Moon covers the remaining arc rapidly. In orbits **C–D**, New Moon occurs near apogee, and the remaining arc takes longer.
 
 ```{figure} _static/_chapter06/fig17_lunar_synodic_geometry.png
 :width: 80%
 :align: center
 :name: fig17_time_synodic_geometry
 
-**Figure 17** Two geometries for restoring the New Moon alignment: A–B near perigee and C–D near apogee. The Earth moves along its solar orbit while the Moon completes its revolution; the extra lunar arc is crossed faster near perigee.
+**Figure 18** Two geometries for restoring the New Moon alignment: A–B near perigee and C–D near apogee. The Earth moves along its solar orbit while the Moon completes its revolution; the extra lunar arc is crossed faster near perigee.
 ```
 
 The distinction is a useful first explanation, rather than a complete prediction. The Earth's own variable orbital speed and the Sun's gravitational perturbation of the lunar orbit also contribute. The regular progression of true anomaly at successive New Moons reflects the fact that the phase cycle and the perigee cycle do not have the same period.
@@ -394,17 +390,17 @@ $$
 A=27.55455\ \mathrm{d},
 $$
 
-about $0.23\ \mathrm{d}$ longer than the sidereal month. Perigee moves eastward in the same sense as the Moon's orbital motion, so the Moon must travel beyond one stellar revolution (i.e,. the direction with respect to fixed stars) to encounter the perigee again. [Figure 18](fig18_time_anomalistic) shows that individual perigee-to-perigee intervals also vary.
+about $0.23\ \mathrm{d}$ longer than the sidereal month. Perigee moves eastward in the same sense as the Moon's orbital motion, so the Moon must travel beyond one stellar revolution (i.e,. the direction with respect to fixed stars) to encounter the perigee again. [Figure 19](fig18_time_anomalistic) shows that individual perigee-to-perigee intervals also vary.
 
 ```{figure} _static/_chapter06/fig18_anomalistic_month.png
 :width: 80%
 :align: center
 :name: fig18_time_anomalistic
 
-**Figure 18** Variation of the anomalistic month during 2008–2010. The angular curves describe the relative orientation of the Sun and lunar perigee; the left axis gives departures of the perigee-to-perigee and apogee-to-apogee intervals from their mean.
+**Figure 19** Variation of the anomalistic month during 2008–2010. The angular curves describe the relative orientation of the Sun and lunar perigee; the left axis gives departures of the perigee-to-perigee and apogee-to-apogee intervals from their mean.
 ```
 
-The **line of apsides** joins the nearest and farthest points of an orbit: periapsis and apoapsis, called perigee and apogee for an Earth-centred orbit. Its gradual rotation is called **apsidal precession** ([Figure 19](fig19_time_apsidal_precession)). The lunar line of apsides completes one prograde circuit in approximately **8.85 years**. If $P_{\mathrm{aps}}$ is that period, the mean-rate relation is
+The **line of apsides** joins the nearest and farthest points of an orbit: periapsis and apoapsis, called perigee and apogee for an Earth-centred orbit. Its gradual rotation is called **apsidal precession** ([Figure 20](fig19_time_apsidal_precession)). The lunar line of apsides completes one prograde circuit in approximately **8.85 years**. If $P_{\mathrm{aps}}$ is that period, the mean-rate relation is
 
 $$
 \frac{1}{A}=\frac{1}{P_{\mathrm{Moon}}}-\frac{1}{P_{\mathrm{aps}}}.
@@ -417,7 +413,7 @@ This rotation of the orbital ellipse must be distinguished from the axial preces
 :align: center
 :name: fig19_time_apsidal_precession
 
-**Figure 19** Apsidal precession changes the orientation of an elliptical orbit while leaving the central body near one focus. This schematic illustrates successive orientations of the major axis.
+**Figure 20** Apsidal precession changes the orientation of an elliptical orbit while leaving the central body near one focus. This schematic illustrates successive orientations of the major axis.
 ```
 
 ### The longer pattern of lunation lengths
@@ -430,26 +426,26 @@ P_{\mathrm{beat}}
 \simeq412\ \mathrm{d}.
 $$
 
-The longer sequence in [Figure 20](fig20_time_lunation_long) also contains modulation associated with the Earth's eccentricity and the changing orientation of the lunar apsides. The 8.85-year apsidal period is measured relative to the stars. The orientation relative to the Earth's perihelion changes on a nearby period, while the angle from the Sun changes much faster during each annual revolution. These are different angular comparisons and should not be assigned one common period.
+The longer sequence in [Figure 21](fig20_time_lunation_long) also contains modulation associated with the Earth's eccentricity and the changing orientation of the lunar apsides. The 8.85-year apsidal period is measured relative to the stars. The orientation relative to the Earth's perihelion changes on a nearby period, while the angle from the Sun changes much faster during each annual revolution. These are different angular comparisons and should not be assigned one common period.
 
 ```{figure} _static/_chapter06/fig20_lunation_2008_2027.png
 :width: 85%
 :align: center
 :name: fig20_time_lunation_long
 
-**Figure 20** Variation of lunation length over 2008–2027. The rapid oscillations and their changing envelope reflect several interacting cycles, including lunar phase, lunar perigee, and the Earth's orbital motion.
+**Figure 21** Variation of lunation length over 2008–2027. The rapid oscillations and their changing envelope reflect several interacting cycles, including lunar phase, lunar perigee, and the Earth's orbital motion.
 ```
 
 ### The draconic month
 
-The lunar orbital plane is inclined by about $5.1^\circ$ to the ecliptic. The intersection of the two planes defines a **line of nodes**. At the **ascending node**, the Moon crosses from south to north of the ecliptic; at the descending node it crosses from north to south ([Figure 21](fig21_time_lunar_nodes)).
+The lunar orbital plane is inclined by about $5.1^\circ$ to the ecliptic. The intersection of the two planes defines a **line of nodes**. At the **ascending node**, the Moon crosses from south to north of the ecliptic; at the descending node it crosses from north to south ([Figure 22](fig21_time_lunar_nodes)).
 
 ```{figure} _static/_chapter06/fig21_lunar_nodes.png
 :width: 75%
 :align: center
 :name: fig21_time_lunar_nodes
 
-**Figure 21** The inclined lunar orbital plane, ascending and descending nodes, and their retrograde motion. The nodal line completes a circuit in approximately 18.6 years.
+**Figure 22** The inclined lunar orbital plane, ascending and descending nodes, and their retrograde motion. The nodal line completes a circuit in approximately 18.6 years.
 ```
 
 The **draconic month**, also called the **draconitic** or **nodical month**, is the interval between successive passages through the ascending node. Its mean duration is
@@ -465,48 +461,48 @@ $$
 \frac{1}{D}=\frac{1}{P_{\mathrm{Moon}}}+\frac{1}{P_{\mathrm{node}}}.
 $$
 
-The nodal period sets the mean difference from the sidereal month. Lunar eccentricity and the changing orientation of perigee relative to the nodes modulate individual crossing intervals ([Figure 22](fig22_time_draconic)). The draconic cycle is especially relevant to eclipses, which require a phase alignment to occur close to a node.[^ch06_draconic_period]
+The nodal period sets the mean difference from the sidereal month. Lunar eccentricity and the changing orientation of perigee relative to the nodes modulate individual crossing intervals ([Figure 23](fig22_time_draconic)). The draconic cycle is especially relevant to eclipses, which require a phase alignment to occur close to a node.[^ch06_draconic_period]
 
 ```{figure} _static/_chapter06/fig22_draconic_month.png
 :width: 80%
 :align: center
 :name: fig22_time_draconic
 
-**Figure 22** Departures of individual draconic months from the mean and the changing angle between lunar perigee and the ascending node. The larger-scale envelope accompanies their changing relative orientation.
+**Figure 23** Departures of individual draconic months from the mean and the changing angle between lunar perigee and the ascending node. The larger-scale envelope accompanies their changing relative orientation.
 ```
 
 ### The Moon's changing orbital parameters
 
 The lunar orbit is not one fixed Keplerian ellipse. A useful instantaneous description uses **osculating orbital elements**: the elements of the ellipse that matches the Moon's position and velocity at one instant. Solar perturbations change those elements continuously. Three examples complete the comparison of lunar periods.
 
-First, **perigee and apogee distances vary** ([Figure 23](fig23_time_lunar_distances)). Changes in the orbit's shape and size alter the closest and farthest Earth–Moon separations. A quoted mean distance does not specify the distance at a particular perigee or apogee.
+First, **perigee and apogee distances vary** ([Figure 24](fig23_time_lunar_distances)). Changes in the orbit's shape and size alter the closest and farthest Earth–Moon separations. A quoted mean distance does not specify the distance at a particular perigee or apogee.
 
 ```{figure} _static/_chapter06/fig23_lunar_perigee_apogee.png
 :width: 80%
 :align: center
 :name: fig23_time_lunar_distances
 
-**Figure 23** Changes in lunar perigee and apogee distance during 2008–2010, shown with the eccentricity at perigee and the relative longitude of the Sun and lunar perigee. The left ordinate is in thousands of kilometres.
+**Figure 24** Changes in lunar perigee and apogee distance during 2008–2010, shown with the eccentricity at perigee and the relative longitude of the Sun and lunar perigee. The left ordinate is in thousands of kilometres.
 ```
 
-Second, the **eccentricity varies** ([Figure 24](fig24_time_lunar_eccentricity)). Its commonly quoted mean value, about $0.055$, summarizes a perturbed orbit rather than specifying an immutable ellipse. The changing eccentricity affects the speed contrast between perigee and apogee and therefore the durations of the various months.
+Second, the **eccentricity varies** ([Figure 25](fig24_time_lunar_eccentricity)). Its commonly quoted mean value, about $0.055$, summarizes a perturbed orbit rather than specifying an immutable ellipse. The changing eccentricity affects the speed contrast between perigee and apogee and therefore the durations of the various months.
 
 ```{figure} _static/_chapter06/fig24_lunar_eccentricity.png
 :width: 80%
 :align: center
 :name: fig24_time_lunar_eccentricity
 
-**Figure 24** Variation of instantaneous lunar eccentricity during 2008–2010. The superposed angular curves describe the solar orientation relative to lunar perigee.
+**Figure 25** Variation of instantaneous lunar eccentricity during 2008–2010. The superposed angular curves describe the solar orientation relative to lunar perigee.
 ```
 
-Third, the **inclination and instantaneous nodal longitude vary** ([Figure 25](fig25_time_lunar_inclination)). A mean inclination near $5.1^\circ$ is sufficient for elementary geometry, but precision eclipse calculations require the time-dependent orbit. These graphs explain why the Moon is an effective natural calendar marker while its individual cycles are unsuitable as a uniform laboratory clock.
+Third, the **inclination and instantaneous nodal longitude vary** ([Figure 26](fig25_time_lunar_inclination)). A mean inclination near $5.1^\circ$ is sufficient for elementary geometry, but precision eclipse calculations require the time-dependent orbit. These graphs explain why the Moon is an effective natural calendar marker while its individual cycles are unsuitable as a uniform laboratory clock.
 
 ```{figure} _static/_chapter06/fig25_lunar_inclination.png
 :width: 75%
 :align: center
 :name: fig25_time_lunar_inclination
 
-**Figure 25** The lunar orbital inclination and instantaneous ascending-node longitude during 2008–2010. The inclination oscillates around its mean as the geometry of the solar perturbation changes.
+**Figure 26** The lunar orbital inclination and instantaneous ascending-node longitude during 2008–2010. The inclination oscillates around its mean as the geometry of the solar perturbation changes.
 ```
 
 For reference, the four mean lunar periods describe four different returns:
@@ -577,14 +573,14 @@ Removing the equation of time does not make Earth's rotation perfectly regular. 
 2. **Seasonal variations.** Atmospheric circulation, oceanic motion, and other seasonal mass movements exchange angular momentum with the solid Earth. They produce changes in day length of order milliseconds.
 3. **Irregular geophysical variations.** Exchange of angular momentum between the core and mantle, changes in mass distribution, and other processes introduce fluctuations that cannot be represented by a single periodic correction.
 
-[Figure 26](fig26_time_tidal_rotation) illustrates the tidal mechanism. Earth's rotation carries its tidal deformation ahead of the Earth–Moon direction. The resulting torque slows terrestrial rotation and transfers angular momentum to the Moon's orbit. Other geophysical effects modify the observed long-term trend.
+[Figure 27](fig26_time_tidal_rotation) illustrates the tidal mechanism. Earth's rotation carries its tidal deformation ahead of the Earth–Moon direction. The resulting torque slows terrestrial rotation and transfers angular momentum to the Moon's orbit. Other geophysical effects modify the observed long-term trend.
 
 ```{figure} _static/_chapter06/fig26_tides_rotation.png
 :width: 68%
 :align: center
 :name: fig26_time_tidal_rotation
 
-**Figure 26** Schematic tidal coupling of Earth's rotation and the Moon's orbit. The displaced tidal bulge exerts a torque, transferring angular momentum from terrestrial spin to lunar orbital motion.
+**Figure 27** Schematic tidal coupling of Earth's rotation and the Moon's orbit. The displaced tidal bulge exerts a torque, transferring angular momentum from terrestrial spin to lunar orbital motion.
 ```
 
 A small change in the length of each day accumulates into a much larger difference between rotation time and a uniform reference. Ancient eclipse observations therefore constrain the historical difference between these scales: an eclipse prediction depends on both the Moon's orbit and which terrestrial longitude was turned toward it. For precision dynamics we need a reference whose rate is established independently of Earth's rotation.
@@ -625,24 +621,24 @@ $$
 
 The difference $DUT1=UT1-UTC$ is measured and published; it is not the same as $\Delta AT$. A **leap second** changes $\Delta AT$ when needed. Positive leap seconds have usually been inserted at the end of 30 June or 31 December. A negative leap second is allowed in principle if the measured rotation requires one. Their scheduling follows observations and official announcements rather than a fixed annual rule.[^ch06_utc]
 
-[Figure 27](fig27_time_ut1_utc) shows the resulting sawtooth history of $UT1-UTC$. Between adjustments, variable Earth rotation changes the difference. At an adjustment, the UTC labeling changes by one second relative to the continuous atomic scale. A positive leap-second day contains $86\,401$ SI seconds and includes the label $23{:}59{:}60$.
+[Figure 28](fig27_time_ut1_utc) shows the resulting sawtooth history of $UT1-UTC$. Between adjustments, variable Earth rotation changes the difference. At an adjustment, the UTC labeling changes by one second relative to the continuous atomic scale. A positive leap-second day contains $86\,401$ SI seconds and includes the label $23{:}59{:}60$.
 
 ```{figure} _static/_chapter06/fig27_ut1_utc_history.png
 :width: 90%
 :align: center
 :name: fig27_time_ut1_utc
 
-**Figure 27** Historical variation of $UT1-UTC$. The one-second steps mark leap-second adjustments, while the intervening slopes reflect changes in the Earth's rotation rate.
+**Figure 28** Historical variation of $UT1-UTC$. The one-second steps mark leap-second adjustments, while the intervening slopes reflect changes in the Earth's rotation rate.
 ```
 
-[Figure 28](fig28_time_atomic_rotation) compares UT1 and UTC with TAI over an earlier interval. UTC remains piecewise parallel to TAI, while UT1 follows terrestrial rotation. These historical curves illustrate the mechanism; they do not provide the offsets for a new observation.
+[Figure 29](fig28_time_atomic_rotation) compares UT1 and UTC with TAI over an earlier interval. UTC remains piecewise parallel to TAI, while UT1 follows terrestrial rotation. These historical curves illustrate the mechanism; they do not provide the offsets for a new observation.
 
 ```{figure} _static/_chapter06/fig28_atomic_rotational_times.png
 :width: 70%
 :align: center
 :name: fig28_time_atomic_rotation
 
-**Figure 28** UT1 and UTC relative to TAI in a historical record. The staircase in $UTC-TAI$ and the smoother, irregular change of $UT1-TAI$ arise from different definitions of the scales.
+**Figure 29** UT1 and UTC relative to TAI in a historical record. The staircase in $UTC-TAI$ and the smoother, irregular change of $UT1-TAI$ arise from different definitions of the scales.
 ```
 
 UTC is practical for timestamps and civil coordination. Elapsed intervals that span a leap second must be evaluated with a leap-second-aware conversion, or in a continuous scale such as TAI. The $0.9$-second condition describes the established leap-second system. A **2022 CGPM resolution** decided that the permitted difference between UT1 and UTC will be increased in or before **2035**, so this condition should not be assumed to be a permanent definition for all future epochs.[^ch06_utc_future]
@@ -657,14 +653,14 @@ $$
 T_{\mathrm{civil}}=UTC+\text{adopted offset},
 $$
 
-including a date change where necessary. Italy uses **Central European Time**, CET, at $UTC+1\ \mathrm{h}$, and **Central European Summer Time**, CEST, at $UTC+2\ \mathrm{h}$. Neither is the local mean solar time of every Italian town. The historical map in [Figure 29](fig29_time_zones) illustrates the geographical arrangement, but time-zone boundaries and legal offsets can change.[^ch06_civil_time]
+including a date change where necessary. Italy uses **Central European Time**, CET, at $UTC+1\ \mathrm{h}$, and **Central European Summer Time**, CEST, at $UTC+2\ \mathrm{h}$. Neither is the local mean solar time of every Italian town. The historical map in [Figure 30](fig29_time_zones) illustrates the geographical arrangement, but time-zone boundaries and legal offsets can change.[^ch06_civil_time]
 
 ```{figure} _static/_chapter06/fig29_time_zones.png
 :width: 100%
 :align: center
 :name: fig29_time_zones
 
-**Figure 29** Historical world time-zone map. Irregular boundaries and fractional-hour offsets show that civil time is a geographical convention superposed on astronomical time.
+**Figure 30** Historical world time-zone map. Irregular boundaries and fractional-hour offsets show that civil time is a geographical convention superposed on astronomical time.
 ```
 
 Longitude, equation of time, and daylight saving are separate corrections. Combining the approximate relation between local mean time and UT1 with $E=T_\odot-T_{\mathrm{M}}$ gives
@@ -679,14 +675,14 @@ All terms must be expressed in the same time units. For example, at $15^\circ$ e
 
 ### The International Date Line
 
-If successive zones increase their clock reading eastward, a full circuit accumulates 24 hours. One boundary must therefore separate two different calendar dates. The **International Date Line** lies mainly in the Pacific Ocean near longitude $180^\circ$, with deviations that keep territories and island groups on the same civil date ([Figure 30](fig30_time_date_line)).
+If successive zones increase their clock reading eastward, a full circuit accumulates 24 hours. One boundary must therefore separate two different calendar dates. The **International Date Line** lies mainly in the Pacific Ocean near longitude $180^\circ$, with deviations that keep territories and island groups on the same civil date ([Figure 31](fig30_time_date_line)).
 
 ```{figure} _static/_chapter06/fig30_international_date_line.png
 :width: 43%
 :align: center
 :name: fig30_time_date_line
 
-**Figure 30** The International Date Line and nearby time zones in a historical map. Its departures from the $180^\circ$ meridian preserve the civil unity of territories and island groups.
+**Figure 31** The International Date Line and nearby time zones in a historical map. Its departures from the $180^\circ$ meridian preserve the civil unity of territories and island groups.
 ```
 
 Crossing the line **westward**, a traveller advances the calendar date by one day; crossing **eastward**, the traveller moves the date back by one day. This is a change of date convention, not a discontinuity in elapsed physical time. The date line completes the bookkeeping required by a globe covered with local civil times.[^ch06_date_line]
@@ -695,14 +691,14 @@ Crossing the line **westward**, a traveller advances the calendar date by one da
 
 **Daylight saving time** advances the civil clock, usually by one hour, during part of the year. Its purpose is to shift scheduled activities toward the daylight available in the evening. It changes clock labels and human schedules; it does not lengthen the astronomical day or alter sunrise in local solar time.
 
-[Figure 31](fig31_time_daylight_saving) distinguishes northern-summer use in blue, southern-summer use in orange, former use in light grey, and no use in dark grey. The map is a historical illustration rather than a current catalogue of national rules. Different jurisdictions can use different transition dates, and some do not change their clocks at all.[^ch06_daylight_saving]
+[Figure 32](fig31_time_daylight_saving) distinguishes northern-summer use in blue, southern-summer use in orange, former use in light grey, and no use in dark grey. The map is a historical illustration rather than a current catalogue of national rules. Different jurisdictions can use different transition dates, and some do not change their clocks at all.[^ch06_daylight_saving]
 
 ```{figure} _static/_chapter06/fig31_daylight_saving_regions.png
 :width: 95%
 :align: center
 :name: fig31_time_daylight_saving
 
-**Figure 31** Historical distribution of daylight saving time. Blue and orange identify seasonal use in the Northern and Southern Hemispheres; the grey shades distinguish former use from no use.
+**Figure 32** Historical distribution of daylight saving time. Blue and orange identify seasonal use in the Northern and Southern Hemispheres; the grey shades distinguish former use from no use.
 ```
 
 An observing record should specify its time scale and offset. A clock time such as $02{:}30$ can occur twice when clocks are moved back, or fail to occur when they are moved forward. UTC timestamps avoid this local ambiguity, while precise elapsed-time calculations must still account for leap seconds.
@@ -749,14 +745,14 @@ $$
 d\tau_{\mathrm{proper}}=dt\sqrt{1-\frac{v^2}{c^2}}.
 $$
 
-The moving clock accumulates less proper time than the inertial-frame coordinate interval. [Figure 32](fig32_time_special_relativity) illustrates the comparison. For $v\ll c$, the fractional difference begins at order $v^2/(2c^2)$.
+The moving clock accumulates less proper time than the inertial-frame coordinate interval. [Figure 33](fig32_time_special_relativity) illustrates the comparison. For $v\ll c$, the fractional difference begins at order $v^2/(2c^2)$.
 
 ```{figure} _static/_chapter06/fig32_special_relativity.png
 :width: 44%
 :align: center
 :name: fig32_time_special_relativity
 
-**Figure 32** Illustration of clocks carried by observers with different motions. Their accumulated proper times depend on their trajectories; a reunion permits a direct comparison.
+**Figure 33** Illustration of clocks carried by observers with different motions. Their accumulated proper times depend on their trajectories; a reunion permits a direct comparison.
 ```
 
 General relativity adds the effect of gravitational potential. In a weak field, using the Newtonian potential $\Phi<0$ and an appropriate coordinate frame,
@@ -766,14 +762,14 @@ $$
 \simeq1+\frac{\Phi}{c^2}-\frac{v^2}{2c^2}.
 $$
 
-A clock deeper in a gravitational potential runs more slowly relative to this coordinate time, other conditions being equal. [Figure 33](fig33_time_general_relativity) is a qualitative visualization of spacetime curvature, rather than a literal surface on which clocks sit.
+A clock deeper in a gravitational potential runs more slowly relative to this coordinate time, other conditions being equal. [Figure 34](fig33_time_general_relativity) is a qualitative visualization of spacetime curvature, rather than a literal surface on which clocks sit.
 
 ```{figure} _static/_chapter06/fig33_general_relativity.png
 :width: 58%
 :align: center
 :name: fig33_time_general_relativity
 
-**Figure 33** Schematic visualization of spacetime curvature around Earth. Gravitational potential and motion both affect the comparison of physical clock rates.
+**Figure 34** Schematic visualization of spacetime curvature around Earth. Gravitational potential and motion both affect the comparison of physical clock rates.
 ```
 
 Coordinate time provides a consistent variable for the equations in the chosen frame; it does not abolish relativistic effects. Those effects enter the relation between coordinates, clock readings, and observations. Two spatially separated events assigned the same coordinate time are simultaneous **in that coordinate convention**. Simultaneity is not independent of the chosen frame.[^ch06_relativistic]
@@ -801,14 +797,14 @@ $$
 
 where $g$ is the Earth's orbital mean anomaly. The trigonometric arguments are in radians. This expression illustrates the main periodic correction; detailed transformations use more complete models and the observer's location and motion.[^ch06_time_transformations]
 
-[Figure 34](fig34_time_scale_relations) collects the connections between rotation, atomic, civil, and dynamical time. Some relations are constant offsets, some require measured Earth-orientation corrections, and others require relativistic transformations. The diagram uses the older label TDT for the scale now called TT.
+[Figure 35](fig34_time_scale_relations) collects the connections between rotation, atomic, civil, and dynamical time. Some relations are constant offsets, some require measured Earth-orientation corrections, and others require relativistic transformations. The diagram uses the older label TDT for the scale now called TT.
 
 ```{figure} _static/_chapter06/fig34_time_scales.png
 :width: 72%
 :align: center
 :name: fig34_time_scale_relations
 
-**Figure 34** Relations among astronomical time scales in historical notation. TAI–UTC depends on leap seconds, TDT–TAI is the fixed 32.184-second offset, and TDB–TDT contains small periodic relativistic corrections. UT0, UT1, and the historical smoothed scale UT2 refer to Earth rotation.
+**Figure 35** Relations among astronomical time scales in historical notation. TAI–UTC depends on leap seconds, TDT–TAI is the fixed 32.184-second offset, and TDB–TDT contains small periodic relativistic corrections. UT0, UT1, and the historical smoothed scale UT2 refer to Earth rotation.
 ```
 
 An observing calculation consequently needs both the time scale and the frame. UTC can identify when data were recorded, UT1 specifies terrestrial rotation, TT provides the usual argument for geocentric ephemerides, and TDB or TCB supplies a barycentric dynamical argument. A barycentric light-travel-time correction is a separate operation from the transformation between TT and TDB.
@@ -847,14 +843,14 @@ $$
 
 It is noon in **TT**, not noon in UT1 or UTC. At that epoch it corresponds to 11:58:55.816 UTC. The identical numerical JD at noon UT1 labels a different instant. Similarly, J1950.0 is exactly $18\,262.5$ days before J2000.0 and corresponds to **1950 January 1, 00:00 TT**, about 1 h 50 min after B1950.0. The prefixes B and J therefore carry physical and conventional information; they cannot be dropped from a precise catalogue epoch.[^ch06_j2000]
 
-[Figure 35](fig35_time_catalogue_epochs) uses **HD 219134** to illustrate coordinate labels referring to different systems and epochs. Its appreciable proper motion makes an epoch especially important. An equinox specifies the orientation of a classical coordinate system; a position epoch specifies the instant at which a moving star's position is stated. ICRS axes do not need an equinox, although ICRS catalogue positions still have an epoch.
+[Figure 36](fig35_time_catalogue_epochs) uses **HD 219134** to illustrate coordinate labels referring to different systems and epochs. Its appreciable proper motion makes an epoch especially important. An equinox specifies the orientation of a classical coordinate system; a position epoch specifies the instant at which a moving star's position is stated. ICRS axes do not need an equinox, although ICRS catalogue positions still have an epoch.
 
 ```{figure} _static/_chapter06/fig35_catalogue_epochs.png
 :width: 95%
 :align: center
 :name: fig35_time_catalogue_epochs
 
-**Figure 35** Catalogue information for HD 219134, with coordinates in different reference systems, epoch labels, and proper-motion components. B1950 and J2000 must be interpreted with their respective conventions.
+**Figure 36** Catalogue information for HD 219134, with coordinates in different reference systems, epoch labels, and proper-motion components. B1950 and J2000 must be interpreted with their respective conventions.
 ```
 
 ### The civil calendar and the Julian reform
@@ -883,14 +879,14 @@ $$
 
 about 11 minutes per year. This accumulates to roughly one day in **128 years**. Equinoxes consequently drift toward earlier Julian calendar dates.
 
-In **1582**, Pope **Gregory XIII** introduced a reform that removed ten calendar dates to restore the spring equinox near its conventional March date. In the first adopting countries, **Thursday 4 October was followed by Friday 15 October** ([Figure 36](fig36_time_gregorian)). The sequence of weekdays remained continuous. Adoption occurred at different times in different countries, so a historical date must be interpreted in its local calendar context.[^ch06_gregorian_calendar]
+In **1582**, Pope **Gregory XIII** introduced a reform that removed ten calendar dates to restore the spring equinox near its conventional March date. In the first adopting countries, **Thursday 4 October was followed by Friday 15 October** ([Figure 37](fig36_time_gregorian)). The sequence of weekdays remained continuous. Adoption occurred at different times in different countries, so a historical date must be interpreted in its local calendar context.[^ch06_gregorian_calendar]
 
 ```{figure} _static/_chapter06/fig36_gregorian_reform.png
 :width: 65%
 :align: center
 :name: fig36_time_gregorian
 
-**Figure 36** The October 1582 calendar transition in the first countries to adopt the Gregorian reform. The date advanced from 4 to 15 October while the weekday sequence continued.
+**Figure 37** The October 1582 calendar transition in the first countries to adopt the Gregorian reform. The date advanced from 4 to 15 October while the weekday sequence continued.
 ```
 
 The **Gregorian leap-year rule** retains years divisible by 4, except century years, which are leap years only when divisible by 400. Thus 1600 and 2000 are leap years, while 1700, 1800, 1900, and 2100 are not. There are 97 leap years in a 400-year cycle, so
@@ -927,14 +923,14 @@ $$
 \end{array}
 $$
 
-The season names are reversed in the Southern Hemisphere. These events use the **apparent Sun**, not the fictitious uniformly moving mean Sun. Equal $90^\circ$ longitude intervals consequently take different amounts of time. Near a solstice, one hemisphere is tilted toward the Sun and receives longer days and a higher midday Sun ([Figure 37](fig37_time_solstice)). At an equinox, the Sun lies on the celestial equator and the ideal illumination boundary passes through the terrestrial poles ([Figure 38](fig38_time_equinox)).[^ch06_seasons]
+The season names are reversed in the Southern Hemisphere. These events use the **apparent Sun**, not the fictitious uniformly moving mean Sun. Equal $90^\circ$ longitude intervals consequently take different amounts of time. Near a solstice, one hemisphere is tilted toward the Sun and receives longer days and a higher midday Sun ([Figure 38](fig37_time_solstice)). At an equinox, the Sun lies on the celestial equator and the ideal illumination boundary passes through the terrestrial poles ([Figure 39](fig38_time_equinox)).[^ch06_seasons]
 
 ```{figure} _static/_chapter06/fig37_solstice_geometry.png
 :width: 75%
 :align: center
 :name: fig37_time_solstice
 
-**Figure 37** Illumination near the June solstice. The Northern Hemisphere is tilted toward the Sun, with continuous daylight inside part of the Arctic region.
+**Figure 38** Illumination near the June solstice. The Northern Hemisphere is tilted toward the Sun, with continuous daylight inside part of the Arctic region.
 ```
 
 ```{figure} _static/_chapter06/fig38_equinox_geometry.png
@@ -942,7 +938,7 @@ The season names are reversed in the Southern Hemisphere. These events use the *
 :align: center
 :name: fig38_time_equinox
 
-**Figure 38** Ideal illumination at an equinox. The Sun lies on the equator and the day–night boundary passes through both poles. Refraction and the finite solar disk make observed daylight slightly longer than the geometric twelve hours.
+**Figure 39** Ideal illumination at an equinox. The Sun lies on the equator and the day–night boundary passes through both poles. Refraction and the finite solar disk make observed daylight slightly longer than the geometric twelve hours.
 ```
 
 The following rounded examples illustrate the relation between seasonal events and civil dates. A decimal day such as **20.3 March** means 0.3 day, or 7.2 hours, after the beginning of 20 March. The values are approximate calendar illustrations; precise event times require an ephemeris and a specified time scale.
@@ -969,40 +965,40 @@ $$
 \qquad(e\simeq0.0167).
 $$
 
-The incident flux at aphelion is therefore about **6.5% lower**, often rounded to **7%**, than at perihelion. [Figure 39](fig39_time_hemisphere_flux) shows the different annual patterns of total solar power intercepted by the two hemispheres. These totals should not be confused with the irradiance received by a particular horizontal surface.[^ch06_hemisphere_seasons]
+The incident flux at aphelion is therefore about **6.5% lower**, often rounded to **7%**, than at perihelion. [Figure 40](fig39_time_hemisphere_flux) shows the different annual patterns of total solar power intercepted by the two hemispheres. These totals should not be confused with the irradiance received by a particular horizontal surface.[^ch06_hemisphere_seasons]
 
 ```{figure} _static/_chapter06/fig39_hemispheric_solar_flux.png
 :width: 65%
 :align: center
 :name: fig39_time_hemisphere_flux
 
-**Figure 39** Seasonal variation of solar power intercepted by the Northern and Southern Hemispheres. Axial tilt redistributes the incoming energy between them, while orbital eccentricity changes the total received by Earth.
+**Figure 40** Seasonal variation of solar power intercepted by the Northern and Southern Hemispheres. Axial tilt redistributes the incoming energy between them, while orbital eccentricity changes the total received by Earth.
 ```
 
 The present alignment of perihelion with southern summer is temporary. Precession changes the orientation of the seasonal cycle relative to the orbit. Roughly half an axial precession cycle is about **13,000 years**, giving the scale on which the alignment can reverse. A precise calculation must also include the precession of the orbital apsides; the relative climatic-precession cycle is therefore not identical to the axial-precession period.
 
 ### Land, oceans, and the annual temperature cycle
 
-The two hemispheres do not respond identically to the same seasonal forcing. The Northern Hemisphere contains much more land, while the Southern Hemisphere is dominated by oceans ([Figure 40](fig40_time_land_ocean)). For comparable absorbed energy, the temperature of the shallow layer participating in heating over land changes more rapidly than that of the ocean, whose large heat capacity, mixing, and evaporation spread the response over greater depths and longer times.
+The two hemispheres do not respond identically to the same seasonal forcing. The Northern Hemisphere contains much more land, while the Southern Hemisphere is dominated by oceans ([Figure 41](fig40_time_land_ocean)). For comparable absorbed energy, the temperature of the shallow layer participating in heating over land changes more rapidly than that of the ocean, whose large heat capacity, mixing, and evaporation spread the response over greater depths and longer times.
 
 ```{figure} _static/_chapter06/fig40_hemispheric_land_ocean.png
 :width: 100%
 :align: center
 :name: fig40_time_land_ocean
 
-**Figure 40** Distribution of land and oceans, with the equator and tropics marked. The Northern Hemisphere contains a much larger share of the terrestrial land area.
+**Figure 41** Distribution of land and oceans, with the equator and tropics marked. The Northern Hemisphere contains a much larger share of the terrestrial land area.
 ```
 
 The global mean near-surface temperature is typically higher in July than in January by roughly **2–3°C**, despite Earth receiving less solar irradiance near July aphelion. The larger and faster seasonal response of northern land areas contributes strongly to this annual cycle. This difference is a climatic average, not a universal temperature offset between the hemispheres on a particular day. Ocean and atmospheric circulation, clouds, surface properties, and thermal storage also matter.[^ch06_hemisphere_temperature]
 
-[Figure 41](fig41_time_temperature_cycle) illustrates the annual temperature pattern for several selected years. Its ordinate combines seasonal departures from an annual reference with differences among years. The seasonal cycle must be distinguished from the longer-term change of the annual mean. Winds and ocean currents transport energy between regions and hemispheres, while the planet's radiation balance and stored heat determine its evolving thermal state.
+[Figure 42](fig41_time_temperature_cycle) illustrates the annual temperature pattern for several selected years. Its ordinate combines seasonal departures from an annual reference with differences among years. The seasonal cycle must be distinguished from the longer-term change of the annual mean. Winds and ocean currents transport energy between regions and hemispheres, while the planet's radiation balance and stored heat determine its evolving thermal state.
 
 ```{figure} _static/_chapter06/fig41_global_temperature_cycle.png
 :width: 64%
 :align: center
 :name: fig41_time_temperature_cycle
 
-**Figure 41** Illustration of the monthly global temperature cycle for selected historical years. The warmer mid-year months reflect the hemispheric asymmetry of land and ocean; vertical differences between yearly curves represent a separate change of the temperature baseline. Graphic credit: Statista; data source identified in the graphic as NASA.
+**Figure 42** Illustration of the monthly global temperature cycle for selected historical years. The warmer mid-year months reflect the hemispheric asymmetry of land and ocean; vertical differences between yearly curves represent a separate change of the temperature baseline. Graphic credit: Statista; data source identified in the graphic as NASA.
 ```
 
 ## Twilight
@@ -1015,14 +1011,14 @@ The sky does not become dark as soon as the solar disk disappears. Sunlight stil
 | Nautical | $-12^\circ$ | $102^\circ$ |
 | Astronomical | $-18^\circ$ | $108^\circ$ |
 
-In the evening, **civil twilight ends** when the solar centre reaches $-6^\circ$, **nautical twilight ends** at $-12^\circ$, and **astronomical twilight ends** at $-18^\circ$. Morning twilight follows the reverse sequence: astronomical twilight begins at $-18^\circ$, nautical twilight at $-12^\circ$, and civil twilight at $-6^\circ$. [Figure 42](fig42_time_twilight_limits) summarizes the intervals.
+In the evening, **civil twilight ends** when the solar centre reaches $-6^\circ$, **nautical twilight ends** at $-12^\circ$, and **astronomical twilight ends** at $-18^\circ$. Morning twilight follows the reverse sequence: astronomical twilight begins at $-18^\circ$, nautical twilight at $-12^\circ$, and civil twilight at $-6^\circ$. [Figure 43](fig42_time_twilight_limits) summarizes the intervals.
 
 ```{figure} _static/_chapter06/fig42_twilight_definitions.png
 :width: 75%
 :align: center
 :name: fig42_time_twilight_limits
 
-**Figure 42** Evening twilight classified by the geometric depression of the solar centre. The boundaries at 6°, 12°, and 18° define civil, nautical, and astronomical twilight, respectively.
+**Figure 43** Evening twilight classified by the geometric depression of the solar centre. The boundaries at 6°, 12°, and 18° define civil, nautical, and astronomical twilight, respectively.
 ```
 
 Civil twilight generally leaves enough natural illumination for many ordinary outdoor activities. Nautical twilight historically allows the horizon and selected stars to be seen together for navigation. Beyond the astronomical boundary, scattered sunlight is conventionally small enough for the sky to be treated as astronomically dark. Actual observing conditions also depend on the Moon, clouds, aerosols, artificial lighting, and the natural night-sky background.
@@ -1032,17 +1028,17 @@ Civil twilight generally leaves enough natural illumination for many ordinary ou
 :align: center
 :name: fig43_time_observatory_twilight
 
-**Figure 43** An observatory during twilight. The solar disk is below the horizon, while scattered sunlight still illuminates the sky and limits faint-object observations.
+**Figure 44** An observatory during twilight. The solar disk is below the horizon, while scattered sunlight still illuminates the sky and limits faint-object observations.
 ```
 
-Twilight duration depends on latitude and season. If the Sun descends steeply through the horizon, the three boundaries follow each other rapidly. At high latitude it can remain close to the horizon for hours, or never reach $-18^\circ$, so an entire night may lack astronomical darkness. The geometric distinction between evening **dusk** and morning **dawn** is illustrated in [Figure 44](fig44_time_dawn_dusk).
+Twilight duration depends on latitude and season. If the Sun descends steeply through the horizon, the three boundaries follow each other rapidly. At high latitude it can remain close to the horizon for hours, or never reach $-18^\circ$, so an entire night may lack astronomical darkness. The geometric distinction between evening **dusk** and morning **dawn** is illustrated in [Figure 45](fig44_time_dawn_dusk).
 
 ```{figure} _static/_chapter06/fig44_dawn_dusk.png
 :width: 70%
 :align: center
 :name: fig44_time_dawn_dusk
 
-**Figure 44** Dusk and dawn on either side of the nighttime interval. Twilight accompanies the Sun's passage below the horizon in the evening and its approach to the horizon in the morning.
+**Figure 45** Dusk and dawn on either side of the nighttime interval. Twilight accompanies the Sun's passage below the horizon in the evening and its approach to the horizon in the morning.
 ```
 
 The horizontal-coordinate relation connects these definitions to an observing calculation:
