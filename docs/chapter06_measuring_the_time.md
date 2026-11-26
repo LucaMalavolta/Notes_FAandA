@@ -86,7 +86,9 @@ Before upper transit, a star on the eastern side of the meridian has a negative 
 **Figure 3** Right ascension $\alpha$, hour angle, and local sidereal time $\Theta$. The symbol $h$ in this diagram denotes hour angle. Their geometry gives $\Theta=HA+\alpha$.
 ```
 
-A **sidereal day** is the interval between successive meridian passages of the equinox. To elementary accuracy, it can be identified with a full rotation relative to distant stars. A **solar day** is the interval between successive upper meridian passages of the Sun. During one terrestrial rotation, the Earth advances along its orbit. It must turn through an additional angle, approximately $1^\circ$, before the Sun returns to the same meridian ([Figure 4](fig04_time_day_lengths)). The mean solar day is consequently about four minutes longer than the sidereal day.
+A **sidereal day** is the interval between successive meridian passages of the equinox. To elementary accuracy, it can be identified with a full rotation relative to distant stars. A **solar day** or **synodic day** is the interval between successive *upper* meridian passages of the Sun. In the Arctic region, the Sun may always be above the horizon for part of the summer and may cross the meridian twice. The upper meridian passage occurs when the Sun is closer to the south direction. In the Antarctic region, the situation is reversed.
+
+During one terrestrial rotation, the Earth advances along its orbit. It must turn through an additional angle, approximately $1^\circ$, before the Sun returns to the same meridian ([Figure 4](fig04_time_day_lengths)). The mean solar day is consequently about four minutes longer than the sidereal day.
 
 ```{figure} _static/_chapter06/fig04_sidereal_solar_day.png
 :width: 57%
@@ -103,7 +105,16 @@ $$
 \simeq24\ \mathrm{h}\ 3\ \mathrm{min}\ 56.56\ \mathrm{s\ of\ sidereal\ time}.
 $$
 
-Equivalently, 24 sidereal hours correspond to approximately **23 h 56 min 4 s** of mean solar time. These expressions compare the readings of two differently graduated clocks over the same physical interval; they do not imply that the SI second has two definitions.
+Equivalently, 24 sidereal hours correspond to approximately **23 h 56 min 4 s** of mean solar time. These expressions compare the readings of two differently graduated clocks over the same physical interval; they do not imply that the SI second has two definitions. [Figure 4](fig04_time_day_lengths_another) shows another representation of the same concept.
+
+```{figure} _static/_chapter06/fig04_sidereal_solar_day_another.png
+:width: 57%
+:align: center
+:name: fig04_time_day_lengths_another
+
+**Figure 4** After rotating once relative to a distant celestial direction, the Earth must turn a little farther to face the Sun again. The orbital displacement is exaggerated for clarity.
+```
+
 
 ### Apparent and mean sidereal time
 
@@ -145,7 +156,7 @@ The distinction concerns the sense of rotation relative to orbital motion. These
 
 ## Using the Sun to measure the year
 
-The Sun's annual motion supplies two different years. The **sidereal year**, approximately $365.2564\ \mathrm{d}$, measures a complete revolution relative to distant stars. The **tropical year**, approximately $365.2422\ \mathrm{d}$, follows the moving equinox and therefore the seasonal cycle. It is shorter by approximately 20 minutes because the equinox moves westward, against the Sun's apparent eastward motion ([Figure 5](fig05_time_tropical_year)).[^ch06_years]
+The Sun's annual motion supplies two different years. The **sidereal year**, approximately $365.2564\ \mathrm{d}$, measures a complete revolution relative to distant stars; in other words, it is the time between two passages of the Sun in the same position with respect to the fixed stars. The **tropical year**, approximately $365.2422\ \mathrm{d}$, is the time between two passages of the Sun on the vernal equinox. The tropical year follows the moving equinox and therefore the seasonal cycle. It is shorter than the sidereal year by approximately 20 minutes because the equinox moves westward, against the Sun's apparent eastward motion ([Figure 5](fig05_time_tropical_year)).[^ch06_years]
 
 ```{figure} _static/_chapter06/fig05_tropical_year.png
 :width: 65%
@@ -155,7 +166,7 @@ The Sun's annual motion supplies two different years. The **sidereal year**, app
 **Figure 5** The moving equinox is reached before the Earth completes one revolution relative to the stars. The numerical annotations refer to an older reference epoch; the geometry explains the distinction between tropical and sidereal years.
 ```
 
-At elementary level, a tropical year is described as the interval between successive vernal equinoxes. More precisely, the **mean tropical year** is the interval during which the Sun's mean ecliptic longitude, measured from the mean equinox of date, increases by $360^\circ$. An individual equinox-to-equinox interval differs slightly from this mean definition because of orbital perturbations and the changing geometry of the reference system.
+At an elementary level, a tropical year is the interval between successive vernal equinoxes. More precisely, the **mean tropical year** is the interval during which the Sun's mean ecliptic longitude, measured from the mean equinox of date, increases by $360^\circ$. An individual equinox-to-equinox interval differs slightly from this mean definition because of orbital perturbations and the changing geometry of the reference system.
 
 The following historical intervals illustrate that the return of a particular equinox is not an invariant duration:
 
@@ -249,7 +260,9 @@ The eccentricity contribution has a main period of one year, while the obliquity
 
 For example, if $E=+16\ \mathrm{min}$, the real Sun crosses the meridian when local mean solar time is approximately $11{:}44$. Apparent noon is then earlier than mean noon. This comparison concerns **local** time. A civil clock also includes the offset of the adopted time zone and, where applicable, daylight saving time; those conventions are considered below.
 
-## The analemma
+More information about the equation of time can be found at [this webiste](https://equation-of-time.info/work)
+
+### The analemma
 
 Observe the Sun from one location at the same mean solar time throughout a year. Its position changes in two coordinates: declination follows the seasonal north–south displacement, while the equation of time produces an east–west displacement. The resulting curve is the **analemma**. On Earth it resembles an unequal figure eight ([Figures 9](fig09_time_analemma) and [10](fig10_time_analemma_photo)). The apparent orientation of the figure depends on latitude and the time of day chosen for the observations.
 
@@ -341,7 +354,7 @@ Taking $P_{\mathrm{Earth}}\simeq365.2564\ \mathrm{d}$ recovers a synodic period 
 **Figure 14** The Moon returns to the same stellar direction after about 27.32 days, but requires about 29.53 days to restore its alignment with the Sun. The Earth's orbital displacement changes the Sun's direction during the interval.
 ```
 
-## Why lunations have different lengths
+### Why lunations have different lengths
 
 An individual lunation can differ from the mean by several hours. [Figure 15](fig15_time_lunation_short) shows this variability during 2008–2010. Its left axis gives the departure from the mean duration, while its right axis gives the Moon's **true anomaly** at New Moon. True anomaly is the angle measured from perigee to the Moon's instantaneous position, in the direction of orbital motion ([Figure 16](fig16_time_true_anomaly)).[^ch06_lunar_variations]
 
@@ -373,7 +386,7 @@ The Moon moves faster near **perigee** and slower near **apogee**. The extra ang
 
 The distinction is a useful first explanation, rather than a complete prediction. The Earth's own variable orbital speed and the Sun's gravitational perturbation of the lunar orbit also contribute. The regular progression of true anomaly at successive New Moons reflects the fact that the phase cycle and the perigee cycle do not have the same period.
 
-## The anomalistic month and apsidal precession
+### The anomalistic month and apsidal precession
 
 The **anomalistic month** is the interval between successive passages through perigee. Its mean duration is approximately
 
@@ -381,7 +394,7 @@ $$
 A=27.55455\ \mathrm{d},
 $$
 
-about $0.23\ \mathrm{d}$ longer than the sidereal month. Perigee moves eastward in the same sense as the Moon's orbital motion, so the Moon must travel beyond one stellar revolution to encounter it again. [Figure 18](fig18_time_anomalistic) shows that individual perigee-to-perigee intervals also vary.
+about $0.23\ \mathrm{d}$ longer than the sidereal month. Perigee moves eastward in the same sense as the Moon's orbital motion, so the Moon must travel beyond one stellar revolution (i.e,. the direction with respect to fixed stars) to encounter the perigee again. [Figure 18](fig18_time_anomalistic) shows that individual perigee-to-perigee intervals also vary.
 
 ```{figure} _static/_chapter06/fig18_anomalistic_month.png
 :width: 80%
@@ -391,7 +404,7 @@ about $0.23\ \mathrm{d}$ longer than the sidereal month. Perigee moves eastward 
 **Figure 18** Variation of the anomalistic month during 2008–2010. The angular curves describe the relative orientation of the Sun and lunar perigee; the left axis gives departures of the perigee-to-perigee and apogee-to-apogee intervals from their mean.
 ```
 
-The **line of apsides** joins the nearest and farthest points of an orbit: periapsis and apoapsis, called perigee and apogee for an Earth-centred orbit. Its gradual rotation is **apsidal precession** ([Figure 19](fig19_time_apsidal_precession)). The lunar line of apsides completes one prograde circuit in approximately **8.85 years**. If $P_{\mathrm{aps}}$ is that period, the mean-rate relation is
+The **line of apsides** joins the nearest and farthest points of an orbit: periapsis and apoapsis, called perigee and apogee for an Earth-centred orbit. Its gradual rotation is called **apsidal precession** ([Figure 19](fig19_time_apsidal_precession)). The lunar line of apsides completes one prograde circuit in approximately **8.85 years**. If $P_{\mathrm{aps}}$ is that period, the mean-rate relation is
 
 $$
 \frac{1}{A}=\frac{1}{P_{\mathrm{Moon}}}-\frac{1}{P_{\mathrm{aps}}}.
@@ -427,7 +440,7 @@ The longer sequence in [Figure 20](fig20_time_lunation_long) also contains modul
 **Figure 20** Variation of lunation length over 2008–2027. The rapid oscillations and their changing envelope reflect several interacting cycles, including lunar phase, lunar perigee, and the Earth's orbital motion.
 ```
 
-## The draconic month
+### The draconic month
 
 The lunar orbital plane is inclined by about $5.1^\circ$ to the ecliptic. The intersection of the two planes defines a **line of nodes**. At the **ascending node**, the Moon crosses from south to north of the ecliptic; at the descending node it crosses from north to south ([Figure 21](fig21_time_lunar_nodes)).
 
@@ -462,7 +475,7 @@ The nodal period sets the mean difference from the sidereal month. Lunar eccentr
 **Figure 22** Departures of individual draconic months from the mean and the changing angle between lunar perigee and the ascending node. The larger-scale envelope accompanies their changing relative orientation.
 ```
 
-## The Moon's changing orbital parameters
+### The Moon's changing orbital parameters
 
 The lunar orbit is not one fixed Keplerian ellipse. A useful instantaneous description uses **osculating orbital elements**: the elements of the ellipse that matches the Moon's position and velocity at one instant. Solar perturbations change those elements continuously. Three examples complete the comparison of lunar periods.
 
@@ -634,7 +647,7 @@ The difference $DUT1=UT1-UTC$ is measured and published; it is not the same as $
 
 UTC is practical for timestamps and civil coordination. Elapsed intervals that span a leap second must be evaluated with a leap-second-aware conversion, or in a continuous scale such as TAI. The $0.9$-second condition describes the established leap-second system. A **2022 CGPM resolution** decided that the permitted difference between UT1 and UTC will be increased in or before **2035**, so this condition should not be assumed to be a permanent definition for all future epochs.[^ch06_utc_future]
 
-## Standard time zones
+### Standard time zones
 
 Local mean solar time changes continuously with longitude. For civil purposes, neighbouring places adopt a common **standard time**. A nominal one-hour difference corresponds to $15^\circ$ of longitude, but actual time-zone boundaries follow political and practical choices. Some offsets include half hours or quarter hours, so there is no exact division into 24 equal geographical strips.
 
@@ -664,7 +677,7 @@ $$
 
 All terms must be expressed in the same time units. For example, at $15^\circ$ east, CET approximately coincides with local mean solar time; apparent solar time still differs by $E$. Under CEST, the civil clock gains another hour without any corresponding change in the Sun's motion.
 
-## The International Date Line
+### The International Date Line
 
 If successive zones increase their clock reading eastward, a full circuit accumulates 24 hours. One boundary must therefore separate two different calendar dates. The **International Date Line** lies mainly in the Pacific Ocean near longitude $180^\circ$, with deviations that keep territories and island groups on the same civil date ([Figure 30](fig30_time_date_line)).
 
@@ -678,7 +691,7 @@ If successive zones increase their clock reading eastward, a full circuit accumu
 
 Crossing the line **westward**, a traveller advances the calendar date by one day; crossing **eastward**, the traveller moves the date back by one day. This is a change of date convention, not a discontinuity in elapsed physical time. The date line completes the bookkeeping required by a globe covered with local civil times.[^ch06_date_line]
 
-## Daylight saving time
+### Daylight saving time
 
 **Daylight saving time** advances the civil clock, usually by one hour, during part of the year. Its purpose is to shift scheduled activities toward the daylight available in the evening. It changes clock labels and human schedules; it does not lengthen the astronomical day or alter sunrise in local solar time.
 
@@ -726,7 +739,7 @@ $$
 
 at the accuracy of the TAI realization used here. Predicting a celestial position at a specified TT and predicting which terrestrial meridian faces it are thus related calculations with different time arguments.[^ch06_delta_t]
 
-## Proper time and coordinate time
+### Proper time and coordinate time
 
 Relativity requires a distinction between a clock reading and the time coordinate used to describe a system. **Proper time**, $\tau_{\mathrm{proper}}$, is measured by a clock following a particular observer's worldline. **Coordinate time**, $t$, labels events in a specified spacetime coordinate system. Clocks at different places or moving at different velocities need not accumulate the same proper time between selected events.
 
@@ -765,7 +778,7 @@ A clock deeper in a gravitational potential runs more slowly relative to this co
 
 Coordinate time provides a consistent variable for the equations in the chosen frame; it does not abolish relativistic effects. Those effects enter the relation between coordinates, clock readings, and observations. Two spatially separated events assigned the same coordinate time are simultaneous **in that coordinate convention**. Simultaneity is not independent of the chosen frame.[^ch06_relativistic]
 
-## Terrestrial and barycentric dynamical time
+### Terrestrial and barycentric dynamical time
 
 The **Geocentric Celestial Reference System** provides a relativistic description centred on Earth. Its coordinate time is **TCG**, Geocentric Coordinate Time. TT is defined as a linearly scaled version of TCG:
 
@@ -844,7 +857,7 @@ It is noon in **TT**, not noon in UT1 or UTC. At that epoch it corresponds to 11
 **Figure 35** Catalogue information for HD 219134, with coordinates in different reference systems, epoch labels, and proper-motion components. B1950 and J2000 must be interpreted with their respective conventions.
 ```
 
-## The civil calendar and the Julian reform
+### The civil calendar and the Julian reform
 
 The daily, monthly, and yearly cycles are not integer multiples of one another. A civil calendar must therefore choose how to approximate the seasonal year with a whole number of days. Adding occasional days or months is an **intercalation**. A calendar rule is an approximation to astronomical cycles, rather than a law governing those cycles.[^ch06_calendars]
 
@@ -860,7 +873,7 @@ The name *bissextile* recalls the Roman practice of repeating a day identified a
 
 Extending a calendar's rules to dates before its adoption produces a **proleptic calendar**. Historical BCE/CE chronology has no year zero: 1 BCE is followed directly by 1 CE. **Astronomical year numbering** instead includes year 0, corresponding to 1 BCE; year $-1$ corresponds to 2 BCE. Under a proleptic every-four-years Julian rule, astronomical year 0 is a leap year. These numbering systems must be distinguished when evaluating intervals across the BCE/CE boundary.
 
-## The Gregorian calendar
+### The Gregorian calendar
 
 The Julian average year exceeds the near-present tropical year by approximately
 
@@ -943,7 +956,7 @@ The following rounded examples illustrate the relation between seasonal events a
 
 These durations sum to approximately one tropical year and show the unequal division of the annual cycle. In successive ordinary years, a seasonal event tends to occur about **5 h 49 min later** on the civil clock because the year exceeds 365 days. A leap day then shifts the calendar placement back by nearly a day. The four-year pattern is modified by century rules and slow astronomical changes, as the comparison of 1950, 2000, and 2096 indicates.
 
-## Differences between the hemispheres
+### Differences between the hemispheres
 
 The axial tilt is the principal cause of the seasons, but orbital eccentricity changes both their durations and the incident solar flux. Earth reaches aphelion in early July, during northern summer, and perihelion in early January, during southern summer. It moves more slowly near aphelion, so **northern spring and summer together last about seven days longer** than southern spring and summer.
 
